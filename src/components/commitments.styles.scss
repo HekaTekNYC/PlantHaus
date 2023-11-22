@@ -11,47 +11,48 @@
     font-weight: 800;
     font-family: "Cormorant Garamond";
   }
+}
 
-  .three-points-row {
+.three-points-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 60px;
+
+  .points-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 40px 60px;
+    justify-content: center;
 
-    .points-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .blob-container {
+      position: absolute;
+    }
 
-      .blob-container {
-        position: absolute;
-      }
+    .point-blob {
+      position: relative;
+      z-index: -1;
+      width: 150px;
+      height: 150px;
+      top: 100px;
+    }
 
-      .point-blob {
-        position: relative;
-        z-index: -1;
-        width: 150px;
-        height: 150px;
-        top: 100px;
-      }
+    .point-icon {
+      width: 50px;
+    }
 
-      .point-icon {
-        width: 50px;
-      }
+    .point-header {
+      text-align: center;
+      font-family: "Cormorant Garamond";
+      font-weight: 700;
+      font-size: 1.55rem;
+      margin: 8px 0;
+    }
 
-      .point-header {
-        text-align: center;
-        font-family: "Cormorant Garamond";
-        font-weight: 700;
-        font-size: 1.55rem;
-        margin: 8px 0;
-      }
-
-      .point-info {
-        text-align: center;
-        margin: 0 10px;
-        padding: 5px 20px;
-      }
+    .point-info {
+      text-align: center;
+      margin: 0 10px;
+      padding: 5px 20px;
     }
   }
 }
