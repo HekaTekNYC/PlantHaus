@@ -1,3 +1,5 @@
+["ffd9c1","ce8861","3c403d","3c514e","497f73","a3bcb6","daded4","ffffff"]
+
 Plants
 Pet Friendly Section
 New Arrivals
