@@ -2,16 +2,34 @@ import React from "react";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { PiPottedPlant } from "react-icons/pi";
 import { PiChatsCircle } from "react-icons/pi";
+import Slider from "../components/Slider";
+import "../components/slider.styles.scss";
+import "./home.styles.scss";
+import zzImage1 from "../assets/zz-1.png";
+import zzImage2 from "../assets/zz-2.png";
+import heroImage from "../assets/styled-plants-5.png";
 
 const Home = () => {
+  //   Plants for new arrivals: Monstera, Spider, Snake, Fiddle leaf fig
+  // Plants that are pet friendly prayer palm, birds nest fern, aloe,
+
+  const zzImages = [zzImage1, zzImage2];
+
   return (
     <>
       {/* Hero section */}
       <div className="hero-container">
-        <div className="hero-image-container"></div>
+        <div className="hero-image-container">
+          <img src={heroImage} alt="indoor plants" className="hero-img" />
+        </div>
         <div className="hero-text-container">
-          <div className="header-text"></div>
-          <div className="header-description"></div>
+          <div className="header-text">The Plant Haus</div>
+          <div className="header-description">
+            Your trusted companion in cultivating a thriving oasis at home. With
+            an extensive array of lush botanical wonders, handpicked for their
+            beauty and resilience, we empower you to transform any space into a
+            verdant sanctuary with ease."
+          </div>
           {/* <button></button> */}
         </div>
       </div>
@@ -60,12 +78,18 @@ const Home = () => {
       </div>
 
       {/* New Arrivals Section */}
-      <div className="new-arrivals-container"></div>
+      <div className="new-arrivals-container">
+        <h2>New Arrivals</h2>
+        <div className="new-arrivals-images">
+          {/* <Slider images={zzImages} className="slider-img" /> */}
+        </div>
+      </div>
 
       {/* Pet Friendly Plants Section */}
-      <div className="pet-friendly-container"></div>
-      {/* Reviews */}
-      <div className="reviews-container"></div>
+      <div className="pet-friendly-container">
+        <h2>Pet Friendly</h2>
+        <div className="new-arrivals-images">{/* <Slider /> */}</div>
+      </div>
     </>
   );
 };
