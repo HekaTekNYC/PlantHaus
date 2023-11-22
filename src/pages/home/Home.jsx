@@ -1,14 +1,16 @@
-import React from "react";
-import Commitments from "../components/Commitments";
-import NewArrivals from "../components/NewArrivals";
-import PetFriendly from "../components/PetFriendly";
-import Reviews from "../components/Reviews";
-import heroImage from "../assets/styled-plants-5.png";
-import "./home.styles.scss";
+import React from "react"
+import { Outlet } from "react-router-dom"
+import Commitments from "../../components/Commitments"
+import NewArrivals from "../../components/NewArrivals"
+import PetFriendly from "../../components/PetFriendly"
+import Reviews from "../../components/Reviews"
+import heroImage from "../../assets/styled-plants-5.png"
+import "./home.styles.scss"
 
 const Home = () => {
   return (
     <>
+      <Outlet />
       {/* Hero section */}
       <div className="hero-container">
         <div className="hero-image-container">
@@ -39,6 +41,6 @@ const Home = () => {
       {/* Reviews */}
       <Reviews />
     </>
-  );
-};
-export default Home;
+  )
+}
+export default Home

@@ -1,10 +1,10 @@
-import React from "react";
-import { LiaShippingFastSolid } from "react-icons/lia";
-import { PiPottedPlant, PiChatsCircle } from "react-icons/pi";
-import Blob1 from "../assets/blobs/Blob1";
-import Blob2 from "../assets/blobs/Blob2";
-import Blob3 from "../assets/blobs/Blob3";
-import "./commitments.styles.scss";
+import React from "react"
+import { LiaShippingFastSolid } from "react-icons/lia"
+import { PiPottedPlant, PiChatsCircle } from "react-icons/pi"
+import Blob1 from "../assets/blobs/Blob1"
+import Blob2 from "../assets/blobs/Blob2"
+import Blob3 from "../assets/blobs/Blob3"
+import "./commitments.styles.scss"
 
 const Commitments = () => {
   const pointsData = [
@@ -31,7 +31,7 @@ const Commitments = () => {
       info: "Upon ordering, you'll receive a complimentary plant-parenting instruction card. Plus, our team of virtual plant doctors is always on call, providing continuous online support for your plant care inquiries.",
       svg: <Blob3 />,
     },
-  ];
+  ]
   return (
     <>
       {/* Three Points of supprt section */}
@@ -39,8 +39,8 @@ const Commitments = () => {
         <div className="three-header">Our Commitment</div>
         <div className="three-points-row ">
           {pointsData.map(({ icon, header, info, id, svg }) => (
-            <div className="blob-container">
-              <div className="points-container" key={id}>
+            <div className="blob-container" key={id}>
+              <div className="points-container">
                 <div className="point-blob">{svg}</div>
                 <div className="point-icon">{icon}</div>
                 <h3 className="point-header">{header}</h3>
@@ -51,7 +51,7 @@ const Commitments = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Commitments;
+export default Commitments
