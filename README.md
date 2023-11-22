@@ -1,3 +1,9 @@
+["ffd9c1","ce8861","3c403d","3c514e","497f73","a3bcb6","daded4","ffffff"]
+
+Plants
+Pet Friendly Section
+New Arrivals
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
