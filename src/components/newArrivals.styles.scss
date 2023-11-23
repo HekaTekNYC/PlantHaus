@@ -10,10 +10,10 @@
     text-align: center;
     font-size: 2.2rem;
     font-weight: 800;
-    font-family: "Cormorant Garamond";
+    font-family: 'Cormorant Garamond';
   }
 
-  .new-arrivals-images {
+  .new-arrivals-products {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,6 +25,26 @@
       height: 460px;
       object-fit: cover;
       margin: 0px 40px;
+      background-color: #f4efef08;
+      box-shadow: 0px 0px 17px 0px rgba(124, 124, 121, 0.218);
+    }
+    .new-arrivals-info {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px;
+      padding: 5px 36px;
+
+      .new-arrivals-text {
+        display: flex;
+        font-size: 1.35rem;
+        font-weight: 600;
+        font-family: 'Cormorant Garamond';
+        margin: 6px 0px;
+      }
+      .new-arrivals-price {
+        display: flex;
+        font-size: 1.15rem;
+      }
     }
   }
 }
