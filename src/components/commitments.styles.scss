@@ -2,31 +2,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 30px 0;
-  padding: 50px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px 60px;
 
   .three-header {
     font-size: 2.2rem;
     font-weight: 800;
-    font-family: "Cormorant Garamond";
+    font-family: 'Cormorant Garamond';
+    margin-bottom: 0;
   }
 }
 
 .three-points-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 
   .points-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     .blob-container {
       position: absolute;
+      z-index: -1;
+      width: 150px;
+      height: 150px;
     }
 
     .point-blob {
@@ -43,16 +45,39 @@
 
     .point-header {
       text-align: center;
-      font-family: "Cormorant Garamond";
+      font-family: 'Cormorant Garamond';
       font-weight: 700;
       font-size: 1.55rem;
-      margin: 8px 0;
+      margin: 3px 0 10px;
     }
 
     .point-info {
       text-align: center;
       margin: 0 10px;
       padding: 5px 20px;
+      line-height: 1.4;
     }
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+}
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
+}
+
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+  .three-points-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+// Apply for screens up to 992px
+@media only screen and (max-width: 992px) {
+}
+
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
 }
