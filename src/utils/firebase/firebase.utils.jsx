@@ -2,8 +2,10 @@ import { initializeApp } from 'firebase/app'
 import {
   getAuth,
   signInWithPopup,
+  signInWithRedirect,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from 'firebase/auth'
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore'
 
@@ -26,6 +28,8 @@ googleProvider.setCustomParameters({
 
 export const auth = getAuth()
 export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider)
+export const signInWithGoogleRedirect = () =>
+  signInWithRedirect(auth, googleProvider)
 
 export const db = getFirestore()
 
@@ -58,10 +62,15 @@ export const createUserDocumentFromAuth = async (
   return userDocRef
 }
 
-//do this inside the firebase file to allow control over the application interfaces with external service (firebase). It allows a creation of the front end and the services is relies on
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return
 
-  // if this changes then weve protected our front end from this.
   return await createUserWithEmailAndPassword(auth, email, password)
+}
+
+export const signInAuthUserWithEmailAndPassword = async (email, password) => {
+  if (!email || !password) return
+
+  // if this changes then weve protected our front end from this.
+  return await signInWithEmailAndPassword(auth, email, password)
 }
