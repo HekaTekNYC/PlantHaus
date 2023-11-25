@@ -34,7 +34,31 @@ const SignInForm = () => {
       console.log(response)
       resetFormFields()
     } catch (error) {
-      console.log(error)
+      switch (error.code) {
+        case 'auth/wrong-password':
+          alert('incorrect password')
+          break
+        case 'auth/invalid-login-credentials':
+          alert('invalid login credentials')
+          break
+        case 'auth/invalid-email':
+          alert('incorrect email address')
+          break
+        case 'auth/email-already-exists':
+          alert('email already exists')
+          break
+        case 'auth/popup-closed-by-user':
+          alert('popup closed by user')
+          break
+        case 'auth/cancelled-popup-request':
+          alert('popup closed by user')
+          break
+        case 'auth/user-not-found':
+          alert('no user associated with this email')
+          break
+        default:
+          console.log(error)
+      }
     }
   }
 
@@ -70,7 +94,7 @@ const SignInForm = () => {
           <Button buttonType="inverted" type="submit">
             Sign In
           </Button>
-          <Button buttonType="google" onClick={signInWithGoogle}>
+          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
             Google Sign In
           </Button>
         </div>

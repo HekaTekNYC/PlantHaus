@@ -1,3 +1,35 @@
 .authentication-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   padding: 80px 60px 20px;
+
+  .sign-in-form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .sign-up-form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+  .authentication-container {
+    flex-direction: column;
+
+    .sign-in-form {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+
+    .sign-up-form {
+      width: 100%;
+    }
+  }
 }
