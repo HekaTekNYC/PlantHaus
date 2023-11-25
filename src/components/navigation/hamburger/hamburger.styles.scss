@@ -1,0 +1,22 @@
+.burger-button {
+  --button-color: #3c403f;
+  overflow: hidden;
+
+  .hamburger {
+    transition: transform 1s, rotate 1s;
+  }
+
+  &[aria-expanded='true'] .hamburger {
+    transform: translate(10px, -10px) rotate(0.125turn);
+  }
+
+  .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  &[aria-expanded='true'] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+}
