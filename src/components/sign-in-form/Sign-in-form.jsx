@@ -1,12 +1,15 @@
 import { useState } from 'react'
+
 import FormInput from '../form-input/Form-input'
 import Button from '../button/Button'
-import './sign-in-form.styles.scss'
+
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from '../../utils/firebase/firebase.utils'
+
+import './sign-in-form.styles.scss'
 
 const defaultFormFields = {
   email: '',
@@ -22,16 +25,14 @@ const SignInForm = () => {
   }
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup()
-    await createUserDocumentFromAuth(user)
+    await signInWithGooglePopup()
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
     try {
-      const response = await signInAuthUserWithEmailAndPassword(email, password)
-      console.log(response)
+      const { user } = await signInAuthUserWithEmailAndPassword(email, password)
       resetFormFields()
     } catch (error) {
       switch (error.code) {
@@ -46,12 +47,6 @@ const SignInForm = () => {
           break
         case 'auth/email-already-exists':
           alert('email already exists')
-          break
-        case 'auth/popup-closed-by-user':
-          alert('popup closed by user')
-          break
-        case 'auth/cancelled-popup-request':
-          alert('popup closed by user')
           break
         case 'auth/user-not-found':
           alert('no user associated with this email')
