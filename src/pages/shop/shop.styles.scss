@@ -1,0 +1,18 @@
+.shop-container {
+  padding: 80px 60px 20px;
+  height: 100vh;
+
+  .new-arrivals-header {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Cormorant Garamond';
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+}
