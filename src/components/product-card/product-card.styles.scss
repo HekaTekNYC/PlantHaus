@@ -1,0 +1,56 @@
+.product-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .img-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+  }
+
+  img {
+    border-radius: 4px;
+    width: 320px;
+    height: 460px;
+    object-fit: cover;
+  }
+
+  button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 380px;
+    display: none;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+
+    button {
+      opacity: 0.85;
+      display: flex;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    .text {
+      font-weight: 600;
+      font-family: 'Cormorant Garamond';
+      font-size: 1.35rem;
+      margin: 8px 0;
+    }
+
+    .price {
+      font-size: 1.15rem;
+    }
+  }
+}

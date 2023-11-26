@@ -1,0 +1,59 @@
+.cart-sidebar-container {
+  position: absolute;
+  width: 448px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 32px;
+  border: 1px solid black;
+  background-color: white;
+  top: 70px;
+  right: 0px;
+  z-index: 19;
+
+  .cart-header {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Cormorant Garamond';
+    margin: 10px 0 20px;
+  }
+  .cart-info {
+    display: flex;
+    font-size: 1.05rem;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond';
+  }
+
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+  }
+
+  .hr {
+    width: 90%;
+    border: 0;
+    margin: 20px 0;
+    height: 0.1rem;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(98, 204, 169) 6%,
+      rgb(55, 158, 125) 50%,
+      rgb(98, 204, 169) 93%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    // overflow: scroll;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
