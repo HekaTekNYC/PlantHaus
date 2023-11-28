@@ -12,13 +12,32 @@
   right: 0px;
   z-index: 19;
 
-  .cart-header {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 800;
-    font-family: 'Cormorant Garamond';
-    margin: 10px 0 20px;
+  .cart-header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .cart-title {
+      display: flex;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 800;
+      font-family: 'Cormorant Garamond';
+    }
+
+    .x-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .closeX {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+      }
+    }
   }
+
   .cart-info {
     display: flex;
     font-size: 1.05rem;
