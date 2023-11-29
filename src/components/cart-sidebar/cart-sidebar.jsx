@@ -9,7 +9,8 @@ import CartItem from '../cart-item/cart-item'
 import './cart-sidebar.styles.scss'
 
 const CartSidebar = () => {
-  const { isCartOpen, setIsCartOpen, cartItems } = useContext(CartContext)
+  const { isCartOpen, setIsCartOpen, cartItems, clearItemFromCart } =
+    useContext(CartContext)
   const toggleCartClosed = () => setIsCartOpen(!isCartOpen)
   const navigate = useNavigate()
 
@@ -33,14 +34,15 @@ const CartSidebar = () => {
       </div>
       <hr className="hr" />
 
-      <div className="cart-items"></div>
-
+      {/* <div className="cart-items"></div> */}
+      <hr className="item-separator" />
       {cartItems.map((item) => (
         <CartItem key={item.id} cartItem={item} />
       ))}
-      <div className="subtotal">Subtotal</div>
-      <div className="shipping">Shipping</div>
-      <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT</Button>
+      <div className="item-seperator"></div>
+      <div className="subtotal">Subtotal:</div>
+      <div className="shipping">Shipping:</div>
+      <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT PAGE</Button>
     </div>
   )
 }
