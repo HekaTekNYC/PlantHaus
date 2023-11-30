@@ -9,6 +9,7 @@ const CategoriesPreview = () => {
 
   return (
     <>
+      {/* this is pulling out our subcategories (New Arrival, Pet Friendly, New Plant Parents) */}
       {Object.keys(categoriesMap).map((title) => {
         const products = categoriesMap[title]
         return <CategoryPreview key={title} title={title} products={products} />

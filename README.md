@@ -4,6 +4,8 @@ Plants
 Pet Friendly Section
 New Arrivals
 
+The categories-map section on udemy shows us how to map through the values and have them displayed on the screen
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
