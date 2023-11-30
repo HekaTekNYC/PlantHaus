@@ -14,6 +14,7 @@ import {
   doc,
   getDoc,
   setDoc,
+  where,
   collection,
   writeBatch,
   query,
@@ -63,13 +64,46 @@ export const addCollectionAndDocuments = async (
 export const getCategoriesAndDocuments = async () => {
   const collectionRef = collection(db, 'categories')
   const q = query(collectionRef)
-
   const querySnapshot = await getDocs(q)
-  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+  const categoriesMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
     const { title, items } = docSnapshot.data()
+    acc[title.toLowerCase()] = items
+    console.log('accum', acc)
+    return acc
+  }, {})
+  return categoriesMap
+}
+
+export const getCategoryAndDocuments = async () => {
+  const querySnapshot = await getDocs(collection(db, 'categories'))
+
+  const categoryMap = querySnapshot.docs.reduce(function (acc, doc) {
+    const { title, items } = doc.data()
     acc[title.toLowerCase()] = items
     return acc
   }, {})
+  //   const { title, items } = doc.data()
+
+  //   const newObj = {}
+  //   console.log('doc data', doc.data())
+  //   console.log('doc items', items)
+  //   console.log('doc id', doc.id)
+  //   newObj[doc.id] = [...items]
+
+  //   console.log('newObj', newObj)
+  //   return newObj
+  // })
+
+  // const newObj = {}
+  // const { title, items } = doc.data()
+  // const plantTitle = title.toLowerCase()
+
+  //   // newObj[plantTitle] = items
+  // }
+  // console.log('data', data)
+  // return newObj
+  // })
+  console.log('category map', categoryMap)
   return categoryMap
 }
 

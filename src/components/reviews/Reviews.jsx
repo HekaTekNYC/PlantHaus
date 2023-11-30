@@ -1,5 +1,5 @@
-import React from "react";
-import "./reviews.styles.scss";
+import React from 'react'
+import './reviews.styles.scss'
 
 const Reviews = () => {
   return (
@@ -46,7 +46,7 @@ const Reviews = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Reviews;
+export default Reviews
