@@ -14,7 +14,6 @@ import {
   doc,
   getDoc,
   setDoc,
-  where,
   collection,
   writeBatch,
   query,
@@ -82,27 +81,7 @@ export const getCategoryAndDocuments = async () => {
     acc[title.toLowerCase()] = items
     return acc
   }, {})
-  //   const { title, items } = doc.data()
 
-  //   const newObj = {}
-  //   console.log('doc data', doc.data())
-  //   console.log('doc items', items)
-  //   console.log('doc id', doc.id)
-  //   newObj[doc.id] = [...items]
-
-  //   console.log('newObj', newObj)
-  //   return newObj
-  // })
-
-  // const newObj = {}
-  // const { title, items } = doc.data()
-  // const plantTitle = title.toLowerCase()
-
-  //   // newObj[plantTitle] = items
-  // }
-  // console.log('data', data)
-  // return newObj
-  // })
   console.log('category map', categoryMap)
   return categoryMap
 }
