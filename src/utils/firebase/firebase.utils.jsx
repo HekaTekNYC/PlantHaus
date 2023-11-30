@@ -80,24 +80,49 @@ export const getCategoriesAndDocuments = async () => {
     // destructure the data (object) and take off the title and items from the docsnapshot
     const { title, items } = docSnapshot.data()
     acc[title.toLowerCase()] = items
-    console.log('accum', acc)
+
     return acc
   }, {})
   return categoriesMap
 }
 
-export const getCategoryAndDocuments = async () => {
-  const querySnapshot = await getDocs(collection(db, 'categories'))
+// This data model for how to fetch data from firebase changes a lot! Which is why we keep this in the utils file so we can isolate when breakages happen
+/*
+Referece of object structure we are creating
 
-  const categoryMap = querySnapshot.docs.reduce(function (acc, doc) {
-    const { title, items } = doc.data()
-    acc[title.toLowerCase()] = items
-    return acc
-  }, {})
-
-  console.log('category map', categoryMap)
-  return categoryMap
+{
+  new_arrivals: {
+    title: 'New Arrivals',
+    items: [
+      {},
+      {},
+    ]
+  },
+  pet_friendly: {
+    title: 'Pet Friendly',
+    items: [
+      {},
+      {},
+    ]
+  },
 }
+
+
+
+*/
+
+// export const getCategoryAndDocuments = async () => {
+//   const querySnapshot = await getDocs(collection(db, 'categories'))
+
+//   const categoryMap = querySnapshot.docs.reduce(function (acc, doc) {
+//     const { title, items } = doc.data()
+//     acc[title.toLowerCase()] = items
+//     return acc
+//   }, {})
+
+//   console.log('category map', categoryMap)
+//   return categoryMap
+// }
 
 export const createUserDocumentFromAuth = async (
   userAuth,

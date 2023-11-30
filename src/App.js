@@ -12,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
+          {/* find out how to do a nested route on home */}
           <Route path="shop/*" element={<Shop />} />
           <Route path="auth" element={<Authentication />} />
           <Route path="about" element={<About />} />
