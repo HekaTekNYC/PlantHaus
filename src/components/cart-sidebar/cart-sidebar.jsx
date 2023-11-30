@@ -35,11 +35,11 @@ const CartSidebar = () => {
       <hr className="hr" />
 
       {/* <div className="cart-items"></div> */}
-      <hr className="item-separator" />
+
       {cartItems.map((item) => (
         <CartItem key={item.id} cartItem={item} />
       ))}
-      <div className="item-seperator"></div>
+      <hr className="item-separator" />
       <div className="subtotal">Subtotal:</div>
       <div className="shipping">Shipping:</div>
       <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT PAGE</Button>
