@@ -12,7 +12,7 @@ const CategoryPage = () => {
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
   //grab the products from the category chosen by utilizing useState
-  const [products, setProducts] = useState(categoriesMap(category))
+  const [products, setProducts] = useState(categoriesMap[category])
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {

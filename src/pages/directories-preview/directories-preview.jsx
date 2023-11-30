@@ -1,31 +1,26 @@
-// import { useContext, useEffect, useState } from 'react'
-// import { useParams } from 'react-router-dom'
-// import ProductCard from '../../components/product-card/product-card'
-// import { CategoriesContext } from '../../contexts/categories.context'
+import { useContext } from 'react'
 
-// import DirectoryPreview from '../../components/directory-preview/directory-preview'
-import './directories-preview.styles.scss'
+import { CategoriesContext } from '../../contexts/categories.context'
 
-const DirectoriesPreview = () => {
-  // const { category } = useParams()
-  // const { categoriesMap } = useContext(CategoriesContext)
-  // const [products, setProducts] = useState([])
-  // useEffect(() => {
-  //   setProducts(categoriesMap[category])
-  // }, [category, categoriesMap])
-  // console.log('category in directory', category)
-  // return (
-  //   <>
-  //     <h2 className="directories-preview-title">{category}</h2>
-  //     <div className="directories-preview-container">
-  //       {products &&
-  //         products.map((product) => (
-  //           <ProductCard key={product.id} product={product} />
-  //         ))}
-  //     </div>
-  //     console.log('category in directory', category)
-  //   </>
-  // )
+import DirectoryPreview from '../../components/directory-preview/directory-preview'
+
+const DirectoriesPreview = ({ category }) => {
+  const { categoriesMap } = useContext(CategoriesContext)
+
+  return (
+    <>
+      {/* this is pulling out our subcategories (New Arrival, Pet Friendly, New Plant Parents) */}
+
+      {Object.keys(categoriesMap)
+        .filter((title) => title === category)
+        .map((title) => {
+          const products = categoriesMap[title]
+          return (
+            <DirectoryPreview key={title} title={title} products={products} />
+          )
+        })}
+    </>
+  )
 }
 
 export default DirectoriesPreview

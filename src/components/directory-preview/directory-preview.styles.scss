@@ -1,11 +1,15 @@
 .directory-preview-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 90px;
+  height: 100vh;
+  margin: 50px 20px;
+  padding: 40px 60px;
 
   .directory-title {
-    font-size: 28px;
-    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Cormorant Garamond';
     cursor: pointer;
   }
 
@@ -15,3 +19,55 @@
     column-gap: 40px;
   }
 }
+
+// .directory-preview-container {
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20px 60px;
+//   margin: 50px 20px;
+
+//   h2 {
+//     text-align: center;
+//     font-size: 2.2rem;
+//     font-weight: 800;
+//     font-family: 'Cormorant Garamond';
+//   }
+// }
+
+// .directories-preview-products {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   margin-top: 40px;
+// }
+
+// .pet-friendly-product {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+//   img {
+//     border-radius: 4px;
+//     width: 320px;
+//     height: 460px;
+//     object-fit: cover;
+//     margin: 0px 40px;
+//   }
+
+//   .pet-friendly-info {
+//     margin: 0px 40px;
+
+//     .pet-friendly-text {
+//       font-weight: 600;
+//       font-family: 'Cormorant Garamond';
+//       font-size: 1.35rem;
+//       margin: 6px 0;
+//     }
+//     .pet-friendly-price {
+//       font-size: 1.15rem;
+//     }
+//   }
+// }
