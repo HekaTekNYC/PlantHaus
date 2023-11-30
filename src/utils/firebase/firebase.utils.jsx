@@ -46,25 +46,38 @@ export const db = getFirestore()
 
 export const addCollectionAndDocuments = async (
   collectionKey,
-  objectsToAdd
+  objectsToAdd,
   // you can add fields here like field = 'whatever' then you go to object.[field].toLowerCase()
+  field = 'title'
 ) => {
+  // creating a collection reference by calling the firevase collection method passing in our database and then our collectionKey (which we made) which is referencing our database
   const collectionRef = collection(db, collectionKey)
+  // create a batch variable and assign it to the evaluated result of the writeBatch method from firebase passing in our databse that allows us to create our database in our application
   const batch = writeBatch(db)
 
+  // use the obejctsToAdd argument to loop through the object and on each object....
   objectsToAdd.forEach((object) => {
-    const docRef = doc(collectionRef, object.title.toLowerCase())
+    // create a document reference and assign it the evaluated result of calling the firebase doc method passing in our collection ref (which is our main database) as the key and object (our db subcategories and documents) as the value and making them lowercase to match our db
+    const docRef = doc(collectionRef, object[field].toLowerCase())
+    //utilizing the set method on the firebase writeBatch method previously created on 55 and passing in our docRef above as well as our object containing all collections, subcollections and documents.
     batch.set(docRef, object)
   })
+  //use the commit method on batch to push it into firestore.
   await batch.commit()
   console.log('done')
 }
 
 export const getCategoriesAndDocuments = async () => {
+  // we need our collectionRef passing in our db and the collectionKey (categories)
   const collectionRef = collection(db, 'categories')
+  // generate a query off the collectionRef by using the query method on collectionRef or accessing our collection
   const q = query(collectionRef)
+  // that gives use an object that we can get snapshot off of by using getDocs method that fetches the snapshots
   const querySnapshot = await getDocs(q)
+  // the querysnapshot.doc allows use to access the different document snapshots off of querysnapshots.doc which gives us an array of all the individual documents inside the snapshots are the actual data. We reduce over this to give us our structrue of the collection.
+  //reduce over the array to end up with the final object we want to create
   const categoriesMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+    // destructure the data (object) and take off the title and items from the docsnapshot
     const { title, items } = docSnapshot.data()
     acc[title.toLowerCase()] = items
     console.log('accum', acc)
