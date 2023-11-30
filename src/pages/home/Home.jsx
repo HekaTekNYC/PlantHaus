@@ -1,8 +1,9 @@
 import React from 'react'
-// import Commitments from '../../components/Commitments'
-import DirectoriesPreview from '../directories-preview/directories-preview'
-
-// import Reviews from '../../components/reviews/Reviews'
+import Commitments from '../../components/Commitments'
+// import DirectoriesPreview from '../directories-preview/directories-preview'
+import NewArrivals from '../../components/NewArrivals'
+import PetFriendly from '../../components/PetFriendly'
+import Reviews from '../../components/reviews/Reviews'
 import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
 
@@ -29,18 +30,16 @@ const Home = () => {
       </div>
 
       {/* Our Commitments Section */}
-      {/* <Commitments /> */}
+      <Commitments />
 
       {/* New Arrivals Section */}
-
-      <DirectoriesPreview />
+      <NewArrivals />
 
       {/* Pet Friendly Plants Section */}
-
-      {/* <DirectoriesPreview category="pet_friendly" /> */}
+      <PetFriendly />
 
       {/* Reviews */}
-      {/* <Reviews /> */}
+      <Reviews />
     </>
   )
 }
