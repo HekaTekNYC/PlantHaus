@@ -6,6 +6,7 @@ import PetFriendly from '../../components/PetFriendly'
 import Reviews from '../../components/reviews/Reviews'
 import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
+import DirectoriesPreview from '../directories-preview/directories-preview'
 
 const Home = () => {
   return (
@@ -31,15 +32,14 @@ const Home = () => {
 
       {/* Our Commitments Section */}
       <Commitments />
+      {/* New Arrivals */}
+      <DirectoriesPreview category="new_arrivals" />
 
-      {/* New Arrivals Section */}
-      <NewArrivals />
-
-      {/* Pet Friendly Plants Section */}
-      <PetFriendly />
+      {/* Pet Friendly */}
+      <DirectoriesPreview category="pet_friendly" />
 
       {/* Reviews */}
-      <Reviews />
+      {/* <Reviews /> */}
     </>
   )
 }

@@ -1,11 +1,13 @@
 import React from 'react'
+import ReviewSlider from './Review-slider'
 import './reviews.styles.scss'
 
 const Reviews = () => {
   return (
     <>
       <div className="reviews-container">
-        <h2 className="reviews-header">Reviews</h2>
+        <ReviewSlider />
+        {/* <h2 className="reviews-header">Reviews</h2>
         <div className="reviews">
           <div className="reviews-text">
             <b> Review from South Portland, Maine:</b> <br />
@@ -43,7 +45,7 @@ const Reviews = () => {
             one star because I wish the delivery could be a bit quicker, but the
             wait was well worth it."
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
