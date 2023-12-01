@@ -24,25 +24,30 @@ const CartSidebar = () => {
         <div className="x-container">
           <TfiClose onClick={toggleCartClosed} className="closeX" />
         </div>
-        <h2 className="cart-title">Your Cart</h2>
-      </div>
+        <div className="title-amount">
+          <h2 className="cart-title">Your Cart</h2>
+          <div className="item-count">4 items</div>
+        </div>
 
-      <div className="cart-info">
-        Each order is meticulously prepared and packaged by our dedicated team!
-        In the chilly winter season, additional protective packaging is included
-        to ensure the safety of your plants.{' '}
+        <div className="cart-info">
+          Each order is meticulously prepared and packaged by our dedicated
+          team! In the chilly winter season, additional protective packaging is
+          included to ensure the safety of your plants.
+        </div>
+        <div className="styled-line"></div>
       </div>
-      <hr className="hr" />
-
-      {/* <div className="cart-items"></div> */}
 
       {cartItems.map((item) => (
         <CartItem key={item.id} cartItem={item} />
       ))}
-      <hr className="item-separator" />
-      <div className="subtotal">Subtotal:</div>
-      <div className="shipping">Shipping:</div>
+
+      <div className="subtotal-container">
+        <div>Subtotal:</div>
+        <div>$38</div>
+      </div>
+
       <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT PAGE</Button>
+      <div className="shipping">Taxes and shipping calculated at checkout.</div>
     </div>
   )
 }

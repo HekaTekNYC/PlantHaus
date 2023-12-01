@@ -22,7 +22,7 @@ const DirectoryPreview = ({ title, products }) => {
           .filter((_, idx) => idx < 4)
           //after we filter the 4 out we can then map through them
           .map((product) => (
-            <div className="directory-product-card">
+            <div>
               <ProductCard key={product.id} product={product} />
             </div>
           ))}
