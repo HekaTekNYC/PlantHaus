@@ -13,6 +13,8 @@
   z-index: 19;
 }
 
+// Cart Header Container
+
 .cart-header-container {
   display: flex;
   flex-direction: column;
@@ -56,10 +58,7 @@
   }
 }
 
-.empty-message {
-  font-size: 18px;
-  margin: 50px auto;
-}
+// Styled Line
 
 .styled-line {
   width: 100%;
@@ -73,11 +72,20 @@
   );
 }
 
-.subtotal-container {
+.cart-footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+
+  .subtotal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .shipping {
+    text-align: center;
+  }
 }
 
 .cart-items {

@@ -78,6 +78,25 @@
 @media only screen and (max-width: 992px) {
 }
 
+// Apply for screens up to 768px
+@media only screen and (max-width: 1200px) {
+  .three-points-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    .blob-container {
+      position: static; /* Change to static or relative based on your layout needs */
+      width: 100%; /* Adjust width as needed */
+    }
+
+    .point-blob {
+      position: static; /* Change to static or relative based on your layout needs */
+      width: 100%; /* Adjust width as needed */
+      top: 0; /* Adjust as needed */
+    }
+  }
+}
+
 // Apply for screens up to 1200px
 @media only screen and (max-width: 1200px) {
 }

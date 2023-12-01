@@ -69,6 +69,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 758px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 80px 40px;
+  }
+
+  .hero-image-container {
+    width: 100%;
+  }
+
+  .hero-text-container {
+    width: 100%;
+  }
+}
+
 // Apply for screens up to 992px
 @media only screen and (max-width: 992px) {
   .hero-container {

@@ -1,0 +1,13 @@
+.category-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  font-family: 'Cormorant Garamond';
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+}

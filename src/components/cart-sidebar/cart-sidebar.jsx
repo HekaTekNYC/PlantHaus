@@ -2,14 +2,14 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
 import { TfiClose } from 'react-icons/tfi'
-
+import CheckoutItem from '../checkout-item/checkout-item'
 import Button from '../button/Button'
 import CartItem from '../cart-item/cart-item'
 
 import './cart-sidebar.styles.scss'
 
 const CartSidebar = () => {
-  const { isCartOpen, setIsCartOpen, cartItems, clearItemFromCart } =
+  const { isCartOpen, setIsCartOpen, clearItemFromCart, cartItems, cartTotal } =
     useContext(CartContext)
   const toggleCartClosed = () => setIsCartOpen(!isCartOpen)
   const navigate = useNavigate()
@@ -40,14 +40,21 @@ const CartSidebar = () => {
       {cartItems.map((item) => (
         <CartItem key={item.id} cartItem={item} />
       ))}
+      {cartItems.map((cartItem) => (
+        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+      ))}
 
-      <div className="subtotal-container">
-        <div>Subtotal:</div>
-        <div>$38</div>
+      <div className="cart-footer">
+        <div className="subtotal-container">
+          <div className="total">Subtotal: </div>
+          <span>${cartTotal}</span>
+        </div>
+
+        <Button onClick={goToCheckoutHandler}>Checkout Page</Button>
+        <div className="shipping">
+          Taxes and shipping calculated at checkout.
+        </div>
       </div>
-
-      <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT PAGE</Button>
-      <div className="shipping">Taxes and shipping calculated at checkout.</div>
     </div>
   )
 }

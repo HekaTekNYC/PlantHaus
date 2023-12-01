@@ -1,15 +1,10 @@
 import { Link } from 'react-router-dom'
-
+import { shopTitle } from '../../utils/firebase/shoptTitle.utils'
 import ProductCard from '../product-card/product-card'
 
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
-  const shopTitle = (title) => {
-    return title
-      .replace(/_/g, ' ')
-      .replace(/\b\w/g, (firstLetter) => firstLetter.toUpperCase())
-  }
   return (
     <div className="category-preview-container">
       <h2>
