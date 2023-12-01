@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductCard from '../../components/product-card/product-card'
+import { shopTitle } from '../../utils/firebase/shoptTitle.utils'
 
 import { CategoriesContext } from '../../contexts/categories.context'
 
@@ -21,8 +22,10 @@ const CategoryPage = () => {
 
   return (
     <>
+      <div className="category-title">
+        <h2>{shopTitle(category)}</h2>
+      </div>
       <div className="category-container">
-        <h2 className="category-title">{category}</h2>
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (
