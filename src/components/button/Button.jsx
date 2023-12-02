@@ -9,6 +9,7 @@ inverted
 const BUTTON_TYPE_CLASSES = {
   google: 'google-sign-in',
   inverted: 'inverted',
+  checkout: 'checkout',
   //   cardButton: 'card-button',
 }
 

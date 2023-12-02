@@ -1,12 +1,13 @@
 import React from 'react'
-import Commitments from '../../components/Commitments'
-// import DirectoriesPreview from '../directories-preview/directories-preview'
-import NewArrivals from '../../components/NewArrivals'
-import PetFriendly from '../../components/PetFriendly'
-import Reviews from '../../components/reviews/Reviews'
+
+import Commitments from '../../components/commitments/Commitments'
+import DirectoriesPreview from '../directories-preview/directories-preview'
+import Reviews from '../reviews/reviews'
+
+import Button from '../../components/button/Button'
+
 import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
-import DirectoriesPreview from '../directories-preview/directories-preview'
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
               their beauty and resilience, we empower you to transform any space
               into a verdant sanctuary with ease.
             </div>
-            {/* <button></button> */}
+            <Button>Shop Now</Button>
           </div>
         </div>
       </div>
@@ -39,7 +40,8 @@ const Home = () => {
       <DirectoriesPreview category="pet_friendly" />
 
       {/* Reviews */}
-      {/* <Reviews /> */}
+
+      <Reviews />
     </>
   )
 }

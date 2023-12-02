@@ -1,16 +1,18 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
+
 import { TfiClose } from 'react-icons/tfi'
-import CheckoutItem from '../checkout-item/checkout-item'
+
 import Button from '../button/Button'
 import CartItem from '../cart-item/cart-item'
 
 import './cart-sidebar.styles.scss'
 
 const CartSidebar = () => {
-  const { isCartOpen, setIsCartOpen, clearItemFromCart, cartItems, cartTotal } =
+  const { isCartOpen, setIsCartOpen, cartItems, cartTotal, cartCount } =
     useContext(CartContext)
+
   const toggleCartClosed = () => setIsCartOpen(!isCartOpen)
   const navigate = useNavigate()
 
@@ -20,16 +22,16 @@ const CartSidebar = () => {
 
   return (
     <div className="cart-sidebar-container">
-      <div className="cart-header-container">
-        <div className="x-container">
+      <div className="cart-sidebar-header-container">
+        <div className="cart-sidebar-x-container">
           <TfiClose onClick={toggleCartClosed} className="closeX" />
         </div>
-        <div className="title-amount">
-          <h2 className="cart-title">Your Cart</h2>
-          <div className="item-count">4 items</div>
+        <div className="cart-sidebar-title-amount">
+          <h2 className="cart-sidebar-title">Your Cart</h2>
+          <div className="cart-sidebar-item-count">{cartCount} items</div>
         </div>
 
-        <div className="cart-info">
+        <div className="cart-sidebar-info">
           Each order is meticulously prepared and packaged by our dedicated
           team! In the chilly winter season, additional protective packaging is
           included to ensure the safety of your plants.
@@ -37,21 +39,24 @@ const CartSidebar = () => {
         <div className="styled-line"></div>
       </div>
 
-      {cartItems.map((item) => (
-        <CartItem key={item.id} cartItem={item} />
-      ))}
-      {cartItems.map((cartItem) => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-      ))}
+      <div className="cart-sidebar-items">
+        {cartItems.length ? (
+          cartItems.map((item) => <CartItem key={item.id} cartItem={item} />)
+        ) : (
+          <div className="cart-sidebar-empty-cart">Your cart is empty</div>
+        )}
+      </div>
 
-      <div className="cart-footer">
-        <div className="subtotal-container">
-          <div className="total">Subtotal: </div>
-          <span>${cartTotal}</span>
+      <div className="cart-sidebar-footer">
+        <div className="cart-sidebar-subtotal-container">
+          <div className="cart-sidebar-subtotal">Subtotal: </div>
+          <span className="sidebar-total-price">${cartTotal}</span>
         </div>
 
-        <Button onClick={goToCheckoutHandler}>Checkout Page</Button>
-        <div className="shipping">
+        <Button buttonType="checkout" onClick={goToCheckoutHandler}>
+          Checkout Page
+        </Button>
+        <div className="cart-sidebar-shipping">
           Taxes and shipping calculated at checkout.
         </div>
       </div>
