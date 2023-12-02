@@ -10,13 +10,13 @@ const ReviewSlider = ({ reviews }) => {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
   }
   return (
     <div className="review-slider-container">
-      <h2>Review Slider</h2>
+      <h2 style={{textAlign: "center"}}>REVIEW SLIDER</h2>
       <Slider {...settings}>
         {/* <TiStarFullOutline /> */}
         {/* <TiStarHalfOutline /> */}

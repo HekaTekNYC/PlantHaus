@@ -1,40 +1,8 @@
-.review-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 500px;
-  margin: 30px 50px;
-  padding: 60px;
-
-  &:hover {
-    background-color: #fff;
-    color: #3c403f;
-    border: 1px solid #ebf3f1;
-  }
-  .review-card {
-    display: flex;
-    text-align: center;
-    max-width: 300px;
-    border-radius: 8px;
-    background-color: rgb(228, 230, 236);
-    border: 1px solid #3c403f;
-    padding: 20px;
-    margin: 10px;
-    box-sizing: border-box;
-  }
-
-  .user-img {
-    width: 20px;
-  }
-  .user-name {
-    display: flex;
-    align-items: flex-start;
-  }
-  .user-location {
-    font-weight: bolder;
-  }
-  p {
-    display: flex;
-    text-align: center;
-  }
+.review-slider-container {
+  height: 30vh;
+  width: auto;
+  margin: 200px 50px;
+ 
 }
+
+
