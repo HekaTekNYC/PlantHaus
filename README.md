@@ -96,3 +96,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 // Apply for screens up to 1200px
 @media only screen and (max-width: 1200px) {
 }
+
+// .reviews-container {
+ 
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   padding: 20px 60px;
+
+//   .review-card {
+//     box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.15);
+//     box-sizing: border-box;
+//     padding: 30px 50px;
+//     font-family: sans-serif;
+//     color: white;
+//     font-weight: 400;
+//     border-radius: 15px;
+//     background: #fff;
+//     width: 100%;
+//     max-width: 600px;
+//   }
+
+//   .reviews-header {
+    
+//     text-align: center;
+//     margin: 50px 10px;
+//     padding: 5px 20px;
+//     text-align: center;
+//     font-size: 2.2rem;
+//     font-weight: 800;
+//     font-family: 'Cormorant Garamond';
+//   }
+// }
+
+// .reviews {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+
+//   .reviews-text {
+//     text-align: center;
+//     font-size: 1rem;
+//     margin: 0 15px 12px;
+//   }
+// }
