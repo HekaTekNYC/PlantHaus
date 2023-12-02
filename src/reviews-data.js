@@ -22,7 +22,6 @@ const REVIEWS_DATA = [
       },
       {
         id: 3,
-        rating: '',
         imageUrl: 'https://i.ibb.co/nn0Sr8S/ororo-munroe.png',
         user: 'Ororo Munroe',
         location: 'LA, California',
@@ -32,7 +31,6 @@ const REVIEWS_DATA = [
       {
         id: 4,
         imageUrl: 'https://i.ibb.co/KGYxYLz/Wade-Wilson.png',
-        rating: '',
         name: 'Wade Wilson',
         location: 'Austin, Texas',
         review:
@@ -41,7 +39,6 @@ const REVIEWS_DATA = [
       {
         id: 5,
         imageUrl: 'https://i.ibb.co/gDpyzG6/Samanth-Fox.png',
-        rating: '',
         user: 'Samantha Fox',
         location: 'Brooklyn, New York',
         review:
@@ -50,19 +47,10 @@ const REVIEWS_DATA = [
 
       {
         id: 6,
-        rating: '',
         imageUrl: 'https://i.ibb.co/W6rNHDF/zach-lai.png',
         user: 'Zach Lai',
         location: 'Portland, Oregon',
-        review: '',
-      },
-      {
-        id: 7,
-        rating: '',
-        imageUrl: '',
-        user: '',
-        location: '',
-        review: '',
+        review: 'Im so great and so are my plants.',
       },
     ],
   },
