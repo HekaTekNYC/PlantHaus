@@ -1,6 +1,6 @@
 import './plant-page.styles.scss'
 
-const Shop = () => {
+const PlantPage = () => {
   return (
     <>
       <div className="plant-page-container"></div>
@@ -8,4 +8,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default PlantPage
