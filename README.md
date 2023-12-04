@@ -142,3 +142,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 //     margin: 0 15px 12px;
 //   }
 // }
+    <div className="review-slider-container">
+      <h2 style={{ textAlign: 'center' }}>REVIEW SLIDER</h2>
+      <Slider {...settings}>
+        {reviews &&
+          reviews.map((review) => (
+            <ReviewCard key={review.id} reviews={review} />
+          ))}
+      </Slider>
+    </div>
+  );
+};
