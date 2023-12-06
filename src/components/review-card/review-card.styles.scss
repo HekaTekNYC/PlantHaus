@@ -1,6 +1,6 @@
 .review-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   border-radius: 4px;
   align-items: center;
@@ -8,12 +8,29 @@
   margin-bottom: 20px; 
   height: 65vh;
   width: auto;
-  // overflow: hidden;
-  // background-image: url('../../assets/ivy2.png');
-  // background-size: cover; 
-  // background-position: contain;
-  // background-repeat: no-repeat;
- 
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
   .review-card {
     display: flex;
     flex-direction: column;

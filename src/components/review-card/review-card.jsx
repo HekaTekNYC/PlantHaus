@@ -5,8 +5,8 @@ const ReviewCard = ({ reviews }) => {
   const { location, review, imageUrl, user } = reviews;
 
   return (
-    <div className="review-container">
-      <div className='review-card'>
+    <div className="review-container gallery-cell">
+      <div className='review-card '>
       <div className="profile-picture">
         <img src={imageUrl} alt={`${imageUrl}`} />
       </div>

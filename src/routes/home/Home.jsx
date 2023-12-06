@@ -38,6 +38,8 @@ const Home = () => {
 
       {/* Pet Friendly */}
       <DirectoriesPreview category="pet_friendly" />
+      {/* <DirectoriesPreview category="plant_page" /> */}
+      {/* <DirectoriesPreview category="all_products" /> */}
 
       {/* Reviews */}
 
