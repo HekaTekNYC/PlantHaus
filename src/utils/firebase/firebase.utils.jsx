@@ -107,6 +107,49 @@ export const getReviewsAndDocuments = async () => {
   }, {})
   return reviewsMap
 }
+export const getAllProductsAndDocuments = async () => {
+  // we need our collectionRef passing in our db and the collectionKey (categories)
+  const collectionRef = collection(db, 'all-products')
+  // generate a query off the collectionRef by using the query method on collectionRef or accessing our collection
+  const q = query(collectionRef)
+  // that gives use an object that we can get snapshot off of by using getDocs method that fetches the snapshots
+  const querySnapshot = await getDocs(q)
+  // the querysnapshot.doc allows use to access the different document snapshots off of querysnapshots.doc which gives us an array of all the individual documents inside the snapshots are the actual data. We reduce over this to give us our structrue of the collection.
+  //reduce over the array to end up with the final object we want to create
+  const allProductsMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+    // destructure the data (object) and take off the title and items from the docsnapshot
+    const { title, items } = docSnapshot.data()
+    acc[title.toLowerCase()] = items
+
+    return acc
+  }, {})
+  return allProductsMap
+}
+
+//collectionGroup("charecters") 
+  // .where("book", "==" "Olivers Twist")
+
+
+export const getPlantPageAndDocuments = async () => {
+  // we need our collectionRef passing in our db and the collectionKey (categories)
+  const collectionRef = collection(db, '')
+  // generate a query off the collectionRef by using the query method on collectionRef or accessing our collection
+  const q = query(collectionRef)
+  // that gives use an object that we can get snapshot off of by using getDocs method that fetches the snapshots
+  const querySnapshot = await getDocs(q)
+  // the querysnapshot.doc allows use to access the different document snapshots off of querysnapshots.doc which gives us an array of all the individual documents inside the snapshots are the actual data. We reduce over this to give us our structrue of the collection.
+  //reduce over the array to end up with the final object we want to create
+  const plantPageMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+    // destructure the data (object) and take off the title and items from the docsnapshot
+    const { title, items } = docSnapshot.data()
+    acc[title.toLowerCase()] = items
+
+    return acc
+  }, {})
+  return plantPageMap
+}
+
+
 
 // This data model for how to fetch data from firebase changes a lot! Which is why we keep this in the utils file so we can isolate when breakages happen
 /*

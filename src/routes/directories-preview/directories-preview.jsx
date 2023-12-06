@@ -1,11 +1,15 @@
 import { useContext } from 'react'
 
 import { CategoriesContext } from '../../contexts/categories.context'
+// import { PlantPageContext } from '../../contexts/plant-page.context'
+// import { AllProductsContext } from '../../contexts/all-producs.context'
 
 import DirectoryPreview from '../../components/directory-preview/directory-preview'
 
 const DirectoriesPreview = ({ category }) => {
   const { categoriesMap } = useContext(CategoriesContext)
+  // const { allProcductsMap } = useContext(CategoriesContext)
+  // const { plantPageMap } = useContext(CategoriesContext)
 
   return (
     <>

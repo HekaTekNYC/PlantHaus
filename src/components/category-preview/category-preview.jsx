@@ -5,6 +5,7 @@ import ProductCard from '../product-card/product-card'
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
+
   return (
     <div className="category-preview-container">
       <h2>
