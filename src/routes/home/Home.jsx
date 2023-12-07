@@ -34,16 +34,17 @@ const Home = () => {
       {/* Our Commitments Section */}
       <Commitments />
       {/* New Arrivals */}
-      <DirectoriesPreview category="new_arrivals" />
 
+      <DirectoriesPreview category="best-sellers" />
+
+      <DirectoriesPreview category="pet-friendly" />
       {/* Pet Friendly */}
-      <DirectoriesPreview category="pet_friendly" />
       {/* <DirectoriesPreview category="plant_page" /> */}
       {/* <DirectoriesPreview category="all_products" /> */}
 
       {/* Reviews */}
 
-      <Reviews />
+      {/* <Reviews /> */}
     </>
   )
 }
