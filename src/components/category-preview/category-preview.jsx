@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import { shopTitle } from '../../utils/firebase/shoptTitle.utils'
+import shopTitle from '../../utils/shopTitle.utils'
 import ProductCard from '../product-card/product-card'
 
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
-
   return (
     <div className="category-preview-container">
       <h2>

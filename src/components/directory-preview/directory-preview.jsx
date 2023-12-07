@@ -1,19 +1,14 @@
 import { Link } from 'react-router-dom'
 
 import ProductCard from '../product-card/product-card'
-
+import shopTitle from '../../utils/shopTitle.utils'
 import './directory-preview.styles.scss'
 
 const DirectoryPreview = ({ title, products }) => {
-  const shopTitle = (title) => {
-    return title
-      .replace(/_/g, ' ')
-      .replace(/\b\w/g, (firstLetter) => firstLetter.toUpperCase())
-  }
   return (
     <div className="directory-preview-container">
       <h2 className="directory-title">
-        <Link to={`/shop/${title}`}>{shopTitle(title)}</Link>
+        <Link to={`${title}`}>{shopTitle(title)}</Link>
       </h2>
       <div className="directory-preview">
         {products

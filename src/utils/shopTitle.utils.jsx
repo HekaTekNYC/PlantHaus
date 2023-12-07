@@ -1,5 +1,7 @@
-export const shopTitle = (title) => {
+const shopTitle = (title) => {
   return title
-    .replace(/_/g, ' ')
+    .replace(/-/g, ' ')
     .replace(/\b\w/g, (firstLetter) => firstLetter.toUpperCase())
 }
+
+export default shopTitle

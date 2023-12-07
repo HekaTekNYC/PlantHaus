@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductCard from '../../components/product-card/product-card'
-import { shopTitle } from '../../utils/firebase/shoptTitle.utils'
+import shopTitle from '../../utils/shopTitle.utils'
 
 import { CategoriesContext } from '../../contexts/categories.context'
 

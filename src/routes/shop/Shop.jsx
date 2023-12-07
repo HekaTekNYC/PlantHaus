@@ -15,7 +15,7 @@ const Shop = () => {
           {/* this directs where the header link will go  */}
           <Route path=":category" element={<CategoryPage />} />
           {/* <Route path=":all-products" element={<AllProducts />} /> */}
-          <Route path=":plant-page" element={<PlantPage />} />
+          <Route path=":products" element={<PlantPage />} />
 
           {/* <Route path="/categories/:categoryTitle" element={<CategoryPage />} /> */}
         </Routes>
