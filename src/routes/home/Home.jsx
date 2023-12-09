@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import Reviews from '../reviews/reviews'
@@ -10,6 +10,12 @@ import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  // const handleCategoryClick = () => {
+  //   navigate(`/shop/${category}`)
+  // }
+
   return (
     <>
       {/* Hero section */}
@@ -33,14 +39,10 @@ const Home = () => {
 
       {/* Our Commitments Section */}
       <Commitments />
-      {/* New Arrivals */}
+
+      {/* Best Sellers*/}
 
       <DirectoriesPreview category="best-sellers" />
-
-      <DirectoriesPreview category="pet-friendly" />
-      {/* Pet Friendly */}
-      {/* <DirectoriesPreview category="plant_page" /> */}
-      {/* <DirectoriesPreview category="all_products" /> */}
 
       {/* Reviews */}
 

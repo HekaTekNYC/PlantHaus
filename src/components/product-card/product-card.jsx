@@ -1,11 +1,11 @@
-// import { useContext } from 'react'
-// import { CartContext } from '../../contexts/cart.context'
-// import Button from '../button/Button'
+import Button from '../button/Button'
+
 import { Link } from 'react-router-dom'
 import './product-card.styles.scss'
 
 const ProductCard = ({ product }) => {
-  const { name, price, imageUrl } = product
+  const { name, price, imageUrl, id } = product
+  // const params = useParams()
   // const { addItemToCart } = useContext(CartContext)
   // const addProductToCart = () => addItemToCart(product)
   const mainImg = imageUrl.img1
@@ -14,7 +14,8 @@ const ProductCard = ({ product }) => {
   const price2 = Math.max(...prices)
   return (
     <>
-      <Link to={`/shop/products/${name}`}>
+      <Link to={`/products/${id}`}>
+        {/* <Link to={`${name}`}> */}
         <div className="product-card-container">
           <div className="product-img">
             <img src={mainImg} alt={`${name}`} />

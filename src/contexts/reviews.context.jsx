@@ -11,7 +11,7 @@ export const ReviewsProvider = ({ children }) => {
   useEffect(() => {
     const getReviewsMap = async () => {
       const reviewsMap = await getReviewsAndDocuments()
-      console.log('reviews Map', reviewsMap)
+      // console.log('reviews Map', reviewsMap)
       //this is where we are affecting state change.
       setReviewsMap(reviewsMap)
     }

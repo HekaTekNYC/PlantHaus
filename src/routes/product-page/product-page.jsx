@@ -4,22 +4,37 @@ import Product from '../../components/product/product'
 
 import { CategoriesContext } from '../../contexts/categories.context'
 
-const PlantPage = () => {
-  //use params gives us an object but we are goign to destructure off category only
-  const { category } = useParams()
+const ProductPage = () => {
+  const { category, productId } = useParams()
+
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
   //grab the products from the category chosen by utilizing useState
-  const [products, setProducts] = useState(categoriesMap[category])
+  const [products, setProducts] = useState(categoriesMap[category] || [])
 
   //useeffect whenever cateogry or categoriesmap changes
+  // useEffect(() => {
+  //   setProducts(categoriesMap[category])
+  // }, [category, categoriesMap])
   useEffect(() => {
-    setProducts(categoriesMap[category])
-  }, [category, categoriesMap])
+    const fetchProductDetails = () => {
+      const allProducts = Object.values(categoriesMap).flat()
+      console.log(
+        'all products in product page from mapping through categories',
+        allProducts
+      )
+      const selectedProduct = allProducts.find(
+        (p) => p.id === parseInt(productId, 10)
+      )
+      setProducts([selectedProduct])
+    }
+    fetchProductDetails()
+  }, [productId, categoriesMap])
 
   return (
     <>
       <div className="category-container">
+        <h2>Product Page</h2>
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (
@@ -30,4 +45,4 @@ const PlantPage = () => {
   )
 }
 
-export default PlantPage
+export default ProductPage
