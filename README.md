@@ -1,9 +1,3 @@
-["ffd9c1","ce8861","3c403d","3c514e","497f73","a3bcb6","daded4","ffffff"]
-
-Plants
-Pet Friendly Section
-New Arrivals
-
 The categories-map section on udemy shows us how to map through the values and have them displayed on the screen
 
 # Getting Started with Create React App
@@ -98,58 +92,58 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 }
 
 // .reviews-container {
- 
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   padding: 20px 60px;
 
-//   .review-card {
-//     box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.15);
-//     box-sizing: border-box;
-//     padding: 30px 50px;
-//     font-family: sans-serif;
-//     color: white;
-//     font-weight: 400;
-//     border-radius: 15px;
-//     background: #fff;
-//     width: 100%;
-//     max-width: 600px;
-//   }
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// width: 100%;
+// padding: 20px 60px;
 
-//   .reviews-header {
-    
-//     text-align: center;
-//     margin: 50px 10px;
-//     padding: 5px 20px;
-//     text-align: center;
-//     font-size: 2.2rem;
-//     font-weight: 800;
-//     font-family: 'Cormorant Garamond';
-//   }
+// .review-card {
+// box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.15);
+// box-sizing: border-box;
+// padding: 30px 50px;
+// font-family: sans-serif;
+// color: white;
+// font-weight: 400;
+// border-radius: 15px;
+// background: #fff;
+// width: 100%;
+// max-width: 600px;
+// }
+
+// .reviews-header {
+
+// text-align: center;
+// margin: 50px 10px;
+// padding: 5px 20px;
+// text-align: center;
+// font-size: 2.2rem;
+// font-weight: 800;
+// font-family: 'Cormorant Garamond';
+// }
 // }
 
 // .reviews {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
+// display: flex;
+// flex-direction: row;
+// justify-content: space-between;
 
-//   .reviews-text {
-//     text-align: center;
-//     font-size: 1rem;
-//     margin: 0 15px 12px;
-//   }
+// .reviews-text {
+// text-align: center;
+// font-size: 1rem;
+// margin: 0 15px 12px;
 // }
-    <div className="review-slider-container">
-      <h2 style={{ textAlign: 'center' }}>REVIEW SLIDER</h2>
-      <Slider {...settings}>
-        {reviews &&
-          reviews.map((review) => (
-            <ReviewCard key={review.id} reviews={review} />
-          ))}
-      </Slider>
-    </div>
-  );
+// }
+<div className="review-slider-container">
+<h2 style={{ textAlign: 'center' }}>REVIEW SLIDER</h2>
+<Slider {...settings}>
+{reviews &&
+reviews.map((review) => (
+<ReviewCard key={review.id} reviews={review} />
+))}
+</Slider>
+</div>
+);
 };

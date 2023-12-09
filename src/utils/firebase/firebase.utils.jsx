@@ -18,6 +18,7 @@ import {
   writeBatch,
   query,
   getDocs,
+  fetchAllProducts,
 } from 'firebase/firestore'
 
 const firebaseConfig = {

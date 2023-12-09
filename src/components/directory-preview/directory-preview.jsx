@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 import ProductCard from '../product-card/product-card'
 import shopTitle from '../../utils/shopTitle.utils'
 import './directory-preview.styles.scss'

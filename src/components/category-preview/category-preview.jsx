@@ -1,15 +1,20 @@
+import React, { useContext, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import shopTitle from '../../utils/shopTitle.utils'
 import ProductCard from '../product-card/product-card'
-
+import { CategoriesContext } from '../../contexts/categories.context'
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
+  const { categoriesMap } = useContext(CategoriesContext)
+  console.log('title', title)
+
   return (
     <div className="category-preview-container">
       <h2>
-        <Link className="title" to={`${title}`}>
-          {shopTitle(title)}
+        <Link className="title" to={`/${title}`}>
+          {/* {shopTitle(title)} */}
+          {`${title}`}
         </Link>
       </h2>
       <div className="preview">
