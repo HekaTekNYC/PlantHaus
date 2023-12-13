@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import Reviews from '../reviews/reviews'
@@ -10,11 +10,13 @@ import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
 
 const Home = () => {
-  // const navigate = useNavigate()
+  const {category} = useParams();
+  const navigate = useNavigate()
 
-  // const handleCategoryClick = () => {
-  //   navigate(`/shop/${category}`)
-  // }
+  const handleCategoryClick = () => {
+    navigate(`/shop/`)
+  }
+  
 
   return (
     <>
@@ -32,7 +34,9 @@ const Home = () => {
               their beauty and resilience, we empower you to transform any space
               into a verdant sanctuary with ease.
             </div>
-            <Button>Shop Now</Button>
+            <Button onClick={() => handleCategoryClick(category)}>Shop Now</Button>
+
+            {/* <Button>Shop Now</Button> */}
           </div>
         </div>
       </div>
