@@ -30,6 +30,9 @@ const Product = ({ product }) => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       <div className="product-img">
         <img src={imageUrl && imageUrl.img1} alt={`${name}`} />
         <img src={thumbnailUrl && thumbnailUrl.thumb1} alt={`${name}`} />
@@ -49,7 +52,7 @@ const Product = ({ product }) => {
           ))}
       </div>
 
-      <div>Tags: {tags}</div>
+      {/* <div>Tags: {tags}</div> */}
       <div>Latin Binomial: {latinBinomial}</div>
       <Button buttonType="inverted" onClick={addProductToCart}>
         Add to cart
