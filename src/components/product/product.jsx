@@ -31,8 +31,8 @@ const Product = ({ product }) => {
       <br />
       <br />
       <div className="product-img">
-        <img src={imageUrl} alt={`${name}`} />
-        <img src={thumbnailUrl} alt={`${name}`} />
+        <img src={imageUrl && imageUrl.img1} alt={`${name}`} />
+        <img src={thumbnailUrl && thumbnailUrl.thumb1} alt={`${name}`} />
       </div>
       <div>Name: {name}</div>
       <div>Price: {price && price.small}</div>

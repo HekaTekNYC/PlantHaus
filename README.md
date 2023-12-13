@@ -159,6 +159,7 @@ App.js
 -----------Categories Preview (/shop bc it still lives on the shop page)
 ---------------Category Page (/shop/category)
 ------------------Product Page (/shop/category/product)
+
 -----------Product Page (/shop/product)
 --------Auth (/auth)
 --------Checkout (/checkout)

@@ -1,6 +1,6 @@
 import Button from '../button/Button'
 
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import './product-card.styles.scss'
 
 const ProductCard = ({ product }) => {
@@ -11,6 +11,10 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate()
 
   const goToProduct = () => {
+    console.log(
+      'Navigating to product in ProductCard component:',
+      `/shop/${plantName}`
+    )
     navigate(`/shop/${plantName}`)
   }
 
@@ -23,7 +27,8 @@ const ProductCard = ({ product }) => {
   const price2 = Math.max(...prices)
   return (
     <>
-      <a href={`${plantName}`} onClick={goToProduct}>
+      {/* <Link to={`/shop/${plantName}`}> */}
+      <span onClick={goToProduct}>
         {/* /shop/product/url */}
         <div className="product-card-container">
           <div className="product-img">
@@ -37,7 +42,8 @@ const ProductCard = ({ product }) => {
           Add to cart
         </Button> */}
         </div>
-      </a>
+      </span>
+      {/* </Link> */}
     </>
   )
 }
