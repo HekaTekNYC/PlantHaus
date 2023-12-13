@@ -7,6 +7,8 @@ import ProductPage from './routes/product-page/product-page'
 import About from './routes/about/About'
 import Checkout from './routes/checkout/Checkout'
 import Authentication from './routes/authentication/Authentication'
+import CategoriesPreview from './routes/reviews/reviews'
+import CategoryPage from './routes/category-page/category-page'
 
 const App = () => {
   return (
@@ -16,12 +18,15 @@ const App = () => {
           <Route index element={<Home />} />
 
           <Route path="shop/*" element={<Shop />} />
+          {/* <Route path="category" element={<CategoriesPreview />} /> */}
+          {/* <Route path=":category" element={<CategoryPage />} />
+          </Route> */}
 
           <Route path="auth" element={<Authentication />} />
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
-          <Route path="all-products/*" element={<AllProducts />} />
-          <Route path="product/:productId" element={<ProductPage />} />
+          {/* <Route path="all-products/*" element={<AllProducts />} /> */}
+          {/* <Route path="product/:productId" element={<ProductPage />} /> */}
         </Route>
       </Routes>
     </>

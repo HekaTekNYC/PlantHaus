@@ -6,15 +6,14 @@ import { CategoriesContext } from '../../contexts/categories.context'
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
-  const { categoriesMap } = useContext(CategoriesContext)
-  console.log('title', title)
+  console.log('title in category preview', title)
 
   return (
     <div className="category-preview-container">
       <h2>
-        <Link className="title" to={`/${title}`}>
-          {/* {shopTitle(title)} */}
-          {`${title}`}
+        <Link className="title" to={`${title}`}>
+          {/* This works to /shop/category */}
+          {shopTitle(title)}
         </Link>
       </h2>
       <div className="preview">

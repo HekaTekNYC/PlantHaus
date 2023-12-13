@@ -7,25 +7,15 @@ import './shop.styles.scss'
 
 const Shop = () => {
   return (
-    <>
-      <div className="shop-container">
-        <Routes>
-          {/* this is the 4 items & header link*/}
-          {/* This is the same as /Shop it just loads all category previews */}
-          <Route index element={<CategoriesPreview />} />
-          {/* this goes to shop/ whatever category is chosen on the categorypage */}
-          {/* /shop/category/product-name */}
-          <Route path=":category" element={<CategoryPage />} />
-          {/* <Route path=":all-products" element={<AllProducts />} /> */}
-          <Route path="all-products/*" element={<AllProducts />} />
-          {/* <Route index element={<AllProducts />} /> */}
-          {/* /shop/product-name */}
-          <Route path=":name" element={<ProductPage />} />
+    <div className="shop-container">
+      <Routes>
+        <Route index element={<CategoriesPreview />} />
 
-          {/* <Route path="/categories/:categoryTitle" element={<CategoryPage />} /> */}
-        </Routes>
-      </div>
-    </>
+        <Route path=":category" element={<CategoryPage />} />
+
+        <Route path="products/" element={<ProductPage />} />
+      </Routes>
+    </div>
   )
 }
 

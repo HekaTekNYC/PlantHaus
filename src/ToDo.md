@@ -11,7 +11,7 @@
                                           SHOP
                                           /  \
                               CATEGORY PAGE
-                                 /
+                                 /      \
 
 <div className="shop-container">
         <Routes>

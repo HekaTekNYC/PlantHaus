@@ -25,7 +25,7 @@ const CategoryPage = () => {
   return (
     <>
       <div className="category-title">
-        <h2>{category}</h2>
+        <h2>{shopTitle(category)}</h2>
       </div>
       <div className="category-container">
         {/* if products is undefined, dont render products */}

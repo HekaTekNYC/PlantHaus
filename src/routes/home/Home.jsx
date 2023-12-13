@@ -10,7 +10,7 @@ import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
 
 const Home = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   // const handleCategoryClick = () => {
   //   navigate(`/shop/${category}`)
@@ -44,7 +44,11 @@ const Home = () => {
 
       <DirectoriesPreview category="best-sellers" />
 
+      {/* Feature  */}
+
       {/* Reviews */}
+
+      <div className="feature-container"></div>
 
       {/* <Reviews /> */}
     </>

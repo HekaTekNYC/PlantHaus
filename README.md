@@ -136,6 +136,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 // margin: 0 15px 12px;
 // }
 // }
+
 <div className="review-slider-container">
 <h2 style={{ textAlign: 'center' }}>REVIEW SLIDER</h2>
 <Slider {...settings}>
@@ -147,3 +148,18 @@ reviews.map((review) => (
 </div>
 );
 };
+
+App.js
+---Navigation (/layout)
+^-----Home or (/ or /home)
+^------Directory Preview (/home)
+^------Category Page (/category)
+^-----Product Page (category/product)
+^-----Shop (/shop)
+-----------Categories Preview (/shop bc it still lives on the shop page)
+---------------Category Page (/shop/category)
+------------------Product Page (/shop/category/product)
+-----------Product Page (/shop/product)
+--------Auth (/auth)
+--------Checkout (/checkout)
+--------About (/about)

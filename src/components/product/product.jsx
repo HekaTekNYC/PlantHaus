@@ -4,6 +4,7 @@ import Button from '../button/Button'
 import './product.styles.scss'
 
 const Product = ({ product }) => {
+  console.log('Product Data:', product)
   const {
     name,
     price,
