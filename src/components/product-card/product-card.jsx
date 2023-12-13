@@ -1,21 +1,30 @@
 import Button from '../button/Button'
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './product-card.styles.scss'
 
 const ProductCard = ({ product }) => {
-  const { name, price, imageUrl, id } = product
-  // const params = useParams()
+  const { name, price, imageUrl } = product
+  const plantName = name.toLowerCase().split(' ').join('-')
+  console.log('plantname', plantName)
+
+  const navigate = useNavigate()
+
+  const goToProduct = () => {
+    navigate(`/shop/${plantName}`)
+  }
+
   // const { addItemToCart } = useContext(CartContext)
   // const addProductToCart = () => addItemToCart(product)
+
   const mainImg = imageUrl.img1
   const prices = Object.values(price)
   const price1 = Math.min(...prices)
   const price2 = Math.max(...prices)
   return (
     <>
-      <Link to={`/products/${id}`}>
-        {/* <Link to={`${name}`}> */}
+      <a href={`${plantName}`} onClick={goToProduct}>
+        {/* /shop/product/url */}
         <div className="product-card-container">
           <div className="product-img">
             <img src={mainImg} alt={`${name}`} />
@@ -28,7 +37,7 @@ const ProductCard = ({ product }) => {
           Add to cart
         </Button> */}
         </div>
-      </Link>
+      </a>
     </>
   )
 }

@@ -34,3 +34,5 @@ export const CategoriesProvider = ({ children }) => {
     </CategoriesContext.Provider>
   )
 }
+
+//comments

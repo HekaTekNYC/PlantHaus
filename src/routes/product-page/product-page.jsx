@@ -5,31 +5,32 @@ import Product from '../../components/product/product'
 import { CategoriesContext } from '../../contexts/categories.context'
 
 const ProductPage = () => {
-  const { category, productId } = useParams()
+  const { category } = useParams()
 
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
   //grab the products from the category chosen by utilizing useState
   const [products, setProducts] = useState(categoriesMap[category] || [])
 
-  //useeffect whenever cateogry or categoriesmap changes
-  // useEffect(() => {
-  //   setProducts(categoriesMap[category])
-  // }, [category, categoriesMap])
+  // useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    const fetchProductDetails = () => {
-      const allProducts = Object.values(categoriesMap).flat()
-      console.log(
-        'all products in product page from mapping through categories',
-        allProducts
-      )
-      const selectedProduct = allProducts.find(
-        (p) => p.id === parseInt(productId, 10)
-      )
-      setProducts([selectedProduct])
-    }
-    fetchProductDetails()
-  }, [productId, categoriesMap])
+    setProducts(categoriesMap[category])
+  }, [category, categoriesMap])
+
+  // useEffect(() => {
+  //   const fetchProductDetails = () => {
+  //     const allProducts = Object.values(categoriesMap).flat()
+  //     console.log(
+  //       'all products in product page from mapping through categories',
+  //       allProducts
+  //     )
+  //     const selectedProduct = allProducts.find(
+  //       (p) => p.id === parseInt(urlName, 10)
+  //     )
+  //     setProducts([selectedProduct])
+  //   }
+  //   fetchProductDetails()
+  // }, [urlName, categoriesMap])
 
   return (
     <>

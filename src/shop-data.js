@@ -5,6 +5,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Prayer Plant',
+        urlName: 'prayer-plant',
         latin_biomial: "Maranta leuconeura 'Red Vein'",
         imageUrl: {
           img1: 'https://i.ibb.co/vPk0r9d/prayer-palm-1.png',
@@ -33,6 +34,7 @@ const SHOP_DATA = [
       {
         id: 2,
         name: 'Spider Plant',
+        urlName: 'spider-plant',
         latin_biomial: "Chlorophytum comosum 'Variegatum'",
         imageUrl: {
           img1: 'https://i.postimg.cc/MHtHdCXP/spider-plant-4.png',
@@ -62,6 +64,7 @@ const SHOP_DATA = [
       {
         id: 3,
         name: "Bird's Nest Fern",
+        urlName: 'birds-nest-fern',
         latin_biomial: "Asplenium nidus 'Crissie'",
         imageUrl: {
           img1: 'https://i.postimg.cc/jSB5gQdb/birds-nest-fern-1.png',
@@ -237,7 +240,7 @@ const SHOP_DATA = [
       },
       {
         id: 9,
-        name: 'Bonsai ',
+        name: 'Bonsai',
         latin_biomial: 'Juniperus spp. (Various species)',
         imageUrl: {
           img1: 'https://i.ibb.co/TmRppzp/bonsai-2.png',
