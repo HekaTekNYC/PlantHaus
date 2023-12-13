@@ -15,11 +15,13 @@ const CategoryPage = () => {
   const { categoriesMap } = useContext(CategoriesContext)
   console.log('Categories Map from Category-Page:', categoriesMap)
   //grab the products from the category chosen by utilizing useState
-  const [products, setProducts] = useState(categoriesMap[category])
+  const [products, setProducts] = useState(categoriesMap[category] || [])
+  console.log('Category', category)
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    setProducts(categoriesMap[category])
+    console.log('useEffect is working')
+    setProducts(categoriesMap[category] || [])
   }, [category, categoriesMap])
 
   return (
@@ -31,8 +33,14 @@ const CategoryPage = () => {
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              category={category}
+              product={product}
+            />
           ))}
+        {products &&
+          console.log('Number of products:', products && products.length)}
       </div>
     </>
   )

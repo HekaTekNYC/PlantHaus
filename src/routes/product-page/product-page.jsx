@@ -5,10 +5,19 @@ import Product from '../../components/product/product'
 import { CategoriesContext } from '../../contexts/categories.context'
 
 const ProductPage = () => {
-  const { category } = useParams()
+  const { category, productName } = useParams()
+  console.log('Category:', category)
+  console.log('ProductName:', productName)
+  // access the category title fr
 
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
+  // const allCats = Object.keys(categoriesMap).map((title) => {
+  //   const products = categoriesMap[title]
+  // })
+
+  // console.log('All Categories from Product Page', allCats())
+  // const category = categoriesMap[category]
   //grab the products from the category chosen by utilizing useState
   const [products, setProducts] = useState(categoriesMap[category] || [])
 
@@ -17,30 +26,17 @@ const ProductPage = () => {
     setProducts(categoriesMap[category])
   }, [category, categoriesMap])
 
-  // useEffect(() => {
-  //   const fetchProductDetails = () => {
-  //     const allProducts = Object.values(categoriesMap).flat()
-  //     console.log(
-  //       'all products in product page from mapping through categories',
-  //       allProducts
-  //     )
-  //     const selectedProduct = allProducts.find(
-  //       (p) => p.id === parseInt(urlName, 10)
-  //     )
-  //     setProducts([selectedProduct])
-  //   }
-  //   fetchProductDetails()
-  // }, [urlName, categoriesMap])
-
   return (
     <>
       <div className="category-container">
-        <h2>Product Page</h2>
         {/* if products is undefined, dont render products */}
         {products &&
-          products.map((product) => (
-            <Product key={product.id} product={product} />
-          ))}
+          products
+            .filter(
+              (product) =>
+                product.name.toLowerCase().split(' ').join('-') === productName
+            )
+            .map((product) => <Product key={product.id} product={product} />)}
       </div>
     </>
   )
