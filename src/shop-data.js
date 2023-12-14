@@ -29,6 +29,23 @@ const SHOP_DATA = [
         },
         pro_tip:
           "Ensure your 'Fascinator' feels like royalty by using lukewarm water for hydration—no chilly surprises for this regal plant.",
+        icons: [
+          {
+            id: 1,
+            name: 'Easy Peasy',
+            imageUrl: 'https://i.ibb.co/JzpcWS1/1.png',
+          },
+          {
+            id: 2,
+            name: 'Lost of Loving',
+            imageUrl: 'https://i.ibb.co/SXmmqL5/2.png',
+          },
+          {
+            id: 3,
+            name: 'Pretty chill',
+            imageUrl: 'https://i.ibb.co/64M62gb/3.png',
+          },
+        ],
       },
 
       {
