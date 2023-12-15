@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { CartContext } from '../../contexts/cart.context'
 import Button from '../button/Button'
 import './product.styles.scss'
 
 const Product = ({ product }) => {
-  console.log('Product Data:', product)
+  // console.log('Product Data:', product)
   const {
     name,
     price,
@@ -17,24 +17,48 @@ const Product = ({ product }) => {
     thumbnailUrl,
     latinBinomial,
   } = product
-  console.log('price in product: ')
+  // console.log('price in product: ')
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
+
+  const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
+
+  const handleThumbnailClick = (clickedThumbnail) => {
+    //Here we use the Object.keys method from thumbnailUrl obbject
+    //then we used the find method to find the matching key fo rthe clicked item
+    const thumbnailKey = Object.keys(thumbnailUrl).find(
+      (key) => thumbnailUrl[key] === clickedThumbnail
+    )
+    //Now we replace the 'thumb' with the img
+
+    const fullSizeImage = imageUrl[thumbnailKey.replace('thumb', 'img')]
+    //set the fullsize image to the selectedImage
+    //then we use the fullSizeImage key to access the full size image from our imageUrl obj.
+    console.log('ThumbnailUrl Clicked', thumbnailUrl)
+    console.log('selectedImage:', selectedImage)
+    //we set fullSizeImage asthe value for selected image
+    setSelectedImage(fullSizeImage)
+  }
 
   return (
     <div className="product-container">
       <div className="product-img-container">
-        {/* <div className='product-thumb' */}
         <div className="product-thumb-col">
           {thumbnailUrl &&
-            Object.values(thumbnailUrl).map((thumbnail, index) => (
-              <div className="product-thumb-container">
-                <img key={index} src={thumbnail} alt={`${name}`} />
-              </div>
-            ))}
+            Object.entries(thumbnailUrl).map(
+              ([thumbnailKey, thumbnail], index) => (
+                <div
+                  className="product-thumb-container"
+                  key={thumbnailKey}
+                  onClick={() => handleThumbnailClick(thumbnail)}
+                >
+                  <img src={thumbnail} alt={`${name}`} />
+                </div>
+              )
+            )}
         </div>
         <div className="product-img-col">
-          <img src={imageUrl.img1} alt={`${name}`} />
+          <img src={selectedImage} alt={`${name}`} />
         </div>
       </div>
       <div className="product-info-container">
@@ -59,11 +83,10 @@ const Product = ({ product }) => {
           Icons:
           {icons &&
             icons.map((icon) => (
-              <>
+              <React.Fragment key={icon.id}>
                 <div>{icon.name}</div>
-                console.log('icons:', icons)
                 <div>{icon.imageUrl}</div>
-              </>
+              </React.Fragment>
             ))}
         </div>
         <div className="styled-line"></div>
