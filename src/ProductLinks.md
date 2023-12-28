@@ -29,9 +29,12 @@ https://i.ibb.co/KqZ85QY/cactus-2-thumb.png
 https://i.ibb.co/Jyg3wn7/cactus-2.png
 https://i.ibb.co/Db0ty6W/echeveria-1.png
 https://i.ibb.co/V3BcQqJ/echeveria-1-thumb.png 
-https://i.ibb.co/fGJySyq/echeveria-2-thumb.png
-https://i.ibb.co/cFGHJrk/echeveria-2.png
 
+https://i.ibb.co/xDG9qtq/echeveria-2.png
+https://i.ibb.co/5hpn106/echeveria-2-thumb.png
+
+https://i.ibb.co/xzRRLgs/echeveria-3.png
+https://i.ibb.co/0nW97j8/echeveria-3-thumb.png
 
 https://i.ibb.co/C9M5L0t/fiddle-leaf-fig-1-thumb.png
 https://i.ibb.co/v4HmSLj/fiddle-leaf-fig-1.png
@@ -130,6 +133,8 @@ https://i.ibb.co/xMGB7Zf/svizzera-1.png
 https://i.ibb.co/6rb23G9/svizzera-2-thumb.png
 https://i.ibb.co/Vwg0ZSy/svizzera-2.png
 
+
+https://i.ibb.co/fHxt8y0/yucca-cane-1.png
 https://i.ibb.co/x8dGJsZ/yuca-cane-2-thumb.png
 https://i.ibb.co/sR5RHwc/yuca-cane-2.png
 https://i.ibb.co/YXphHq8/yuca-cane-3-thumb-2.png
@@ -137,6 +142,14 @@ https://i.ibb.co/WvsnxHm/yuca-cane-3-thumb.png
 https://i.ibb.co/cxfj7BT/Yucca-cane-1-thumb.png
 https://i.ibb.co/bBDcxSB/Yucca-cane-1.png
 
+
+//working links
+https://i.ibb.co/6HfCdNn/Yucca-cane-1.png
+https://i.ibb.co/dGM5qrx/Yucca-cane-1-thumb.png
+https://i.ibb.co/br7dbgm/yuca-cane-2-thumb.png
+https://i.ibb.co/s5z6Z4p/yuca-cane-2.png
+https://i.ibb.co/QkxH5Cd/yuca-cane-3-thumb.png
+https://i.ibb.co/xj74ksq/yuca-cane-3.png
 
 https://i.ibb.co/6Fwb0s9/zz-1-thumb.png
 https://i.ibb.co/rpffWKw/zz-1.png

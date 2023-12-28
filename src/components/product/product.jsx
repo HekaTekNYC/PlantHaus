@@ -4,7 +4,7 @@ import Button from '../button/Button'
 import './product.styles.scss'
 
 const Product = ({ product }) => {
-  // console.log('Product Data:', product)
+
   const {
     name,
     price,
@@ -17,39 +17,36 @@ const Product = ({ product }) => {
     thumbnailUrl,
     latinBinomial,
   } = product
-  // console.log('price in product: ')
+
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
-//initial state may be used incorrectly?
+
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const handleThumbnailClick = (clickedThumbnail) => {
-    //Here we use the Object.keys method from thumbnailUrl object
-    //then we used the find method to find the matching key fo rthe clicked item
+
     const thumbnailKey = Object.keys(thumbnailUrl).find(
       (key) => thumbnailUrl[key] === clickedThumbnail
     )
-    console.log('Clicked Thumbnail Key:', thumbnailKey);
- if(thumbnailKey === undefined) {
-  console.error('thumbnail key not found:', clickedThumbnail)
- }
-    // this is searching through ALL imageUrls
-    const fullSizeImage = imageUrl[thumbnailKey.replace('thumb', 'img')]
-    console.log('Full Size Image:', fullSizeImage);
+    const imgMatch = thumbnailKey.match(/(\d+)(?=(?:-thumb)?\.[^.]*$|$)/)
 
-    //set the fullsize image to the selectedImage
-    //then we use the fullSizeImage key to access the full size image from our imageUrl obj.
-    console.log('ThumbnailUrl Clicked', thumbnailUrl)
-    console.log('selectedImage:', selectedImage)
-    //we set fullSizeImage asthe value for selected image
+    if(thumbnailKey === undefined) {
+      console.error('thumbnail key not found:', clickedThumbnail)
+    }
+
+    const lastNumber = imgMatch[1];
+    const fullSizeImageKey = Object.keys(imageUrl).find(
+      (key) => key.includes(lastNumber) 
+    );
+    const fullSizeImage = imageUrl[fullSizeImageKey];
+
     setSelectedImage(fullSizeImage)
     
   }
-  //I wasn't getting the corresponding images when clicking to enlarge the view. I noticed that my console.log's on teh selectedImage wasn't showing an updated state. It identified the key and fullsize image but selected image still showed a previous state.
-  // useEffect(() => {
-  //   const updatedImg = 
-  //   console.log('selectedImage:', selectedImage);
-  // }, [selectedImage]);
+
+  useEffect(() => {
+
+  }, [selectedImage]);
 
   return (    <div className="product-container">
       <div className="product-img-container">
@@ -62,9 +59,7 @@ const Product = ({ product }) => {
                   className="product-thumb-container"
                   key={index}
                   onClick={() => handleThumbnailClick(thumbnail) }
-                  
                   >
-                    {   console.log('thumbnail', thumbnail)}
                   <img src={thumbnail} alt={`${name}`} loading='lazy'/>
                 </div>
                 
@@ -87,7 +82,7 @@ const Product = ({ product }) => {
               <div key={size}>{`${size}: ${value}`}</div>
             ))}
         </div>
-        <div className="cart-add">
+        <div className="product-cart-add">
           <Button buttonType="inverted" onClick={addProductToCart}>
             Add to cart
           </Button>
@@ -97,10 +92,11 @@ const Product = ({ product }) => {
           Icons:
           {icons &&
             icons.map((icon) => (
-              <React.Fragment key={icon.id}>
+              <div key={icon.id}>
                 <div>{icon.name}</div>
-                <div>{icon.imageUrl}</div>
-              </React.Fragment>
+                {/* <div>{icon.imageUrl}</div> */}
+                <img src={icon.imageUrl} alt={icon.name} />
+              </div>
             ))}
         </div>
         <div className="styled-line"></div>

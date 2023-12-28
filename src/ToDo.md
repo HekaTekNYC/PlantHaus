@@ -7,22 +7,7 @@
 7.  Then once all of that is done we jump into the product page.
 8.  Finish Checkout page styles.
 9.  Shop page is not responsive. √
-
-                                          SHOP
-                                          /  \
-                              CATEGORY PAGE
-                                 /      \
-
-<div className="shop-container">
-        <Routes>
-          {/* this is the 4 items & header link*/}
-          <Route index element={<CategoriesPreview />} />
-          {/* this directs where the header link will go  */}
-          <Route path=":category" element={<CategoryPage />} />
-          {/* <Route path=":all-products" element={<AllProducts />} /> */}
-          <Route path="products/:productId" element={<ProductPage />} />
-          <Route path="all-products" element={<AllProducts />} />
-
-          {/* <Route path="/categories/:categoryTitle" element={<CategoryPage />} /> */}
-        </Routes>
-      </div>
+10. We need to figure out why our products are not showing when click on ProductCard from Shop page.
+11. We need to make sure that our product cards are clickable from the homepage.
+12. Fix the layout on product details page
+13. Icons need to load on product details page...poss. reason is because they are in a div and not in an img tag? 
