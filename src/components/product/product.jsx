@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { CartContext } from '../../contexts/cart.context'
 import Button from '../button/Button'
 import './product.styles.scss'
@@ -20,40 +20,54 @@ const Product = ({ product }) => {
   // console.log('price in product: ')
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
-
+//initial state may be used incorrectly?
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const handleThumbnailClick = (clickedThumbnail) => {
-    //Here we use the Object.keys method from thumbnailUrl obbject
+    //Here we use the Object.keys method from thumbnailUrl object
     //then we used the find method to find the matching key fo rthe clicked item
     const thumbnailKey = Object.keys(thumbnailUrl).find(
       (key) => thumbnailUrl[key] === clickedThumbnail
     )
-    //Now we replace the 'thumb' with the img
-
+    console.log('Clicked Thumbnail Key:', thumbnailKey);
+ if(thumbnailKey === undefined) {
+  console.error('thumbnail key not found:', clickedThumbnail)
+ }
+    // this is searching through ALL imageUrls
     const fullSizeImage = imageUrl[thumbnailKey.replace('thumb', 'img')]
+    console.log('Full Size Image:', fullSizeImage);
+
     //set the fullsize image to the selectedImage
     //then we use the fullSizeImage key to access the full size image from our imageUrl obj.
     console.log('ThumbnailUrl Clicked', thumbnailUrl)
     console.log('selectedImage:', selectedImage)
     //we set fullSizeImage asthe value for selected image
     setSelectedImage(fullSizeImage)
+    
   }
+  //I wasn't getting the corresponding images when clicking to enlarge the view. I noticed that my console.log's on teh selectedImage wasn't showing an updated state. It identified the key and fullsize image but selected image still showed a previous state.
+  // useEffect(() => {
+  //   const updatedImg = 
+  //   console.log('selectedImage:', selectedImage);
+  // }, [selectedImage]);
 
-  return (
-    <div className="product-container">
+  return (    <div className="product-container">
       <div className="product-img-container">
         <div className="product-thumb-col">
           {thumbnailUrl &&
             Object.entries(thumbnailUrl).map(
               ([thumbnailKey, thumbnail], index) => (
+             
                 <div
                   className="product-thumb-container"
-                  key={thumbnailKey}
-                  onClick={() => handleThumbnailClick(thumbnail)}
-                >
-                  <img src={thumbnail} alt={`${name}`} />
+                  key={index}
+                  onClick={() => handleThumbnailClick(thumbnail) }
+                  
+                  >
+                    {   console.log('thumbnail', thumbnail)}
+                  <img src={thumbnail} alt={`${name}`} loading='lazy'/>
                 </div>
+                
               )
             )}
         </div>
