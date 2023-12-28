@@ -14,7 +14,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   const handleCategoryClick = () => {
-    navigate(`/shop/`)
+    navigate(`/shop/${category}`)
   }
   
 

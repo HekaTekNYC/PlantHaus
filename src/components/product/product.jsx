@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     pro_tip,
     size_description,
     thumbnailUrl,
-    latinBinomial,
+    latin_binomial,
   } = product
 
   const { addItemToCart } = useContext(CartContext)
@@ -73,7 +73,8 @@ const Product = ({ product }) => {
       <div className="product-info-container">
         <div className="product-header">
           <div className="product-name">{name}</div>
-          <div className="product-price">{price && price.small}</div>
+       
+          <div className="product-price">${price && price.small}</div>
         </div>
         <div className="product-size">
           Size Description:
@@ -88,14 +89,16 @@ const Product = ({ product }) => {
           </Button>
         </div>
         <div className="styled-line"></div>
-        <div className="product-icons">
-          Icons:
+     
+        <div className="product-icons-row">
           {icons &&
             icons.map((icon) => (
-              <div key={icon.id}>
-                <div>{icon.name}</div>
-                {/* <div>{icon.imageUrl}</div> */}
-                <img src={icon.imageUrl} alt={icon.name} />
+              <div className="plant-care-icons-container" >
+                <div className='plant-care-icon-container' key={icon.id}>
+                <img src={icon.imageUrl} className='plant-care-icon' alt={icon.name} />
+                </div>
+                
+                <div className='plant-care-icon-name'>{icon.name}</div>
               </div>
             ))}
         </div>
@@ -106,7 +109,7 @@ const Product = ({ product }) => {
         </div>
         <div className="product-care">
           <h3>Care:</h3>
-          <div className="product-latin">{latinBinomial}</div>
+          <div className="product-latin">{latin_binomial}</div>
           <p>{care}</p>
           <div>
             <span className="pro-tip">Pro Tip: </span>

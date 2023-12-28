@@ -54,12 +54,15 @@
   flex-direction: column;
   width: 40%;
   padding-left: 20px;
-  .product-header {
-    .product-name {
-    }
-    .product-price {
-    }
+
+}
+.product-header {
+  .product-name {
+    font-size: 3rem;
   }
+  .product-price {
+  }
+}
 
   .product-size {
   }
@@ -67,12 +70,43 @@
   .product-cart-add {
   }
 
-  .product-icons {
+  .product-icons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    width: 100%;
+
+    .plant-care-icons-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+      .plant-care-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        width: 75px;
+        margin-bottom: 8px;
+      }
+  
+      .plant-care-icon {
+        width: 100%; 
+      }
+  
+      .plant-care-icon-name {
+  
+      }
+    }
+
   }
 
   .product-description {
   }
-}
+
 
 .product-care {
 }

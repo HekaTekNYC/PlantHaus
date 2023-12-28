@@ -6,7 +6,7 @@ import { CategoriesContext } from '../../contexts/categories.context'
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
-  // const { category } = useParams();
+  const { category } = useParams();
   console.log('title in category preview', title)
 
   return (
@@ -23,8 +23,9 @@ const CategoryPreview = ({ title, products }) => {
           .filter((_, idx) => idx < 4)
           //after we filter the 4 out we can then map through them
           .map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} category={category}/>
           ))}
+          {console.log('Category in CategoryPreview:', category)}
       </div>
     </div>
   )

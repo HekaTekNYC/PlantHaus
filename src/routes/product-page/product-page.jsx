@@ -26,7 +26,10 @@ const ProductPage = () => {
               product.name.toLowerCase().split(' ').join('-') === productName
           )
           .map((product) => <Product key={product.id} product={product} />)}
+{    console.log('Category:', category)}    
+{console.log('ProductName:', productName)}
     </div>
+    
   )
 }
 

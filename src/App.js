@@ -19,14 +19,14 @@ const App = () => {
 
           <Route path="shop/*" element={<Shop />} />
           {/* <Route path="category" element={<CategoriesPreview />} /> */}
-          {/* <Route path=":category" element={<CategoryPage />} />
-          </Route> */}
+           {/* <Route path=":category" element={<CategoryPage />} />  */}
+          
 
           <Route path="auth" element={<Authentication />} />
           <Route path="about" element={<About />} />
           <Route path="checkout" element={<Checkout />} />
           {/* <Route path="all-products/*" element={<AllProducts />} /> */}
-          {/* <Route path="product/:productId" element={<ProductPage />} /> */}
+          {/* <Route path="product/:category/:productName" element={<ProductPage />} /> */}
         </Route>
       </Routes>
     </>
