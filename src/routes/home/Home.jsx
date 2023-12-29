@@ -13,8 +13,9 @@ const Home = () => {
   const {category} = useParams();
   const navigate = useNavigate()
 
-  const handleCategoryClick = () => {
+  const handleCategoryClick = (category) => {
     navigate(`/shop/${category}`)
+    // navigate(`/shop/`)
   }
   
 

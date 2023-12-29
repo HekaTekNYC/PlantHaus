@@ -19,11 +19,10 @@ const CategoryPage = () => {
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    console.log('useEffect is working')
+
     setProducts(categoriesMap[category] || [])
   }, [category, categoriesMap])
-  console.log('Category in CategoryPage:', category);
-  console.log('Products in CategoryPage:', products);
+
   return (
     <>
       <div className="category-title">

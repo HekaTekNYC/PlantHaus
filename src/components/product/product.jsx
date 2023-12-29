@@ -80,7 +80,7 @@ const Product = ({ product }) => {
           Size Description:
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
-              <div key={size}>{`${size}: ${value}`}</div>
+              <div key={size}>{`${value}`}</div>
             ))}
         </div>
         <div className="product-cart-add">
