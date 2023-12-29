@@ -13,9 +13,9 @@ const Home = () => {
   const {category} = useParams();
   const navigate = useNavigate()
 
-  const handleCategoryClick = (category) => {
-    navigate(`/shop/${category}`)
-    // navigate(`/shop/`)
+  const handleCategoryClick = () => {
+    navigate(`/shop/`)
+   
   }
   
 
@@ -35,7 +35,7 @@ const Home = () => {
               their beauty and resilience, we empower you to transform any space
               into a verdant sanctuary with ease.
             </div>
-            <Button onClick={() => handleCategoryClick(category)}>Shop Now</Button>
+            <Button onClick={() => handleCategoryClick('category')}>Shop Now</Button>
 
             {/* <Button>Shop Now</Button> */}
           </div>

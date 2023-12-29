@@ -10,10 +10,9 @@ import './category-page.styles.scss'
 const CategoryPage = () => {
   //use params gives us an object but we are goign to destructure off category only
   const { category } = useParams()
-  console.log('Category', category)
+  console.log('Category useParams in Category Page', category)
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
-  console.log('Categories Map from Category-Page:', categoriesMap)
   //grab the products from the category chosen by utilizing useState
   const [products, setProducts] = useState(categoriesMap[category] || [])
 

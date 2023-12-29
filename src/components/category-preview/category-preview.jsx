@@ -1,13 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import shopTitle from '../../utils/shopTitle.utils'
 import ProductCard from '../product-card/product-card'
-import { CategoriesContext } from '../../contexts/categories.context'
+
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
   const { category } = useParams();
-  console.log('Category in CategoryPreview:', category);
+  console.log('Category useParams in CategoryPreview:', category);
 
   return (
     <div className="category-preview-container">
@@ -23,7 +23,7 @@ const CategoryPreview = ({ title, products }) => {
           .filter((_, idx) => idx < 4)
           //after we filter the 4 out we can then map through them
           .map((product) => (
-            <ProductCard key={product.id} product={product} category={title}/>
+            <ProductCard key={product.id} product={product} />
           ))}
           {console.log('Category in CategoryPreview:', category)}
       </div>

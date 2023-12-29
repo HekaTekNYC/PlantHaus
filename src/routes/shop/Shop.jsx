@@ -14,7 +14,7 @@ const Shop = () => {
 
         <Route path=":category/*" element={<CategoryPage />} />
 
-        <Route path=":category/:productName" element={<ProductPage  />} />
+        <Route path="product/:category/:productName" element={<ProductPage  />} />
       </Routes>
     </div>
   )

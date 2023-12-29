@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <Link to={`/shop/${plantName}`}>
+      <Link to={`/shop/${category}/${plantName}`}>
         <div className="product-card-container">
           <div className="product-card-img">
             <img src={mainImg} alt={`${name}`} />
