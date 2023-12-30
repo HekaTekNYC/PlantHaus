@@ -19,7 +19,7 @@ export const CategoriesProvider = ({ children }) => {
   useEffect(() => {
     const getCategoriesMap = async () => {
       const categoriesMap = await getCategoriesAndDocuments()
-      console.log('categories Map', categoriesMap)
+
       //this is where we are affecting state change.
       setCategoriesMap(categoriesMap)
     }

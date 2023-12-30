@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { CartContext } from '../../contexts/cart.context'
+
 import Button from '../button/Button'
 import './product.styles.scss'
 
 const Product = ({ product }) => {
-
   const {
     name,
     price,
@@ -20,49 +20,45 @@ const Product = ({ product }) => {
 
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
+  console.log('products inside product.jsx', product)
 
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const handleThumbnailClick = (clickedThumbnail) => {
-
     const thumbnailKey = Object.keys(thumbnailUrl).find(
       (key) => thumbnailUrl[key] === clickedThumbnail
     )
     const imgMatch = thumbnailKey.match(/(\d+)(?=(?:-thumb)?\.[^.]*$|$)/)
 
-    if(thumbnailKey === undefined) {
+    if (thumbnailKey === undefined) {
       console.error('thumbnail key not found:', clickedThumbnail)
     }
 
-    const lastNumber = imgMatch[1];
-    const fullSizeImageKey = Object.keys(imageUrl).find(
-      (key) => key.includes(lastNumber) 
-    );
-    const fullSizeImage = imageUrl[fullSizeImageKey];
+    const lastNumber = imgMatch[1]
+    const fullSizeImageKey = Object.keys(imageUrl).find((key) =>
+      key.includes(lastNumber)
+    )
+    const fullSizeImage = imageUrl[fullSizeImageKey]
 
     setSelectedImage(fullSizeImage)
-    
   }
 
-  useEffect(() => {
+  useEffect(() => {}, [selectedImage])
 
-  }, [selectedImage]);
-
-  return (    <div className="product-container">
+  return (
+    <div className="product-container">
       <div className="product-img-container">
         <div className="product-thumb-col">
           {thumbnailUrl &&
             Object.entries(thumbnailUrl).map(
               ([thumbnailKey, thumbnail], index) => (
-             
                 <div
                   className="product-thumb-container"
                   key={index}
-                  onClick={() => handleThumbnailClick(thumbnail) }
-                  >
-                  <img src={thumbnail} alt={`${name}`} loading='lazy'/>
+                  onClick={() => handleThumbnailClick(thumbnail)}
+                >
+                  <img src={thumbnail} alt={`${name}`} loading="lazy" />
                 </div>
-                
               )
             )}
         </div>
@@ -73,7 +69,7 @@ const Product = ({ product }) => {
       <div className="product-info-container">
         <div className="product-header">
           <div className="product-name">{name}</div>
-       
+
           <div className="product-price">${price && price.small}</div>
         </div>
         <div className="product-size">
@@ -89,16 +85,20 @@ const Product = ({ product }) => {
           </Button>
         </div>
         <div className="styled-line"></div>
-     
+
         <div className="product-icons-row">
           {icons &&
             icons.map((icon) => (
-              <div className="plant-care-icons-container" >
-                <div className='plant-care-icon-container' key={icon.id}>
-                <img src={icon.imageUrl} className='plant-care-icon' alt={icon.name} />
+              <div className="plant-care-icons-container">
+                <div className="plant-care-icon-container" key={icon.id}>
+                  <img
+                    src={icon.imageUrl}
+                    className="plant-care-icon"
+                    alt={icon.name}
+                  />
                 </div>
-                
-                <div className='plant-care-icon-name'>{icon.name}</div>
+
+                <div className="plant-care-icon-name">{icon.name}</div>
               </div>
             ))}
         </div>

@@ -1,13 +1,10 @@
-import Button from '../button/Button'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './product-card.styles.scss'
 
 const ProductCard = ({ product }) => {
-  const { category } = useParams()
   const { name, price, imageUrl } = product
   const plantName = name.toLowerCase().split(' ').join('-')
-  console.log('plantname', plantName)
-
+  const nameMatch = name
   const mainImg = imageUrl.img1
   const prices = Object.values(price)
   const price1 = Math.min(...prices)
@@ -15,7 +12,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <Link to={`/shop/${category}/${plantName}`}>
+      <Link to={`/shop/product/${plantName}`} state={{ nameMatch }}>
         <div className="product-card-container">
           <div className="product-card-img">
             <img src={mainImg} alt={`${name}`} />

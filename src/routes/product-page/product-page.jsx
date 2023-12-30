@@ -1,36 +1,43 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-
+import { useContext } from 'react'
+import { useLocation } from 'react-router-dom'
 import Product from '../../components/product/product'
+
 import { CategoriesContext } from '../../contexts/categories.context'
+
 import './product-page.styles.scss'
 
 const ProductPage = () => {
-  const { category, productName } = useParams()
-  console.log('Category:', category)
-  console.log('ProductName:', productName)
-
   const { categoriesMap } = useContext(CategoriesContext)
-  const [products, setProducts] = useState(categoriesMap[category] || [])
+  const products = Object.values(categoriesMap).flatMap(
+    (productArray) => productArray
+  )
 
-  useEffect(() => {
-    setProducts(categoriesMap[category])
-  }, [category, categoriesMap])
+  const location = useLocation()
+  const { state } = location
+
+  if (!state || !state.nameMatch) {
+    return <div>Error: Product information not found.</div>
+  }
+
+  const { nameMatch } = state
+
+  const uniqueProductNames = new Set()
 
   return (
-    <div className="product-page-container">
-      {products &&
-        products
-          .filter(
-            (product) =>
-              product.name.toLowerCase().split(' ').join('-') === productName
-          )
-          .map((product) => <Product key={product.id} product={product} />)}
-{    console.log('Category:', category)}    
-{console.log('ProductName:', productName)}
-    </div>
-    
+    <>
+      <div className="product-container">
+        {products.map((product) => {
+          if (
+            product.name === nameMatch &&
+            !uniqueProductNames.has(product.name)
+          ) {
+            uniqueProductNames.add(product.name)
+            return <Product key={product.id} product={product} />
+          }
+          return null
+        })}
+      </div>
+    </>
   )
 }
-
 export default ProductPage

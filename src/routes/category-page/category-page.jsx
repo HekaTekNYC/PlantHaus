@@ -10,7 +10,7 @@ import './category-page.styles.scss'
 const CategoryPage = () => {
   //use params gives us an object but we are goign to destructure off category only
   const { category } = useParams()
-  console.log('Category', category)
+
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
   console.log('Categories Map from Category-Page:', categoriesMap)
@@ -19,11 +19,9 @@ const CategoryPage = () => {
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    console.log('useEffect is working')
     setProducts(categoriesMap[category] || [])
   }, [category, categoriesMap])
-  console.log('Category in CategoryPage:', category);
-  console.log('Products in CategoryPage:', products);
+
   return (
     <>
       <div className="category-title">
@@ -33,14 +31,8 @@ const CategoryPage = () => {
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (
-            <ProductCard
-              key={product.id}
-              category={category}
-              product={product}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
-        {products &&
-          console.log('Number of products:', products && products.length)}
       </div>
     </>
   )
