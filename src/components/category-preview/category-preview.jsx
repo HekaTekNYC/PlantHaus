@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import shopTitle from '../../utils/shopTitle.utils'
 import ProductCard from '../product-card/product-card'
 
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
-  const { category } = useParams();
-  console.log('Category useParams in CategoryPreview:', category);
+  // const { category } = useParams();
+  // console.log('Category useParams in CategoryPreview:', category);
 
   return (
     <div className="category-preview-container">
@@ -25,7 +25,7 @@ const CategoryPreview = ({ title, products }) => {
           .map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-          {console.log('Category in CategoryPreview:', category)}
+          {/* {console.log('Category in CategoryPreview:', category)} */}
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
 import Button from '../button/Button'
 import './product.styles.scss'
@@ -7,6 +8,7 @@ const Product = ({ product }) => {
 
   const {
     name,
+    id,
     price,
     imageUrl,
     description,
@@ -21,6 +23,7 @@ const Product = ({ product }) => {
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
 
+  
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const handleThumbnailClick = (clickedThumbnail) => {
@@ -48,7 +51,9 @@ const Product = ({ product }) => {
 
   }, [selectedImage]);
 
-  return (    <div className="product-container">
+  return (    
+    <Link to={`/shop/product/${id}`}>
+  <div className="product-container">
       <div className="product-img-container">
         <div className="product-thumb-col">
           {thumbnailUrl &&
@@ -73,18 +78,18 @@ const Product = ({ product }) => {
       <div className="product-info-container">
         <div className="product-header">
           <div className="product-name">{name}</div>
-       
+          <div className="product-latin">{latin_binomial}</div>
           <div className="product-price">${price && price.small}</div>
         </div>
         <div className="product-size">
-          Size Description:
+          <div className="product-size-subheader">Plant Size</div>
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
               <div key={size}>{`${value}`}</div>
             ))}
         </div>
         <div className="product-cart-add">
-          <Button buttonType="inverted" onClick={addProductToCart}>
+          <Button buttonType="checkout" onClick={addProductToCart}>
             Add to cart
           </Button>
         </div>
@@ -103,14 +108,14 @@ const Product = ({ product }) => {
             ))}
         </div>
         <div className="styled-line"></div>
-        <div className="product-description">
-          <h3>Description</h3>
-          <p>{description}</p>
+        <div className="product-paragraph">
+          <div className="product-subheader">Description</div>
+          <div>{description}</div>
         </div>
-        <div className="product-care">
-          <h3>Care:</h3>
-          <div className="product-latin">{latin_binomial}</div>
-          <p>{care}</p>
+        <div className="product-paragraph">
+          <div className="product-subheader">Plant Care</div>
+   
+          <div>{care}</div>
           <div>
             <span className="pro-tip">Pro Tip: </span>
             {pro_tip}
@@ -118,6 +123,7 @@ const Product = ({ product }) => {
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 

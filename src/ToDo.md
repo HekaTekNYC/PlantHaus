@@ -11,3 +11,4 @@
 11. We need to make sure that our product cards are clickable from the homepage.
 12. Fix the layout on product details page
 13. Icons need to load on product details page...poss. reason is because they are in a div and not in an img tag? 
+14. Connect the cart 
