@@ -850,14 +850,16 @@ const SHOP_DATA = [
         name: 'Echeveria',
         latin_binomial: 'Echeveria spp.',
         imageUrl: {
-          img1: 'https://i.ibb.co/CvFPrGC/echeveria.png',
+          img1: 'https://i.ibb.co/6mQVYtW/echeverria-1.png',
           img2: 'https://i.ibb.co/xDG9qtq/echeveria-2.png',
           img3: 'https://i.ibb.co/xzRRLgs/echeveria-3.png',
+          img4:'https://i.ibb.co/Db0ty6W/echeveria-1.png',
         },
         thumbnailUrl: {
-          thumb1: 'https://i.ibb.co/V3BcQqJ/echeveria-1-thumb.png',
+          thumb1: 'https://i.ibb.co/9hkPZpw/echeverria-1-thumb.png',
           thumb2: 'https://i.ibb.co/5hpn106/echeveria-2-thumb.png',
           thumb3: 'https://i.ibb.co/0nW97j8/echeveria-3-thumb.png',
+          thumb4: 'https://i.ibb.co/V3BcQqJ/echeveria-1-thumb.png',
         },
         price: {
           small: 22,
@@ -1522,12 +1524,12 @@ const SHOP_DATA = [
         latin_binomial: 'Beaucarnea recurvata',
         imageUrl: {
           img1:'https://i.ibb.co/ZNJcQcG/ponytail-palm-2.png',
-          img2:'https://i.ibb.co/rZr1c1J/ponytail-palm-1.png' ,
+          img2:'https://i.ibb.co/mbVVjNh/feey-r-RHs-BEDh-FK4-unsplash.jpg' ,
           img3:'https://i.ibb.co/mJCQfC3/ponytail-palm-3.png',
         },
         thumbnailUrl: {
           thumb1: 'https://i.ibb.co/rmbWYK5/ponytail-palm-2-thumb-2.png',
-          thumb2: 'https://i.ibb.co/3T00kBp/ponytail-palm-1-thumb.png',
+          thumb2: 'https://i.ibb.co/tPKbV0M/ponytail-palm-thumb.jpg',
           thumb3: 'https://i.ibb.co/J2RNSK3/ponytail-palm-3-thumb.png',
         },
         price: {
