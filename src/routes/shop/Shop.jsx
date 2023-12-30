@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import CategoriesPreview from '../categories-preview/categories-preview'
 import CategoryPage from '../category-page/category-page'
 import ProductPage from '../product-page/product-page'
@@ -12,9 +12,11 @@ const Shop = () => {
       <Routes>
         <Route index element={<CategoriesPreview />} />
 
+
         <Route path=":category/" element={<CategoryPage />} />
 
         <Route path="product/:productName" element={<ProductPage />} />
+
       </Routes>
     </div>
   )
