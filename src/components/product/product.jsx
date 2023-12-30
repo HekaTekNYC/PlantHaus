@@ -22,7 +22,6 @@ const Product = ({ product }) => {
 
   const { addItemToCart } = useContext(CartContext)
   const addProductToCart = () => addItemToCart(product)
-  console.log('products inside product.jsx', product)
 
   
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
@@ -74,21 +73,31 @@ const Product = ({ product }) => {
       <div className="product-info-container">
         <div className="product-header">
           <div className="product-name">{name}</div>
-
+          <div className="product-latin">{latin_binomial}</div>
           <div className="product-price">${price && price.small}</div>
         </div>
         <div className="product-size">
           <div className="product-size-subheader">Plant Size</div>
+
+          <div className="product-cart-add"></div>
+          {/* {price &&
+            Object.entries(price).map(([size, value]) => (
+              <Button buttonType="checkout" onClick={addProductToCart(value)}>
+                {size}
+              </Button>
+            ))} */}
+
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
               <div key={size}>{`${value}`}</div>
             ))}
-        </div>
-        <div className="product-cart-add">
-          <Button buttonType="checkout" onClick={addProductToCart}>
+
+          {/* <Button buttonType="checkout" onClick={addProductToCart}>
+
             Add to cart
-          </Button>
+          </Button> */}
         </div>
+
         <div className="styled-line"></div>
 
         <div className="product-icons-row">
@@ -114,7 +123,7 @@ const Product = ({ product }) => {
         </div>
         <div className="product-paragraph">
           <div className="product-subheader">Plant Care</div>
-   
+
           <div>{care}</div>
           <div>
             <span className="pro-tip">Pro Tip: </span>
