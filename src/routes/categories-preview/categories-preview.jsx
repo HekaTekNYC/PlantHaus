@@ -13,7 +13,7 @@ const CategoriesPreview = () => {
       {Object.keys(categoriesMap).map((title) => {
         //the mapping = top level category such as new arrival
         const products = categoriesMap[title] // each individual categories items with all of the products details inside
-        console.log('products in Categories Preview:', products)
+        // console.log('products in Categories Preview:', products)
         return <CategoryPreview key={title} title={title} products={products} />
       })}
     </>

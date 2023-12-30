@@ -10,17 +10,19 @@ import './category-page.styles.scss'
 const CategoryPage = () => {
   //use params gives us an object but we are goign to destructure off category only
   const { category } = useParams()
-  console.log('Category', category)
+  // console.log('Category useParams in Category Page', category)
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
-  console.log('Categories Map from Category-Page:', categoriesMap)
+  const categoryTitle = categoriesMap;
+  console.log('categoryTitle', categoryTitle)
+   
   //grab the products from the category chosen by utilizing useState
   const [products, setProducts] = useState(categoriesMap[category] || [])
-  console.log('Category', category)
+  // const products = categoriesMap[category] || []
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    console.log('useEffect is working')
+
     setProducts(categoriesMap[category] || [])
   }, [category, categoriesMap])
 
@@ -30,6 +32,13 @@ const CategoryPage = () => {
         <h2>{shopTitle(category)}</h2>
       </div>
       <div className="category-container">
+              {/* this is pulling out our subcategories (New Arrival, Pet Friendly, New Plant Parents) */}
+      {/* {Object.keys(categoriesMap).map((title) => {
+        //the mapping = top level category such as new arrival
+        const products = categoriesMap[title] // each individual categories items with all of the products details inside
+        // console.log('products in Categories Preview:', products)
+        return <ProductCard key={title} title={title} products={products} />
+      })} */}
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (

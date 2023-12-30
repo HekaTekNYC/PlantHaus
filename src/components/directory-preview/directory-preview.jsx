@@ -4,10 +4,11 @@ import shopTitle from '../../utils/shopTitle.utils'
 import './directory-preview.styles.scss'
 
 const DirectoryPreview = ({ title, products }) => {
+
   return (
     <div className="directory-preview-container">
       <h2 className="directory-title">
-        <Link to={`${title}`}>{shopTitle(title)}</Link>
+        <Link to={`${title.id}`}>{shopTitle(title)}</Link>
       </h2>
       <div className="directory-preview">
         {products
@@ -16,8 +17,8 @@ const DirectoryPreview = ({ title, products }) => {
           .filter((_, idx) => idx < 4)
           //after we filter the 4 out we can then map through them
           .map((product) => (
-            <div>
-              <ProductCard key={product.id} product={product} />
+            <div key={product.id}>
+              <ProductCard key={title.id} product={product} />
             </div>
           ))}
       </div>

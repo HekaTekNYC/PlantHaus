@@ -4,13 +4,13 @@ const PLANT_CARE_DATA = [
       items: [
         //  easiest factor
         {
-            id: 1,
+            id: 1, 
             name: 'Easy Peasy',
             imageUrl: 'https://i.ibb.co/JzpcWS1/1.png'
         },
         {
             id: 2,
-            name: 'Lost of Loving',
+            name: 'Lots of Loving',
             imageUrl: 'https://i.ibb.co/SXmmqL5/2.png'
         },
         {
