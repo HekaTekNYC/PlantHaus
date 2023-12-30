@@ -10,7 +10,7 @@ import './category-page.styles.scss'
 const CategoryPage = () => {
   //use params gives us an object but we are goign to destructure off category only
   const { category } = useParams()
-  // console.log('Category useParams in Category Page', category)
+
   // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
   const categoryTitle = categoriesMap;
@@ -42,14 +42,8 @@ const CategoryPage = () => {
         {/* if products is undefined, dont render products */}
         {products &&
           products.map((product) => (
-            <ProductCard
-              key={product.id}
-              category={category}
-              product={product}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
-        {products &&
-          console.log('Number of products:', products && products.length)}
       </div>
     </>
   )

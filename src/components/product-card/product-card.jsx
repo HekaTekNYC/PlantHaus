@@ -1,14 +1,14 @@
-import Button from '../button/Button'
+
 import { Link } from 'react-router-dom'
 import './product-card.styles.scss'
 
 const ProductCard = ({ product }) => {
 
-  const { name, price, imageUrl, id } = product
-  // const plantName = name.toLowerCase().split(' ').join('-')
-  // console.log('plantname', plantName)
+  const { name, price, imageUrl } = product
+  const plantName = name.toLowerCase().split(' ').join('-')
+  const nameMatch = name
+  const mainImg = imageUrl.img1
 
-  const mainImg = imageUrl && imageUrl.img1
   const prices = Object.values(price)
   const price1 = Math.min(...prices)
   const price2 = Math.max(...prices)
@@ -17,7 +17,9 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <Link to={`/shop/product/${id}`}>
+
+      <Link to={`/shop/product/${plantName}`} state={{ nameMatch }}>
+
         <div className="product-card-container">
           <div className="product-card-img">
             {mainImg && <img src={mainImg} alt={`${name}`} /> }

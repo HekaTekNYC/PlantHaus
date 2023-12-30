@@ -12,12 +12,10 @@ const Shop = () => {
       <Routes>
         <Route index element={<CategoriesPreview />} />
 
-        <Route path="shop/:category/" element={<CategoryPage />} />
-        <Route path="product/:id" element={<ProductPage  />} />
-        <Route
-          path="*"
-          element={<Navigate to="/product/:id" />}
-        />
+
+        <Route path=":category/" element={<CategoryPage />} />
+
+        <Route path="product/:productName" element={<ProductPage />} />
 
       </Routes>
     </div>

@@ -8,7 +8,9 @@ const DirectoryPreview = ({ title, products }) => {
   return (
     <div className="directory-preview-container">
       <h2 className="directory-title">
-        <Link to={`${title.id}`}>{shopTitle(title)}</Link>
+
+        <Link to={`/shop/${title}`}>{shopTitle(title)}</Link>
+
       </h2>
       <div className="directory-preview">
         {products
