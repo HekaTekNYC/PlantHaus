@@ -1,19 +1,24 @@
 import { createContext, useState, useEffect } from 'react'
 
-const addCartItem = (cartItems, productToAdd) => {
+const addCartItem = (cartItems, productToAdd, selectedSize) => {
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === productToAdd.id
+    (cartItem) =>
+      cartItem.id === productToAdd.id && cartItem.price === selectedSize
   )
+
+  //check if product matches via id
+  //check if the product price key matches
+  //up the q
 
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
-      cartItem.id === productToAdd.id
+      cartItem.id === productToAdd.id && cartItem.size === selectedSize
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem
     )
   }
 
-  return [...cartItems, { ...productToAdd, quantity: 1 }]
+  return [...cartItems, { ...productToAdd, quantity: 1, size: selectedSize }]
 }
 
 const removeCartItem = (cartItems, cartItemToRemove) => {
@@ -40,6 +45,7 @@ const clearCartItem = (cartItems, cartItemToClear) =>
 
 export const CartContext = createContext({
   isCartOpen: false,
+  selectSize: () => {},
   setIsCartOpen: () => {},
   cartItems: [],
   addItemToCart: () => {},
@@ -71,10 +77,12 @@ export const CartProvider = ({ children }) => {
     setCartTotal(newCartTotal)
   }, [cartItems])
 
-  const addItemToCart = (productToAdd) => {
-    setCartItems(addCartItem(cartItems, productToAdd))
+  const addItemToCart = (productToAdd, selectedSize) => {
+    setCartItems(addCartItem(cartItems, productToAdd, selectedSize))
   }
-
+  const sizeSelect = (product, selectedSize) => {
+    addItemToCart(product, selectedSize)
+  }
   //remove one item from cart
   const removeItemFromCart = (cartItemToRemove) => {
     setCartItems(removeCartItem(cartItems, cartItemToRemove))

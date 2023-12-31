@@ -20,11 +20,27 @@ const Product = ({ product }) => {
     latin_binomial,
   } = product
 
+  const [selectedSize, setSelectedSize] = useState(null)
+
   const { addItemToCart } = useContext(CartContext)
-  const addProductToCart = () => addItemToCart(product)
+  const addProductToCart = () => addItemToCart(product, selectedSize)
+
+  if (selectedSize !== null) {
+    addItemToCart(product, selectedSize)
+  } else {
+    console.log('Select your size dumbass!')
+  }
+  // const addProductToCart = (productName, productSize) => () => {
+  //   const selectedProduct = product.find((item) => item.price.hasOwnProperty(productSize));
+  //   if (selectedProduct) {
+  //     addItemToCart(selectedProduct);
+  //   }
+  // };
 
   
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
+
+  const sizeClickHandler = () => {}
 
   const handleThumbnailClick = (clickedThumbnail) => {
     const thumbnailKey = Object.keys(thumbnailUrl).find(
@@ -72,20 +88,26 @@ const Product = ({ product }) => {
       </div>
       <div className="product-info-container">
         <div className="product-header">
-          <div className="product-name">{name}</div>
+          <span className="product-name">{name}</span>
           <div className="product-latin">{latin_binomial}</div>
           <div className="product-price">${price && price.small}</div>
         </div>
         <div className="product-size">
           <div className="product-size-subheader">Plant Size</div>
 
-          <div className="product-cart-add"></div>
-          {/* {price &&
+          {price &&
             Object.entries(price).map(([size, value]) => (
-              <Button buttonType="checkout" onClick={addProductToCart(value)}>
-                {size}
-              </Button>
-            ))} */}
+              <div key={size}>
+                <Button
+                  buttonType="checkout"
+                  onClick={() => sizeClickHandler()}
+                >
+                  {size}
+                </Button>
+              </div>
+            ))}
+          <div className="product-cart-add"></div>
+
 
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
