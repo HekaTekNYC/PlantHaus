@@ -6,7 +6,9 @@ import ProductCard from '../product-card/product-card'
 import './category-preview.styles.scss'
 
 const CategoryPreview = ({ title, products }) => {
+
   console.log('products in category preview', products)
+
 
   return (
     <div className="category-preview-container">
@@ -21,6 +23,7 @@ const CategoryPreview = ({ title, products }) => {
           .map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+
       </div>
     </div>
   )

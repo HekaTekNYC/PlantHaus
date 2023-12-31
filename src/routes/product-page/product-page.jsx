@@ -1,5 +1,7 @@
+
 import { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
+
 import Product from '../../components/product/product'
 
 import { CategoriesContext } from '../../contexts/categories.context'
@@ -7,6 +9,7 @@ import { CategoriesContext } from '../../contexts/categories.context'
 import './product-page.styles.scss'
 
 const ProductPage = () => {
+
   const { categoriesMap } = useContext(CategoriesContext)
   const products = Object.values(categoriesMap).flatMap(
     (productArray) => productArray
@@ -38,6 +41,7 @@ const ProductPage = () => {
         })}
       </div>
     </>
+
   )
 }
 export default ProductPage

@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
 
 import Button from '../button/Button'
@@ -7,6 +8,7 @@ import './product.styles.scss'
 const Product = ({ product }) => {
   const {
     name,
+    id,
     price,
     imageUrl,
     description,
@@ -35,6 +37,7 @@ const Product = ({ product }) => {
   //   }
   // };
 
+  
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const sizeClickHandler = () => {}
@@ -60,8 +63,10 @@ const Product = ({ product }) => {
 
   useEffect(() => {}, [selectedImage])
 
+
   return (
     <div className="product-container">
+
       <div className="product-img-container">
         <div className="product-thumb-col">
           {thumbnailUrl &&
@@ -89,6 +94,7 @@ const Product = ({ product }) => {
         </div>
         <div className="product-size">
           <div className="product-size-subheader">Plant Size</div>
+
           {price &&
             Object.entries(price).map(([size, value]) => (
               <div key={size}>
@@ -102,11 +108,14 @@ const Product = ({ product }) => {
             ))}
           <div className="product-cart-add"></div>
 
+
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
               <div key={size}>{`${value}`}</div>
             ))}
+
           {/* <Button buttonType="checkout" onClick={addProductToCart}>
+
             Add to cart
           </Button> */}
         </div>
@@ -145,6 +154,7 @@ const Product = ({ product }) => {
         </div>
       </div>
     </div>
+   
   )
 }
 

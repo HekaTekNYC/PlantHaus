@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+
 }
 
 // product image container left side
@@ -9,8 +10,10 @@
 .product-img-container {
   display: flex;
   width: 50%;
+
   padding-top: 20px;
   // object-fit: cover;
+
 
   .product-thumb-col {
     display: flex;
@@ -37,6 +40,7 @@
     height: auto;
     width: 100%;
     padding: 0 10px 10px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,6 +48,7 @@
     img {
       width: 100%;
       height: auto;
+
     }
   }
 }
@@ -56,17 +61,22 @@
   width: 50%;
   padding-left: 40px;
   line-height: 1.6;
+
 }
 
 .product-header {
+
   .product-name {
     font-size: 3rem;
     margin: 0;
+
   }
 
   .product-latin {
     font-family: 'Cormorant Garamond';
+
     color: #ce8861;
+
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
@@ -85,6 +95,7 @@
   padding: 10px 0 30px;
   font-size: 1.02rem;
 
+
   .product-size-subheader {
     font-size: 1rem;
     margin-bottom: 8px;
@@ -93,6 +104,7 @@
 
 .product-cart-add {
 }
+
 
 .product-icons-row {
   display: flex;
@@ -108,6 +120,7 @@
     align-items: center;
     justify-content: center;
 
+
     .plant-care-icon-container {
       display: flex;
       align-items: center;
@@ -118,22 +131,30 @@
     }
 
     .plant-care-icon {
+
       width: 100%;
     }
 
     .plant-care-icon-name {
+
     }
   }
 }
 
+
 .product-subheader {
   color: #ce8861;
+
   font-size: 1.2rem;
   font-weight: 400px;
   margin-bottom: 8px;
 }
 
+
 .product-paragraph {
   margin: 10px 0;
   line-height: 1.6;
+
 }
+
+
