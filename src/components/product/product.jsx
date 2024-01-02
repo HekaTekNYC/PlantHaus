@@ -23,13 +23,20 @@ const Product = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState(null)
 
   const { addItemToCart } = useContext(CartContext)
-  const addProductToCart = () => addItemToCart(product, selectedSize)
+  // const addProductToCart = () => addItemToCart(product, selectedSize)
 
-  if (selectedSize !== null) {
-    addItemToCart(product, selectedSize)
-  } else {
-    console.log('Select your size dumbass!')
-  }
+  const addProductToCart = () => {
+    if (selectedSize) {
+      addItemToCart(product, selectedSize);
+    } else {
+      console.log('Select your size before adding to cart!');
+    }
+  };
+  // if (selectedSize !== null) {
+  //   addItemToCart(product, selectedSize)
+  // } else {
+  //   console.log('Select your size dumbass!')
+  // }
   // const addProductToCart = (productName, productSize) => () => {
   //   const selectedProduct = product.find((item) => item.price.hasOwnProperty(productSize));
   //   if (selectedProduct) {
@@ -40,7 +47,9 @@ const Product = ({ product }) => {
   
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
-  const sizeClickHandler = () => {}
+  const sizeClickHandler = (size) => {
+    setSelectedSize(size)
+  }
 
   const handleThumbnailClick = (clickedThumbnail) => {
     const thumbnailKey = Object.keys(thumbnailUrl).find(
@@ -90,7 +99,26 @@ const Product = ({ product }) => {
         <div className="product-header">
           <span className="product-name">{name}</span>
           <div className="product-latin">{latin_binomial}</div>
-          <div className="product-price">${price && price.small}</div>
+          {/* <div className="product-price">${price && price.small}</div> */}
+          {/* <div className="product-price">
+  {price &&
+    Object.entries(price).map(([size, value]) => (
+      <div key={size}>
+      <span key={size}>
+        {size}: ${value}{' '}
+      </span>
+      </div>
+    ))}
+</div> */}
+<div className="product-price">
+  {price &&
+    Object.entries(price).map(([size, value]) => (
+      <div key={size}>
+        {size}: ${value}{' '}
+      </div>
+    ))}
+</div>
+
         </div>
         <div className="product-size">
           <div className="product-size-subheader">Plant Size</div>
@@ -100,13 +128,25 @@ const Product = ({ product }) => {
               <div key={size}>
                 <Button
                   buttonType="checkout"
-                  onClick={() => sizeClickHandler()}
+                  onClick={() => sizeClickHandler(size)}
                 >
                   {size}
                 </Button>
               </div>
             ))}
-          <div className="product-cart-add"></div>
+          <div className="product-cart-add">
+          {selectedSize ? (
+  <div className="product-cart-add">
+    <Button buttonType="checkout" onClick={addProductToCart}>
+      Add to cart
+    </Button>
+  </div>
+) : (
+  <div className="product-cart-add">
+    <p>Please select a size.</p>
+  </div>
+)}
+          </div>
 
 
           {size_description &&
