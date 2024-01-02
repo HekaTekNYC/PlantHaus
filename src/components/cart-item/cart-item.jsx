@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { TfiClose } from 'react-icons/tfi'
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
 
@@ -12,11 +12,20 @@ const CartItem = ({ cartItem }) => {
     useContext(CartContext)
 
   const clearItemsHandler = () => clearAllItemsFromCart(cartItem)
-  const addItemHandler = () => addItemToCart(cartItem)
+  const addItemHandler = () => addItemToCart({...cartItem, selectedSize})
   const removeItemHandler = () => removeItemFromCart(cartItem)
   // const selectedItem = price.find((amount) => amount.size === size)
   const thumb = thumbnailUrl.thumb1
+  // Get all available sizes from the item's price object
+  const availableSizes = Object.keys(price);
 
+  // State to track the selected size
+  const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
+
+  // Get the price for the selected size
+  const selectedPrice = price[selectedSize];
+
+  
   return (
     <>
       <div className="cart-item-line-container">
@@ -28,7 +37,7 @@ const CartItem = ({ cartItem }) => {
             <div className="cart-item-details-row">
               <div className="cart-item-details">
                 <div className="cart-item-name">{name}</div>
-                <div className="cart-item-size">size</div>
+                <div className="cart-item-size">Size: {selectedSize}</div>
               </div>
               <div className="x-btn">
                 <TfiClose onClick={clearItemsHandler} className="closeX" />
@@ -43,11 +52,19 @@ const CartItem = ({ cartItem }) => {
 
                 {quantity}
                 <HiOutlinePlus
-                  onClick={addItemHandler}
+                  onClick={addItemHandler(selectedSize)}
                   className="cart-item-icon"
                 />
               </div>
-              <div className="cart-item-price">${price}</div>
+              {/* <div className="cart-item-price">${price}</div> */}
+              <div className="cart-item-price">
+              ${price[selectedSize]}
+                {/* {Object.entries(price).map(([size, value]) => (
+                  <span key={size}>
+                    {size}: ${value}{' '}
+                  </span>
+                ))} */}
+              </div>
             </div>
           </div>
         </div>
