@@ -19,26 +19,32 @@ useEffect(() => {
 
 
   return (
-    <div className="checkout-item-container">
-      <div className="checkout-image-container">
-        
-        <img className="checkout-img" src={thumbnailUrl} alt={`${name}`} />
+    <div className="cart-item-line-container">
+    <div className="cart-item-container">
+      <div className="cart-item-image">
+        <img src={thumbnailUrl} alt={`${name}`} />
       </div>
-        <span className="name"> {name} </span>
-        <span className="quantity">
-          <div className="arrow" onClick={removeItemHandler}>
-            &#10094;
+      <div className="cart-item-details-container">
+        <div className="cart-item-details-row">
+          <div className="cart-item-details">
+            <div className="cart-item-name">{name}</div>
+            {/* <div className="cart-item-size">Size: {size}</div> */}
+            <div className="cart-item-size">Size: {size}</div>
           </div>
-          <span className="value">{quantity}</span>
-          <div className="arrow" onClick={addItemHandler}>
-            &#10095;
-          </div>
-        </span>
-        <span className="price"> {price}</span>
-        <div className="remove-button" onClick={clearItemHandler}>
-          &#10005;
+       
         </div>
-        {/* <hr className="item-separator" /> */}
+        <div className="counter-price-container">
+          <div className="counter-container">
+    Quantity:
+            {quantity}
+ 
+          </div>
+          <div className="cart-item-price">           
+          ${price}            
+          </div>
+        </div>
+      </div>
+    </div>
   
     </div>
   )

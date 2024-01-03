@@ -1,9 +1,26 @@
-.sign-up-container {
-  display: flex;
-  flex-direction: column;
-  width: 380px;
+.checkout-form-container {
+  width: 100%;
+}
 
-  h2 {
-    margin: 10px 0;
+
+.checkout-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .return-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    cursor: pointer;
+
+    .return-cart-text {
+      padding: 1px 0 0 2px;
+    }
+  }
+
+  .shipping-btn {
+    margin-top: 7px;
   }
 }
+
