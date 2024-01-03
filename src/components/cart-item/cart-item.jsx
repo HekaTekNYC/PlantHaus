@@ -7,25 +7,23 @@ import { CartContext } from '../../contexts/cart.context'
 import './cart-item.styles.scss'
 
 const CartItem = ({ cartItem }) => {
-  const { name, quantity, thumbnailUrl, price } = cartItem
+  const { name, quantity, thumbnailUrl, price, size } = cartItem
+  console.log('cart item insdie cart item', cartItem)
+
+
+
+
   const { clearAllItemsFromCart, addItemToCart, removeItemFromCart } =
     useContext(CartContext)
 
   const clearItemsHandler = () => clearAllItemsFromCart(cartItem)
-  const addItemHandler = () => addItemToCart({...cartItem, selectedSize})
-  const removeItemHandler = () => removeItemFromCart(cartItem)
+  const addItemHandler = () => addItemToCart(cartItem, size)
+  const removeItemHandler = () => removeItemFromCart(cartItem, size)
+
   // const selectedItem = price.find((amount) => amount.size === size)
   const thumb = thumbnailUrl.thumb1
-  // Get all available sizes from the item's price object
-  const availableSizes = Object.keys(price);
-
-  // State to track the selected size
-  const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
-
-  // Get the price for the selected size
-  const selectedPrice = price[selectedSize];
-
   
+
   return (
     <>
       <div className="cart-item-line-container">
@@ -37,7 +35,8 @@ const CartItem = ({ cartItem }) => {
             <div className="cart-item-details-row">
               <div className="cart-item-details">
                 <div className="cart-item-name">{name}</div>
-                <div className="cart-item-size">Size: {selectedSize}</div>
+                {/* <div className="cart-item-size">Size: {size}</div> */}
+                <div className="cart-item-size">Size: {size}</div>
               </div>
               <div className="x-btn">
                 <TfiClose onClick={clearItemsHandler} className="closeX" />
@@ -49,21 +48,14 @@ const CartItem = ({ cartItem }) => {
                   onClick={removeItemHandler}
                   className="cart-item-icon"
                 />
-
                 {quantity}
                 <HiOutlinePlus
-                  onClick={addItemHandler(selectedSize)}
+                  onClick={addItemHandler}
                   className="cart-item-icon"
                 />
               </div>
-              {/* <div className="cart-item-price">${price}</div> */}
-              <div className="cart-item-price">
-              ${price[selectedSize]}
-                {/* {Object.entries(price).map(([size, value]) => (
-                  <span key={size}>
-                    {size}: ${value}{' '}
-                  </span>
-                ))} */}
+              <div className="cart-item-price">           
+              ${price}            
               </div>
             </div>
           </div>

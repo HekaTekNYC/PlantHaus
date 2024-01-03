@@ -10,6 +10,7 @@ const BUTTON_TYPE_CLASSES = {
   google: 'google-sign-in',
   inverted: 'inverted',
   checkout: 'checkout',
+  outlined: 'outlined',
   //   cardButton: 'card-button',
 }
 

@@ -1,14 +1,15 @@
 import React, { useState, useContext, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+
 import { CartContext } from '../../contexts/cart.context'
 
-import Button from '../button/Button'
+import Button from '../button/main-button/Button'
+
 import './product.styles.scss'
+
 
 const Product = ({ product }) => {
   const {
     name,
-    id,
     price,
     imageUrl,
     description,
@@ -20,37 +21,28 @@ const Product = ({ product }) => {
     latin_binomial,
   } = product
 
+
   const [selectedSize, setSelectedSize] = useState(null)
+  const [selectedPrice, setSelectedPrice] = useState(null)
 
   const { addItemToCart } = useContext(CartContext)
   // const addProductToCart = () => addItemToCart(product, selectedSize)
 
+console.log('figureing out wtffff', price[0])
   const addProductToCart = () => {
-    if (selectedSize) {
+    if (selectedSize ) {
       addItemToCart(product, selectedSize);
     } else {
       console.log('Select your size before adding to cart!');
     }
   };
-  // if (selectedSize !== null) {
-  //   addItemToCart(product, selectedSize)
-  // } else {
-  //   console.log('Select your size dumbass!')
-  // }
-  // const addProductToCart = (productName, productSize) => () => {
-  //   const selectedProduct = product.find((item) => item.price.hasOwnProperty(productSize));
-  //   if (selectedProduct) {
-  //     addItemToCart(selectedProduct);
-  //   }
-  // };
-
-  
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
-  const sizeClickHandler = (size) => {
-    setSelectedSize(size)
-  }
-
+  const selectOptionHandler = (size, price) => {
+    setSelectedSize(size);
+    setSelectedPrice(price);
+  };
+  
   const handleThumbnailClick = (clickedThumbnail) => {
     const thumbnailKey = Object.keys(thumbnailUrl).find(
       (key) => thumbnailUrl[key] === clickedThumbnail
@@ -71,6 +63,7 @@ const Product = ({ product }) => {
   }
 
   useEffect(() => {}, [selectedImage])
+ 
 
 
   return (
@@ -99,65 +92,40 @@ const Product = ({ product }) => {
         <div className="product-header">
           <span className="product-name">{name}</span>
           <div className="product-latin">{latin_binomial}</div>
-          {/* <div className="product-price">${price && price.small}</div> */}
-          {/* <div className="product-price">
-  {price &&
-    Object.entries(price).map(([size, value]) => (
-      <div key={size}>
-      <span key={size}>
-        {size}: ${value}{' '}
-      </span>
-      </div>
-    ))}
-</div> */}
-<div className="product-price">
-  {price &&
-    Object.entries(price).map(([size, value]) => (
-      <div key={size}>
-        {size}: ${value}{' '}
-      </div>
-    ))}
-</div>
+          <div className="product-price">${price && price.small}</div>
+          {/* <div className="product-price">${}</div> */}
+
 
         </div>
-        <div className="product-size">
+        <div className="product-size-container">
           <div className="product-size-subheader">Plant Size</div>
-
+          <div className='product-size-btns'>
           {price &&
             Object.entries(price).map(([size, value]) => (
-              <div key={size}>
-                <Button
-                  buttonType="checkout"
-                  onClick={() => sizeClickHandler(size)}
+              <button className="product-btn" key={size}
+                  onClick={() => selectOptionHandler(size, value)}
                 >
                   {size}
-                </Button>
-              </div>
+              </button>
             ))}
-          <div className="product-cart-add">
-          {selectedSize ? (
-  <div className="product-cart-add">
-    <Button buttonType="checkout" onClick={addProductToCart}>
-      Add to cart
-    </Button>
-  </div>
-) : (
-  <div className="product-cart-add">
-    <p>Please select a size.</p>
-  </div>
-)}
-          </div>
+            </div>
 
+            
 
+          <div className='product-size-description'>
           {size_description &&
             Object.entries(size_description).map(([size, value]) => (
               <div key={size}>{`${value}`}</div>
             ))}
 
-          {/* <Button buttonType="checkout" onClick={addProductToCart}>
-
-            Add to cart
-          </Button> */}
+          </div>
+        
+            <div className="product-cart-add">
+              <Button buttonType="checkout" onClick={addProductToCart}>
+                Add to cart
+              </Button>
+            </div>
+     
         </div>
 
         <div className="styled-line"></div>

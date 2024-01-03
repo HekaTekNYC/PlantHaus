@@ -1,40 +1,47 @@
 import { createContext, useState, useEffect } from 'react'
-
 const addCartItem = (cartItems, productToAdd, selectedSize) => {
   const existingCartItem = cartItems.find(
     (cartItem) =>
-      cartItem.id === productToAdd.id && cartItem.price === selectedSize
-  )
-
-  //check if product matches via id
-  //check if the product price key matches
-  //up the q
+      cartItem.id === productToAdd.id &&
+      cartItem.size === selectedSize 
+  );
 
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id && cartItem.size === selectedSize
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem
-    )
+    );
   }
 
-  return [...cartItems, { ...productToAdd, quantity: 1, size: selectedSize }]
-}
+  const selectedPrice = productToAdd.price[selectedSize];
+console.log('selectedPrice', selectedPrice)
+  return [
+    ...cartItems,
+    {
+      ...productToAdd,
+      quantity: 1,
+      size: selectedSize,
+      price: selectedPrice,
+    },
+  ];
+};
+
 
 const removeCartItem = (cartItems, cartItemToRemove) => {
   // find the cart item to remove
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === cartItemToRemove.id
+    (cartItem) => cartItem.id === cartItemToRemove.id && cartItem.size === cartItemToRemove.size
   )
 
   // check if quantity is equal to 1, if it is remove that item from the cart
-  if (existingCartItem.quantity === 1) {
-    return cartItems.filter((cartItem) => cartItem.id !== cartItemToRemove.id)
+  if (existingCartItem.quantity === 1 ) {
+    return cartItems.filter((cartItem) => cartItem.size !== cartItemToRemove.size)
   }
 
   // return back cartitems with matching cart item with reduced quantity
   return cartItems.map((cartItem) =>
-    cartItem.id === cartItemToRemove.id
+    cartItem.size === cartItemToRemove.size
       ? { ...cartItem, quantity: cartItem.quantity - 1 }
       : cartItem
   )
@@ -80,6 +87,7 @@ export const CartProvider = ({ children }) => {
   const addItemToCart = (productToAdd, selectedSize) => {
     setCartItems(addCartItem(cartItems, productToAdd, selectedSize))
   }
+  
   const sizeSelect = (product, selectedSize) => {
     addItemToCart(product, selectedSize)
   }
@@ -106,3 +114,8 @@ export const CartProvider = ({ children }) => {
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }
+
+
+
+
+

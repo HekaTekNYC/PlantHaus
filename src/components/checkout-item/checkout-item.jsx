@@ -14,14 +14,7 @@ const CheckoutItem = ({ cartItem }) => {
   const addItemHandler = () => addItemToCart(cartItem)
   const removeItemHandler = () => removeItemToCart(cartItem)
 
-  const dataEx = [
-    {
-      id: 1
-    },
-    {
-      id: 2
-    },
-  ]
+
 
   return (
     <div className="checkout-item-container item-separator">

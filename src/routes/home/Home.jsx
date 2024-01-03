@@ -4,7 +4,7 @@ import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import Reviews from '../reviews/reviews'
 
-import Button from '../../components/button/Button'
+import Button from '../../components/button/main-button/Button'
 
 import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
