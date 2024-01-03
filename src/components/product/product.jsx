@@ -21,14 +21,24 @@ const Product = ({ product }) => {
     latin_binomial,
   } = product
 
+  // useEffect(() => {
+  //   if (price && Object.keys(price).length > 0) {
+  //     const firstSize = Object.keys(price)[0];
+  //     const firstPrice = price[firstSize];
+  //     setSelectedSize(firstSize);
+  //     setSelectedPrice(firstPrice);
+  //   }
+  // }, [price]);
 
-  const [selectedSize, setSelectedSize] = useState(null)
-  const [selectedPrice, setSelectedPrice] = useState(null)
+  // const firstSize = 
+  // const firstPrice = 
+  const [selectedSize, setSelectedSize] = useState(Object.keys(price)[0])
+  const [selectedPrice, setSelectedPrice] = useState(Object.values(price)[0])
 
   const { addItemToCart } = useContext(CartContext)
   // const addProductToCart = () => addItemToCart(product, selectedSize)
 
-console.log('figureing out wtffff', price[0])
+
   const addProductToCart = () => {
     if (selectedSize ) {
       addItemToCart(product, selectedSize);
@@ -38,9 +48,10 @@ console.log('figureing out wtffff', price[0])
   };
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
-  const selectOptionHandler = (size, price) => {
+  const selectOptionHandler = (size, price, index) => {
     setSelectedSize(size);
     setSelectedPrice(price);
+    // setActiveIndex(index)
   };
   
   const handleThumbnailClick = (clickedThumbnail) => {
@@ -64,7 +75,7 @@ console.log('figureing out wtffff', price[0])
 
   useEffect(() => {}, [selectedImage])
  
-
+ 
 
   return (
     <div className="product-container">
@@ -92,8 +103,8 @@ console.log('figureing out wtffff', price[0])
         <div className="product-header">
           <span className="product-name">{name}</span>
           <div className="product-latin">{latin_binomial}</div>
-          <div className="product-price">${price && price.small}</div>
-          {/* <div className="product-price">${}</div> */}
+          {/* <div className="product-price">${price && price.small}</div> */}
+          <div className="product-price">${selectedPrice}</div>
 
 
         </div>
@@ -102,7 +113,8 @@ console.log('figureing out wtffff', price[0])
           <div className='product-size-btns'>
           {price &&
             Object.entries(price).map(([size, value]) => (
-              <button className="product-btn" key={size}
+          
+              <button className="product-btn"
                   onClick={() => selectOptionHandler(size, value)}
                 >
                   {size}
