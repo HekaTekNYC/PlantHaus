@@ -114,7 +114,9 @@ const Product = ({ product }) => {
           {price &&
             Object.entries(price).map(([size, value]) => (
           
-              <button className={`product-btn`} key={size}
+
+              <button className="product-btn"
+
                   onClick={() => selectOptionHandler(size, value)}
                 >
                   {size}
