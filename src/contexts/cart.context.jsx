@@ -13,14 +13,16 @@ const addCartItem = (cartItems, productToAdd, selectedSize) => {
         : cartItem
     );
   }
-
+console.log('product to add object', productToAdd);
   const selectedPrice = productToAdd.price[selectedSize];
-console.log('selectedPrice', selectedPrice)
+  const selectedThumbnail = productToAdd.thumbnailUrl.thumb1
+console.log('selected thumbnail in cart context', selectedThumbnail)
   return [
     ...cartItems,
     {
       ...productToAdd,
       quantity: 1,
+      thumbnailUrl: selectedThumbnail,
       size: selectedSize,
       price: selectedPrice,
     },

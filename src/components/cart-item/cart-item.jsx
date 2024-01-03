@@ -21,7 +21,7 @@ const CartItem = ({ cartItem }) => {
   const removeItemHandler = () => removeItemFromCart(cartItem, size)
 
   // const selectedItem = price.find((amount) => amount.size === size)
-  const thumb = thumbnailUrl.thumb1
+  // const thumb = thumbnailUrl && thumbnailUrl.thumb1
   
 
   return (
@@ -29,7 +29,7 @@ const CartItem = ({ cartItem }) => {
       <div className="cart-item-line-container">
         <div className="cart-item-container">
           <div className="cart-item-image">
-            <img src={thumb} alt={`${name}`} />
+            <img src={thumbnailUrl} alt={`${name}`} />
           </div>
           <div className="cart-item-details-container">
             <div className="cart-item-details-row">
