@@ -14,6 +14,7 @@
 13. Icons need to load on product details page...poss. reason is because they are in a div and not in an img tag?
 14. We didn't code it to show the price range.
 15. We need to fix the monsterra which isn't showing any price at all.
+16. Fix the size underscore with a function in cart
 
 // Inside your CartProvider component
 
