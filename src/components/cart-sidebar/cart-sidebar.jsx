@@ -4,7 +4,7 @@ import { CartContext } from '../../contexts/cart.context'
 
 import { TfiClose } from 'react-icons/tfi'
 
-import Button from '../button/Button'
+import Button from '../button/main-button/Button'
 import CartItem from '../cart-item/cart-item'
 
 import './cart-sidebar.styles.scss'
@@ -21,6 +21,7 @@ const CartSidebar = () => {
   }
 
   return (
+    <div className={`cart-sidebar-container ${isCartOpen ? 'open' : ''}`}>
     <div className="cart-sidebar-container">
       <div className="cart-sidebar-header-container">
         <div className="cart-sidebar-x-container">
@@ -60,6 +61,7 @@ const CartSidebar = () => {
           Taxes and shipping calculated at checkout.
         </div>
       </div>
+    </div>
     </div>
   )
 }

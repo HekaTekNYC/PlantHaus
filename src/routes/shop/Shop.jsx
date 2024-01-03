@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import CategoriesPreview from '../categories-preview/categories-preview'
 import CategoryPage from '../category-page/category-page'
 import ProductPage from '../product-page/product-page'

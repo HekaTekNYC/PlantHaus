@@ -15,3 +15,36 @@
 14. We didn't code it to show the price range.
 15. We need to fix the monsterra which isn't showing any price at all.
 
+// Inside your CartProvider component
+
+const addCartItem = (productToAdd, selectedSize) => {
+  setCartItems((prevCartItems) => {
+    const existingCartItem = prevCartItems.find(
+      (cartItem) =>
+        cartItem.id === productToAdd.id &&
+        cartItem.size === selectedSize
+    );
+
+    if (existingCartItem) {
+      return prevCartItems.map((cartItem) =>
+        cartItem.id === productToAdd.id &&
+        cartItem.size === selectedSize
+          ? { ...cartItem, quantity: cartItem.quantity + 1 }
+          : cartItem
+      );
+    }
+
+    // Find the price for the selected size dynamically
+    const selectedPrice = productToAdd.price[selectedSize];
+
+    return [
+      ...prevCartItems,
+      {
+        ...productToAdd,
+        quantity: 1,
+        size: selectedSize,
+        price: selectedPrice,
+      },
+    ];
+  });
+};
