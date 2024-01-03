@@ -47,7 +47,7 @@ const Home = () => {
 
       {/* Best Sellers*/}
 
-      <DirectoriesPreview category="best-sellers" />
+      <DirectoriesPreview category="pet-friendly" />
 
       {/* Feature  */}
 
