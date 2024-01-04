@@ -1,7 +1,16 @@
 .checkout-form-container {
   width: 100%;
+
+  h4 {
+    font-family: 'Cormorant Garamond';
+  }
 }
 
+.form-check-input:checked[type='checkbox'],
+.form-check-input:checked {
+  background-color: #3c685d;
+  border-color: #3c685d;
+}
 
 .checkout-footer {
   display: flex;
@@ -23,4 +32,3 @@
     margin-top: 7px;
   }
 }
-

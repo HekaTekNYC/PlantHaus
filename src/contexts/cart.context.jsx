@@ -1,22 +1,22 @@
 import { createContext, useState, useEffect } from 'react'
+
 const addCartItem = (cartItems, productToAdd, selectedSize) => {
   const existingCartItem = cartItems.find(
     (cartItem) =>
-      cartItem.id === productToAdd.id &&
-      cartItem.size === selectedSize 
-  );
+      cartItem.id === productToAdd.id && cartItem.size === selectedSize
+  )
 
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id && cartItem.size === selectedSize
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem
-    );
+    )
   }
-console.log('product to add object', productToAdd);
-  const selectedPrice = productToAdd.price[selectedSize];
+
+  const selectedPrice = productToAdd.price[selectedSize]
   const selectedThumbnail = productToAdd.thumbnailUrl.thumb1
-console.log('selected thumbnail in cart context', selectedThumbnail)
+
   return [
     ...cartItems,
     {
@@ -26,19 +26,22 @@ console.log('selected thumbnail in cart context', selectedThumbnail)
       size: selectedSize,
       price: selectedPrice,
     },
-  ];
-};
-
+  ]
+}
 
 const removeCartItem = (cartItems, cartItemToRemove) => {
   // find the cart item to remove
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === cartItemToRemove.id && cartItem.size === cartItemToRemove.size
+    (cartItem) =>
+      cartItem.id === cartItemToRemove.id &&
+      cartItem.size === cartItemToRemove.size
   )
 
   // check if quantity is equal to 1, if it is remove that item from the cart
-  if (existingCartItem.quantity === 1 ) {
-    return cartItems.filter((cartItem) => cartItem.size !== cartItemToRemove.size)
+  if (existingCartItem.quantity === 1) {
+    return cartItems.filter(
+      (cartItem) => cartItem.size !== cartItemToRemove.size
+    )
   }
 
   // return back cartitems with matching cart item with reduced quantity
@@ -89,10 +92,7 @@ export const CartProvider = ({ children }) => {
   const addItemToCart = (productToAdd, selectedSize) => {
     setCartItems(addCartItem(cartItems, productToAdd, selectedSize))
   }
-  
-  const sizeSelect = (product, selectedSize) => {
-    addItemToCart(product, selectedSize)
-  }
+
   //remove one item from cart
   const removeItemFromCart = (cartItemToRemove) => {
     setCartItems(removeCartItem(cartItems, cartItemToRemove))
@@ -116,8 +116,3 @@ export const CartProvider = ({ children }) => {
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }
-
-
-
-
-

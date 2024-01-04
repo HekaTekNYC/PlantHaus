@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { TfiClose } from 'react-icons/tfi'
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
-
+import shopTitle from '../../utils/shopTitle.utils'
 import { CartContext } from '../../contexts/cart.context'
 
 import './cart-item.styles.scss'
@@ -9,9 +9,6 @@ import './cart-item.styles.scss'
 const CartItem = ({ cartItem }) => {
   const { name, quantity, thumbnailUrl, price, size } = cartItem
   console.log('cart item insdie cart item', cartItem)
-
-
-
 
   const { clearAllItemsFromCart, addItemToCart, removeItemFromCart } =
     useContext(CartContext)
@@ -22,7 +19,6 @@ const CartItem = ({ cartItem }) => {
 
   // const selectedItem = price.find((amount) => amount.size === size)
   // const thumb = thumbnailUrl && thumbnailUrl.thumb1
-  
 
   return (
     <>
@@ -36,7 +32,7 @@ const CartItem = ({ cartItem }) => {
               <div className="cart-item-details">
                 <div className="cart-item-name">{name}</div>
                 {/* <div className="cart-item-size">Size: {size}</div> */}
-                <div className="cart-item-size">Size: {size}</div>
+                <div className="cart-item-size">Size: {shopTitle(size)}</div>
               </div>
               <div className="x-btn">
                 <TfiClose onClick={clearItemsHandler} className="closeX" />
@@ -54,9 +50,7 @@ const CartItem = ({ cartItem }) => {
                   className="cart-item-icon"
                 />
               </div>
-              <div className="cart-item-price">           
-              ${price}            
-              </div>
+              <div className="cart-item-price">${price}</div>
             </div>
           </div>
         </div>
