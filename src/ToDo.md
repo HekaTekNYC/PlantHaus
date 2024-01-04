@@ -7,9 +7,7 @@
 6.  Fix styling.
 
 7.  Then once all of that is done we jump into the product page.√
-
-8.  Finish Checkout page styles.
-
+8.  Finish Checkout page styles. √
 9.  Shop page is not responsive. √
 10. We need to figure out why our products are not showing when click on ProductCard from Shop page. √
 11. We need to make sure that our product cards are clickable from the homepage.
@@ -18,4 +16,4 @@
 14. We didn't code it to show the price range. √
 15. We need to fix the monsterra which isn't showing any price at all. √
 16. Fix the size underscore with a function in cart √
-17. Fix toggle cart open in checkout page
+17. Fix toggle cart open in checkout page √

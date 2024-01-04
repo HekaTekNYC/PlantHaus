@@ -117,8 +117,11 @@ const Product = ({ product }) => {
           <div className="product-size-description">
             {size_description &&
               Object.entries(size_description).map(([size, value]) => (
-                <div className="size-description" key={size}>{`${value}`}</div>
+                <div className="size-description" key={size}>{`${shopTitle(
+                  size
+                )}: ${value}`}</div>
               ))}
+            {/* console.log('Key Value Pairs in Product.jsx:', key, value) */}
           </div>
 
           <div className="product-cart-add">
