@@ -10,14 +10,11 @@ import heroImage from '../../assets/styled-plants-5.png'
 import './home.styles.scss'
 
 const Home = () => {
-  const {category} = useParams();
   const navigate = useNavigate()
 
   const handleCategoryClick = () => {
     navigate(`/shop/`)
-   
   }
-  
 
   return (
     <>
@@ -35,7 +32,9 @@ const Home = () => {
               their beauty and resilience, we empower you to transform any space
               into a verdant sanctuary with ease.
             </div>
-            <Button onClick={() => handleCategoryClick('category')}>Shop Now</Button>
+            <Button onClick={() => handleCategoryClick('category')}>
+              Shop Now
+            </Button>
 
             {/* <Button>Shop Now</Button> */}
           </div>
