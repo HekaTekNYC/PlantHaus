@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-
 }
 
 // product image container left side
@@ -13,7 +12,6 @@
 
   padding-top: 20px;
   // object-fit: cover;
-
 
   .product-thumb-col {
     display: flex;
@@ -48,7 +46,6 @@
     img {
       width: 100%;
       height: auto;
-
     }
   }
 }
@@ -61,11 +58,9 @@
   width: 50%;
   padding-left: 40px;
   line-height: 1.6;
-
 }
 
 .product-header {
-
   .product-name {
     font-size: 3rem;
     margin: 0;
@@ -89,62 +84,59 @@
 }
 
 .product-size-container {
-  padding: 10px 0 30px;
+  padding: 10px 0 10px;
   font-size: 1.02rem;
-  
+
   .product-size-subheader {
     font-size: 1rem;
     margin-bottom: 8px;
   }
-  
+
   .product-size-btns {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     .product-btn {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      width: 100px;
       height: 40px;
       letter-spacing: 0.5px;
-      line-height: 50px;
-      padding: 0 35px;
-      margin-right: 20px;
-      font-size: 1rem;
+      line-height: 30px;
+      padding: 0 10px;
+      margin-right: 10px;
+      font-size: 0.8rem;
       background-color: #fff;
-      color: #ce8861;
+      color: #3c403f;
       text-transform: uppercase;
-      font-weight: bolder;
-      border: 2px solid #ce8861;
+      font-weight: 600;
+      border: 1px solid #3c403f;
       cursor: pointer;
       border-radius: 6px;
-      
+
       &:hover,
       &:focus,
       &:active {
-        background-color: #ce8861;
+        background-color: #3c403f;
         color: #fff;
         border: none;
       }
     }
-
-  }
-  .product-size-description {
-
-  }
-  .product-cart-add {
-
   }
 }
 
-
-
+.product-size-description {
+  margin-bottom: 10px;
+  .size-description {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+}
 
 .product-icons-row {
   display: flex;
@@ -160,7 +152,6 @@
     align-items: center;
     justify-content: center;
 
-
     .plant-care-icon-container {
       display: flex;
       align-items: center;
@@ -171,30 +162,19 @@
     }
 
     .plant-care-icon {
-
       width: 100%;
-    }
-
-    .plant-care-icon-name {
-
     }
   }
 }
 
-
 .product-subheader {
   color: #ce8861;
-
   font-size: 1.2rem;
   font-weight: 400px;
   margin-bottom: 8px;
 }
 
-
 .product-paragraph {
   margin: 10px 0;
   line-height: 1.6;
-
 }
-
-

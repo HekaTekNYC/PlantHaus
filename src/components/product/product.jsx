@@ -3,9 +3,9 @@ import React, { useState, useContext, useEffect } from 'react'
 import { CartContext } from '../../contexts/cart.context'
 
 import Button from '../button/main-button/Button'
+import shopTitle from '../../utils/shopTitle.utils'
 
 import './product.styles.scss'
-
 
 const Product = ({ product }) => {
   const {
@@ -30,30 +30,27 @@ const Product = ({ product }) => {
   //   }
   // }, [price]);
 
-  // const firstSize = 
-  // const firstPrice = 
   const [selectedSize, setSelectedSize] = useState(Object.keys(price)[0])
   const [selectedPrice, setSelectedPrice] = useState(Object.values(price)[0])
 
   const { addItemToCart } = useContext(CartContext)
   // const addProductToCart = () => addItemToCart(product, selectedSize)
 
-
   const addProductToCart = () => {
-    if (selectedSize ) {
-      addItemToCart(product, selectedSize);
+    if (selectedSize) {
+      addItemToCart(product, selectedSize)
     } else {
-      console.log('Select your size before adding to cart!');
+      console.log('Select your size before adding to cart!')
     }
-  };
+  }
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
 
   const selectOptionHandler = (size, price, index) => {
-    setSelectedSize(size);
-    setSelectedPrice(price);
+    setSelectedSize(size)
+    setSelectedPrice(price)
     // setActiveIndex(index)
-  };
-  
+  }
+
   const handleThumbnailClick = (clickedThumbnail) => {
     const thumbnailKey = Object.keys(thumbnailUrl).find(
       (key) => thumbnailUrl[key] === clickedThumbnail
@@ -74,12 +71,9 @@ const Product = ({ product }) => {
   }
 
   useEffect(() => {}, [selectedImage])
- 
- 
 
   return (
     <div className="product-container">
-
       <div className="product-img-container">
         <div className="product-thumb-col">
           {thumbnailUrl &&
@@ -105,41 +99,33 @@ const Product = ({ product }) => {
           <div className="product-latin">{latin_binomial}</div>
           {/* <div className="product-price">${price && price.small}</div> */}
           <div className="product-price">${selectedPrice}</div>
-
-
         </div>
         <div className="product-size-container">
-          <div className="product-size-subheader">Plant Size</div>
-          <div className='product-size-btns'>
-          {price &&
-            Object.entries(price).map(([size, value]) => (
-          
-
-              <button className="product-btn"
-
+          <div className="product-size-subheader">Plant Size:</div>
+          <div className="product-size-btns">
+            {price &&
+              Object.entries(price).map(([size, value]) => (
+                <button
+                  className="product-btn"
                   onClick={() => selectOptionHandler(size, value)}
                 >
-                  {size}
-              </button>
-            ))}
-            </div>
-
-            
-
-          <div className='product-size-description'>
-          {size_description &&
-            Object.entries(size_description).map(([size, value]) => (
-              <div key={size}>{`${value}`}</div>
-            ))}
-
+                  {shopTitle(size)}
+                </button>
+              ))}
           </div>
-        
-            <div className="product-cart-add">
-              <Button buttonType="checkout" onClick={addProductToCart}>
-                Add to cart
-              </Button>
-            </div>
-     
+
+          <div className="product-size-description">
+            {size_description &&
+              Object.entries(size_description).map(([size, value]) => (
+                <div className="size-description" key={size}>{`${value}`}</div>
+              ))}
+          </div>
+
+          <div className="product-cart-add">
+            <Button buttonType="checkout" onClick={addProductToCart}>
+              Add to cart
+            </Button>
+          </div>
         </div>
 
         <div className="styled-line"></div>
@@ -176,7 +162,6 @@ const Product = ({ product }) => {
         </div>
       </div>
     </div>
-   
   )
 }
 
