@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  margin: 40px 20px;
-  padding: 40px 60px 20px;
+  align-items: center;
+  margin: 40px 60px;
+  padding: 40px 20px 20px;
 
   .directory-title {
     text-align: center;
@@ -24,38 +24,31 @@
 }
 
 // Media Queries
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .directory-preview-container {
-    .directory-preview {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .directory-preview-container {
-    .directory-preview {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .directory-preview-container {
-    .directory-preview {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
+  // .directory-preview {
+  //   grid-template-columns: 200px repeat(1, 1fr);
+  // }
 }
 
-/*Medium devices (landscape tablets and medium desktops, 992px and up)*/
-@media only screen and (min-width: 992px) {
-  .directory-preview-container {
-    .directory-preview {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+}
+
+// Apply for screens up to 992px
+@media only screen and (max-width: 992px) {
+}
+
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
+  // .directory-preview-container {
+  //   margin: 0;
+  // }
+  // .directory-preview {
+  //   grid-template-columns: 300px repeat(2, 1fr);
+  // }
 }

@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 15px 0;
-  padding: 10px 60px;
-  height: 350px;
+  margin: 15px;
+  padding: 60px 70px;
+  height: 400px;
 
   .three-header {
     font-size: 2.2rem;
@@ -19,7 +19,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  
 
   .points-container {
     display: flex;
@@ -30,7 +29,6 @@
 
     .blob-container {
       position: absolute;
-      
       z-index: -1;
       width: 150px;
       height: 150px;
@@ -67,41 +65,44 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 600px) {
-}
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
+  // Your styles for screens up to 600px width
 }
 
-// Apply for screens up to 768px
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  // Your styles for screens 600px and wider
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .three-points-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
+  // Your styles for screens 768px and wider
+}
+
+/* Medium devices (landscape tablets and medium desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .three-points-container {
+    height: 800px;
   }
 }
-// Apply for screens up to 992px
-@media only screen and (max-width: 992px) {
-}
 
-// Apply for screens up to 768px
+/* Apply for screens up to 1200px */
 @media only screen and (max-width: 1200px) {
+  .three-points-container {
+    height: 800px;
+  }
   .three-points-row {
     grid-template-columns: 1fr;
     gap: 10px;
 
     .blob-container {
-      position: static; /* Change to static or relative based on your layout needs */
-      width: 100%; /* Adjust width as needed */
+      position: static;
+      width: 100%;
     }
 
     .point-blob {
-      position: static; /* Change to static or relative based on your layout needs */
-      width: 100%; /* Adjust width as needed */
-      top: 0; /* Adjust as needed */
+      position: static;
+      width: 100%;
+      top: 0;
     }
   }
-}
-
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1200px) {
 }
