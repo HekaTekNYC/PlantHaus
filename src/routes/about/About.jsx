@@ -2,12 +2,15 @@ import React from 'react'
 import './about.styles.scss'
 
 const About = () => {
+  const aboutImage = 'https://i.ibb.co/fFMZvW9/About-Page.png'
   return (
     <>
       <div className="about-container">
-        <div className="about-img"></div>
+        <div className="about-img">
+          <img src={aboutImage} alt='about page' />
+        </div>
         <div className="about-info">
-          <h3>About Plant Haus</h3>
+          <h1>About Plant Haus</h1>
           <p>
             Nestled in the heart of Brooklyn, our plant shop stands as a green
             oasis for urban dwellers seeking the perfect touch of nature within
