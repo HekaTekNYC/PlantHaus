@@ -52,8 +52,14 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
   )
 }
 
+// const clearCartItem = (cartItems, cartItemToClear) =>
+//   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id)
 const clearCartItem = (cartItems, cartItemToClear) =>
-  cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id)
+  cartItems.filter(
+    (cartItem) =>
+      cartItem.id !== cartItemToClear.id ||
+      cartItem.size !== cartItemToClear.size
+  );
 
 export const CartContext = createContext({
   isCartOpen: false,

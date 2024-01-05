@@ -21,21 +21,35 @@ const CartSidebar = () => {
   }
   const cartRef = useRef(null)
 
-  const handleOutsideClick = (event) => {
-    if (cartRef.current && !cartRef.current.contains(event.target)) {
-      setIsCartOpen(false)
-    }
-  }
+  
 
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (cartRef.current && !cartRef.current.contains(event.target)) {
+        setIsCartOpen(false);
+      }
+    };
+
     if (isCartOpen) {
-      document.addEventListener('click', handleOutsideClick)
+      document.addEventListener('mousedown', handleOutsideClick);
     }
 
     return () => {
-      document.removeEventListener('click', handleOutsideClick)
-    }
-  }, [isCartOpen, setIsCartOpen, handleOutsideClick])
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [isCartOpen, setIsCartOpen]);
+  // useEffect(() => {
+  //   if (cartRef.current) {
+  //     setIsCartOpen(true)
+  //   }
+
+  //   return () => {
+  //     if (cartRef.current) {
+  //       setIsCartOpen(false)
+  //     }
+  //   }
+  // }, [isCartOpen, setIsCartOpen, cartRef])
+
 
   return (
     <div
