@@ -1,0 +1,50 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 80px;
+
+    .about-img {
+        width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  
+    .about-info {
+      padding-left: 40px;
+      width: 50%;
+  
+      h1 {
+        font-size: 3.3rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Cormorant Garamond';
+      }
+  
+      p {
+        font-size: 1.3rem;
+        font-family: 'Cormorant Garamond';
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 20px;
+      }
+      .about-info {
+        padding-left: 0;
+        max-width: 100%; 
+      }
+    }
+}
