@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
 
@@ -19,49 +19,69 @@ const CartSidebar = () => {
   const goToCheckoutHandler = () => {
     navigate('/checkout')
   }
+  const cartRef = useRef(null)
+
+  const handleOutsideClick = (event) => {
+    if (cartRef.current && !cartRef.current.contains(event.target)) {
+      setIsCartOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    if (isCartOpen) {
+      document.addEventListener('click', handleOutsideClick)
+    }
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick)
+    }
+  }, [isCartOpen, setIsCartOpen, handleOutsideClick])
 
   return (
-    <div className={`cart-sidebar-container ${isCartOpen ? 'open' : ''}`}>
-    <div className="cart-sidebar-container">
-      <div className="cart-sidebar-header-container">
-        <div className="cart-sidebar-x-container">
-          <TfiClose onClick={toggleCartClosed} className="closeX" />
-        </div>
-        <div className="cart-sidebar-title-amount">
-          <h2 className="cart-sidebar-title">Your Cart</h2>
-          <div className="cart-sidebar-item-count">{cartCount} items</div>
+    <div
+      className={`cart-sidebar-container${isCartOpen ? ' open' : ''}`}
+      ref={cartRef}
+    >
+      <div className="cart-sidebar-container">
+        <div className="cart-sidebar-header-container">
+          <div className="cart-sidebar-x-container">
+            <TfiClose onClick={toggleCartClosed} className="closeX" />
+          </div>
+          <div className="cart-sidebar-title-amount">
+            <h2 className="cart-sidebar-title">Your Cart</h2>
+            <div className="cart-sidebar-item-count">{cartCount} items</div>
+          </div>
+
+          <div className="cart-sidebar-info">
+            Each order is meticulously prepared and packaged by our dedicated
+            team! In the chilly winter season, additional protective packaging
+            is included to ensure the safety of your plants.
+          </div>
+          <div className="styled-line"></div>
         </div>
 
-        <div className="cart-sidebar-info">
-          Each order is meticulously prepared and packaged by our dedicated
-          team! In the chilly winter season, additional protective packaging is
-          included to ensure the safety of your plants.
+        <div className="cart-sidebar-items">
+          {cartItems.length ? (
+            cartItems.map((item) => <CartItem key={item.id} cartItem={item} />)
+          ) : (
+            <div className="cart-sidebar-empty-cart">Your cart is empty</div>
+          )}
         </div>
-        <div className="styled-line"></div>
+
+        <div className="cart-sidebar-footer">
+          <div className="cart-sidebar-subtotal-container">
+            <div className="cart-sidebar-subtotal">Subtotal: </div>
+            <span className="sidebar-total-price">${cartTotal}</span>
+          </div>
+
+          <Button buttonType="checkout" onClick={goToCheckoutHandler}>
+            Checkout Page
+          </Button>
+          <div className="cart-sidebar-shipping">
+            Taxes and shipping calculated at checkout.
+          </div>
+        </div>
       </div>
-
-      <div className="cart-sidebar-items">
-        {cartItems.length ? (
-          cartItems.map((item) => <CartItem key={item.id} cartItem={item} />)
-        ) : (
-          <div className="cart-sidebar-empty-cart">Your cart is empty</div>
-        )}
-      </div>
-
-      <div className="cart-sidebar-footer">
-        <div className="cart-sidebar-subtotal-container">
-          <div className="cart-sidebar-subtotal">Subtotal: </div>
-          <span className="sidebar-total-price">${cartTotal}</span>
-        </div>
-
-        <Button buttonType="checkout" onClick={goToCheckoutHandler}>
-          Checkout Page
-        </Button>
-        <div className="cart-sidebar-shipping">
-          Taxes and shipping calculated at checkout.
-        </div>
-      </div>
-    </div>
     </div>
   )
 }

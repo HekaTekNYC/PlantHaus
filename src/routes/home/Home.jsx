@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import Reviews from '../reviews/reviews'
@@ -42,12 +42,13 @@ const Home = () => {
       </div>
 
       {/* Our Commitments Section */}
-      <Commitments />
-
+      <div className="commitments-section">
+        <Commitments />
+      </div>
       {/* Best Sellers*/}
-
-      <DirectoriesPreview category="pet-friendly" />
-
+      <div className="directories-section">
+        <DirectoriesPreview category="pet-friendly" />
+      </div>
       {/* Feature  */}
 
       {/* Reviews */}

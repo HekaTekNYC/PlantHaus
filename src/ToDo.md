@@ -17,3 +17,5 @@
 15. We need to fix the monsterra which isn't showing any price at all. √
 16. Fix the size underscore with a function in cart √
 17. Fix toggle cart open in checkout page √
+
+18. If you have two of the same plants but in different sizes within the cart when you click the "x" button to remove all of one (whether small, medium, large, or x-large) it will remove any instance of every size of that item out of your cart.

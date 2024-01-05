@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import FormInput from '../form-input/Form-input'
 import Button from '../button/main-button/Button'
 
@@ -16,8 +16,8 @@ const defaultFormFields = {
   password: '',
 }
 
-const SignInForm = ({onLogin}) => {
-  const navigate = useNavigate();
+const SignInForm = ({ onLogin }) => {
+  const navigate = useNavigate()
   const [formFields, setFormFields] = useState(defaultFormFields)
   const { email, password } = formFields
 
@@ -27,6 +27,10 @@ const SignInForm = ({onLogin}) => {
 
   const signInWithGoogle = async () => {
     await signInWithGooglePopup()
+    console.log('Google sign-in successful')
+    onLogin()
+    console.log('Navigating to home page')
+    navigate('/')
   }
 
   const handleSubmit = async (event) => {
@@ -35,9 +39,6 @@ const SignInForm = ({onLogin}) => {
     try {
       const { user } = await signInAuthUserWithEmailAndPassword(email, password)
       resetFormFields()
-      console.log('User signed in successfully');
-      onLogin();
-      navigate('/');
     } catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
@@ -87,6 +88,7 @@ const SignInForm = ({onLogin}) => {
           onChange={handleChange}
           name="password"
           value={password}
+          autoComplete="current-password"
         />
 
         <div className="buttons-container">

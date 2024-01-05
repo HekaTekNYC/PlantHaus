@@ -1,7 +1,10 @@
 import { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import FormInput from '../form-input/Form-input'
 import Button from '../button/main-button/Button'
+import { Icon } from 'react-icons-kit'
+import { eyeOff } from 'react-icons-kit/feather/eyeOff'
+import { eye } from 'react-icons-kit/feather/eye'
 
 import {
   createAuthUserWithEmailAndPassword,
@@ -17,9 +20,12 @@ const defaultFormFields = {
   confirmPassword: '',
 }
 
-const SignUpForm = () => {
+const SignUpForm = ({ onLogin }) => {
+  const navigate = useNavigate()
   const [formFields, setFormFields] = useState(defaultFormFields)
   const { displayName, email, password, confirmPassword } = formFields
+  const [showPassword, setShowPassword] = useState(false)
+  const [type, setType] = useState('password')
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields)
@@ -38,7 +44,10 @@ const SignUpForm = () => {
       const { user } = await createAuthUserWithEmailAndPassword(email, password)
 
       await createUserDocumentFromAuth(user, { displayName })
+
       resetFormFields()
+      onLogin()
+      navigate('/')
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         alert('Cannot create user, email already in use')
@@ -53,7 +62,9 @@ const SignUpForm = () => {
 
     setFormFields({ ...formFields, [name]: value })
   }
-
+  const handleToggle = () => {
+    setType((prevType) => (prevType === 'password' ? 'text' : 'password'))
+  }
   return (
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>
@@ -76,24 +87,33 @@ const SignUpForm = () => {
           name="email"
           value={email}
         />
-
-        <FormInput
-          label="Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="password"
-          value={password}
-        />
-
-        <FormInput
-          label="Confirm Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="confirmPassword"
-          value={confirmPassword}
-        />
+        <div className="password-container">
+          <FormInput
+            label="Password"
+            type={type}
+            required
+            onChange={handleChange}
+            name="password"
+            value={password}
+          />
+          <div className="eye-icon-container" onClick={handleToggle}>
+            <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+          </div>
+        </div>
+        <div className="password-container">
+          <FormInput
+            label="Confirm Password"
+            type={type}
+            required
+            onChange={handleChange}
+            name="confirmPassword"
+            value={confirmPassword}
+            autoComplete="new-password"
+          />
+          <div className="eye-icon-container" onClick={handleToggle}>
+            <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+          </div>
+        </div>
 
         <Button buttonType="inverted" type="submit">
           Sign Up
