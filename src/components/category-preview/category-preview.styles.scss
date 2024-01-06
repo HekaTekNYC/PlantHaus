@@ -3,10 +3,13 @@
   flex-direction: column;
   padding: 50px 0;
   height: 700px;
+  width: 100%;
+  margin: 0 -5px;
 
   h2 {
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
+    white-space: nowrap;
   }
 
   .title {
@@ -21,27 +24,16 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-basis: auto;
     justify-content: space-between;
+    width: 100%;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  // .preview {
-  //   grid-template-columns: 1fr;
-  // }
-}
-
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
-}
-
-// Apply for screens up to 768px
-@media only screen and (max-width: 768px) {
-}
-
-// Apply for screens up to 992px
-@media only screen and (max-width: 1055px) {
   .category-preview-container {
     height: auto;
 
@@ -51,7 +43,62 @@
   }
 }
 
-@media only screen and (min-width: 1055px) and (max-width: 1400px) {
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
+  .category-preview-container {
+    height: auto;
+    width: 100%;
+
+    .preview {
+      width: 100%;
+    }
+  }
+}
+
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+  .category-preview-container {
+    width: 100%;
+    align-items: center;
+    .preview {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .category-preview-container {
+    width: 100%;
+    align-items: center;
+
+    .preview {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .category-preview-container {
+    height: auto;
+    .preview {
+      width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1059px) {
+  .category-preview-container {
+    height: auto;
+
+    .preview {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1059px) and (max-width: 1400px) {
   .category-preview-container {
     .preview {
       > :last-child {
@@ -65,6 +112,7 @@
 @media only screen and (max-width: 1200px) {
   .category-preview-container {
     height: auto;
+
     h2 {
       margin-bottom: 10px;
       padding-bottom: 10px;
@@ -76,6 +124,4 @@
   }
 }
 @media only screen and (max-width: 1400px) {
-  .category-preview-container {
-  }
 }

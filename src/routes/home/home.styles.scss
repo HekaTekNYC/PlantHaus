@@ -57,21 +57,21 @@
     justify-content: center;
     padding: 80px 20px;
     width: 100%;
-  }
+    .hero-image-container {
+      width: 100%;
+    }
 
-  .hero-image-container {
-    width: 100%;
-  }
-
-  .hero-text-container {
-    width: 100%;
+    .hero-text-container {
+      width: 100%;
+      padding: 20px 0;
+      .header-description {
+        width: 100%;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .hero-container {
-    padding: 80px 40px 0;
-  }
 }
 
 // Apply for screens up to 1200px
