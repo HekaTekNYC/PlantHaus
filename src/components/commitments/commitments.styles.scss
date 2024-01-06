@@ -1,11 +1,12 @@
 .three-points-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   text-align: center;
   margin: 15px;
   padding: 60px 70px;
   height: 400px;
+  width: 100%;
 
   .three-header {
     font-size: 2.2rem;
@@ -16,16 +17,19 @@
 }
 
 .three-points-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  width: 100%;
 
   .points-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 200px;
+    justify-content: start;
+    height: 300px;
+    width: 300px;
 
     .blob-container {
       position: absolute;
@@ -64,45 +68,54 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   // Your styles for screens up to 600px width
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   // Your styles for screens 600px and wider
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   // Your styles for screens 768px and wider
 }
 
 /* Medium devices (landscape tablets and medium desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .three-points-container {
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 30px;
+    height: auto;
   }
 }
 
 /* Apply for screens up to 1200px */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .three-points-container {
     height: 800px;
   }
+  // .three-points-row {
+  //   .blob-container {
+  //     position: static;
+  //     width: 100%;
+  //   }
+
+  //   .point-blob {
+  //     position: static;
+  //     width: 100%;
+  //     top: 0;
+  //   }
+  // }
+}
+
+@media only screen and (min-width: 1600px) {
   .three-points-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
-
-    .blob-container {
-      position: static;
-      width: 100%;
-    }
-
-    .point-blob {
-      position: static;
-      width: 100%;
-      top: 0;
+    .points-container {
+      width: 400px;
     }
   }
 }
