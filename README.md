@@ -71,24 +71,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-/_ Extra small devices (phones, 600px and down) _/
-@media only screen and (min-width: 600px) {
+// Apply for screens up to 1400px
+@media only screen and (max-width: 1400px) {  
 }
 
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
-}
-
-// Apply for screens up to 768px
-@media only screen and (max-width: 768px) {
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
 }
 
 // Apply for screens up to 992px
 @media only screen and (max-width: 992px) {
 }
 
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1200px) {
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+}
+
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
 }
 
 // .reviews-container {
