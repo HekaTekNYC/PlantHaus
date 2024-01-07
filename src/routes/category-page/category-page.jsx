@@ -27,17 +27,15 @@ const CategoryPage = () => {
 
   return (
     <>
-      <div className="category-title">
-        <h2>{shopTitle(category)}</h2>
+      <div>
+        <h2 className="category-title">{shopTitle(category)}</h2>
       </div>
       <div className="category-container">
-        {/* <div className="category-product"> */}
         {products &&
           products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
       </div>
-      {/* </div> */}
     </>
   )
 }
