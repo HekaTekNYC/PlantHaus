@@ -5,14 +5,22 @@
 }
 
 // Media Queries
-
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1601px) {
+  .shop-container {
+    // padding: 80px 80px 20px;
+  }
 }
 
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1600px) {
+  // .shop-container {
+  //   padding: 80px 80px 20px;
+  // }
+}
+
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
   .shop-container {
-    padding: 80px 20px 20px;
+    padding: 80px 60px 20px;
   }
 }
 
@@ -23,17 +31,12 @@
   }
 }
 
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1400px) {
-}
-@media only screen and (max-width: 1600px) {
-  // .shop-container {
-  //   padding: 80px 80px 20px;
-  // }
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
+  .shop-container {
+    padding: 80px 20px 20px;
+  }
 }
 
-@media only screen and (min-width: 1601px) {
-  .shop-container {
-    // padding: 80px 80px 20px;
-  }
+@media only screen and (max-width: 400px) {
 }

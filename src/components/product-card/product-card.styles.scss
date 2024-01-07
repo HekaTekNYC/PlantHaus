@@ -60,14 +60,68 @@
   }
 }
 
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
+// Apply for screens up to 1600px
+@media only screen and (max-width: 1600px) {
   .product-card-container {
-    width: 100px;
-    .prodcut-card {
-      width: 100px;
+    height: 450px;
+    .product-card {
+      width: 100%;
+    }
+  }
+}
+
+// Apply for screens up to 1400px
+@media only screen and (max-width: 1400px) {
+  .product-card {
+    .product-card-img {
+      max-width: 450px;
+      max-height: 450px;
+    }
+  }
+}
+
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
+  .product-card-container {
+    width: 400px;
+    .product-card {
+      width: 100%;
+      .product-card-img {
+        height: auto;
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-card-container {
+    width: 300px;
+
+    .product-card {
+      width: 100%;
 
       .product-card-img {
+        height: auto;
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .product-card-container {
+    width: 300px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .product-card {
+      width: 100%;
+
+      .product-card-img {
+        height: auto;
         width: 100%;
       }
     }
@@ -81,7 +135,6 @@
 
     .product-card {
       width: 100%;
-      // height: 400px;
 
       .product-card-img {
         height: auto;
@@ -90,85 +143,17 @@
     }
   }
 }
-
-@media only screen and (max-width: 860px) {
+// Apply for screens up to 600px
+@media only screen and (max-width: 600px) {
   .product-card-container {
-    width: 100%;
-
-    h2 {
-      text-align: center;
-    }
-
-    .product-card {
-      width: 100%;
-      // height: 400px;
+    min-width: 200px;
+    .prodcut-card {
+      width: 100px;
+      height: 300px;
 
       .product-card-img {
-        height: auto;
         width: 100%;
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .product-card-container {
-    width: 350px;
-
-    .product-card {
-      width: 100%;
-      // height: 400px;
-
-      .product-card-img {
-        height: auto;
-        width: 100%;
-      }
-    }
-  }
-}
-
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1059px) {
-  .product-card-container {
-    max-width: 400px;
-    .product-card {
-      width: 100%;
-      .product-card-img {
-        height: auto;
-        width: 100%;
-      }
-    }
-  }
-}
-
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1200px) {
-  .product-card-container {
-    .product-card {
-      width: 100%;
-      .product-card-img {
-        height: auto;
-        max-width: 500px;
-      }
-    }
-  }
-}
-// Apply for screens up to 1400px
-@media only screen and (max-width: 1400px) {
-  .product-card {
-    .product-card-img {
-      max-width: 450px;
-      max-height: 450px;
-    }
-  }
-}
-
-// Apply for screens up to 1600px
-@media only screen and (max-width: 1600px) {
-  .product-card-container {
-    height: 450px;
-    .product-card {
-      width: 100%;
     }
   }
 }
