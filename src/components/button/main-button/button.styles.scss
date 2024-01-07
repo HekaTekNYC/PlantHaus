@@ -1,10 +1,10 @@
 .button-container {
-  min-width: 165px;
+  min-width: 155px;
   width: auto;
   height: 45px;
   letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
+  line-height: 40px;
+  padding: 0 30px;
   font-size: 1rem;
   background-color: #3c403f;
   color: white;
@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 6px;
+  // white-space: nowrap;
 
   &:hover {
     background-color: #fff;
@@ -54,5 +55,13 @@
       color: #fff;
       border: none;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button-container {
+    min-width: 145px;
+    line-height: 20px;
+    margin: 0 5px;
   }
 }
