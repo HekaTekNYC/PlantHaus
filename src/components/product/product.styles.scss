@@ -9,9 +9,7 @@
 .product-img-container {
   display: flex;
   width: 50%;
-
   padding-top: 20px;
-  // object-fit: cover;
 
   .product-thumb-col {
     display: flex;
@@ -19,6 +17,7 @@
     align-items: center;
     width: 170px;
     margin-right: 20px;
+    order: 1;
 
     .product-thumb-container {
       width: 165px;
@@ -38,6 +37,7 @@
     height: auto;
     width: 100%;
     padding: 0 10px 10px;
+    order: 2;
 
     display: flex;
     flex-direction: column;
@@ -178,4 +178,104 @@
 .product-paragraph {
   margin: 10px 0;
   line-height: 1.6;
+}
+
+// Apply for screens up to 1200px
+@media only screen and (max-width: 1200px) {
+  .product-img-container {
+    flex-direction: column;
+
+    .product-img-col {
+      order: 2;
+    }
+    .product-thumb-col {
+      order: 3;
+      flex-direction: row;
+      width: 50%;
+
+      .product-thumb-container {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// Apply for screens up to 992px
+@media only screen and (max-width: 992px) {
+  .product-icons-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .plant-care-icons-container {
+      min-width: 150px;
+
+      .plant-care-icon-name {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .product-icons-row {
+    .plant-care-icons-container {
+      min-width: 100px;
+    }
+  }
+}
+
+// Apply for screens up to 768px
+@media only screen and (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+
+    .product-img-container {
+      width: 100%;
+    }
+    .product-info-container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+// Apply for screens up to 600px
+@media only screen and (max-width: 609px) {
+  .product-icons-row {
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    .plant-care-icons-container {
+      min-width: 200px;
+
+      .plant-care-icon-name {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .product-header {
+    .product-name {
+      font-size: 2.2rem;
+    }
+
+    .product-price {
+      font-size: 1.3rem;
+    }
+  }
+
+  .product-cart-add {
+    display: flex;
+    justify-content: center;
+  }
+  .product-icons-row {
+    display: column;
+    .plant-care-icons-container {
+      width: 100%;
+    }
+  }
 }

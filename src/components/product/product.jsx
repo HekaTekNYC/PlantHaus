@@ -21,15 +21,6 @@ const Product = ({ product }) => {
     latin_binomial,
   } = product
 
-  // useEffect(() => {
-  //   if (price && Object.keys(price).length > 0) {
-  //     const firstSize = Object.keys(price)[0];
-  //     const firstPrice = price[firstSize];
-  //     setSelectedSize(firstSize);
-  //     setSelectedPrice(firstPrice);
-  //   }
-  // }, [price]);
-
   const [selectedSize, setSelectedSize] = useState(Object.keys(price)[0])
   const [selectedPrice, setSelectedPrice] = useState(Object.values(price)[0])
 
@@ -97,7 +88,6 @@ const Product = ({ product }) => {
         <div className="product-header">
           <span className="product-name">{name}</span>
           <div className="product-latin">{latin_binomial}</div>
-          {/* <div className="product-price">${price && price.small}</div> */}
           <div className="product-price">${selectedPrice}</div>
         </div>
         <div className="product-size-container">
@@ -121,7 +111,6 @@ const Product = ({ product }) => {
                   size
                 )}: ${value}`}</div>
               ))}
-            {/* console.log('Key Value Pairs in Product.jsx:', key, value) */}
           </div>
 
           <div className="product-cart-add">
@@ -152,13 +141,13 @@ const Product = ({ product }) => {
         <div className="styled-line"></div>
         <div className="product-paragraph">
           <div className="product-subheader">Description</div>
-          <div>{description}</div>
+          <div className="product-text">{description}</div>
         </div>
         <div className="product-paragraph">
           <div className="product-subheader">Plant Care</div>
 
-          <div>{care}</div>
-          <div>
+          <div className="product-text">{care}</div>
+          <div className="product-text">
             <span className="pro-tip">Pro Tip: </span>
             {pro_tip}
           </div>
