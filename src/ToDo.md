@@ -25,7 +25,8 @@
 22. Shop page is still not responsive between 900 and 880. It isn't centering. √
 23. Category page the header needs to be the same weigh as on the categories preview... padding gets screwed at 860. Margin on screen at left goes away. Make images smaller once it hits 860.
 24. About page margins and font need to be fixed. We can break it at 992...lower the font size of the header and paragraph switch it from row to column and padding needs ot be tighter on the sides.0px √
-25. Product page needs to be responsive. it's stacking off the screen and the google sign in buttono gets wierd when it gets smaller. √
+25. Signin Page needs to be responsive. it's stacking off the screen the google sign in buttono gets wierd when it gets smaller.
 26. Checkout page needs to be responsive. The form bleeds on top of the checkout section.
 27. Commitments section needs to be re-written and made responsive. √
 28. Home page needs adjustments for responsiveness. √
+29. Product page needs to be made responsive. √
