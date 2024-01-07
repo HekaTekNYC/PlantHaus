@@ -39,23 +39,23 @@ const Home = () => {
             {/* <Button>Shop Now</Button> */}
           </div>
         </div>
+
+        {/* Our Commitments Section */}
+        <div className="commitments-section">
+          <Commitments />
+        </div>
+        {/* Best Sellers*/}
+        <div className="directories-section">
+          <DirectoriesPreview category="pet-friendly" />
+        </div>
+        {/* Feature  */}
+
+        {/* Reviews */}
+
+        <div className="feature-container"></div>
+
+        {/* <Reviews /> */}
       </div>
-
-      {/* Our Commitments Section */}
-      <div className="commitments-section">
-        <Commitments />
-      </div>
-      {/* Best Sellers*/}
-      <div className="directories-section">
-        <DirectoriesPreview category="pet-friendly" />
-      </div>
-      {/* Feature  */}
-
-      {/* Reviews */}
-
-      <div className="feature-container"></div>
-
-      {/* <Reviews /> */}
     </>
   )
 }
