@@ -49,6 +49,14 @@
   }
 }
 
+.commitments-section {
+  width: 100%;
+}
+
+.directories-section {
+  width: 100%;
+}
+
 // Apply for screens up to 1200px
 @media only screen and (max-width: 1400px) {
 }
@@ -103,6 +111,7 @@
   }
 }
 @media only screen and (max-width: 600px) {
-}
-@media only screen and (min-width: 600px) {
+  .home-container {
+    padding: 70px 10px 20px;
+  }
 }
