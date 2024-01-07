@@ -1,10 +1,9 @@
 .category-title {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2.2rem;
   margin-bottom: 15px;
   font-weight: 600;
   font-family: 'Cormorant Garamond';
-  // margin: 0 -5px;
 }
 
 .category-container {
@@ -13,7 +12,6 @@
   column-gap: 30px;
   row-gap: 20px;
   width: auto;
-  // margin-right: 70px;
 }
 
 @media screen and (max-width: 1400px) {
