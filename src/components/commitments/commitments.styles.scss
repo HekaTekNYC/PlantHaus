@@ -1,7 +1,6 @@
 .three-points-container {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   text-align: center;
   margin: 15px;
   padding: 60px 70px;
@@ -19,99 +18,112 @@
 .three-points-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 20px;
 
-  .points-container {
+  .main-point-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     height: 300px;
-    width: 300px;
 
     .blob-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
       position: absolute;
       z-index: -1;
-      width: 150px;
-      height: 150px;
+      width: 100%;
+      height: 300px;
+      width: 300px;
+
+      .point-blob {
+        position: relative;
+        z-index: -1;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: 8px;
+      }
     }
 
-    .point-blob {
-      position: relative;
-      z-index: -1;
-      width: 150px;
-      height: 150px;
-      top: 100px;
-    }
+    .points-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 45px;
+      height: 300px;
+      width: 350px;
 
-    .point-icon {
-      width: 50px;
-    }
+      .point-icon {
+        width: 50px;
+      }
 
-    .point-header {
-      text-align: center;
-      font-family: 'Cormorant Garamond';
-      font-weight: 700;
-      font-size: 1.55rem;
-      margin: 3px 0 10px;
-    }
+      .point-header {
+        text-align: center;
+        font-family: 'Cormorant Garamond';
+        font-weight: 700;
+        font-size: 1.55rem;
+        margin: 3px 0 10px;
+      }
 
-    .point-info {
-      text-align: center;
-      margin: 10px;
-      padding: 5px 20px;
-      line-height: 1.4;
+      .point-info {
+        text-align: center;
+        margin: 10px 0;
+        padding: 5px 0;
+        line-height: 1.4;
+      }
     }
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  // Your styles for screens up to 600px width
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   // Your styles for screens 600px and wider
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   // Your styles for screens 768px and wider
 }
 
 /* Medium devices (landscape tablets and medium desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .three-points-container {
     display: flex;
     flex-direction: column;
-
     padding: 60px 30px;
     height: auto;
+  }
+  .three-points-row {
+    flex-direction: column;
+
+    .main-point-container {
+      width: 100%;
+    }
   }
 }
 
 /* Apply for screens up to 1200px */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .three-points-container {
     height: 800px;
-  }
-  // .three-points-row {
-  //   .blob-container {
-  //     position: static;
-  //     width: 100%;
-  //   }
 
-  //   .point-blob {
-  //     position: static;
-  //     width: 100%;
-  //     top: 0;
-  //   }
-  // }
+    .main-point-container {
+      width: 100%;
+
+      .points-container {
+        width: 100%;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .three-points-row {
     .points-container {
       width: 400px;

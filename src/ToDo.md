@@ -19,3 +19,11 @@
 17. Fix toggle cart open in checkout page √
 
 18. If you have two of the same plants but in different sizes within the cart when you click the "x" button to remove all of one (whether small, medium, large, or x-large) it will remove any instance of every size of that item out of your cart.
+19. Hero image is not responsive. Media queries on commitments may be affecting this.
+20. Directory preview needs to be rsponsive.
+21. Navbar needs to be responsive. Implement a hamburger once it reaches 600 a hamburger needs to be activated.0px
+22. Shop page is still not responsive between 900 and 880. It isn't centering.
+23. Category page the header needs to be the same weigh as on the categories preview... padding gets screwed at 860. Margin on screen at left goes away. Make images smaller once it hits 860.
+24. About page margins and font need to be fixed. We can break it at 992...lower the font size of the header and paragraph switch it from row to column and padding needs ot be tighter on the sides.0px
+25. Product page needs to be responsive. it's stacking off the screen and the google sign in buttono gets wierd when it gets smaller.
+26. Checkout page needs to be responsive. The form bleeds on top of the checkout section.
