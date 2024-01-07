@@ -39,9 +39,11 @@ const Commitments = () => {
         <div className="three-header">Our Commitment</div>
         <div className="three-points-row">
           {pointsData.map(({ icon, header, info, id, svg }) => (
-            <div className="blob-container" key={id}>
-              <div className="points-container">
+            <div className="main-point-container" key={id}>
+              <div className="blob-container">
                 <div className="point-blob">{svg}</div>
+              </div>
+              <div className="points-container">
                 <div className="point-icon">{icon}</div>
                 <h3 className="point-header">{header}</h3>
                 <p className="point-info">{info}</p>
