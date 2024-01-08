@@ -23,31 +23,32 @@ const CheckoutForm = () => {
         <FloatingLabel
           controlId="floatingInput"
           label="Email address"
-          className="mb-3"
+          className="mb-3 custom-form-control"
+          
         >
-          <Form.Control type="email" placeholder="name@example.com" />
+          <Form.Control type="email" placeholder="name@example.com" className="form-control"/>
         </FloatingLabel>
-        <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Email me with news and offers" />
+        <Form.Group className="mb-3 custom-form-control" id="formGridCheckbox">
+          <Form.Check type="checkbox" label="Email me with news and offers" className="custom-form-control"/>
         </Form.Group>
         <div className="styled-line"></div>
 
         <h4 className="mt-5 mb-3">Delivery</h4>
         <Row>
-          <Form.Group as={Col} controlId="formGridFirstName">
+          <Form.Group size="sm" as={Col} controlId="formGridFirstName" className="custom-form-control">
             <FloatingLabel
               controlId="floatingInput"
               label="First Name"
-              className="mb-3"
+              className="mb-3 mb-3 custom-form-control"
             >
-              <Form.Control type="text" placeholder="First Name" />
+              <Form.Control type="text" placeholder="First Name" className="custom-form-control" />
             </FloatingLabel>
           </Form.Group>
           <Form.Group as={Col} controlId="formGridLastName">
             <FloatingLabel
               controlId="floatingInput"
               label="Last Name"
-              className="mb-3"
+              className="mb-3 mb-3 custom-form-control"
             >
               <Form.Control type="text" placeholder="Last Name" />
             </FloatingLabel>
@@ -57,7 +58,7 @@ const CheckoutForm = () => {
           <FloatingLabel
             controlId="floatingInput"
             label="Address"
-            className="mb-3"
+            className="mb-3 mb-3 custom-form-control"
           >
             <Form.Control type="text" placeholder="Address" />
           </FloatingLabel>
@@ -66,7 +67,7 @@ const CheckoutForm = () => {
           <FloatingLabel
             controlId="floatingInput"
             label="Apartment, studio, or floor"
-            className="mb-3"
+            className="mb-3 mb-3 custom-form-control"
           >
             <Form.Control
               type="text"
@@ -79,14 +80,15 @@ const CheckoutForm = () => {
             <FloatingLabel
               controlId="floatingInput"
               label="City"
-              className="mb-3"
+              className="mb-3 mb-3 custom-form-control "
+              
             >
-              <Form.Control type="text" placeholder="City" />
+              <Form.Control  type="text" placeholder="City" className='input-sm' />
             </FloatingLabel>
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridState">
-            <FloatingLabel controlId="floatingSelect" label="select state">
+          <Form.Group as={Col} controlId="formGridState"className=' custom-form-control'>
+            <FloatingLabel className="custom-input custom-form-control " controlId="floatingSelect" label="select state">
               <Form.Select aria-label="select state">
                 <option value="1">AL</option>
                 <option value="2">AK</option>
@@ -148,7 +150,7 @@ const CheckoutForm = () => {
             <FloatingLabel
               controlId="floatingInput"
               label="Zip"
-              className="mb-3"
+              className="mb-3 custom-form-control"
             >
               <Form.Control type="text" placeholder="Zipcode" />
             </FloatingLabel>

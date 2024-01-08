@@ -4,31 +4,167 @@
   h4 {
     font-family: 'Cormorant Garamond';
   }
-}
 
-.form-check-input:checked[type='checkbox'],
-.form-check-input:checked {
-  background-color: #3c685d;
-  border-color: #3c685d;
-}
+  .form-check-input:checked[type='checkbox'],
+  .form-check-input:checked {
+    background-color: #3c685d;
+    border-color: #3c685d;
+  }
 
-.checkout-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .return-cart {
+  .checkout-footer {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    cursor: pointer;
+    justify-content: space-between;
 
-    .return-cart-text {
-      padding: 1px 0 0 2px;
+    .return-cart {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      cursor: pointer;
+
+      .return-cart-text {
+        padding: 1px 0 0 2px;
+      }
+    }
+
+    .shipping-btn {
+      margin-top: 7px;
     }
   }
 
-  .shipping-btn {
-    margin-top: 7px;
+  .custom-form-control {
+    font-size: 14px;
   }
+
+  .custom-input{
+    font-size: 12px !important;
+    // margin: 1em 0em !important;
+    width: 100% !important;
+  }
+  
+}
+  @media (max-width: 1400px) {
+    .checkout-page-container {
+      .checkout-form {
+        margin-left: 10px;
+      
+    .checkout-form-container {
+      margin-left: 40px;
+      
+    }
+  }
+}
+}
+  @media (max-width: 1200px) {
+    .checkout-page-container {
+    //   margin: -10px;
+      .checkout-form {
+        margin-left: 20px;
+      
+    .checkout-form-container {
+      margin-left: 20px;
+      .checkout-footer {
+        flex-direction: column-reverse;
+        
+        .shipping-btn {
+          Button {
+            font-size: 12px;
+          }
+        }     
+        .custom-form-control {
+          font-size: 2px !important;
+        }
+        
+        .return-cart {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+}
+  @media (max-width: 585px) {
+    // .checkout-form-container {
+    //   margin: -10px;
+      .checkout-footer {
+        flex-direction: column-reverse;
+        
+        .shipping-btn {
+          Button {
+            font-size: 12px;
+          }
+        }     
+        .custom-form-control {
+          font-size: 2px !important;
+        }
+        
+        .return-cart {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  // }
+
+
+@media (max-width: 460px) {
+  .checkout-footer {
+    flex-direction: column-reverse;
+    
+    .shipping-btn {
+      Button {
+        // font-size: .5rem !important;
+        // height: 35px !important;
+      }
+    }
+    
+    .custom-form-control {
+      font-size: 8px !important;
+    }
+    
+    .return-cart {
+      text-align: center;
+    }
+    .input {
+      height: auto;
+      width: auto;
+      overflow: hidden;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .checkout-form-container {
+      .checkout-form {
+      
+
+    .checkout-footer {
+      flex-direction: column-reverse;
+  
+      .shipping-btn {
+        Button {
+          font-size: 8px !important;
+        
+        }
+      }
+    }
+  
+      .return-cart {
+        text-align: center;
+      }
+  
+      .custom-form-control {
+        font-size: 4px !important;
+      }
+      .input {
+        height: auto;
+        width: auto;
+      }
+      .custom-form-control .form-select {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+}
 }

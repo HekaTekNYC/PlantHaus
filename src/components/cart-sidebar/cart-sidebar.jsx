@@ -38,17 +38,7 @@ const CartSidebar = () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [isCartOpen, setIsCartOpen]);
-  // useEffect(() => {
-  //   if (cartRef.current) {
-  //     setIsCartOpen(true)
-  //   }
 
-  //   return () => {
-  //     if (cartRef.current) {
-  //       setIsCartOpen(false)
-  //     }
-  //   }
-  // }, [isCartOpen, setIsCartOpen, cartRef])
 
 
   return (
