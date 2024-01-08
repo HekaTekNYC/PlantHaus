@@ -15,11 +15,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
 
     .return-cart {
       display: flex;
       flex-direction: row;
       align-items: start;
+      width: 100%;
       cursor: pointer;
 
       .return-cart-text {
@@ -29,142 +33,32 @@
 
     .shipping-btn {
       margin-top: 7px;
+      width: 100%;
     }
-  }
-
-  .custom-form-control {
-    font-size: 14px;
-  }
-
-  .custom-input{
-    font-size: 12px !important;
-    // margin: 1em 0em !important;
-    width: 100% !important;
-  }
-  
+  } 
 }
-  @media (max-width: 1400px) {
-    .checkout-page-container {
-      .checkout-form {
-        margin-left: 10px;
-      
-    .checkout-form-container {
-      margin-left: 40px;
-      
-    }
-  }
-}
-}
-  @media (max-width: 1200px) {
-    .checkout-page-container {
-    //   margin: -10px;
-      .checkout-form {
-        margin-left: 20px;
-      
-    .checkout-form-container {
-      margin-left: 20px;
-      .checkout-footer {
-        flex-direction: column-reverse;
-        
-        .shipping-btn {
-          Button {
-            font-size: 12px;
-          }
-        }     
-        .custom-form-control {
-          font-size: 2px !important;
-        }
-        
-        .return-cart {
-          margin-top: 10px;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-}
-  @media (max-width: 585px) {
-    // .checkout-form-container {
-    //   margin: -10px;
-      .checkout-footer {
-        flex-direction: column-reverse;
-        
-        .shipping-btn {
-          Button {
-            font-size: 12px;
-          }
-        }     
-        .custom-form-control {
-          font-size: 2px !important;
-        }
-        
-        .return-cart {
-          margin-top: 10px;
-          text-align: center;
-        }
-      }
-    }
-  // }
 
 
-@media (max-width: 460px) {
+
+// Media queries
+
+// Apply for screens up to 992px
+@media only screen and (max-width: 992px) {
   .checkout-footer {
-    flex-direction: column-reverse;
-    
-    .shipping-btn {
-      Button {
-        // font-size: .5rem !important;
-        // height: 35px !important;
-      }
-    }
-    
-    .custom-form-control {
-      font-size: 8px !important;
-    }
-    
+    flex-direction: column !important;
+   
     .return-cart {
-      text-align: center;
-    }
-    .input {
-      height: auto;
-      width: auto;
-      overflow: hidden;
-    }
-  }
-
-  @media (min-width: 400px) {
-    .checkout-form-container {
-      .checkout-form {
-      
-
-    .checkout-footer {
-      flex-direction: column-reverse;
-  
-      .shipping-btn {
-        Button {
-          font-size: 8px !important;
-        
-        }
-      }
-    }
-  
-      .return-cart {
-        text-align: center;
-      }
-  
-      .custom-form-control {
-        font-size: 4px !important;
-      }
-      .input {
-        height: auto;
-        width: auto;
-      }
-      .custom-form-control .form-select {
-        height: auto;
-        width: auto;
-      }
+      margin-left: 5px;
     }
   }
 }
+
+
+@media (max-width: 600px) {
+  .shipping-btn {
+    margin-top: 10px;
+  }
 }
+
+
+
