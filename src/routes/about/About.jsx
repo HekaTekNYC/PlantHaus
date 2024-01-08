@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.styles.scss'
+import plantBedroom from '../../assets/styled-plants-3.png'
 
 const About = () => {
   const aboutImage = 'https://i.ibb.co/fFMZvW9/About-Page.png'
@@ -7,7 +8,7 @@ const About = () => {
     <>
       <div className="about-container">
         <div className="about-img">
-          <img src={aboutImage} alt='about page' />
+          <img src={plantBedroom} alt="about page" />
         </div>
         <div className="about-info">
           <h1>About Plant Haus</h1>

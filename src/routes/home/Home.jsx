@@ -5,7 +5,9 @@ import DirectoriesPreview from '../directories-preview/directories-preview'
 import ReviewsPreview from '../reviews/reviews-preview'
 import Button from '../../components/button/main-button/Button'
 
+import ladderImage from '../../assets/styled-plants-2.png'
 import heroImage from '../../assets/styled-plants-5.png'
+
 import './home.styles.scss'
 
 const Home = () => {
@@ -22,6 +24,7 @@ const Home = () => {
         <div className="hero-container">
           <div className="hero-image-container">
             <img src={heroImage} alt="indoor plants" className="hero-img" />
+            {/* <img src={ladderImage} alt="indoor plants" className="ladder-img" /> */}
           </div>
           <div className="hero-text-container">
             <div className="header-text">The Plant Haus</div>
