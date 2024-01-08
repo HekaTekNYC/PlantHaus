@@ -13,6 +13,7 @@
   height: 800px;
 
   .hero-image-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +23,13 @@
     .hero-img {
       border-radius: 4px;
     }
+    // .ladder-img {
+    //   position: absolute;
+    //   top: -20;
+    //   right: 0;
+    //   width: 500px;
+    //   z-index: 2;
+    // }
   }
 
   .hero-text-container {

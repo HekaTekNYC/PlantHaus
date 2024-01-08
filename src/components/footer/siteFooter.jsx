@@ -67,7 +67,7 @@ const SiteFooter = () => {
                   Contact
                 </h6>
                 <p>
-                  <i className="fas fa-home mr-3 "></i> Brooklyn, NY 11, US
+                  <i className="fas fa-home mr-3 "></i> Brooklyn, NY 11233, US
                 </p>
                 <p>
                   <i className="fas fa-envelope mr-3"></i> hekatek@gmail.com
@@ -79,20 +79,12 @@ const SiteFooter = () => {
                   <i className="fas fa-print mr-3"></i> + 01 917 777 1826
                 </p>
               </div>
-              {/* <!-- Grid column --> */}
 
-              {/* <!-- Grid column --> */}
-              {/* <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ml-auto">
-                <h6 className="text-uppercase mb-4 font-weight-bold">
-                  Follow us
-                </h6> */}
-              {/* <div className="row justify-content-end"> */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
                 <h6 className="text-uppercase mb-4 font-weight-bold">
                   Follow us
                 </h6>
-                {/* </div> */}
-                {/* <!-- Facebook --> */}
+
                 <a
                   className="btn btn-primary btn-floating m-2 rounded-circle"
                   style={{
