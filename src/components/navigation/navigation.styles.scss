@@ -10,41 +10,70 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   z-index: 20;
+}
 
-  .logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 400px;
+.hamburger-icon {
+  display: none;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 400px;
 
-    .logo {
-      width: auto;
-      height: 55px;
-      margin: 10px 4px 10px 10px;
-    }
+  .logo {
+    width: auto;
+    height: 55px;
+    margin: 10px 4px 10px 10px;
+  }
 
-    .logo-text {
-      font-family: 'Cormorant Garamond';
-      //   text-shadow: rgba(81, 81, 78, 0.448) 1px 0 1px;
-      font-size: 2.2rem;
-      font-weight: 800;
-      width: 100%;
-    }
+  .logo-text {
+    font-family: 'Cormorant Garamond';
+    font-size: 2.2rem;
+    font-weight: 800;
+    width: 100%;
+  }
+}
+
+.right-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .nav-links {
+    padding: 10px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+.cart-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    padding: 0 40px;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
   }
 
   .nav-links-container {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    .nav-links {
-      padding: 10px 15px;
-      cursor: pointer;
-      white-space: nowrap;
-    }
+    display: none;
   }
 }

@@ -18,13 +18,16 @@
     align-items: center;
     width: 100%;
 
-
     .return-cart {
       display: flex;
       flex-direction: row;
-      align-items: start;
+
       width: 100%;
       cursor: pointer;
+
+      .cartarrow {
+        width: 10px;
+      }
 
       .return-cart-text {
         padding: 1px 0 0 2px;
@@ -35,30 +38,26 @@
       margin-top: 7px;
       width: 100%;
     }
-  } 
+  }
 }
-
-
 
 // Media queries
 
 // Apply for screens up to 992px
 @media only screen and (max-width: 992px) {
   .checkout-footer {
-    flex-direction: column !important;
-   
     .return-cart {
       margin-left: 5px;
     }
   }
 }
 
-
 @media (max-width: 600px) {
-  .shipping-btn {
-    margin-top: 10px;
+  .checkout-footer {
+    flex-direction: column !important;
+
+    .shipping-btn {
+      margin-top: 10px;
+    }
   }
 }
-
-
-

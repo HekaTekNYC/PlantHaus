@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { ReviewsProvider } from './contexts/reviews.context.jsx'
 import App from './App'
 import { UserProvider } from './contexts/user.context.jsx'
+import { NavbarProvider } from './contexts/navbar.context.jsx'
 import { CategoriesProvider } from './contexts/categories.context.jsx'
 import { CartProvider } from './contexts/cart.context.jsx'
 
@@ -13,15 +14,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <UserProvider>
-        <ReviewsProvider>
-          <CategoriesProvider>
-            <CartProvider>
-              <App />
-            </CartProvider>
-          </CategoriesProvider>
-        </ReviewsProvider>
-      </UserProvider>
+      <NavbarProvider>
+        <UserProvider>
+          <ReviewsProvider>
+            <CategoriesProvider>
+              <CartProvider>
+                <App />
+              </CartProvider>
+            </CategoriesProvider>
+          </ReviewsProvider>
+        </UserProvider>
+      </NavbarProvider>
     </BrowserRouter>
   </React.StrictMode>
 )

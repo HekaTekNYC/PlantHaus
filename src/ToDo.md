@@ -30,3 +30,4 @@
 27. Commitments section needs to be re-written and made responsive. √
 28. Home page needs adjustments for responsiveness. √
 29. Product page needs to be made responsive. √
+30. navlink whitesace and cart needs correction

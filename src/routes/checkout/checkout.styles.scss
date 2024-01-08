@@ -3,7 +3,6 @@
   flex-direction: row;
   padding: 60px 100px 20px;
   width: 100%;
-  
 }
 
 .checkout-form {
@@ -11,7 +10,7 @@
   width: 100%;
   height: 100%;
   order: 1;
-} 
+}
 
 .checkout-container {
   display: flex;
@@ -64,7 +63,7 @@
     margin: 20px 0;
 
     .discount-input {
-     width: 200px;
+      width: 200px;
     }
 
     .form-select:focus,
@@ -120,7 +119,6 @@
     align-items: center;
     width: 100%;
 
-
     .shipping-text {
       font-style: italic;
       font-size: 0.9rem;
@@ -149,14 +147,12 @@
   }
 }
 
-
 // Apply for screens up to 1400px
 @media only screen and (max-width: 1400px) {
-
-   .checkout-page-container {
+  .checkout-page-container {
     padding: 60px 40px 0px;
- 
-    .checkout-items{
+
+    .checkout-items {
       width: 100%;
     }
   }
@@ -166,8 +162,7 @@
 @media only screen and (max-width: 1200px) {
   .checkout-page-container {
     padding: 60px 40px 20px;
-   }
-   
+  }
 }
 
 // Apply for screens up to 992px
@@ -179,52 +174,24 @@
 
   .checkout-form {
     padding: 40px 40px 20px;
-
   }
 
   .checkout-container {
     padding: 40px 40px 20px;
     height: auto;
   }
-  
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .checkout-page-container {
     flex-direction: column;
   }
 
-  // .checkout-form {
-  //   padding: 40px 40px 20px;
-
-  // }
-
   .checkout-container {
-    // padding: 40px 40px 20px;
-    // height: auto;
-
     .discount-row {
       .discount-input {
         width: 150px;
       }
     }
-
-    
   }
-   
-
-  
-
 }
-
-
-
-
-
-
-
-
-
-
