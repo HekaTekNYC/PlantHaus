@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect, useRef } from 'react'
 
 import { CartContext } from '../../contexts/cart.context'
 
@@ -60,6 +60,13 @@ const Product = ({ product }) => {
 
     setSelectedImage(fullSizeImage)
   }
+  const buttonRefs = useRef({})
+
+  useEffect(() => {
+    if (buttonRefs.current && Object.keys(buttonRefs.current).length > 0) {
+      buttonRefs.current[Object.keys(buttonRefs.current)[0]].focus()
+    }
+  }, [])
 
   useEffect(() => {}, [selectedImage])
 
@@ -97,6 +104,8 @@ const Product = ({ product }) => {
               Object.entries(price).map(([size, value]) => (
                 <button
                   className="product-btn"
+                  key={size}
+                  ref={(el) => (buttonRefs.current[size] = el)}
                   onClick={() => selectOptionHandler(size, value)}
                 >
                   {shopTitle(size)}
@@ -158,3 +167,8 @@ const Product = ({ product }) => {
 }
 
 export default Product
+// <button
+//   className="product-btn"
+//   ref={addProductToCartButtonRef}
+//   onClick={() => selectOptionHandler(size, value)}
+// >

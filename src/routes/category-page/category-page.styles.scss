@@ -4,6 +4,7 @@
   margin-bottom: 15px;
   font-weight: 600;
   font-family: 'Cormorant Garamond';
+  padding-top: 50px;
 }
 
 .category-container {
@@ -11,8 +12,8 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
   row-gap: 20px;
-  width: 100%; /* Ensure full width on all screens */
-  jusitfy-content: center;
+  width: 100%;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -32,7 +33,7 @@
 @media screen and (max-width: 600px) {
   .category-container {
     grid-template-columns: 1fr;
-    column-gap: 15px; /* Adjust column gap for smaller screens */
-    row-gap: 15px; /* Adjust row gap for smaller screens */
+    column-gap: 15px;
+    row-gap: 15px;
   }
 }
