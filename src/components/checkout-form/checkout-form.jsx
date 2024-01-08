@@ -24,18 +24,30 @@ const CheckoutForm = () => {
           controlId="floatingInput"
           label="Email address"
           className="mb-3 "
-          
         >
-          <Form.Control type="email" placeholder="name@example.com" className="form-control"/>
+          <Form.Control
+            type="email"
+            placeholder="name@example.com"
+            className="form-control"
+          />
         </FloatingLabel>
         <Form.Group className="mb-3 " id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Email me with news and offers" className=""/>
+          <Form.Check
+            type="checkbox"
+            label="Email me with news and offers"
+            className=""
+          />
         </Form.Group>
         <div className="styled-line"></div>
 
         <h4 className="mt-5 mb-3">Delivery</h4>
         <Row>
-          <Form.Group size="sm" as={Col} controlId="formGridFirstName" className="">
+          <Form.Group
+            size="sm"
+            as={Col}
+            controlId="formGridFirstName"
+            className=""
+          >
             <FloatingLabel
               controlId="floatingInput"
               label="First Name"
@@ -81,14 +93,21 @@ const CheckoutForm = () => {
               controlId="floatingInput"
               label="City"
               className="mb-3 mb-3  "
-              
             >
-              <Form.Control  type="text" placeholder="City" className='input-sm' />
+              <Form.Control
+                type="text"
+                placeholder="City"
+                className="input-sm"
+              />
             </FloatingLabel>
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridState"className=' '>
-            <FloatingLabel className="custom-input  " controlId="floatingSelect" label="select state">
+          <Form.Group as={Col} controlId="formGridState" className=" ">
+            <FloatingLabel
+              className="custom-input  "
+              controlId="floatingSelect"
+              label="select state"
+            >
               <Form.Select aria-label="select state">
                 <option value="1">AL</option>
                 <option value="2">AK</option>
@@ -158,8 +177,8 @@ const CheckoutForm = () => {
         </Row>
         <div className="checkout-footer">
           <div onClick={toggleCartOpen} className="return-cart">
-            <div className="cartarrow">
-              <IoIosArrowBack />
+            <div>
+              <IoIosArrowBack className="cartarrow" />
             </div>
             <div className="return-cart-text" onClick={toggleCartOpen}>
               Return To Cart

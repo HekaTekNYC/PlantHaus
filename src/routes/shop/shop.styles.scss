@@ -2,6 +2,7 @@
   padding: 80px 100px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 // Media Queries
@@ -21,6 +22,7 @@
 @media only screen and (max-width: 1200px) {
   .shop-container {
     padding: 80px 60px 20px;
+    justify-content: center;
   }
 }
 
