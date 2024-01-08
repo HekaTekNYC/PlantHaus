@@ -53,6 +53,13 @@
     padding: 10px 15px;
     cursor: pointer;
     white-space: nowrap;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ce8861;
+      font-weight: 500;
+    }
   }
 }
 

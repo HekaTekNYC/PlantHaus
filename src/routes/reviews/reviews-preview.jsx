@@ -1,10 +1,8 @@
 import { useContext } from 'react'
-
+import Reviews from '../../components/reviews/reviews'
 import { ReviewsContext } from '../../contexts/reviews.context'
 
-import ReviewSlider from '../../components/review-slider/review-slider'
-
-const CategoriesPreview = () => {
+const ReviewsPreview = () => {
   const { reviewsMap } = useContext(ReviewsContext)
 
   return (
@@ -13,10 +11,10 @@ const CategoriesPreview = () => {
 
       {Object.keys(reviewsMap).map((title) => {
         const reviews = reviewsMap[title]
-        return <ReviewSlider key={title} title={title} reviews={reviews} />
+        return <Reviews key={title} title={title} reviews={reviews} />
       })}
     </>
   )
 }
 
-export default CategoriesPreview
+export default ReviewsPreview

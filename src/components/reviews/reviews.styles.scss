@@ -1,19 +1,20 @@
-.directory-preview-container {
+.reviews-preview-container {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
   height: 700px;
   width: 100%;
 
-  .directory-title {
+  .reviews-header {
     padding-bottom: 20px;
     font-family: 'Cormorant Garamond';
     cursor: pointer;
     font-size: 2.2rem;
     font-weight: 600;
+    text-align: center;
   }
 
-  .directory-preview {
+  .reviews-preview {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -27,54 +28,55 @@
 }
 
 // Media Queries
-
-@media only screen and (max-width: 1400px) {
-}
-@media only screen and (min-width: 1201px) and (max-width: 1330px) {
-  .directory-preview-container {
+@media only screen and (min-width: 1401px) {
+  .reviews-preview-container {
     width: 100%;
-    .directory-preview {
+  }
+}
+
+@media only screen and (min-width: 1202px) and (max-width: 1400px) {
+  .reviews-preview-container {
+    height: auto;
+    width: 100%;
+    .reviews-preview {
       > :last-child {
         display: none;
       }
     }
   }
 }
+
 // Apply for screens up to 1200px
 @media only screen and (max-width: 1200px) {
-  .directory-preview-container {
-    height: auto;
-
+  .reviews-preview-container {
+    height: 1000px;
     h2 {
       padding-bottom: 10px;
     }
 
-    .directory-preview {
+    .reviews-preview {
       width: 100%;
     }
   }
 }
 
-@media only screen and (max-width: 1054px) {
-  .directory-preview-container {
-    height: auto;
+@media only screen and (max-width: 1079px) {
+  .reviews-preview-container {
+    height: 1000px;
 
-    .directory-preview {
+    .reviews-preview {
       width: 100%;
     }
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .directory-preview-container {
+  .reviews-preview-container {
     height: auto;
     padding: 20px;
     margin: 30px 0;
 
-    .directory-title {
-      text-align: center;
-    }
-    .directory-preview {
+    .reviews-preview {
       width: 100%;
     }
   }
@@ -82,24 +84,24 @@
 
 // Apply for screens up to 768px
 @media only screen and (max-width: 779px) {
-  .directory-preview-container {
-    width: 100%;
-    align-items: center;
+  .reviews-preview-container {
+    height: auto;
 
-    .directory-preview {
+    .reviews-preview {
       width: 100%;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
   }
 }
 
 // Apply for screens up to 600px
 @media only screen and (max-width: 600px) {
-  .directory-preview-container {
+  .reviews-preview-container {
     height: auto;
 
-    .directory-preview {
+    .reviews-preview {
       width: 100%;
     }
   }

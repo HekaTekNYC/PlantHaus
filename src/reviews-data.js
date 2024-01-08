@@ -15,7 +15,7 @@ const REVIEWS_DATA = [
         id: 2,
         imageUrl: 'https://i.ibb.co/fDtVdfg/Jessica-Jones.png',
         rating: '',
-        name: 'Jessica Jones',
+        user: 'Jessica Jones',
         location: 'South Portland, Maine',
         review:
           "Living in South Portland, where winters can be long and harsh, I appreciate The Plant Haus for offering a variety of hardy plants that can thrive in my climate. The pet-friendly selection is fantastic too! The delivery was prompt, and the plants arrive in excellent condition. I'm now a loyal customer!",
@@ -31,7 +31,7 @@ const REVIEWS_DATA = [
       {
         id: 4,
         imageUrl: 'https://i.ibb.co/KGYxYLz/Wade-Wilson.png',
-        name: 'Wade Wilson',
+        user: 'Wade Wilson',
         location: 'Austin, Texas',
         review:
           "The Plant Haus has a great support team. They've helped me navigate the unique care requirements for each plant. I deducted 1/2 a star because I'd like to see even more options fo rthose of us in warmer regions. Overall, highly reccommend.",
