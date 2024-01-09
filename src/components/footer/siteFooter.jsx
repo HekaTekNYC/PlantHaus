@@ -13,7 +13,7 @@ const SiteFooter = () => {
         style={{ backgroundColor: '#ACC3BE' }}
       >
         {/* <!-- Grid container --> */}
-        <div className="container p-4 pb-0">
+        <div className="container pt-2 pb-0">
           {/* <!-- Section: Links --> */}
           <section className="">
             {/* <!--Grid row--> */}
@@ -21,7 +21,7 @@ const SiteFooter = () => {
               {/* <!-- Grid column --> */}
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">
-                  Plant Hause
+                  Plant Haus
                 </h6>
                 <p>
                   Your friendly plant store. Bringing the beauty of nature into
