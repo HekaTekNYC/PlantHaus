@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
@@ -12,14 +12,14 @@ import './home.styles.scss'
 
 const Home = () => {
   const navigate = useNavigate()
-const location = useLocation();
+  const location = useLocation()
   const handleCategoryClick = () => {
     navigate(`/shop/`)
   }
 
   useEffect(() => {
-    scrollToTop();
-  }, [location]);
+    scrollToTop()
+  }, [location])
   return (
     <>
       {/* Hero section */}
@@ -27,7 +27,6 @@ const location = useLocation();
         <div className="hero-container">
           <div className="hero-image-container">
             <img src={heroImage} alt="indoor plants" className="hero-img" />
-            {/* <img src={ladderImage} alt="indoor plants" className="ladder-img" /> */}
           </div>
           <div className="hero-text-container">
             <div className="header-text">The Plant Haus</div>
@@ -40,8 +39,6 @@ const location = useLocation();
             <Button onClick={() => handleCategoryClick('category')}>
               Shop Now
             </Button>
-
-            {/* <Button>Shop Now</Button> */}
           </div>
         </div>
 
