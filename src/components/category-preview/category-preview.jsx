@@ -9,7 +9,9 @@ const CategoryPreview = ({ title, products }) => {
   console.log('products in category preview', products)
 
   return (
-    <div className="category-preview-container">
+    <>
+  
+          <div className="category-preview-container">
       <h2>
         <Link className="title" to={`/shop/${title}`}>
           {shopTitle(title)}
@@ -23,6 +25,7 @@ const CategoryPreview = ({ title, products }) => {
           ))}
       </div>
     </div>
+    </>
   )
 }
 
