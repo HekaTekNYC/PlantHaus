@@ -12,7 +12,7 @@ const Shop = () => {
 
   return (
     <div className="shop-container">
-\      {isShopPage && (
+     {isShopPage && (
         <div className="mobile-buttons">
           <Link to="/shop/best-sellers" className="mobile-button">
             Best Sellers
