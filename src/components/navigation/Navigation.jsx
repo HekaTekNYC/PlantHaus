@@ -29,17 +29,20 @@ const Navigation = () => {
     <>
       <div className="navigation">
         <Link className="logo-container" to="/">
-          <img className="logo" src={Logo} alt="Plant Haus Logo" />
-          <div className="logo-text"></div>
+          {/* <img className="logo" src={Logo} alt="Plant Haus Logo" /> */}
+
+          <div className="logo-short-text">PH</div>
+          <div className="logo-text">Plant Haus</div>
         </Link>
 
-        {/* Hamburger for mobile */}
-        <div className="hamburger-icon">
-          <Burger toggleMobileNav={toggleMobileNav} />
-        </div>
-
-        {/* Desktop Nav Links */}
         <div className="right-menu">
+          {/* Hamburger for mobile */}
+          <div className="hamburger-icon">
+            <Burger toggleMobileNav={toggleMobileNav} />
+          </div>
+
+          {/* Desktop Nav Links */}
+
           <div className="nav-links-container">
             <Link className="nav-links" to="/shop">
               SHOP
