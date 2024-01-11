@@ -13,9 +13,9 @@ const FeaturePreview = ({ category }) => {
         .filter((title) => title === category)
         .map((title) => {
           const products = categoriesMap[title]
-          return (
-            <FeatureProduct key={title} title={title} products={products} />
-          )
+          const product = products[0]
+          console.log('product in feature preview', product)
+          return <FeatureProduct key={title} title={title} product={product} />
         })}
     </>
   )

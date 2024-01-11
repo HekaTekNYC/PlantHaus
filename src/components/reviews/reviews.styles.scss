@@ -19,7 +19,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    gap: 10px;
+    // width: 100%;
     transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
@@ -31,6 +32,9 @@
 @media only screen and (min-width: 1401px) {
   .reviews-preview-container {
     width: 100%;
+    .reviews-preview {
+      flex: 1 1 200px;
+    }
   }
 }
 

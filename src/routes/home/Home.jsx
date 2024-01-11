@@ -2,10 +2,10 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
+import FeaturePreview from '../feature-preview/feature-preview'
 import ReviewsPreview from '../reviews/reviews-preview'
 import Button from '../../components/button/main-button/Button'
 
-import ladderImage from '../../assets/styled-plants-2.png'
 import heroImage from '../../assets/styled-plants-5.png'
 
 import './home.styles.scss'
@@ -51,7 +51,9 @@ const Home = () => {
           <DirectoriesPreview category="pet-friendly" />
         </div>
         {/* Feature  */}
-        <div className="feature-container"></div>
+        <div className="feature-container">
+          <FeaturePreview category="all-products" />
+        </div>
 
         {/* <Reviews /> */}
         <div className="reviews-container">
