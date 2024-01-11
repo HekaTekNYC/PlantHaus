@@ -17,3 +17,13 @@
     cursor: pointer;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .sign-up-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
