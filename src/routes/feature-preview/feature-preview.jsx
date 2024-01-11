@@ -13,7 +13,7 @@ const FeaturePreview = ({ category }) => {
         .filter((title) => title === category)
         .map((title) => {
           const products = categoriesMap[title]
-          const product = products[0]
+          const product = products[9]
           console.log('product in feature preview', product)
           return <FeatureProduct key={title} title={title} product={product} />
         })}

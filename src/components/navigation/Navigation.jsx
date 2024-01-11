@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 
 import CartIcon from '../../components/cart-icon/cart-icon'
@@ -10,7 +10,6 @@ import { UserContext } from '../../contexts/user.context'
 import { CartContext } from '../../contexts/cart.context'
 import { NavbarContext } from '../../contexts/navbar.context'
 
-import Logo from '../../assets/plant-haus-new.png'
 import { signOutUser } from '../../utils/firebase/firebase.utils'
 
 import './navigation.styles.scss'
@@ -29,8 +28,6 @@ const Navigation = () => {
     <>
       <div className="navigation">
         <Link className="logo-container" to="/">
-          {/* <img className="logo" src={Logo} alt="Plant Haus Logo" /> */}
-
           <div className="logo-short-text">PH</div>
           <div className="logo-text">Plant Haus</div>
         </Link>
