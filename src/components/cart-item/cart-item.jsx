@@ -8,7 +8,7 @@ import './cart-item.styles.scss'
 
 const CartItem = ({ cartItem }) => {
   const { name, quantity, thumbnailUrl, price, size } = cartItem
-  console.log('cart item insdie cart item', cartItem)
+  console.log('cart item inside cart item', cartItem)
 
   const { clearAllItemsFromCart, addItemToCart, removeItemFromCart } =
     useContext(CartContext)

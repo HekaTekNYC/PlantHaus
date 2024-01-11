@@ -5,20 +5,13 @@ import '@fortawesome/fontawesome-free/css/all.css'
 const SiteFooter = () => {
   return (
     <div>
-      {/* <!-- Remove the container if you want to extend the Footer to full width. --> */}
-      {/* <div className="container my-5"> */}
-      {/* <!-- Footer --> */}
       <footer
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: '#ACC3BE' }}
       >
-        {/* <!-- Grid container --> */}
-        <div className="container pt-2 pb-0">
-          {/* <!-- Section: Links --> */}
-          <section className="">
-            {/* <!--Grid row--> */}
+        <div className="px-5 mx-2 py-3">
+          <section>
             <div className="row">
-              {/* <!-- Grid column --> */}
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">
                   Plant Haus

@@ -25,7 +25,7 @@ const Product = ({ product }) => {
   const [selectedPrice, setSelectedPrice] = useState(Object.values(price)[0])
 
   const { addItemToCart } = useContext(CartContext)
-  // const addProductToCart = () => addItemToCart(product, selectedSize)
+  console.log('selectedPrice in product', selectedPrice)
 
   const addProductToCart = () => {
     if (selectedSize) {
@@ -39,7 +39,6 @@ const Product = ({ product }) => {
   const selectOptionHandler = (size, price, index) => {
     setSelectedSize(size)
     setSelectedPrice(price)
-    // setActiveIndex(index)
   }
 
   const handleThumbnailClick = (clickedThumbnail) => {
@@ -167,8 +166,3 @@ const Product = ({ product }) => {
 }
 
 export default Product
-// <button
-//   className="product-btn"
-//   ref={addProductToCartButtonRef}
-//   onClick={() => selectOptionHandler(size, value)}
-// >
