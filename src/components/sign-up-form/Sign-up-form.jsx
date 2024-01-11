@@ -48,6 +48,7 @@ const SignUpForm = ({ onLogin }) => {
       resetFormFields()
       onLogin()
       navigate('/')
+      window.scrollTo(0, 0);
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         alert('Cannot create user, email already in use')
