@@ -8,24 +8,17 @@ import { CategoriesContext } from '../../contexts/categories.context'
 import './category-page.styles.scss'
 
 const CategoryPage = () => {
-  //use params gives us an object but we are goign to destructure off category only
   const { category } = useParams()
 
-  // call categoriesMap to get the associated category
   const { categoriesMap } = useContext(CategoriesContext)
-  const categoryTitle = categoriesMap
-  console.log('categoryTitle', categoryTitle)
 
-  //grab the products from the category chosen by utilizing useState
   const [products, setProducts] = useState(categoriesMap[category] || [])
-  // const products = categoriesMap[category] || []
 
-  //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    setProducts(categoriesMap[category] || []);
-    scrollToTop();
-  }, [category, categoriesMap]);
-  
+    setProducts(categoriesMap[category] || [])
+    scrollToTop()
+  }, [category, categoriesMap])
+
   return (
     <>
       <div>

@@ -13,7 +13,6 @@ const Commitments = () => {
       icon: <LiaShippingFastSolid size={40} />,
       header: 'Unbeatable Quality',
       info: 'Directly sourced from top-rated growers, our online plant shop offers an unparalleled selection of the finest quality plants at the most competitive prices.',
-      // imageUrl: "https://svgshare.com/i/zzu.svg",
       svg: <Blob2 />,
     },
     {
@@ -21,7 +20,6 @@ const Commitments = () => {
       icon: <PiPottedPlant size={40} />,
       header: 'Doorstep Delivery',
       info: "Experience the convenience of having your chosen plants delivered directly to your door when you shop with us online. Should your satisfaction ever waver, just let us know – we're committed to ensuring you're 100% happy with your purchase!",
-      // imageUrl: "https://svgshare.com/i/101V.svg",
       svg: <Blob1 />,
     },
     {
@@ -34,7 +32,6 @@ const Commitments = () => {
   ]
   return (
     <>
-      {/* Three Points of supprt section */}
       <div className="three-points-container">
         <div className="three-header">Our Commitment</div>
         <div className="three-points-row">

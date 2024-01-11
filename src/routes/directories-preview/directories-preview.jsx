@@ -9,8 +9,6 @@ const DirectoriesPreview = ({ category }) => {
 
   return (
     <>
-      {/* this is pulling out our subcategories (New Arrival, Pet Friendly, New Plant Parents) */}
-
       {Object.keys(categoriesMap)
         .filter((title) => title === category)
         .map((title) => {
