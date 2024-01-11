@@ -1,9 +1,7 @@
 .review-card-container {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  flex: 1 0 300px;
-  // max-width: 300px;
+  flex: 1 1 0;
+  max-width: 400px;
   height: 425px;
   margin: 10px;
 }
@@ -59,66 +57,41 @@
   }
 }
 
-// Apply for screens up to 1600px
-// @media only screen and (min-width: 1601px) {
-//   .review-card-container {
-//     width: 100%;
-//   }
-// }
-@media only screen and (max-width: 1600px) {
-  // .review-card-container {
-  //   width: 310px;
-  // }
-}
+// Media Queries
 
-// Apply for screens up to 1400px
-@media only screen and (max-width: 1445px) {
-  // .review-card-container {
-  //   width: 300px;
-  // }
-}
-
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1174px) {
   .review-card-container {
-    width: 400px;
-    height: 400px;
-    .review-card {
-      width: 100%;
-    }
+    height: 350px;
+    max-width: 425px;
   }
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 1100px) {
   .review-card-container {
-    width: 350px;
-
-    .review-card {
-      width: 100%;
-    }
+    flex: 1 1 auto;
+    max-width: 375px;
   }
 }
-@media only screen and (max-width: 859px) {
+
+@media only screen and (max-width: 1000px) {
   .review-card-container {
-    width: 100%;
+    flex: 1 1 auto;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 879px) {
+  .review-card-container {
+    flex: 1 1 auto;
+    max-width: none;
     height: auto;
-    .review-card {
-      width: 100%;
-    }
   }
 }
 
-// // Apply for screens up to 600px
-// @media only screen and (max-width: 600px) {
-//   .product-card-container {
-//     min-width: 200px;
-//     .prodcut-card {
-//       width: 100px;
-//       height: 300px;
-
-//       .product-card-img {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 600px) {
+  .review-card-container {
+    flex: 1 1 auto;
+    max-width: none;
+    height: auto;
+  }
+}
