@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { UserContext } from '../../../contexts/user.context'
 import { signOutUser } from '../../../utils/firebase/firebase.utils'
 import { NavbarContext } from '../../../contexts/navbar.context'
+import { scrollToTop } from '../../../utils/scrollToTop'
 // import Navigation from '../Navigation'
 import './dropdown-nav.styles.scss'
 
@@ -14,6 +15,7 @@ const DropdownNav = () => {
   const handleLinkClick = (path) => {
     toggleMobileNav()
     navigate(path)
+    scrollToTop()  
   }
 
   return (

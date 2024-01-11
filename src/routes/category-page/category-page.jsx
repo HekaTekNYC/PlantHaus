@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductCard from '../../components/product-card/product-card'
 import shopTitle from '../../utils/shopTitle.utils'
-
+import { scrollToTop } from '../../utils/scrollToTop'
 import { CategoriesContext } from '../../contexts/categories.context'
 
 import './category-page.styles.scss'
@@ -22,9 +22,10 @@ const CategoryPage = () => {
 
   //useeffect whenever cateogry or categoriesmap changes
   useEffect(() => {
-    setProducts(categoriesMap[category] || [])
-  }, [category, categoriesMap])
-
+    setProducts(categoriesMap[category] || []);
+    scrollToTop();
+  }, [category, categoriesMap]);
+  
   return (
     <>
       <div>

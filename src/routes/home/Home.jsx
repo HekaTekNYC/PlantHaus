@@ -1,22 +1,25 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, {useEffect} from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import FeaturePreview from '../feature-preview/feature-preview'
 import ReviewsPreview from '../reviews/reviews-preview'
 import Button from '../../components/button/main-button/Button'
-
+import { scrollToTop } from '../../utils/scrollToTop'
 import heroImage from '../../assets/styled-plants-5.png'
 
 import './home.styles.scss'
 
 const Home = () => {
   const navigate = useNavigate()
-
+const location = useLocation();
   const handleCategoryClick = () => {
     navigate(`/shop/`)
   }
 
+  useEffect(() => {
+    scrollToTop();
+  }, [location]);
   return (
     <>
       {/* Hero section */}
