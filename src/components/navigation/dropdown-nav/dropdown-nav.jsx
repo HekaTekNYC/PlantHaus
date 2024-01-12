@@ -21,7 +21,7 @@ const DropdownNav = () => {
   return (
     <>
       <div className="dropdown-container">
-        <Link className="nav-link" to="/shop" onClick={() => toggleMobileNav()}>
+        <Link className="nav-link" to="/shop/" onClick={() => toggleMobileNav()}>
           SHOP
         </Link>
         <Link

@@ -19,7 +19,7 @@ const SiteFooter = () => {
                 <p>
                   Your friendly plant store. Bringing the beauty of nature into
                   your home with a curated collection of houseplants. Discover a
-                  greener, healthier lifestyle with Plant Hause.
+                  greener, healthier lifestyle with Plant Haus.
                 </p>
               </div>
 
