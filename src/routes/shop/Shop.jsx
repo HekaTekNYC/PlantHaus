@@ -8,7 +8,7 @@ import './shop.styles.scss';
 const Shop = () => {
   const location = useLocation();
 
-  const isShopPage = location.pathname === '/shop/';
+  const isShopPage = location.pathname.startsWith('/shop') || location.pathname === '/shop/';
 
   return (
     <div className="shop-container">

@@ -33,6 +33,16 @@
     -webkit-transition: all 0.5s linear;
   }
 }
+//Apply for screens up to 1401
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  .category-preview-container {
+    .preview {
+      > :last-child {
+        display: none;
+      }
+    }
+  }
+}
 
 // Apply for screens up to 1200px
 @media only screen and (max-width: 1200px) {
@@ -49,10 +59,28 @@
     }
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .category-preview-container {
+    height: auto;
+    h2 {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .preview {
+      justify-content: space-between;
+      
+      > :last-child {
+        display: block;
+      }
+    }
+  }
+}
+
 
 @media only screen and (min-width: 1059px) and (max-width: 1400px) {
   .category-preview-container {
     .preview {
+      justify-content: space-between;
       > :last-child {
         display: none;
       }
