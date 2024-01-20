@@ -19,7 +19,7 @@
   font-size: 1.3rem;
   padding: 10px;
   color: #3c514e;
-
+  white-space: nowrap;
 }
 
 .hamburger-icon {
@@ -124,6 +124,10 @@
 @media screen and (max-width: 550px) {
   .navigation {
     padding: 0 40px;
+
+    .nav-store-name {
+      font-size: 1rem;
+    }
   }
 
   .hamburger-icon {
