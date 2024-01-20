@@ -147,12 +147,14 @@
           align-items: center;
           justify-content: center;
           text-align: center;
-          color: white;
+          color: #fff;
           opacity: 1;
 
           h3 {
             margin: 0;
             font-size: 2.2rem;
+            color: #fff;
+            z-index: 3;
           }
         }
       }
