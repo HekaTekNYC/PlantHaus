@@ -25,7 +25,9 @@ const CategoryPreview = ({ title, products }) => {
               <div className="product-wrapper" key={product.id}>
                 <ProductCard product={product} />
                 <div className="category-overlay">
-                  <h3>{shopTitle(title)}</h3>
+                  <Link className="title" to={`/shop/${title}`}>
+                    <h3>{shopTitle(title)}</h3>
+                  </Link>
                 </div>
               </div>
             ))}
