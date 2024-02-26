@@ -11,13 +11,14 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 html {
+  overflow: scroll;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 *,
