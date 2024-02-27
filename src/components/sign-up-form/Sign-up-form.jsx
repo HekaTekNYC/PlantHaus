@@ -48,6 +48,7 @@ const SignUpForm = ({ onLogin }) => {
       resetFormFields()
       onLogin()
       navigate('/')
+      window.scrollTo(0, 0);
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         alert('Cannot create user, email already in use')
@@ -66,6 +67,7 @@ const SignUpForm = ({ onLogin }) => {
     setType((prevType) => (prevType === 'password' ? 'text' : 'password'))
   }
   return (
+    <>
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>
       <span>Create Account</span>
@@ -114,12 +116,15 @@ const SignUpForm = ({ onLogin }) => {
             <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
           </div>
         </div>
-
-        <Button buttonType="inverted" type="submit">
-          Sign Up
-        </Button>
+        <div className='sign-up-btn'>
+          <Button buttonType="inverted" type="submit">
+            Sign Up
+          </Button>
+        </div>
+       
       </form>
     </div>
+    </>
   )
 }
 

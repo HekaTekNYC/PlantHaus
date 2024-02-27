@@ -2,9 +2,9 @@ import { useContext } from 'react'
 
 import { CategoriesContext } from '../../contexts/categories.context'
 
-import DirectoryPreview from '../../components/directory-preview/directory-preview'
+import FeatureProduct from '../../components/feature/feature-product'
 
-const DirectoriesPreview = ({ category }) => {
+const FeaturePreview = ({ category }) => {
   const { categoriesMap } = useContext(CategoriesContext)
 
   return (
@@ -13,12 +13,12 @@ const DirectoriesPreview = ({ category }) => {
         .filter((title) => title === category)
         .map((title) => {
           const products = categoriesMap[title]
-          return (
-            <DirectoryPreview key={title} title={title} products={products} />
-          )
+          const product = products[9]
+          console.log('product in feature preview', product)
+          return <FeatureProduct key={title} title={title} product={product} />
         })}
     </>
   )
 }
 
-export default DirectoriesPreview
+export default FeaturePreview

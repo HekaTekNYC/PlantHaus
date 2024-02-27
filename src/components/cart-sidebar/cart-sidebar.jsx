@@ -6,7 +6,7 @@ import { TfiClose } from 'react-icons/tfi'
 
 import Button from '../button/main-button/Button'
 import CartItem from '../cart-item/cart-item'
-
+import { scrollToTop } from '../../utils/scrollToTop'
 import './cart-sidebar.styles.scss'
 
 const CartSidebar = () => {
@@ -14,14 +14,15 @@ const CartSidebar = () => {
     useContext(CartContext)
 
   const toggleCartClosed = () => setIsCartOpen(!isCartOpen)
+
   const navigate = useNavigate()
 
-  const goToCheckoutHandler = () => {
+  const goToCheckoutHandler = () => {   
     navigate('/checkout')
+    scrollToTop()
   }
-  const cartRef = useRef(null)
 
-  
+  const cartRef = useRef(null) 
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -38,8 +39,6 @@ const CartSidebar = () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [isCartOpen, setIsCartOpen]);
-
-
 
   return (
     <div

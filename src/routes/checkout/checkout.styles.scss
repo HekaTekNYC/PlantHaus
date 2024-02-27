@@ -147,7 +147,7 @@
   }
 }
 
-// Apply for screens up to 1400px
+// Media Queries
 @media only screen and (max-width: 1400px) {
   .checkout-page-container {
     padding: 60px 40px 0px;
@@ -158,14 +158,12 @@
   }
 }
 
-// Apply for screens up to 1200px
 @media only screen and (max-width: 1200px) {
   .checkout-page-container {
     padding: 60px 40px 20px;
   }
 }
 
-// Apply for screens up to 992px
 @media only screen and (max-width: 992px) {
   .checkout-page-container {
     flex-direction: column;

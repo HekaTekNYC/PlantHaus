@@ -19,11 +19,10 @@
     padding-left: 10px;
   }
 }
-// Apply for screens up to 992px
+// Media Queries
 @media only screen and (max-width: 992px) {
 }
 
-// Apply for screens up to 768px
 @media only screen and (max-width: 768px) {
   .authentication-container {
     padding: 80px 40px 20px;
@@ -33,11 +32,13 @@
 
     .sign-in-form {
       width: 100%;
+      padding: 0;
       margin-bottom: 60px;
     }
 
     .sign-up-form {
       width: 100%;
+      padding: 10px 0 0;
     }
   }
 }

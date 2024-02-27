@@ -7,8 +7,6 @@ const ReviewsPreview = () => {
 
   return (
     <>
-      {/* this is pulling out our subcategories (New Arrival, Pet Friendly, New Plant Parents) */}
-
       {Object.keys(reviewsMap).map((title) => {
         const reviews = reviewsMap[title]
         return <Reviews key={title} title={title} reviews={reviews} />

@@ -16,13 +16,4 @@ const CartIcon = () => {
 }
 
 export default CartIcon
-//close with 'x' button
-//create button
-//create the onclick handler
-//add onClick to the btn component
 
-//I want to target the toggle(!isCartOpen)
-
-//close on reload
-
-//close when clicking off of the shopping cart component
