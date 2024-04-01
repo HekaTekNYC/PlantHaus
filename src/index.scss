@@ -11,13 +11,15 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 html {
+  overflow: scroll;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }
 
 *,
@@ -48,11 +50,23 @@ ul {
   padding-left: 0;
 }
 
-// Styled Line
+// Styled Lines
 
 .styled-line {
   width: 100%;
   margin: 20px 0;
+  height: 0.06rem;
+  background-image: linear-gradient(
+    90deg,
+    rgb(210, 210, 210) 6%,
+    rgb(185, 185, 185) 50%,
+    rgb(210, 210, 210) 93%
+  );
+}
+
+.styled-line-under {
+  width: 100%;
+  margin: 1px 0 2px;
   height: 0.06rem;
   background-image: linear-gradient(
     90deg,
