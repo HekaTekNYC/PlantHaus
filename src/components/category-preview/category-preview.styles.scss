@@ -5,18 +5,40 @@
   height: 700px;
   width: 100%;
 
-  h2 {
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
-    white-space: nowrap;
-  }
+  .preview-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-  .title {
-    padding-bottom: 50px;
-    font-family: 'Cormorant Garamond';
-    cursor: pointer;
-    font-size: 2.2rem;
-    font-weight: 600;
+    h2 {
+      margin: 0 0 10px 0;
+      padding: 0 0 10px 0;
+      white-space: nowrap;
+
+      .title {
+        padding-bottom: 50px;
+        font-family: 'Cormorant Garamond';
+        cursor: pointer;
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .view-more-text {
+      font-size: 1.2rem !important;
+      font-family: 'Cormorant Garamond';
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+
+      .arrow {
+        font-size: 0.9rem;
+        margin: 0 0 2px 5px;
+      }
+    }
   }
 }
 
@@ -34,45 +56,6 @@
 
   .category-overlay {
     display: none;
-  }
-
-  .view-more-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #949494;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: DM Sans;
-    line-height: 1.2;
-    border-radius: 6px;
-    white-space: nowrap;
-    cursor: pointer;
-    height: 350px;
-    width: 100px;
-    margin-bottom: 50px;
-    padding: 5px 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: background-color 0.5s ease, box-shadow 0.5s ease;
-
-    &:hover {
-      background-color: #7e7e7e;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    }
-
-    .view-more-text {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-
-      .arrow-icon {
-        font-size: 1.3rem;
-      }
-    }
   }
 }
 
@@ -124,10 +107,14 @@
     width: 100%;
     align-items: center;
 
-    h2 {
-      display: none;
+    .preview-header {
+      h2 {
+        display: none;
+      }
+      .view-more-text {
+        display: none;
+      }
     }
-
     .preview {
       width: 100%;
       flex-direction: column;
