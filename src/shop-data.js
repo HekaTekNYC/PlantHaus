@@ -352,14 +352,14 @@ const SHOP_DATA = [
         imageUrl: {
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-          // img3: 'https://i.ibb.co/f9VpNbw/bonsai-3.png',
+         
         },
         thumbnailUrl: {
           thumb1:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
           thumb2:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-          // thumb3: 'https://i.ibb.co/zRYrfh2/bonsai-3-thumb.png',
+       
         },
         price: {
           small: 29,
@@ -412,7 +412,7 @@ const SHOP_DATA = [
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
           img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-          // img4: 'https://i.ibb.co/b5Lz21y/Yucca-cane.png',
+     
         },
         thumbnailUrl: {
           thumb1:
@@ -421,7 +421,7 @@ const SHOP_DATA = [
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
           thumb3:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-          // thumb4: 'https://i.ibb.co/dGM5qrx/Yucca-cane-1-thumb.png',
+
         },
         price: {
           small: 22,
@@ -535,14 +535,14 @@ const SHOP_DATA = [
         imageUrl: {
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-          // img3: 'https://i.ibb.co/f9VpNbw/bonsai-3.png',
+
         },
         thumbnailUrl: {
           thumb1:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
           thumb2:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-          // thumb3: 'https://i.ibb.co/zRYrfh2/bonsai-3-thumb.png',
+       
         },
         price: {
           small: 29,
@@ -716,7 +716,7 @@ const SHOP_DATA = [
         thumbnailUrl: {
           thumb1:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/satin-pothos-1-thumb_rgjveo.webp',
-          // thumb2: 'https://i.ibb.co/DkSPFdj/satin-pothos-3-thumb.png',
+          thumb2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718918790/satin-pothos-3-thumb_gqf0dh.webp',
           thumb3:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-2-thumb_onu0av.webp',
           thumb4:
@@ -883,7 +883,7 @@ const SHOP_DATA = [
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
           img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-          // img4: 'https://i.ibb.co/b5Lz21y/Yucca-cane.png',
+   
         },
         thumbnailUrl: {
           thumb1:
@@ -892,7 +892,7 @@ const SHOP_DATA = [
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_ws8spp.webp',
           thumb3:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-          // thumb4: 'https://i.ibb.co/dGM5qrx/Yucca-cane-1-thumb.png',
+  
         },
         price: {
           small: 22,
@@ -1816,14 +1816,14 @@ const SHOP_DATA = [
         imageUrl: {
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-          // img3: 'https://i.ibb.co/f9VpNbw/bonsai-3.png',
+       
         },
         thumbnailUrl: {
           thumb1:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
           thumb2:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-          // thumb3: 'https://i.ibb.co/zRYrfh2/bonsai-3-thumb.png',
+       
         },
         price: {
           small: 29,
@@ -1997,7 +1997,7 @@ const SHOP_DATA = [
         thumbnailUrl: {
           thumb1:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/satin-pothos-1-thumb_rgjveo.webp',
-          thumb2: 'https://i.ibb.co/DkSPFdj/satin-pothos-3-thumb.png',
+          thumb2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718918790/satin-pothos-3-thumb_gqf0dh.webp',
           thumb3:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-2-thumb_onu0av.webp',
           thumb4:
@@ -2165,7 +2165,7 @@ const SHOP_DATA = [
           img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
           img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
           img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-          // img4: 'https://i.ibb.co/b5Lz21y/Yucca-cane.png',
+  
         },
         thumbnailUrl: {
           thumb1:
@@ -2174,7 +2174,7 @@ const SHOP_DATA = [
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_ws8spp.webp',
           thumb3:
             'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-          // thumb4: 'https://i.ibb.co/dGM5qrx/Yucca-cane-1-thumb.png',
+
         },
         price: {
           small: 22,
