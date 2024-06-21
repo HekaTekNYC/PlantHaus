@@ -1,17 +1,16 @@
 import React from 'react'
 import './about.styles.scss'
-import plantBedroom from '../../assets/styled-plants-3.png'
+
 
 const About = () => {
-  const aboutImage = 'https://i.ibb.co/fFMZvW9/About-Page.png'
   return (
     <>
       <div className="about-container">
         <div className="about-img">
-          <img src={plantBedroom} alt="about page" />
+          <img src='https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/styled-plants-3_szzwmq.webp' alt="about page" />
         </div>
         <div className="about-info">
-          <h1>About Plant Haus</h1>
+          <h1>About Us</h1>
           <p>
             Nestled in the heart of Brooklyn, our plant shop stands as a green
             oasis for urban dwellers seeking the perfect touch of nature within

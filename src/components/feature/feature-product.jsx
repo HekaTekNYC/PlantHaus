@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 import shopTitle from '../../utils/shopTitle.utils'
 
-import { FaArrowRight } from 'react-icons/fa6'
+// import { FaArrowRight } from 'react-icons/fa6'
+import { BsArrowRight } from 'react-icons/bs'
 
 import './feature-product.styles.scss'
 
@@ -106,7 +107,8 @@ const FeatureProduct = ({ product }) => {
             >
               View Full Details
               <div className="arrow">
-                <FaArrowRight />
+                {/* <FaArrowRight /> */}
+                <BsArrowRight />
               </div>
             </Link>
             <div className="styled-line"></div>

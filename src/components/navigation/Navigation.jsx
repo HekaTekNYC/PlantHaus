@@ -29,8 +29,7 @@ const Navigation = () => {
       <div className="navigation">
         <Link className="logo-container" to="/">
           <div className="logo-short-text">PH</div>
-          <div className='nav-store-name'>PLANT HAUS</div>
-          {/* <div className="logo-text">Plant Haus</div> */}
+          <div className="nav-store-name">PLANT HAUS</div>
         </Link>
 
         <div className="right-menu">

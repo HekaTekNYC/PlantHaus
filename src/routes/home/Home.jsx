@@ -6,7 +6,7 @@ import FeaturePreview from '../feature-preview/feature-preview'
 import ReviewsPreview from '../reviews/reviews-preview'
 import Button from '../../components/button/main-button/Button'
 import { scrollToTop } from '../../utils/scrollToTop'
-import heroImage from '../../assets/styled-plants-5.png'
+
 
 import './home.styles.scss'
 
@@ -26,7 +26,7 @@ const Home = () => {
       <div className="home-container">
         <div className="hero-container">
           <div className="hero-image-container">
-            <img src={heroImage} alt="indoor plants" className="hero-img" />
+            <img src='https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/styled-plants-5_yztggk.webp' alt="indoor plants" className="hero-img" />
           </div>
           <div className="hero-text-container">
             <div className="header-text">The Plant Haus</div>
