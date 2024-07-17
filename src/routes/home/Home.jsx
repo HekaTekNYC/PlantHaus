@@ -7,7 +7,6 @@ import ReviewsPreview from '../reviews/reviews-preview'
 import Button from '../../components/button/main-button/Button'
 import { scrollToTop } from '../../utils/scrollToTop'
 
-
 import './home.styles.scss'
 
 const Home = () => {
@@ -23,12 +22,13 @@ const Home = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="home-container">
-        <div className="hero-container">
-          <div className="hero-image-container">
-            <img src='https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/styled-plants-5_yztggk.webp' alt="indoor plants" className="hero-img" />
-          </div>
-          <div className="hero-text-container">
+
+      <div className="hero-container">
+        <div className="hero-image-container">
+          <div className="overlay"></div>
+        </div>
+        <div className="hero-text-container">
+          <div className="hero-text">
             <div className="header-text">The Plant Haus</div>
             <div className="header-description">
               Your trusted companion in cultivating a thriving oasis at home.
@@ -36,12 +36,16 @@ const Home = () => {
               their beauty and resilience, we empower you to transform any space
               into a verdant sanctuary with ease.
             </div>
-            <Button onClick={() => handleCategoryClick('category')}>
+            <Button
+              buttonType={'inverted'}
+              onClick={() => handleCategoryClick('category')}
+            >
               Shop Now
             </Button>
           </div>
         </div>
-
+      </div>
+      <div className="home-container">
         {/* Our Commitments Section */}
         <div className="commitments-section">
           <Commitments />
