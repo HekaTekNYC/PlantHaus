@@ -1,57 +1,73 @@
-.home-container {
-  padding: 70px 100px 20px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .hero-container {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  height: 800px;
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
 
   .hero-image-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-
-    .hero-img {
-      border-radius: 4px;
-    }
+    background-image: url('https://res.cloudinary.com/daecnx7ih/image/upload/v1721226725/minimalist-black-interior-with-black-sofa_br00fa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
   }
 
   .hero-text-container {
+    position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
     padding: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
 
-    .header-text {
-      text-align: center;
-      font-size: 3.3rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-      font-family: 'Cormorant Garamond';
-    }
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // margin-top: 240px;
 
-    .header-description {
-      text-align: center;
-      font-size: 1.3rem;
-      width: 80%;
-      margin-bottom: 12px;
+      .header-text {
+        text-align: center;
+        font-size: 4.3rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        font-family: 'Cormorant Garamond';
+        color: #fff;
+        z-index: 3;
+      }
+
+      .header-description {
+        text-align: center;
+        font-size: 1.3rem;
+        width: 80%;
+        margin-bottom: 25px;
+        max-width: 900px;
+        color: #fff;
+        z-index: 3;
+      }
     }
   }
+}
+
+.home-container {
+  padding: 20px 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
 }
 
 .commitments-section {
   width: 100%;
+  height: 500px;
 }
 
 .directories-section {
@@ -70,15 +86,16 @@
 
 @media only screen and (max-width: 1200px) {
   .hero-container {
-    height: 700px;
+    height: 800px;
+  }
+  .commitments-section {
+    display: flex;
+    align-items: center;
+    height: 600px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .home-container {
-    padding: 70px 40px 20px;
-    height: auto;
-  }
   .hero-container {
     flex-direction: column;
     justify-content: start;
@@ -86,14 +103,8 @@
     min-height: 800px;
 
     .hero-image-container {
-      width: 100%;
-      padding: 40px 0 20px;
-      height: auto;
-      img {
-        width: 100%;
-      }
+      background-position: right;
     }
-
     .hero-text-container {
       width: 100%;
       padding: 20px 0;
@@ -108,17 +119,40 @@
       }
     }
   }
+  .home-container {
+    padding: 70px 40px 20px;
+    height: auto;
+  }
+
+  .commitments-section {
+    display: flex;
+    align-items: center;
+    height: 900px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
   .hero-container {
     min-height: 600px;
     height: 80%;
+
+    .overlay {
+      background-color: #00000078;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .home-container {
-    padding: 70px 20px 20px;
+    padding: 60px 20px 20px;
+  }
+
+  .commitments-section {
+    display: flex;
+    align-items: center;
+    height: 900px;
+    padding-bottom: 60px;
   }
 }

@@ -41,6 +41,9 @@ const Navigation = () => {
           {/* Desktop Nav Links */}
 
           <div className="nav-links-container">
+            <Link className="nav-links" to="/">
+              HOME
+            </Link>
             <Link className="nav-links" to="/shop">
               SHOP
             </Link>

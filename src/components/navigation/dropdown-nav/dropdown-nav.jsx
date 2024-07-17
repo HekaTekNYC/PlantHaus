@@ -15,13 +15,20 @@ const DropdownNav = () => {
   const handleLinkClick = (path) => {
     toggleMobileNav()
     navigate(path)
-    scrollToTop()  
+    scrollToTop()
   }
 
   return (
     <>
       <div className="dropdown-container">
-        <Link className="nav-link" to="/shop/" onClick={() => toggleMobileNav()}>
+        <Link className="nav-link" to="/" onClick={() => toggleMobileNav()}>
+          HOME
+        </Link>
+        <Link
+          className="nav-link"
+          to="/shop/"
+          onClick={() => toggleMobileNav()}
+        >
           SHOP
         </Link>
         <Link
