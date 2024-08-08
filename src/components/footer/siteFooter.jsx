@@ -63,7 +63,8 @@ const SiteFooter = () => {
                   <i className="fas fa-home mr-3 "></i> Brooklyn, NY 11233, US
                 </p>
                 <p>
-                  <i className="fas fa-envelope mr-3"></i> hekatek@gmail.com
+                  <i className="fas fa-envelope mr-3"></i>{' '}
+                  hekatek@hekateknyc.com
                 </p>
                 <p>
                   <i className="fas fa-phone mr-3"></i> + 01 917 333 6666
@@ -169,10 +170,7 @@ const SiteFooter = () => {
           className="text-center p-3"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
         >
-          © 2024 Copyright
-          {/* <a className="text-white" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a> */}
+          © 2024 Copyright Hekatek
         </div>
       </footer>
     </div>

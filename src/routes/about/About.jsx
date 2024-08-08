@@ -1,13 +1,15 @@
 import React from 'react'
 import './about.styles.scss'
 
-
 const About = () => {
   return (
     <>
       <div className="about-container">
         <div className="about-img">
-          <img src='https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/styled-plants-3_szzwmq.webp' alt="about page" />
+          <img
+            src="https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/styled-plants-3.webp?updatedAt=1723131752753"
+            alt="about page"
+          />
         </div>
         <div className="about-info">
           <h1>About Us</h1>

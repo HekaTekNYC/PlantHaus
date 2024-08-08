@@ -5,7 +5,6 @@ import Button from '../button/main-button/Button'
 
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from '../../utils/firebase/firebase.utils'
 

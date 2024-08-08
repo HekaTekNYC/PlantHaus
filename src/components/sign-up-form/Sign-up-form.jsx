@@ -24,7 +24,6 @@ const SignUpForm = ({ onLogin }) => {
   const navigate = useNavigate()
   const [formFields, setFormFields] = useState(defaultFormFields)
   const { displayName, email, password, confirmPassword } = formFields
-  const [showPassword, setShowPassword] = useState(false)
   const [type, setType] = useState('password')
 
   const resetFormFields = () => {
@@ -48,7 +47,7 @@ const SignUpForm = ({ onLogin }) => {
       resetFormFields()
       onLogin()
       navigate('/')
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         alert('Cannot create user, email already in use')
@@ -68,62 +67,61 @@ const SignUpForm = ({ onLogin }) => {
   }
   return (
     <>
-    <div className="sign-up-container">
-      <h2>Don't have an account?</h2>
-      <span>Create Account</span>
-      <form onSubmit={handleSubmit}>
-        <FormInput
-          label="Display Name"
-          type="text"
-          required
-          onChange={handleChange}
-          name="displayName"
-          value={displayName}
-        />
+      <div className="sign-up-container">
+        <h2>Don't have an account?</h2>
+        <span>Create Account</span>
+        <form onSubmit={handleSubmit}>
+          <FormInput
+            label="Display Name"
+            type="text"
+            required
+            onChange={handleChange}
+            name="displayName"
+            value={displayName}
+          />
 
-        <FormInput
-          label="Email"
-          type="email"
-          required
-          onChange={handleChange}
-          name="email"
-          value={email}
-        />
-        <div className="password-container">
           <FormInput
-            label="Password"
-            type={type}
+            label="Email"
+            type="email"
             required
             onChange={handleChange}
-            name="password"
-            value={password}
+            name="email"
+            value={email}
           />
-          <div className="eye-icon-container" onClick={handleToggle}>
-            <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+          <div className="password-container">
+            <FormInput
+              label="Password"
+              type={type}
+              required
+              onChange={handleChange}
+              name="password"
+              value={password}
+            />
+            <div className="eye-icon-container" onClick={handleToggle}>
+              <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+            </div>
           </div>
-        </div>
-        <div className="password-container">
-          <FormInput
-            label="Confirm Password"
-            type={type}
-            required
-            onChange={handleChange}
-            name="confirmPassword"
-            value={confirmPassword}
-            autoComplete="new-password"
-          />
-          <div className="eye-icon-container" onClick={handleToggle}>
-            <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+          <div className="password-container">
+            <FormInput
+              label="Confirm Password"
+              type={type}
+              required
+              onChange={handleChange}
+              name="confirmPassword"
+              value={confirmPassword}
+              autoComplete="new-password"
+            />
+            <div className="eye-icon-container" onClick={handleToggle}>
+              <Icon icon={type === 'password' ? eyeOff : eye} size={25} />
+            </div>
           </div>
-        </div>
-        <div className='sign-up-btn'>
-          <Button buttonType="inverted" type="submit">
-            Sign Up
-          </Button>
-        </div>
-       
-      </form>
-    </div>
+          <div className="sign-up-btn">
+            <Button buttonType="inverted" type="submit">
+              Sign Up
+            </Button>
+          </div>
+        </form>
+      </div>
     </>
   )
 }

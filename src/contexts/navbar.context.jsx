@@ -14,7 +14,6 @@ export const NavbarProvider = ({ children }) => {
 
   const value = {
     isMobileNavOpen,
-    setIsMobileNavOpen,
     toggleMobileNav,
   }
 
