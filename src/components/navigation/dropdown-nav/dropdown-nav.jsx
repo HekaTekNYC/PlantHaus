@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserContext } from '../../../contexts/user.context'
 import { signOutUser } from '../../../utils/firebase/firebase.utils'

@@ -8,7 +8,7 @@ const CheckoutItem = ({ cartItem }) => {
   const { setIsCartOpen } = useContext(CartContext)
   useEffect(() => {
     setIsCartOpen(false)
-  }, [])
+  }, [setIsCartOpen])
   return (
     <>
       <div className="checkout-item-line-container">
