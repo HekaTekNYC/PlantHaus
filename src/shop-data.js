@@ -8,14 +8,14 @@ const SHOP_DATA = [
         urlName: 'prayer-plant',
         latin_binomial: "Maranta Leuconeura 'Red Vein'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/prayer-palm-1_zwz3if.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/prayer-palm-2_er2td1.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-1.webp?updatedAt=1723131742816',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-2.webp?updatedAt=1723131742767',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/prayer-palm-1-thumb_fiug4s.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-1-thumb.webp?updatedAt=1723131742767',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/prayer-palm-2-thumb_fasxv2.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-2-thumb.webp?updatedAt=1723131742557',
         },
         price: {
           small: 22,
@@ -36,25 +36,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -64,17 +64,17 @@ const SHOP_DATA = [
         urlName: 'spider-plant',
         latin_binomial: "Chlorophytum Ccomosum 'Variegatum'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-4_lj9705.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-3_rss7bs.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-2_m2ibyp.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-4.webp?updatedAt=1723131752164p',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-3.webp?updatedAt=1723131752066',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-2.webp?updatedAt=1723131746870',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-4-thumb_h1towy.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-4-thumb.webp?updatedAt=1723131752138',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-3-thumb_vls025.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-3-thumb.webp?updatedAt=1723131746890',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909827/spider-plant-2-thumb_fgvpz5.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-2-thumb.webp?updatedAt=1723131746921',
         },
         price: {
           small: 22,
@@ -95,25 +95,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -123,14 +123,14 @@ const SHOP_DATA = [
         urlName: 'birds-nest-fern',
         latin_binomial: "Asplenium Nidus 'Crissie'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/birds-nest-fern-1_vehisl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/bird-of-paradise-2_pikake.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-1.webp?updatedAt=1723131730537',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-2.webp?updatedAt=1723131730742',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/birds-nest-fern-1-thumb_zcqnh3.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-1-thumb.webp?updatedAt=1723131730284',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/birds-nest-fern-2-thumb_udpcba.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-2-thumb.webp?updatedAt=1723131731160',
         },
         price: {
           small: 22,
@@ -151,25 +151,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -179,14 +179,14 @@ const SHOP_DATA = [
         name: 'Majesty Palm',
         latin_binomial: 'Ravenea rivularis',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-1_gx5bg2.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-2_prpxba.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-1.webp?updatedAt=1723131733809',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-2.webp?updatedAt=1723131734145',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-1-thumb_sxjcv5.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-1-thumb.webp?updatedAt=1723131733629',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-2_prpxba.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-2-thumb.webp?updatedAt=1723131733788',
         },
         price: {
           large: 88,
@@ -208,25 +208,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -235,17 +235,17 @@ const SHOP_DATA = [
         name: 'Peperomia Raindrop',
         latin_binomial: 'Peperomia Polybotrya',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-1_iurcww.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-2_qxvvqh.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-3_eexnxv.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-1_iurcww.webp?updatedAt=1723131736703',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-2.webp?updatedAt=1723131736624',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-3.webp?updatedAt=1723131737414',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-1-thumb_nnmzv3.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-1-thumb.webp?updatedAt=1723131736319',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-2-thumb_yguxcc.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-2-thumb.webp?updatedAt=1723131736637',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-3-thumb_ouvsek.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-3-thumb.webp?updatedAt=1723131736513',
         },
         price: {
           small: 30,
@@ -266,25 +266,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -293,14 +293,14 @@ const SHOP_DATA = [
         name: 'Ponytail Palm',
         latin_binomial: 'Beaucarnea Recurvata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-1_krqtrz.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-1_krqtrz.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-2.webp?updatedAt=1723131741078',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-1.webp?updatedAt=1723131740999',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-2-thumb_2_cmk5p8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-2-thumb_2.webp?updatedAt=1723131741012',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909873/ponytail-palm-1-thumb_izxb9s.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-1-thumb.webp?updatedAt=1723131740243',
         },
         price: {
           small: 25,
@@ -323,25 +323,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -350,16 +350,14 @@ const SHOP_DATA = [
         name: 'Bonsai ',
         latin_binomial: 'Juniperus Spp. (Various species)',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-         
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2.webp?updatedAt=1723131730967',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1.webp?updatedAt=1723131731098',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2-thumb.webp?updatedAt=1723131730882',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-       
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1-thumb.webp?updatedAt=1723131730742',
         },
         price: {
           small: 29,
@@ -382,25 +380,25 @@ const SHOP_DATA = [
             id: 2,
             name: 'Lots of Loving',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/lots-love_rcuesg.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/lots-love.webp?updatedAt=1723131732928',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -409,19 +407,17 @@ const SHOP_DATA = [
         name: 'Yucca Cane',
         latin_binomial: 'Yucca Elephantipes',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-     
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1.webp?updatedAt=1723131755087',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3.webp?updatedAt=1723131758704',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2.webp?updatedAt=1723131754787',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yucca-cane-1-thumb_xpuzb4.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1-thumb.webp?updatedAt=1723131755557',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3-thumb.webp?updatedAt=1723131755046',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2-thumb.webp?updatedAt=1723131754851',
         },
         price: {
           small: 22,
@@ -444,25 +440,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -477,12 +473,14 @@ const SHOP_DATA = [
         name: 'Bird of Paradise',
         latin_binomial: 'Strelitzia Reginae',
         imageUrl: {
-          img1: 'https://i.ibb.co/cX4tTTx/bird-of-paradise-1.png',
-          img2: 'https://i.ibb.co/kqZQM6f/bird-of-paradise-2.png',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-1.webp?updatedAt=1723131730463',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-2.webp?updatedAt=1723131730605',
         },
         thumbnailUrl: {
-          thumb1: 'https://i.ibb.co/87s3ZT9/bird-of-paradise-1-thumb.png',
-          thumb2: 'https://i.ibb.co/3ydTVdG/bird-of-paradise-2-thumb.png',
+          thumb1:
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-1-thumb.webp?updatedAt=1723131730528',
+          thumb2:
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-2-thumb.webp?updatedAt=1723131730424',
         },
         price: {
           medium: 35,
@@ -506,25 +504,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -533,16 +531,14 @@ const SHOP_DATA = [
         name: 'Bonsai',
         latin_binomial: 'Juniperus Spp. (Various species)',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2.webp?updatedAt=1723131730967',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1.webp?updatedAt=1723131731098',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2-thumb.webp?updatedAt=1723131730882',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-       
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1-thumb.webp?updatedAt=1723131730742',
         },
         price: {
           small: 29,
@@ -565,25 +561,25 @@ const SHOP_DATA = [
             id: 2,
             name: 'Lots of Loving',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/lots-love_rcuesg.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/lots-love.webp?updatedAt=1723131732928',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -592,20 +588,20 @@ const SHOP_DATA = [
         name: 'Monstera',
         latin_binomial: 'Monstera Deliciosa',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-1_ici7gr.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-2_hu0sjk.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-3_ugpth7.webp',
-          img4: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-4_ldl7jb.webp',
+          img1: ' https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-4.webp?updatedAt=1723131735904',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-2.webp?updatedAt=1723131735767',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-3.webp?updatedAt=1723131735462',
+          img4: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-1.webp?updatedAt=1723131734440',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910000/monstera-1-thumb_tbnhor.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-4-thumb.webp?updatedAt=1723131735830 ',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-2-thumb_w4kqcb.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-2-thumb.webp?updatedAt=1723131735155',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-3-thumb_g8u6ui.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-3-thumb.webp?updatedAt=1723131735497',
           thumb4:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-4-thumb_fdzsk8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-1-thumb.webp?updatedAt=1723131734394',
         },
         price: {
           medium: 32,
@@ -626,25 +622,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -653,14 +649,14 @@ const SHOP_DATA = [
         name: 'Cactus',
         latin_binomial: 'Ferocactus Spp. (Various species)',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/cactus-1_guglcc.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909995/cactus-2_a4kgc4.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-1.webp?updatedAt=1723131730928',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-2.webp?updatedAt=1723131731291',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/cactus-1-thumb_bog53p.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-1-thumb.webp?updatedAt=1723131731627',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909993/cactus-2-thumb_yyvpcd.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-2-thumb.webp?updatedAt=1723131731047',
         },
         price: {
           small: 27,
@@ -681,25 +677,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -708,19 +704,20 @@ const SHOP_DATA = [
         name: 'Satin Pothos',
         latin_binomial: "Scindapsus Pictus 'Exotica'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-1_ykmmbz.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-3_bz8ob9.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-2_y4kjbu.webp',
-          img4: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-4_ejbs32.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-1.webp?updatedAt=1723131744274',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-3.webp?updatedAt=1723131744119',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-2.webp?updatedAt=1723131744067',
+          img4: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-4.webp?updatedAt=1723131744149',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/satin-pothos-1-thumb_rgjveo.webp',
-          thumb2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718918790/satin-pothos-3-thumb_gqf0dh.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-1-thumb.webp?updatedAt=1723131743744',
+          thumb2:
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-3-thumb.webp?updatedAt=1723131743927',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-2-thumb_onu0av.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-2-thumb.webp?updatedAt=1723131743889',
           thumb4:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-4-thumb_e9o9vp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-4-thumb.webp?updatedAt=1723131743956',
         },
         price: {
           small: 22,
@@ -741,25 +738,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -768,14 +765,14 @@ const SHOP_DATA = [
         name: 'Pothos',
         latin_binomial: 'Am',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/pothos-1_nooyhl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-2_zafxjd.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-1.webp?updatedAt=1723131741846',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-2.webp?updatedAt=1723131742042',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/pothos-1-thumb_umhfaa.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-1-thumb.webp?updatedAt=1723131742074',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-2-thumb_lvt1r4.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-2-thumb.webp?updatedAt=1723131741941',
         },
         price: {
           small: 22,
@@ -796,25 +793,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -823,14 +820,14 @@ const SHOP_DATA = [
         name: 'Alocasia Polly',
         latin_binomial: "Alocasia Micholitziana 'Polly'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/svizzera-1_pu5qhu.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/svizzera-2_x4lfqf.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-1.webp?updatedAt=1723131752374',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-2.webp?updatedAt=1723131755147',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/svizzera-1-thumb_votg78.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-1-thumb.webp?updatedAt=1723131752104',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/svizzera-1-thumb_votg78.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-2-thumb.webp?updatedAt=1723131758955',
         },
         price: {
           small: 22,
@@ -853,25 +850,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -880,19 +877,17 @@ const SHOP_DATA = [
         name: 'Yucca Cane',
         latin_binomial: 'Yucca Elephantipes',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-   
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1.webp?updatedAt=1723131755087',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3.webp?updatedAt=1723131758704',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2.webp?updatedAt=1723131754787',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yucca-cane-1-thumb_xpuzb4.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1-thumb.webp?updatedAt=1723131755557',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_ws8spp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3-thumb.webp?updatedAt=1723131755046',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-  
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2-thumb.webp?updatedAt=1723131754851',
         },
         price: {
           small: 22,
@@ -915,25 +910,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -948,19 +943,14 @@ const SHOP_DATA = [
         name: 'Echeveria',
         latin_binomial: 'Echeveria Spp.',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-1_jzo6yp.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-2_egzqxd.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeverria-1_ivhndt.webp',
-          // img4: 'https://i.ibb.co/Db0ty6W/echeveria-1.png',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1.webp?updatedAt=1723131731643',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2.webp?updatedAt=1723131731592',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909995/echeveria-1-thumb_bzuaul.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1-thumb.webp?updatedAt=1723131731354',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-2-thumb_hqgbnz.webp',
-          thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeverria-1-thumb_u2hgdo.webp',
-          // thumb4: 'https://i.ibb.co/V3BcQqJ/echeveria-1-thumb.png',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2-thumb.webp?updatedAt=1723131731987',
         },
         price: {
           small: 22,
@@ -982,25 +972,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1009,14 +999,14 @@ const SHOP_DATA = [
         name: 'ZZ Plant',
         latin_binomial: 'Zamioculcas Zamiifolia',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-1_nbodyx.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-2_ehjclc.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-1.webp?updatedAt=1723131756121',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-2.webp?updatedAt=1723131756268',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-1-thumb_e8juyo.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-1-thumb.webp?updatedAt=1723131755134',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-2-thumb_rfdtev.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-2-thumb.webp?updatedAt=1723131755941',
         },
         price: {
           small: 25,
@@ -1039,25 +1029,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1066,14 +1056,14 @@ const SHOP_DATA = [
         name: 'Polka Dot Begonia',
         latin_binomial: 'Begonia Maculata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909881/polka-dot-begonia-1_xyrv4g.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909881/polkda-dot-begonia-1_ah8g1v.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1.webp?updatedAt=1723131739692',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2.webp?updatedAt=1723131739897',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/polka-dot-begonia-1-thumb_tjenvk.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1-thumb.webp?updatedAt=1723131738833',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909875/polkda-dot-begonia-2-thumb_lz0jcm.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2-thumb.webp?updatedAt=1723131739935',
         },
         price: {
           small: 22,
@@ -1094,25 +1084,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1121,17 +1111,17 @@ const SHOP_DATA = [
         name: 'Snake Plant',
         latin_binomial: 'Sansevieria Trifasciata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/snake-plant-1_o5ntgm.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-3_anexyu.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-2_otn1ii.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-1.webp?updatedAt=1723131746930',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-3.webp?updatedAt=1723131746816',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-2.webp?updatedAt=1723131747034',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/snake-plant-1-thumb_smijwp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-1-thumb.webp?updatedAt=1723131746941',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-3-thumb_k01p13.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-3-thumb.webp?updatedAt=1723131746678',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-2-thumb_qmdiwa.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-2-thumb.webp?updatedAt=1723131746757',
         },
         price: {
           small: 22,
@@ -1154,25 +1144,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 11,
             name: 'Once a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1181,14 +1171,14 @@ const SHOP_DATA = [
         name: 'Pothos Variegated',
         latin_binomial: "Am 'Marble Queen' or 'Golden Pothos'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/pothos-verigated-1_zxnt65.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/pothos-verigated-1_zxnt65.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-2.webp?updatedAt=1723131742631',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-1.webp?updatedAt=1723131742075',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/pothos-verigated-2-thumb_f9ljt0.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-2-thumb.webp?updatedAt=1723131742397',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-verigated-1-thumb_vmrzik.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-1-thumb.webp?updatedAt=1723131742141',
         },
         price: {
           small: 22,
@@ -1209,25 +1199,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1236,17 +1226,17 @@ const SHOP_DATA = [
         name: 'Fiddle Leaf Fig',
         latin_binomial: 'Ficus Lyrata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/fiddle-leaf-fig-3_qnpchf.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909998/fiddle-leaf-fig-1_duyyvj.webp ',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/fiddle-leaf-fig-2_ox5opg.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-3.webp?updatedAt=1723131732706',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-1.webp?updatedAt=1723131732170 ',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-2.webp?updatedAt=1723131732682',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909997/fiddle-leaf-fig-1-thumb_vomdh8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-3-thumb.webp?updatedAt=1723131732053',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909997/fiddle-leaf-fig-1-thumb_vomdh8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-1-thumb.webp?updatedAt=1723131732077',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909998/fiddle-leaf-fig-2-thumb_us5djs.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-2-thumb.webp?updatedAt=1723131732258',
         },
         price: {
           small: 22,
@@ -1272,25 +1262,25 @@ const SHOP_DATA = [
             id: 2,
             name: 'Lots of Loving',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/lots-love_rcuesg.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/lots-love.webp?updatedAt=1723131732928',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1299,14 +1289,14 @@ const SHOP_DATA = [
         name: 'Oxalis',
         latin_binomial: 'Oxalis Spp.',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910004/oxalis-1_smh5pn.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/oxalis-2_auzual.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-1.webp?updatedAt=1723131736376',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-2.webp?updatedAt=1723131736526',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/oxalis-2_auzual.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-1-thumb.webp?updatedAt=1723131736183',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/oxalis-2_auzual.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-2-thumb.webp?updatedAt=1723131736430',
         },
         price: {
           small: 22,
@@ -1327,25 +1317,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1360,14 +1350,14 @@ const SHOP_DATA = [
         name: 'Prayer Plant',
         latin_binomial: "Maranta Leuconeura 'Red Vein'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/prayer-palm-1_zwz3if.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/prayer-palm-2_er2td1.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-1.webp?updatedAt=1723131742816',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-2.webp?updatedAt=1723131742767',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/prayer-palm-1-thumb_fiug4s.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-1-thumb.webp?updatedAt=1723131742767',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/prayer-palm-2-thumb_fasxv2.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/prayer-palm-2-thumb.webp?updatedAt=1723131742557',
         },
         price: {
           small: 22,
@@ -1388,25 +1378,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1416,17 +1406,17 @@ const SHOP_DATA = [
         name: 'Spider Plant',
         latin_binomial: "Chlorophytum Comosum 'Variegatum'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-4_lj9705.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-3_rss7bs.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-2_m2ibyp.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-4.webp?updatedAt=1723131752164p',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-3.webp?updatedAt=1723131752066',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-2.webp?updatedAt=1723131746870',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-4-thumb_h1towy.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-4-thumb.webp?updatedAt=1723131752138',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909826/spider-plant-3-thumb_vls025.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-3-thumb.webp?updatedAt=1723131746890',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909827/spider-plant-2-thumb_fgvpz5.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/spider-plant-2-thumb.webp?updatedAt=1723131746921',
         },
         price: {
           small: 22,
@@ -1447,25 +1437,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1474,14 +1464,14 @@ const SHOP_DATA = [
         name: "Bird's Nest Fern",
         latin_binomial: "Asplenium Nidus 'Crissie'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/birds-nest-fern-1_vehisl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/birds-nest-fern-2_exilfd.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-1.webp?updatedAt=1723131730537',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-2.webp?updatedAt=1723131730742',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/birds-nest-fern-1-thumb_zcqnh3.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-1-thumb.webp?updatedAt=1723131730284',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/birds-nest-fern-2-thumb_udpcba.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/birds-nest-fern-2-thumb.webp?updatedAt=1723131731160',
         },
         price: {
           small: 22,
@@ -1502,25 +1492,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1529,14 +1519,14 @@ const SHOP_DATA = [
         name: 'Aloe Vera',
         latin_binomial: 'Aloe Barbadensis Miller',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909988/aloe-vera-1_hhr5sb.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909988/aloe-vera-2_eqa5xa.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/aloe-vera-1.webp?updatedAt=1723131730514',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/aloe-vera-2.webp?updatedAt=1723131730414',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909988/aloe-vera-1-thumb_cmryim.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/aloe-vera-1-thumb.webp?updatedAt=1723131730287',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909988/aloe-vera-2-thumb_j1yviw.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/aloe-vera-2-thumb.webp?updatedAt=1723131730465',
         },
         price: {
           small: 22,
@@ -1558,25 +1548,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 11,
             name: 'Once a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1585,14 +1575,14 @@ const SHOP_DATA = [
         name: 'Majesty Palm',
         latin_binomial: 'Ravenea Rivularis',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-1_gx5bg2.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-2_prpxba.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-1.webp?updatedAt=1723131733809?updatedAt=1723131730465',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-2.webp?updatedAt=1723131734145',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-1-thumb_sxjcv5.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-1-thumb.webp?updatedAt=1723131733629',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/majesty-palm-2-thumb_sdprcn.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/majesty-palm-2-thumb.webp?updatedAt=1723131733788',
         },
         price: {
           large: 88,
@@ -1614,25 +1604,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1641,17 +1631,17 @@ const SHOP_DATA = [
         name: 'Peperomia Raindrop',
         latin_binomial: 'Peperomia Polybotrya',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-1_iurcww.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-2_qxvvqh.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-3_eexnxv.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-1_iurcww.webp?updatedAt=1723131736703',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-2.webp?updatedAt=1723131736624',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-3.webp?updatedAt=1723131737414',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-1-thumb_nnmzv3.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-1-thumb.webp?updatedAt=1723131736319',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/peperomia-2-thumb_yguxcc.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-2-thumb.webp?updatedAt=1723131736637',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/peperomia-3-thumb_ouvsek.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/peperomia-3-thumb.webp?updatedAt=1723131736513',
         },
         price: {
           small: 30,
@@ -1672,25 +1662,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1699,14 +1689,14 @@ const SHOP_DATA = [
         name: 'Ponytail Palm',
         latin_binomial: 'Beaucarnea Recurvata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-2_l2i1fl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-1_krqtrz.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-2.webp?updatedAt=1723131741078',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-1.webp?updatedAt=1723131740999',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/ponytail-palm-2-thumb_2_cmk5p8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-2-thumb_2.webp?updatedAt=1723131741012',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909873/ponytail-palm-1-thumb_izxb9s.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/ponytail-palm-1-thumb.webp?updatedAt=1723131740243',
         },
         price: {
           small: 25,
@@ -1729,25 +1719,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1756,14 +1746,14 @@ const SHOP_DATA = [
         name: 'Bird of Paradise',
         latin_binomial: 'Strelitzia Reginae',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/bird-of-paradise-1_zuvdoj.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/bird-of-paradise-2_pikake.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-1.webp?updatedAt=1723131730463',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-2.webp?updatedAt=1723131730605',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909988/bird-of-paradise-1-thumb_krzjca.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-1-thumb.webp?updatedAt=1723131730528',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909989/bird-of-paradise-2-thumb_vwlamy.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bird-of-paradise-2-thumb.webp?updatedAt=1723131730424',
         },
         price: {
           medium: 35,
@@ -1787,25 +1777,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1814,16 +1804,14 @@ const SHOP_DATA = [
         name: 'Bonsai ',
         latin_binomial: 'Juniperus Spp. (Various species)',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2_vp91ye.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1_ozbw9i.webp',
-       
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2.webp?updatedAt=1723131730967',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1.webp?updatedAt=1723131731098',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-2-thumb_isvrrm.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-2-thumb.webp?updatedAt=1723131730882',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/bonsai-1-thumb_zz49iw.webp',
-       
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bonsai-1-thumb.webp?updatedAt=1723131730742',
         },
         price: {
           small: 29,
@@ -1846,25 +1834,25 @@ const SHOP_DATA = [
             id: 2,
             name: 'Lots of Loving',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/lots-love_rcuesg.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/lots-love.webp?updatedAt=1723131732928',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -1873,20 +1861,20 @@ const SHOP_DATA = [
         name: 'Monstera',
         latin_binomial: 'Monstera Deliciosa',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-4_ldl7jb.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-2_hu0sjk.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-3_ugpth7.webp',
-          img4: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-1_ici7gr.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-4.webp?updatedAt=1723131735904',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-2.webp?updatedAt=1723131735767',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-3.webp?updatedAt=1723131735462',
+          img4: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-1.webp?updatedAt=1723131734440',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/monstera-4-thumb_fdzsk8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-4-thumb.webp?updatedAt=1723131735830',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-2-thumb_w4kqcb.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-2-thumb.webp?updatedAt=1723131735155',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910002/monstera-3-thumb_g8u6ui.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-3-thumb.webp?updatedAt=1723131735497',
           thumb4:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910000/monstera-1-thumb_tbnhor.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/monstera-1-thumb.webp?updatedAt=1723131734394',
         },
         price: {
           medium: 32,
@@ -1907,25 +1895,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1934,14 +1922,14 @@ const SHOP_DATA = [
         name: 'Cactus',
         latin_binomial: 'Ferocactus Spp. (Various species)',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/cactus-1_guglcc.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909995/cactus-2_a4kgc4.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-1.webp?updatedAt=1723131730928',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-2.webp?updatedAt=1723131731291',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909992/cactus-1-thumb_bog53p.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-1-thumb.webp?updatedAt=1723131731627',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909993/cactus-2-thumb_yyvpcd.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/cactus-2-thumb.webp?updatedAt=1723131731047',
         },
         price: {
           small: 27,
@@ -1962,25 +1950,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1989,19 +1977,20 @@ const SHOP_DATA = [
         name: 'Satin Pothos',
         latin_binomial: "Scindapsus Pictus 'Exotica'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-1_ykmmbz.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-3_bz8ob9.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-2_y4kjbu.webp',
-          img4: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-4_ejbs32.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-1.webp?updatedAt=1723131744274',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-3.webp?updatedAt=1723131744119',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-2.webp?updatedAt=1723131744067',
+          img4: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-4.webp?updatedAt=1723131744149',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909852/satin-pothos-1-thumb_rgjveo.webp',
-          thumb2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718918790/satin-pothos-3-thumb_gqf0dh.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-1-thumb.webp?updatedAt=1723131743744',
+          thumb2:
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-3-thumb.webp?updatedAt=1723131743927',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909851/satin-pothos-2-thumb_onu0av.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-2-thumb.webp?updatedAt=1723131743889',
           thumb4:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/satin-pothos-4-thumb_e9o9vp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/satin-pothos-4-thumb.webp?updatedAt=1723131743956',
         },
         price: {
           small: 22,
@@ -2023,25 +2012,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -2050,14 +2039,14 @@ const SHOP_DATA = [
         name: 'Pothos',
         latin_binomial: 'Epipremnum Aureum',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/pothos-1_nooyhl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-2_zafxjd.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-1.webp?updatedAt=1723131741846',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-2.webp?updatedAt=1723131742042',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/pothos-1-thumb_umhfaa.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-1-thumb.webp?updatedAt=1723131742074',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-2-thumb_lvt1r4.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-2-thumb.webp?updatedAt=1723131741941',
         },
         price: {
           small: 22,
@@ -2078,25 +2067,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -2105,14 +2094,14 @@ const SHOP_DATA = [
         name: 'Alocasia Polly',
         latin_binomial: "Alocasia Micholitziana 'Polly'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909819/svizzera-1_pu5qhu.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/svizzera-2_x4lfqf.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-1.webp?updatedAt=1723131752374',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-2.webp?updatedAt=1723131755147',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/svizzera-2_x4lfqf.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-1-thumb.webp?updatedAt=1723131752104',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/svizzera-2-thumb_ibb7h5.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/svizzera-2-thumb.webp?updatedAt=1723131758955',
         },
         price: {
           small: 22,
@@ -2135,25 +2124,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -2162,19 +2151,17 @@ const SHOP_DATA = [
         name: 'Yucca Cane',
         latin_binomial: 'Yucca Elephantipes',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/yucca-cane-1_phk1cl.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_2_lhkadh.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-2_smll5v.webp',
-  
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1.webp?updatedAt=1723131755087',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3.webp?updatedAt=1723131758704',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2.webp?updatedAt=1723131754787',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yucca-cane-1-thumb_xpuzb4.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-1-thumb.webp?updatedAt=1723131755557',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909812/yuca-cane-3-thumb_ws8spp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-3-thumb.webp?updatedAt=1723131755046',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909818/yuca-cane-2-thumb_aofwbk.webp',
-
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/yucca-cane-2-thumb.webp?updatedAt=1723131754851',
         },
         price: {
           small: 22,
@@ -2197,25 +2184,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -2224,17 +2211,14 @@ const SHOP_DATA = [
         name: 'Echeveria',
         latin_binomial: 'Echeveria Spp.',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-1_jzo6yp.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-2_egzqxd.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeverria-1_ivhndt.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1.webp?updatedAt=1723131731643',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2.webp?updatedAt=1723131731592',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909995/echeveria-1-thumb_bzuaul.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1-thumb.webp?updatedAt=1723131731354',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeveria-2-thumb_hqgbnz.webp',
-          thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909996/echeverria-1-thumb_u2hgdo.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2-thumb.webp?updatedAt=1723131731987',
         },
 
         price: {
@@ -2257,25 +2241,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 7,
             name: 'Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pf_eegaaw.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -2284,14 +2268,14 @@ const SHOP_DATA = [
         name: 'ZZ Plant',
         latin_binomial: 'Zamioculcas Zamiifolia',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-1_nbodyx.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-2_ehjclc.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-1.webp?updatedAt=1723131756121',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-2.webp?updatedAt=1723131756268',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-1-thumb_e8juyo.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-1-thumb.webp?updatedAt=1723131755134',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909811/zz-2-thumb_rfdtev.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/zz-2-thumb.webp?updatedAt=1723131755941',
         },
         price: {
           small: 25,
@@ -2314,25 +2298,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -2341,13 +2325,14 @@ const SHOP_DATA = [
         name: 'Polka Dot Begonia',
         latin_binomial: 'Begonia Maculata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909881/polka-dot-begonia-1_xyrv4g.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909881/polkda-dot-begonia-1_ah8g1v.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1.webp?updatedAt=1723131739692',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2.webp?updatedAt=1723131739897',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910007/polka-dot-begonia-1-thumb_tjenvk.webp',
-          thumb2: 'https://i.ibb.co/Jc2S5xV/polkda-dot-begonia-2-thumb.png',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1-thumb.webp?updatedAt=1723131738833',
+          thumb2:
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2-thumb.webp?updatedAt=1723131739935',
         },
         price: {
           small: 22,
@@ -2368,25 +2353,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 5,
             name: 'Medium Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/medium-light_flodui.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -2395,17 +2380,17 @@ const SHOP_DATA = [
         name: 'Snake Plant',
         latin_binomial: 'Sansevieria Trifasciata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/snake-plant-1_o5ntgm.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-3_anexyu.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-2_otn1ii.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-1.webp?updatedAt=1723131746930',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-3.webp?updatedAt=1723131746816',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-2.webp?updatedAt=1723131747034',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909842/snake-plant-1-thumb_smijwp.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-1-thumb.webp?updatedAt=1723131746941',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-3-thumb_k01p13.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-3-thumb.webp?updatedAt=1723131746678',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909835/snake-plant-2-thumb_qmdiwa.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/snake-plant-2-thumb.webp?updatedAt=1723131746757',
         },
         price: {
           small: 22,
@@ -2428,25 +2413,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 11,
             name: 'Once a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -2455,14 +2440,14 @@ const SHOP_DATA = [
         name: 'Pothos Variegated',
         latin_binomial: "Am 'Marble Queen' or 'Golden Pothos'",
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909872/pothos-verigated-2_s5n2cn.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/pothos-verigated-1_zxnt65.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-2.webp?updatedAt=1723131742631',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-1.webp?updatedAt=1723131742075',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909859/pothos-verigated-2-thumb_f9ljt0.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-2-thumb.webp?updatedAt=1723131742397',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909866/pothos-verigated-1-thumb_vmrzik.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-verigated-1-thumb.webp?updatedAt=1723131742141',
         },
         price: {
           small: 22,
@@ -2483,25 +2468,25 @@ const SHOP_DATA = [
             id: 1,
             name: 'Easy Peasy',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/easy-peasy_cojcnm.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/easy-peasy.webp?updatedAt=1723131731545',
           },
           {
             id: 6,
             name: 'Low Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/low-light_ewvwyu.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/low-light.webp?updatedAt=1723131733646',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -2510,17 +2495,17 @@ const SHOP_DATA = [
         name: 'Fiddle Leaf Fig',
         latin_binomial: 'Ficus Lyrata',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/fiddle-leaf-fig-3_qnpchf.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909998/fiddle-leaf-fig-1_duyyvj.webp',
-          img3: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/fiddle-leaf-fig-2_ox5opg.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-3.webp?updatedAt=1723131732706',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-1.webp?updatedAt=1723131732170',
+          img3: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-2.webp?updatedAt=1723131732682',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909999/fiddle-leaf-fig-3-thumb_gfichz.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-3-thumb.webp?updatedAt=1723131732053',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909997/fiddle-leaf-fig-1-thumb_vomdh8.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-1-thumb.webp?updatedAt=1723131732077',
           thumb3:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718909998/fiddle-leaf-fig-2-thumb_us5djs.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/fiddle-leaf-fig-2-thumb.webp?updatedAt=1723131732258',
         },
         price: {
           small: 22,
@@ -2546,25 +2531,25 @@ const SHOP_DATA = [
             id: 2,
             name: 'Lots of Loving',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/lots-love_rcuesg.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/lots-love.webp?updatedAt=1723131732928',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 10,
             name: 'Twice a Month',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/twice-month_abbfpd.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
@@ -2573,14 +2558,14 @@ const SHOP_DATA = [
         name: 'Oxalis',
         latin_binomial: 'Oxalis Spp.',
         imageUrl: {
-          img1: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910004/oxalis-1_smh5pn.webp',
-          img2: 'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910006/oxalis-2_auzual.webp',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-1.webp?updatedAt=1723131736376',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-2.webp?updatedAt=1723131736526',
         },
         thumbnailUrl: {
           thumb1:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910003/oxalis-1-thumb_rwcjfz.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-1-thumb.webp?updatedAt=1723131736183',
           thumb2:
-            'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910004/oxalis-2-thumb_ybjjiw.webp',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/oxalis-2-thumb.webp?updatedAt=1723131736430',
         },
         price: {
           small: 22,
@@ -2601,25 +2586,25 @@ const SHOP_DATA = [
             id: 3,
             name: 'Pretty chill',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910012/pretty-chill_sjirxh.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
             id: 4,
             name: 'Bright Light',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910009/bright-light_hbl9lc.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
             id: 8,
             name: 'Not Pet Friendly',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/not-pf_z4wov8.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
             id: 9,
             name: 'Once a Week',
             imageUrl:
-              'https://res.cloudinary.com/daecnx7ih/image/upload/v1718910010/once-week_erejju.webp',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },

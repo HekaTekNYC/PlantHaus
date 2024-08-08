@@ -7,13 +7,30 @@ import SHOP_DATA from '../shop-data.js'
 
 export const CategoriesContext = createContext({
   categoriesMap: {},
+  loading: true,
 })
 
 export const CategoriesProvider = ({ children }) => {
   const [categoriesMap, setCategoriesMap] = useState({})
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     addCollectionAndDocuments('categories', SHOP_DATA)
+  }, [])
+
+  useEffect(() => {
+    const getCategoriesMap = async () => {
+      try {
+        const categoriesMap = await getCategoriesAndDocuments()
+        setCategoriesMap(categoriesMap)
+      } catch (error) {
+        console.error('Error fetching categories:', error)
+      } finally {
+        setLoading(false) // Set loading to false whether success or error
+      }
+    }
+
+    getCategoriesMap()
   }, [])
 
   useEffect(() => {

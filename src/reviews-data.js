@@ -31,7 +31,7 @@ const REVIEWS_DATA = [
       {
         id: 4,
         imageUrl: 'https://i.ibb.co/KGYxYLz/Wade-Wilson.png',
-        user: 'Wade Wilson',
+        user: 'Chad Knudsen',
         location: 'Austin, Texas',
         review:
           "The Plant Haus has a great support team. They've helped me navigate the unique care requirements for each plant. I deducted 1/2 a star because I'd like to see even more options fo rthose of us in warmer regions. Overall, highly reccommend.",
