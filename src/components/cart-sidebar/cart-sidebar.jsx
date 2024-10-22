@@ -17,28 +17,44 @@ const CartSidebar = () => {
 
   const navigate = useNavigate()
 
-  const goToCheckoutHandler = () => {   
+  const goToCheckoutHandler = () => {
     navigate('/checkout')
     scrollToTop()
   }
 
-  const cartRef = useRef(null) 
-
+  const cartRef = useRef(null)
   useEffect(() => {
     const handleOutsideClick = (event) => {
+      // Ensure that cartRef.current is defined before trying to access it
       if (cartRef.current && !cartRef.current.contains(event.target)) {
-        setIsCartOpen(false);
+        setIsCartOpen(false)
       }
-    };
+    }
 
     if (isCartOpen) {
-      document.addEventListener('mousedown', handleOutsideClick);
+      document.addEventListener('mousedown', handleOutsideClick)
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-    };
-  }, [isCartOpen, setIsCartOpen]);
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isCartOpen, setIsCartOpen])
+
+  // useEffect(() => {
+  //   const handleOutsideClick = (event) => {
+  //     if (cartRef.current && !cartRef.current.contains(event.target)) {
+  //       setIsCartOpen(false);
+  //     }
+  //   };
+
+  //   if (isCartOpen) {
+  //     document.addEventListener('mousedown', handleOutsideClick);
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleOutsideClick);
+  //   };
+  // }, [isCartOpen, setIsCartOpen]);
 
   return (
     <div

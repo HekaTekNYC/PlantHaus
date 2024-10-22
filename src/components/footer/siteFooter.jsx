@@ -79,7 +79,7 @@ const SiteFooter = () => {
                   Follow us
                 </h6>
 
-                <a
+                {/* <a
                   className="btn btn-primary btn-floating m-2 rounded-circle"
                   style={{
                     backgroundColor: 'transparent',
@@ -90,10 +90,10 @@ const SiteFooter = () => {
                   role="button"
                 >
                   <i className="fab fa-facebook-f"></i>
-                </a>
+                </a> */}
 
                 {/* <!-- Twitter --> */}
-                <a
+                {/* <a
                   className="btn btn-primary btn-floating m-2 rounded-circle"
                   style={{
                     backgroundColor: 'transparent',
@@ -104,7 +104,7 @@ const SiteFooter = () => {
                   role="button"
                 >
                   <i className="fab fa-twitter"></i>
-                </a>
+                </a> */}
 
                 {/* <!-- Google --> */}
                 <a
@@ -149,7 +149,7 @@ const SiteFooter = () => {
                 </a>
 
                 {/* <!-- Github --> */}
-                <a
+                {/* <a
                   className="btn btn-primary btn-floating m-2 rounded-circle"
                   style={{
                     backgroundColor: 'transparent',
@@ -160,7 +160,7 @@ const SiteFooter = () => {
                   role="button"
                 >
                   <i className="fab fa-github"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </section>

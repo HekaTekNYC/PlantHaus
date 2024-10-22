@@ -50,17 +50,30 @@ const Home = () => {
         <div className="commitments-section">
           <Commitments />
         </div>
-        {/* Best Sellers*/}
+        {/* Best Sellers/Pet Friendly*/}
         <div className="directories-section">
           <DirectoriesPreview category="pet-friendly" />
         </div>
+        {/* Banner */}
+        <div className="banner-section">
+          <div className="banner-img"> </div>
+          <div className="banner-btn">
+            <h3>Start Your Plant Journey</h3>
+            <Button
+              buttonType={'inverted'}
+              onClick={() => handleCategoryClick('category')}
+            >
+              Shop Now
+            </Button>
+          </div>
+        </div>
         {/* Feature  */}
-        <div className="feature-container">
+        <div className="feature-section">
           <FeaturePreview category="all-products" />
         </div>
 
         {/* <Reviews /> */}
-        <div className="reviews-container">
+        <div className="reviews-section">
           <ReviewsPreview />
         </div>
       </div>
