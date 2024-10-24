@@ -32,11 +32,6 @@ const Navigation = () => {
         </Link>
 
         <div className="right-menu">
-          {/* Hamburger for mobile */}
-          <div className="hamburger-icon">
-            <Burger toggleMobileNav={toggleMobileNav} />
-          </div>
-
           {/* Desktop Nav Links */}
 
           <div className="nav-links-container">
@@ -61,6 +56,10 @@ const Navigation = () => {
           </div>
           <div className="cart-icon">
             <CartIcon />
+          </div>
+          {/* Hamburger for mobile */}
+          <div className="hamburger-icon">
+            <Burger toggleMobileNav={toggleMobileNav} />
           </div>
         </div>
         {isCartOpen && <CartSidebar />}

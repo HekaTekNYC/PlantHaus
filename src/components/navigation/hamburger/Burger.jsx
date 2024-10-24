@@ -4,11 +4,12 @@ import DropdownNav from '../dropdown-nav/dropdown-nav'
 import './burger.styles.scss'
 
 const Burger = () => {
-  const { isMobileNavOpen, setIsMobileNavOpen } = useContext(NavbarContext)
+  const { isMobileNavOpen, toggleMobileNav } = useContext(NavbarContext)
 
   const handleClick = () => {
-    setIsMobileNavOpen((prev) => !prev)
+    toggleMobileNav()
   }
+
   return (
     <div className="hamburger-container">
       <svg

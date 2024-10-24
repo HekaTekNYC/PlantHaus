@@ -50,10 +50,12 @@ const Home = () => {
         <div className="commitments-section">
           <Commitments />
         </div>
+
         {/* Best Sellers/Pet Friendly*/}
         <div className="directories-section">
-          <DirectoriesPreview category="pet-friendly" />
+          <DirectoriesPreview category="best-sellers" />
         </div>
+
         {/* Banner */}
         <div className="banner-section">
           <div className="banner-img"> </div>
@@ -67,6 +69,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
+
         {/* Feature  */}
         <div className="feature-section">
           <FeaturePreview category="all-products" />

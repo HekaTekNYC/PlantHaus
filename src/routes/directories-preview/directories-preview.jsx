@@ -13,6 +13,7 @@ const DirectoriesPreview = ({ category }) => {
         .filter((title) => title === category)
         .map((title) => {
           const products = categoriesMap[title]
+          console.log('products from categoriesMap', products)
           return (
             <DirectoryPreview key={title} title={title} products={products} />
           )

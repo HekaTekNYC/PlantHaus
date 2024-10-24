@@ -184,6 +184,7 @@
   .feature-section,
   .reviews-section {
     padding: 0 80px;
+    margin: 30px;
   }
 }
 
@@ -215,5 +216,8 @@
   .feature-section,
   .reviews-section {
     padding: 0 40px;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
   }
 }

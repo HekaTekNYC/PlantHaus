@@ -9,19 +9,19 @@
 .product-img-container {
   display: flex;
   width: 50%;
-  padding-top: 20px;
+  padding-top: 10px;
 
   .product-thumb-col {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px 10px;
     width: 170px;
-    margin-right: 20px;
     order: 1;
 
     .product-thumb-container {
       width: 165px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       img {
         width: 100%;
@@ -46,6 +46,8 @@
     img {
       width: 100%;
       height: auto;
+      max-width: 377px;
+      max-height: 471px;
     }
   }
 }
@@ -63,6 +65,7 @@
 .product-header {
   .product-name {
     font-size: 3rem;
+    font-weight: 500;
     margin: 0;
   }
 
