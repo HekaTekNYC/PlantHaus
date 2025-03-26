@@ -3,18 +3,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: auto;
   width: 100%;
   overflow: hidden;
+  z-index: 2;
 
   .hero-image-container {
+    position: relative;
     background-image: url('https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/minimalist-plant.webp?updatedAt=1723142215474');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     width: 100%;
     height: 100vh;
+    margin-top: 65px;
     z-index: -1;
+
+    .overlay {
+      background-color: #00000092;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
   }
 
   .hero-text-container {
@@ -22,7 +32,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     height: 100%;
     width: 100%;
     z-index: 3;
@@ -31,12 +40,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      // margin-top: 240px;
+      padding: 0 35px;
 
       .header-text {
         text-align: center;
-        font-size: 4.3rem;
-        font-weight: 600;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.1;
         margin-bottom: 12px;
         font-family: 'Cormorant Garamond';
         color: #fff;
@@ -45,12 +55,16 @@
 
       .header-description {
         text-align: center;
-        font-size: 1.3rem;
-        width: 80%;
+        font-size: 0.9rem;
+        width: 100%;
         margin-bottom: 25px;
         max-width: 900px;
         color: #fff;
         z-index: 3;
+
+        .expanded-text {
+          display: none;
+        }
       }
     }
   }
@@ -83,19 +97,67 @@
 }
 
 // Media Queries
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 390px) {
   .hero-container {
-    height: 800px;
+    .hero-text-container {
+      .hero-text {
+        .header-text {
+          font-size: 3rem;
+          line-height: 1.1;
+        }
+
+        .header-description {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  .hero-container {
+    .hero-text-container {
+      .hero-text {
+        padding: 0 40px;
+        .header-text {
+          font-size: 3.3em;
+          font-weight: 600;
+          line-height: 1.1;
+        }
+        .header-description {
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-container {
+    padding: 60px 20px 20px;
+  }
+
+  .hero-text-container {
+    .hero-text {
+      padding: 0 60px;
+    }
   }
   .commitments-section {
     display: flex;
     align-items: center;
-    height: 600px;
+    height: 900px;
+  }
+  .hero-container {
+    min-height: 600px;
+    height: 80%;
+  }
+  .overlay {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .hero-container {
     flex-direction: column;
     justify-content: start;
@@ -127,32 +189,13 @@
   .commitments-section {
     display: flex;
     align-items: center;
-    height: 900px;
+    height: auto;
   }
 }
-
-@media only screen and (max-width: 780px) {
-  .hero-container {
-    min-height: 600px;
-    height: 80%;
-
-    .overlay {
-      background-color: #00000078;
-      height: 100%;
-      width: 100%;
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .home-container {
-    padding: 60px 20px 20px;
-  }
-
+@media only screen and (min-width: 1200px) {
   .commitments-section {
     display: flex;
     align-items: center;
-    height: 900px;
-    padding-bottom: 60px;
+    height: 600px;
   }
 }

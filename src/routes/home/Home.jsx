@@ -29,12 +29,11 @@ const Home = () => {
         </div>
         <div className="hero-text-container">
           <div className="hero-text">
-            <div className="header-text">The Plant Haus</div>
+            <div className="header-text">PLANT HAUS</div>
             <div className="header-description">
-              Your trusted companion in cultivating a thriving oasis at home.
-              With an extensive array of lush botanical wonders, handpicked for
-              their beauty and resilience, we empower you to transform any space
-              into a verdant sanctuary with ease.
+              Your trusted companion for a thriving home oasis. Discover lush,
+              resilient plants handpicked to transform any space into a green
+              sanctuary.
             </div>
             <Button
               buttonType={'inverted'}
