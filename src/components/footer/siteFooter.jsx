@@ -170,7 +170,25 @@ const SiteFooter = () => {
           className="text-center p-3"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
         >
-          © 2024 Copyright Hekatek
+          <span>
+            Website Developed by{' '}
+            <a
+              href="https://hekateknyc.com/"
+              target="_blank"
+              style={{
+                color: 'white',
+                textDecoration: 'underline',
+                fontWeight: 'bold',
+              }}
+            >
+              Hekatek
+            </a>
+          </span>
+
+          <span class="copyright" style={{ padding: '0 5px' }}>
+            {' '}
+            © Copyright 2025
+          </span>
         </div>
       </footer>
     </div>
