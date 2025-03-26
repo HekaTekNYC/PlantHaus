@@ -17,11 +17,7 @@ import './navigation.styles.scss'
 const Navigation = () => {
   const { currentUser } = useContext(UserContext)
   const { isCartOpen } = useContext(CartContext)
-  const { isMobileNavOpen, toggleMobileNav } = useContext(NavbarContext)
-
-  const closeMobileNav = () => {
-    toggleMobileNav()
-  }
+  const { isMobileNavOpen } = useContext(NavbarContext)
 
   return (
     <>
@@ -30,14 +26,10 @@ const Navigation = () => {
           <div className="logo-short-text">PH</div>
           <div className="nav-store-name">PLANT HAUS</div>
         </Link>
-
         <div className="right-menu">
-          {/* Hamburger for mobile */}
           <div className="hamburger-icon">
-            <Burger toggleMobileNav={toggleMobileNav} />
+            <Burger />
           </div>
-
-          {/* Desktop Nav Links */}
 
           <div className="nav-links-container">
             <Link className="nav-links" to="/">
@@ -59,13 +51,16 @@ const Navigation = () => {
               </Link>
             )}
           </div>
+
           <div className="cart-icon">
             <CartIcon />
           </div>
         </div>
         {isCartOpen && <CartSidebar />}
-        {isMobileNavOpen && <DropdownNav closeMobileNav={closeMobileNav} />}
+        {isMobileNavOpen && <DropdownNav />}{' '}
+        {/* ✅ Menu now renders properly */}
       </div>
+
       <Outlet />
     </>
   )

@@ -1,5 +1,7 @@
 import { createContext, useState, useEffect } from 'react'
 
+const CART_STORAGE_KEY = 'cartItems' // 🔹 Define a key for localStorage
+
 const addCartItem = (cartItems, productToAdd, selectedSize) => {
   const existingCartItem = cartItems.find(
     (cartItem) =>
@@ -36,15 +38,18 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
       cartItem.size === cartItemToRemove.size
   )
 
-
   if (existingCartItem.quantity === 1) {
     return cartItems.filter(
-      (cartItem) => cartItem.size !== cartItemToRemove.size
+      (cartItem) =>
+        !(
+          cartItem.id === cartItemToRemove.id &&
+          cartItem.size === cartItemToRemove.size
+        )
     )
   }
 
-
   return cartItems.map((cartItem) =>
+    cartItem.id === cartItemToRemove.id &&
     cartItem.size === cartItemToRemove.size
       ? { ...cartItem, quantity: cartItem.quantity - 1 }
       : cartItem
@@ -56,11 +61,10 @@ const clearCartItem = (cartItems, cartItemToClear) =>
     (cartItem) =>
       cartItem.id !== cartItemToClear.id ||
       cartItem.size !== cartItemToClear.size
-  );
+  )
 
 export const CartContext = createContext({
   isCartOpen: false,
-  selectSize: () => {},
   setIsCartOpen: () => {},
   cartItems: [],
   addItemToCart: () => {},
@@ -76,6 +80,24 @@ export const CartProvider = ({ children }) => {
   const [cartCount, setCartCount] = useState(0)
   const [cartTotal, setCartTotal] = useState(0)
 
+  // 🛒 Load cart items from localStorage when the app starts
+  useEffect(() => {
+    const storedCart = localStorage.getItem(CART_STORAGE_KEY)
+    if (storedCart) {
+      setCartItems(JSON.parse(storedCart))
+    }
+  }, [])
+
+  // 💾 Save cart items to localStorage whenever they change
+  useEffect(() => {
+    if (cartItems.length > 0) {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems))
+    } else {
+      localStorage.removeItem(CART_STORAGE_KEY) // Remove storage if cart is empty
+    }
+  }, [cartItems])
+
+  // 🔄 Update cart count when items change
   useEffect(() => {
     const newCartCount = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity,
@@ -84,6 +106,7 @@ export const CartProvider = ({ children }) => {
     setCartCount(newCartCount)
   }, [cartItems])
 
+  // 💰 Update total price when items change
   useEffect(() => {
     const newCartTotal = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity * cartItem.price,
@@ -92,18 +115,25 @@ export const CartProvider = ({ children }) => {
     setCartTotal(newCartTotal)
   }, [cartItems])
 
+  // ✅ Add item to cart
   const addItemToCart = (productToAdd, selectedSize) => {
-    setCartItems(addCartItem(cartItems, productToAdd, selectedSize))
+    setCartItems((prevCartItems) =>
+      addCartItem(prevCartItems, productToAdd, selectedSize)
+    )
   }
 
-  //remove one item from cart
+  // 🛑 Remove one quantity from cart
   const removeItemFromCart = (cartItemToRemove) => {
-    setCartItems(removeCartItem(cartItems, cartItemToRemove))
+    setCartItems((prevCartItems) =>
+      removeCartItem(prevCartItems, cartItemToRemove)
+    )
   }
 
-  // remove all cart items
+  // ❌ Clear all of a specific item from cart
   const clearAllItemsFromCart = (cartItemToClear) => {
-    setCartItems(clearCartItem(cartItems, cartItemToClear))
+    setCartItems((prevCartItems) =>
+      clearCartItem(prevCartItems, cartItemToClear)
+    )
   }
 
   const value = {
