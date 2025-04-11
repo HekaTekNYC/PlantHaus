@@ -44,11 +44,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Our Commitments Section */}
+      <div className="commitments-section">
+        <Commitments />
+      </div>
       <div className="home-container">
-        {/* Our Commitments Section */}
-        <div className="commitments-section">
-          <Commitments />
-        </div>
         {/* Best Sellers*/}
         <div className="directories-section">
           <DirectoriesPreview category="pet-friendly" />
