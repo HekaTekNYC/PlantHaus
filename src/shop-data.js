@@ -21,6 +21,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 90,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           'Originating from the lush tropics of Brazil, the Maranta Leuconeura "Red Vein" earns its popular moniker, the "prayer plant," due to its enchanting nightly ritual of folding its leaves, resembling hands in prayer. This unique behavior is believed to be an evolutionary adaptation, ensuring optimal root access to rainfall. The plant\'s striking feature lies in its vibrant red veins, creating an eye-catching display.',
@@ -80,6 +82,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 111,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           "Introducing the Chlorophytum Ccomosum 'Variegatum'—the Spider Plant that's anything but creepy! With arching leaves resembling nature's artwork, painted in shades of green and creamy white, this houseplant brings an elegant and modern vibe to your space. Its air-purifying prowess makes it a favorite, while the cascading effect of its variegated foliage adds a touch of charm.",
@@ -136,6 +140,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 47,
+        stars: 5,
         tags: ['all-products', 'pet-friendly'],
         description:
           "Meet the Asplenium Nidus 'Crissie'—the Bird's Nest Fern with a personality as vibrant as its lush green fronds. Native to tropical Southeast Asia, this fern earns its name from the unique nest-like arrangement of its leaves, creating an exotic and captivating presence. 'Crissie' is your ticket to bringing a slice of the rainforest into your living space.",
@@ -192,6 +198,8 @@ const SHOP_DATA = [
           large: 88,
           extra_large: 109,
         },
+        reviews: 59,
+        stars: 5,
         tags: ['all-products', 'pet-friendly'],
         description:
           'Introducing the Majesty Palm, a touch of tropical elegance for your indoor oasis! With its gracefully arching fronds and regal presence, the Ravenea rivularis brings a slice of paradise to your home. Native to Madagascar, this palm radiates a serene and majestic aura, making it a statement piece in any space.',
@@ -251,6 +259,8 @@ const SHOP_DATA = [
           small: 30,
           medium: 42,
         },
+        reviews: 30,
+        stars: 4,
         tags: ['all-products', 'pet-friendly'],
         description:
           "Meet the Peperomia Raindrop—nature's tear-shaped gem! With its glossy, raindrop-like leaves and compact form, the Peperomia Polybotrya is a delightful addition to your plant family. Native to South America, this easy-care beauty offers a modern aesthetic and a touch of whimsy, making it a favorite among plant enthusiasts.",
@@ -307,6 +317,8 @@ const SHOP_DATA = [
           medium: 35,
           large: 95,
         },
+        reviews: 62,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           'Meet the Ponytail Palm, a quirky and delightful addition to your indoor garden! Despite its name, the Beaucarnea Recurvata is not a true palm but belongs to the agave family. Native to Mexico, this distinctive plant features a swollen trunk that stores water, topped with a cascade of long, arching leaves resembling a cascading ponytail. With its charming and carefree demeanor, the Ponytail Palm adds a touch of desert chic to any space.',
@@ -363,6 +375,8 @@ const SHOP_DATA = [
           small: 29,
           medium: 55,
         },
+        reviews: 22,
+        stars: 4,
         tags: ['all-products'],
         description:
           "Step into the miniature world of artistry with the Bonsai Tree, a living sculpture that encapsulates nature's beauty in a confined space. Originating from ancient Asian traditions, Bonsai involves carefully cultivating trees to mimic their full-sized counterparts in a compact form. Each Bonsai is a unique expression of patience, skill, and a deep appreciation for the delicate balance between the natural and the cultivated.",
@@ -424,6 +438,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 60,
         },
+        reviews: 71,
+        stars: 4,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Meet the Yucca Cane, a striking and resilient plant that brings a touch of the desert to your indoor oasis. Also known as Yucca Elephantipes, this plant features sturdy, sword-shaped leaves that radiate from a central trunk. Native to arid regions of Mexico, the Yucca Cane is celebrated for its architectural beauty and its ability to thrive in a variety of indoor environments.',
@@ -487,6 +503,8 @@ const SHOP_DATA = [
           large: 99,
           extra_large: 119,
         },
+        reviews: 83,
+        stars: 4,
         tags: ['all-products', 'best-seller'],
         description:
           'Enter the realm of tropical grandeur with the Bird of Paradise, also known as Strelitzia Reginae. Native to South Africa, this plant exudes elegance with its large, banana-like leaves and striking orange and blue flowers. With a regal presence, the Bird of Paradise adds a touch of exotic sophistication to your indoor space, making it a favorite among plant enthusiasts.',
@@ -544,6 +562,8 @@ const SHOP_DATA = [
           small: 29,
           medium: 55,
         },
+        reviews: 22,
+        stars: 4,
         tags: ['all-products'],
         description:
           "Step into the miniature world of artistry with the Bonsai Tree, a living sculpture that encapsulates nature's beauty in a confined space. Originating from ancient Asian traditions, Bonsai involves carefully cultivating trees to mimic their full-sized counterparts in a compact form. Each Bonsai is a unique expression of patience, skill, and a deep appreciation for the delicate balance between the natural and the cultivated.",
@@ -607,6 +627,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 99,
         },
+        reviews: 126,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Meet the Monstera Deliciosa, a tropical delight that brings a touch of the jungle to your living space! Characterized by its iconic split leaves, this plant is a statement piece with a bold and captivating presence. Native to the rainforests of Central America, the Monstera Deliciosa has earned its popularity for its unique foliage, making it a favorite among plant enthusiasts.',
@@ -662,6 +684,8 @@ const SHOP_DATA = [
           small: 27,
           medium: 42,
         },
+        reviews: 40,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Enter the world of the desert with the Barrel Cactus, a resilient and iconic succulent that thrives in arid landscapes. Belonging to the Ferocactus genus, these cacti are known for their cylindrical shape, ribbed texture, and striking spines. With a distinctive silhouette that echoes the beauty of the southwestern United States, the Barrel Cactus brings a touch of the wild, sun-soaked desert to your indoor collection.',
@@ -723,6 +747,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 75,
+        stars: 4,
         tags: ['all-products', 'best-seller'],
         description:
           "Introducing the Satin Pothos, a luscious and trailing beauty that adds a touch of elegance to any space. With heart-shaped leaves adorned in silver variegation, the Scindapsus Pictus 'Exotica' creates a mesmerizing display. This vining plant is not just a feast for the eyes but also a resilient and easy-to-care-for companion, making it a cherished favorite among plant enthusiasts.",
@@ -778,6 +804,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 146,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Meet the Pothos, a classic and versatile houseplant that effortlessly combines beauty with resilience. With heart-shaped leaves cascading down long, trailing vines, the Am brings a touch of greenery to any corner of your home. Renowned for its adaptability and air-purifying qualities, the Pothos is a timeless favorite among both beginner and experienced plant enthusiasts.',
@@ -834,6 +862,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 64,
         },
+        reviews: 62,
+        stars: 4,
         tags: ['all-products', 'best-seller'],
         description:
           "Introducing the Alocasia Polly, an exquisite and compact member of the Alocasia family. Also known as Alocasia Micholitziana 'Polly,' this plant boasts striking arrow-shaped leaves with dark green hues and contrasting veins, creating an enchanting visual display. Native to Southeast Asia, the Alocasia Polly is celebrated for its unique foliage and its ability to add a touch of tropical elegance to any interior.",
@@ -894,6 +924,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 60,
         },
+        reviews: 71,
+        stars: 4,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Meet the Yucca Cane, a striking and resilient plant that brings a touch of the desert to your indoor oasis. Also known as Yucca Elephantipes, this plant features sturdy, sword-shaped leaves that radiate from a central trunk. Native to arid regions of Mexico, the Yucca Cane is celebrated for its architectural beauty and its ability to thrive in a variety of indoor environments.',
@@ -956,6 +988,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 45,
+        stars: 5,
         tags: ['all-products', 'best-sellers'],
         description:
           'Meet the Echeveria, a charming and diverse genus of succulents celebrated for its rosette-shaped, fleshy leaves. With a wide range of species and varieties, Echeverias showcase an array of colors, from muted greens to vibrant pinks and purples. Native to semi-desert regions of Central America, Mexico, and northwestern South America, these succulents bring a touch of elegance and modernity to any succulent garden or indoor collection.',
@@ -1013,6 +1047,8 @@ const SHOP_DATA = [
           medium: 35,
           large: 99,
         },
+        reviews: 165,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Introducing the ZZ Plant, a resilient and low-maintenance gem that adds a touch of modern elegance to your indoor jungle. Also known as Zamioculcas Zamiifolia, this plant features glossy, dark green leaves that gracefully arch upward, creating a striking and architectural display. Native to Eastern Africa, the ZZ Plant has become a popular choice for homes and offices due to its ability to thrive in various light conditions and its air-purifying qualities.',
@@ -1069,6 +1105,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 23,
+        stars: 4,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Say hello to the Polka Dot Begonia, a captivating and stylish member of the Begonia family. Also known as Begonia Maculata, this plant steals the spotlight with its angel-wing-shaped leaves adorned with silver polka dots. Native to the rainforests of Brazil, the Polka Dot Begonia is not just a treat for the eyes but also a perfect choice for plant enthusiasts seeking a unique and visually striking addition to their collection.',
@@ -1128,6 +1166,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 64,
         },
+        reviews: 115,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Meet the Snake Plant, a resilient and striking houseplant known for its architectural leaves and air-purifying qualities. Also known as Sansevieria Trifasciata, this plant features upright, sword-like leaves with variegated patterns, creating a modern and eye-catching display. Native to West Africa, the Snake Plant is a popular choice for homes and offices due to its ability to thrive in low-light conditions and its low-maintenance nature.',
@@ -1184,6 +1224,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 98,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           "Introducing the Variegated Pothos, a classic and enchanting houseplant that effortlessly combines elegance with ease of care. Also known as Am 'Marble Queen' or 'Golden Pothos,' this plant features heart-shaped leaves adorned with variegated patterns of green and creamy white. Native to the Solomon Islands, the Variegated Pothos is celebrated for its versatility, air-purifying qualities, and the trailing vines that add a touch of greenery to any space.",
@@ -1244,6 +1286,8 @@ const SHOP_DATA = [
           large: 99,
           extra_large: 129,
         },
+        reviews: 27,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent'],
         description:
           'Enter the world of botanical elegance with the Fiddle Leaf Fig, a statement plant celebrated for its large, violin-shaped leaves. Also known as Ficus Lyrata, this plant is a popular choice for interior decor, adding a touch of lush greenery and a hint of tropical flair to any space. Native to West Africa, the Fiddle Leaf Fig has become a beloved favorite among plant enthusiasts for its striking foliage and iconic silhouette.',
@@ -1302,6 +1346,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 63,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent'],
         description:
           'Meet Oxalis, a charming and delicate plant genus known for its distinctive shamrock-shaped leaves and dainty flowers. Also referred to as the Shamrock Plant, Oxalis comes in various species and varieties, each displaying unique leaf colors and characteristics. Originating from various regions worldwide, including South America, Central America, and South Africa, Oxalis is a delightful addition to both indoor and outdoor gardens.',
@@ -1363,6 +1409,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 90,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           'Originating from the lush tropics of Brazil, the Maranta Leuconeura "Red Vein" earns its popular moniker, the "prayer plant," due to its enchanting nightly ritual of folding its leaves, resembling hands in prayer. This unique behavior is believed to be an evolutionary adaptation, ensuring optimal root access to rainfall. The plant\'s striking feature lies in its vibrant red veins, creating an eye-catching display.',
@@ -1422,6 +1470,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 111,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           "Introducing the Chlorophytum Ccomosum 'Variegatum'—the Spider Plant that's anything but creepy! With arching leaves resembling nature's artwork, painted in shades of green and creamy white, this houseplant brings an elegant and modern vibe to your space. Its air-purifying prowess makes it a favorite, while the cascading effect of its variegated foliage adds a touch of charm.",
@@ -1477,6 +1527,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 47,
+        stars: 5,
         tags: ['all-products', 'pet-friendly'],
         description:
           "Meet the Asplenium Nidus 'Crissie'—the Bird's Nest Fern with a personality as vibrant as its lush green fronds. Native to tropical Southeast Asia, this fern earns its name from the unique nest-like arrangement of its leaves, creating an exotic and captivating presence. 'Crissie' is your ticket to bringing a slice of the rainforest into your living space.",
@@ -1532,6 +1584,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 90,
+        stars: 5,
         tags: ['all-products', 'pet-friendly'],
         description:
           "Say hello to Aloe Vera, the desert's gift to your home! Known for its spiky, fleshy leaves packed with healing properties, this succulent is a true multitasker. With a sleek and modern aesthetic, Aloe Vera adds a touch of green elegance while serving as a natural remedy hub. Let its soothing presence grace your space.",
@@ -1588,6 +1642,8 @@ const SHOP_DATA = [
           large: 88,
           extra_large: 109,
         },
+        reviews: 59,
+        stars: 5,
         tags: ['all-products', 'pet-friendly'],
         description:
           'Introducing the Majesty Palm, a touch of tropical elegance for your indoor oasis! With its gracefully arching fronds and regal presence, the Ravenea rivularis brings a slice of paradise to your home. Native to Madagascar, this palm radiates a serene and majestic aura, making it a statement piece in any space.',
@@ -1647,6 +1703,8 @@ const SHOP_DATA = [
           small: 30,
           medium: 42,
         },
+        reviews: 30,
+        stars: 4,
         tags: ['all-products', 'pet-friendly'],
         description:
           "Meet the Peperomia Raindrop—nature's tear-shaped gem! With its glossy, raindrop-like leaves and compact form, the Peperomia Polybotrya is a delightful addition to your plant family. Native to South America, this easy-care beauty offers a modern aesthetic and a touch of whimsy, making it a favorite among plant enthusiasts.",
@@ -1703,6 +1761,8 @@ const SHOP_DATA = [
           medium: 35,
           large: 95,
         },
+        reviews: 62,
+        stars: 5,
         tags: ['all-products', 'pet-friendly', 'best-seller'],
         description:
           'Meet the Ponytail Palm, a quirky and delightful addition to your indoor garden! Despite its name, the Beaucarnea Recurvata is not a true palm but belongs to the agave family. Native to Mexico, this distinctive plant features a swollen trunk that stores water, topped with a cascade of long, arching leaves resembling a cascading ponytail. With its charming and carefree demeanor, the Ponytail Palm adds a touch of desert chic to any space.',
@@ -1760,6 +1820,8 @@ const SHOP_DATA = [
           large: 99,
           extra_large: 119,
         },
+        reviews: 83,
+        stars: 4,
         tags: ['all-products', 'best-seller'],
         description:
           'Enter the realm of tropical grandeur with the Bird of Paradise, also known as Strelitzia Reginae. Native to South Africa, this plant exudes elegance with its large, banana-like leaves and striking orange and blue flowers. With a regal presence, the Bird of Paradise adds a touch of exotic sophistication to your indoor space, making it a favorite among plant enthusiasts.',
@@ -1817,6 +1879,8 @@ const SHOP_DATA = [
           small: 29,
           medium: 55,
         },
+        reviews: 22,
+        stars: 4,
         tags: ['all-products'],
         description:
           "Step into the miniature world of artistry with the Bonsai Tree, a living sculpture that encapsulates nature's beauty in a confined space. Originating from ancient Asian traditions, Bonsai involves carefully cultivating trees to mimic their full-sized counterparts in a compact form. Each Bonsai is a unique expression of patience, skill, and a deep appreciation for the delicate balance between the natural and the cultivated.",
@@ -1880,6 +1944,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 99,
         },
+        reviews: 126,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Meet the Monstera Deliciosa, a tropical delight that brings a touch of the jungle to your living space! Characterized by its iconic split leaves, this plant is a statement piece with a bold and captivating presence. Native to the rainforests of Central America, the Monstera Deliciosa has earned its popularity for its unique foliage, making it a favorite among plant enthusiasts.',
@@ -1935,6 +2001,8 @@ const SHOP_DATA = [
           small: 27,
           medium: 42,
         },
+        reviews: 40,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Enter the world of the desert with the Barrel Cactus, a resilient and iconic succulent that thrives in arid landscapes. Belonging to the Ferocactus genus, these cacti are known for their cylindrical shape, ribbed texture, and striking spines. With a distinctive silhouette that echoes the beauty of the southwestern United States, the Barrel Cactus brings a touch of the wild, sun-soaked desert to your indoor collection.',
@@ -1996,6 +2064,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 75,
+        stars: 4,
         tags: ['all-products', 'best-seller'],
         description:
           "Introducing the Satin Pothos, a luscious and trailing beauty that adds a touch of elegance to any space. With heart-shaped leaves adorned in silver variegation, the Scindapsus Pictus 'Exotica' creates a mesmerizing display. This vining plant is not just a feast for the eyes but also a resilient and easy-to-care-for companion, making it a cherished favorite among plant enthusiasts.",
@@ -2052,6 +2122,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 140,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           'Meet the Pothos, a classic and versatile houseplant that effortlessly combines beauty with resilience. With heart-shaped leaves cascading down long, trailing vines, the Am brings a touch of greenery to any corner of your home. Renowned for its adaptability and air-purifying qualities, the Pothos is a timeless favorite among both beginner and experienced plant enthusiasts.',
@@ -2108,6 +2180,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 64,
         },
+        reviews: 62,
+        stars: 5,
         tags: ['all-products', 'best-seller'],
         description:
           "Introducing the Alocasia Polly, an exquisite and compact member of the Alocasia family. Also known as Alocasia Micholitziana 'Polly,' this plant boasts striking arrow-shaped leaves with dark green hues and contrasting veins, creating an enchanting visual display. Native to Southeast Asia, the Alocasia Polly is celebrated for its unique foliage and its ability to add a touch of tropical elegance to any interior.",
@@ -2168,6 +2242,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 60,
         },
+        reviews: 71,
+        stars: 4,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Meet the Yucca Cane, a striking and resilient plant that brings a touch of the desert to your indoor oasis. Also known as Yucca Elephantipes, this plant features sturdy, sword-shaped leaves that radiate from a central trunk. Native to arid regions of Mexico, the Yucca Cane is celebrated for its architectural beauty and its ability to thrive in a variety of indoor environments.',
@@ -2225,6 +2301,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 45,
+        stars: 5,
         tags: ['all-products', 'best-sellers'],
         description:
           'Meet the Echeveria, a charming and diverse genus of succulents celebrated for its rosette-shaped, fleshy leaves. With a wide range of species and varieties, Echeverias showcase an array of colors, from muted greens to vibrant pinks and purples. Native to semi-desert regions of Central America, Mexico, and northwestern South America, these succulents bring a touch of elegance and modernity to any succulent garden or indoor collection.',
@@ -2282,6 +2360,8 @@ const SHOP_DATA = [
           medium: 35,
           large: 99,
         },
+        reviews: 165,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Introducing the ZZ Plant, a resilient and low-maintenance gem that adds a touch of modern elegance to your indoor jungle. Also known as Zamioculcas Zamiifolia, this plant features glossy, dark green leaves that gracefully arch upward, creating a striking and architectural display. Native to Eastern Africa, the ZZ Plant has become a popular choice for homes and offices due to its ability to thrive in various light conditions and its air-purifying qualities.',
@@ -2338,6 +2418,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 23,
+        stars: 4,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Say hello to the Polka Dot Begonia, a captivating and stylish member of the Begonia family. Also known as Begonia Maculata, this plant steals the spotlight with its angel-wing-shaped leaves adorned with silver polka dots. Native to the rainforests of Brazil, the Polka Dot Begonia is not just a treat for the eyes but also a perfect choice for plant enthusiasts seeking a unique and visually striking addition to their collection.',
@@ -2397,6 +2479,8 @@ const SHOP_DATA = [
           medium: 32,
           large: 64,
         },
+        reviews: 115,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           'Meet the Snake Plant, a resilient and striking houseplant known for its architectural leaves and air-purifying qualities. Also known as Sansevieria Trifasciata, this plant features upright, sword-like leaves with variegated patterns, creating a modern and eye-catching display. Native to West Africa, the Snake Plant is a popular choice for homes and offices due to its ability to thrive in low-light conditions and its low-maintenance nature.',
@@ -2453,6 +2537,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 98,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
           "Introducing the Variegated Pothos, a classic and enchanting houseplant that effortlessly combines elegance with ease of care. Also known as Am 'Marble Queen' or 'Golden Pothos,' this plant features heart-shaped leaves adorned with variegated patterns of green and creamy white. Native to the Solomon Islands, the Variegated Pothos is celebrated for its versatility, air-purifying qualities, and the trailing vines that add a touch of greenery to any space.",
@@ -2513,6 +2599,8 @@ const SHOP_DATA = [
           large: 99,
           extra_large: 129,
         },
+        reviews: 27,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent'],
         description:
           'Enter the world of botanical elegance with the Fiddle Leaf Fig, a statement plant celebrated for its large, violin-shaped leaves. Also known as Ficus Lyrata, this plant is a popular choice for interior decor, adding a touch of lush greenery and a hint of tropical flair to any space. Native to West Africa, the Fiddle Leaf Fig has become a beloved favorite among plant enthusiasts for its striking foliage and iconic silhouette.',
@@ -2571,6 +2659,8 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
         },
+        reviews: 63,
+        stars: 5,
         tags: ['all-products', 'new-plant-parent'],
         description:
           'Meet Oxalis, a charming and delicate plant genus known for its distinctive shamrock-shaped leaves and dainty flowers. Also referred to as the Shamrock Plant, Oxalis comes in various species and varieties, each displaying unique leaf colors and characteristics. Originating from various regions worldwide, including South America, Central America, and South Africa, Oxalis is a delightful addition to both indoor and outdoor gardens.',
