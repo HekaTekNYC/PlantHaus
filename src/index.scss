@@ -56,6 +56,14 @@ ul {
   padding-left: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
 h1 {
   font-family: 'Cormorant Garamond';
   font-size: 2.5rem;
@@ -126,23 +134,26 @@ h3 {
     font-weight: 600;
     line-height: 1.1;
   }
-
-  h3 {
-    font-size: 2.2rem;
-  }
 }
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
+
   h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h3 {
+    font-size: 2.2rem;
   }
 }
 

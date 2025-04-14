@@ -19,6 +19,11 @@ const Shop = () => {
                   alt="light green monstera leaf"
                   className="shop-img"
                 />
+                <img
+                  src="/images/leaf-light.png"
+                  alt="light green leaf"
+                  className="shop-leaf-img"
+                />
                 <h2>Green Looks Good on You</h2>
                 <p>
                   Explore our full collection of plants that thrive in your

@@ -9,31 +9,33 @@ const CategoryPreview = ({ title, products }) => {
   return (
     <>
       <div className="category-preview-container">
-        <div className="preview-header">
-          <h2>
-            <Link className="title" to={`/shop/${title}`}>
-              {shopTitle(title)}
-            </Link>
-          </h2>
-          <Link to={`/shop/${title}`}>
-            <div className="view-more-text">
-              View More
-              <div className="arrow">
-                <BsArrowRight />
-              </div>
-            </div>
-            <div className="styled-line-under"></div>
+        <div className="category-preview-header">
+          <Link className="category-preview-title" to={`/shop/${title}`}>
+            <h3>{shopTitle(title)}</h3>
           </Link>
+          <div className="view-more-container">
+            <Link to={`/shop/${title}`}>
+              <div className="view-more-text">
+                <p>View More</p>
+                <div className="view-more-arrow">
+                  <BsArrowRight />
+                </div>
+              </div>
+              <div className="styled-line-under"></div>
+            </Link>
+          </div>
         </div>
 
-        <div className="preview">
-          {products
-            .filter((_, idx) => idx < 4)
-            .map((product) => (
-              <div className="product-wrapper" key={product.id}>
-                <ProductCard product={product} />
-              </div>
-            ))}
+        <div className="category-preview">
+          {products.slice(0, 4).map((product, index) => (
+            <div
+              className="category-product-wrapper"
+              key={product.id}
+              data-index={index}
+            >
+              <ProductCard product={product} />
+            </div>
+          ))}
         </div>
       </div>
     </>

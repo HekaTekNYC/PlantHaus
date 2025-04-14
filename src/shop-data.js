@@ -972,35 +972,34 @@ const SHOP_DATA = [
     items: [
       {
         id: 16,
-        name: 'Echeveria',
-        latin_binomial: 'Echeveria Spp.',
+        name: 'Polka Dot Begonia',
+        latin_binomial: 'Begonia Maculata',
         imageUrl: {
-          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1.webp?updatedAt=1723131731643',
-          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2.webp?updatedAt=1723131731592',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1.webp?updatedAt=1723131739692',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2.webp?updatedAt=1723131739897',
         },
         thumbnailUrl: {
           thumb1:
-            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1-thumb.webp?updatedAt=1723131731354',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1-thumb.webp?updatedAt=1723131738833',
           thumb2:
-            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2-thumb.webp?updatedAt=1723131731987',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2-thumb.webp?updatedAt=1723131739935',
         },
         price: {
           small: 22,
           medium: 32,
         },
-        reviews: 45,
-        stars: 5,
-        tags: ['all-products', 'best-sellers'],
+        reviews: 23,
+        stars: 4,
+        tags: ['all-products', 'new-plant-parent', 'best-seller'],
         description:
-          'Meet the Echeveria, a charming and diverse genus of succulents celebrated for its rosette-shaped, fleshy leaves. With a wide range of species and varieties, Echeverias showcase an array of colors, from muted greens to vibrant pinks and purples. Native to semi-desert regions of Central America, Mexico, and northwestern South America, these succulents bring a touch of elegance and modernity to any succulent garden or indoor collection.',
-        care: 'Thriving in bright, indirect light, Echeverias prefer well-draining soil to prevent root rot. Allow the soil to dry out completely between waterings, as these succulents are adapted to survive periods of drought. Pet-friendly and low-maintenance, Echeverias are suitable for both indoor and outdoor settings. Consider their sunlight preferences when deciding on placement—some varieties can tolerate more direct sunlight than others.',
+          'Say hello to the Polka Dot Begonia, a captivating and stylish member of the Begonia family. Also known as Begonia Maculata, this plant steals the spotlight with its angel-wing-shaped leaves adorned with silver polka dots. Native to the rainforests of Brazil, the Polka Dot Begonia is not just a treat for the eyes but also a perfect choice for plant enthusiasts seeking a unique and visually striking addition to their collection.',
+        care: "Thriving in bright, indirect light, the Polka Dot Begonia prefers well-draining soil and slightly higher humidity levels. Keep the soil consistently moist but not waterlogged, allowing the top inch to dry out between waterings. Pet-friendly and relatively low-maintenance, this Begonia adds a touch of tropical flair to your indoor space. Regularly wipe the leaves to maintain their glossy appearance and ensure the plant's overall health.",
         size_description: {
-          small: 'Typically around 3"–6" in diameter for the rosette.',
-          medium:
-            'Reaching 6"–12" in diameter with a more established and mature appearance.',
+          small: 'Typically around 8"–12" tall in a 4-inch pot.',
+          medium: 'Reaching 12"–18" in height with a 6-inch pot.',
         },
         pro_tip:
-          'Rotate your Echeveria periodically to ensure even exposure to sunlight, promoting symmetrical growth. Propagate new plants by removing offsets or leaves and allowing them to root.',
+          "Encourage bushier growth and enhance the Polka Dot Begonia's appearance by pinching back the stems periodically. Propagate by taking stem cuttings and rooting them in water or soil.",
         icons: [
           {
             id: 3,
@@ -1009,22 +1008,22 @@ const SHOP_DATA = [
               'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
-            id: 4,
-            name: 'Bright Light',
+            id: 5,
+            name: 'Medium Light',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
           },
           {
-            id: 7,
-            name: 'Pet Friendly',
+            id: 8,
+            name: 'Not Pet Friendly',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
           },
           {
-            id: 10,
-            name: 'Twice a Month',
+            id: 9,
+            name: 'Once a Week',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
           },
         ],
       },
@@ -1089,34 +1088,35 @@ const SHOP_DATA = [
       },
       {
         id: 18,
-        name: 'Polka Dot Begonia',
-        latin_binomial: 'Begonia Maculata',
+        name: 'Echeveria',
+        latin_binomial: 'Echeveria Spp.',
         imageUrl: {
-          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1.webp?updatedAt=1723131739692',
-          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2.webp?updatedAt=1723131739897',
+          img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1.webp?updatedAt=1723131731643',
+          img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2.webp?updatedAt=1723131731592',
         },
         thumbnailUrl: {
           thumb1:
-            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-1-thumb.webp?updatedAt=1723131738833',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-1-thumb.webp?updatedAt=1723131731354',
           thumb2:
-            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/polka-dot-begonia-2-thumb.webp?updatedAt=1723131739935',
+            'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/echeveria-2-thumb.webp?updatedAt=1723131731987',
         },
         price: {
           small: 22,
           medium: 32,
         },
-        reviews: 23,
-        stars: 4,
-        tags: ['all-products', 'new-plant-parent', 'best-seller'],
+        reviews: 45,
+        stars: 5,
+        tags: ['all-products', 'best-sellers'],
         description:
-          'Say hello to the Polka Dot Begonia, a captivating and stylish member of the Begonia family. Also known as Begonia Maculata, this plant steals the spotlight with its angel-wing-shaped leaves adorned with silver polka dots. Native to the rainforests of Brazil, the Polka Dot Begonia is not just a treat for the eyes but also a perfect choice for plant enthusiasts seeking a unique and visually striking addition to their collection.',
-        care: "Thriving in bright, indirect light, the Polka Dot Begonia prefers well-draining soil and slightly higher humidity levels. Keep the soil consistently moist but not waterlogged, allowing the top inch to dry out between waterings. Pet-friendly and relatively low-maintenance, this Begonia adds a touch of tropical flair to your indoor space. Regularly wipe the leaves to maintain their glossy appearance and ensure the plant's overall health.",
+          'Meet the Echeveria, a charming and diverse genus of succulents celebrated for its rosette-shaped, fleshy leaves. With a wide range of species and varieties, Echeverias showcase an array of colors, from muted greens to vibrant pinks and purples. Native to semi-desert regions of Central America, Mexico, and northwestern South America, these succulents bring a touch of elegance and modernity to any succulent garden or indoor collection.',
+        care: 'Thriving in bright, indirect light, Echeverias prefer well-draining soil to prevent root rot. Allow the soil to dry out completely between waterings, as these succulents are adapted to survive periods of drought. Pet-friendly and low-maintenance, Echeverias are suitable for both indoor and outdoor settings. Consider their sunlight preferences when deciding on placement—some varieties can tolerate more direct sunlight than others.',
         size_description: {
-          small: 'Typically around 8"–12" tall in a 4-inch pot.',
-          medium: 'Reaching 12"–18" in height with a 6-inch pot.',
+          small: 'Typically around 3"–6" in diameter for the rosette.',
+          medium:
+            'Reaching 6"–12" in diameter with a more established and mature appearance.',
         },
         pro_tip:
-          "Encourage bushier growth and enhance the Polka Dot Begonia's appearance by pinching back the stems periodically. Propagate by taking stem cuttings and rooting them in water or soil.",
+          'Rotate your Echeveria periodically to ensure even exposure to sunlight, promoting symmetrical growth. Propagate new plants by removing offsets or leaves and allowing them to root.',
         icons: [
           {
             id: 3,
@@ -1125,22 +1125,22 @@ const SHOP_DATA = [
               'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pretty-chill.webp?updatedAt=1723131743632',
           },
           {
-            id: 5,
-            name: 'Medium Light',
+            id: 4,
+            name: 'Bright Light',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/medium-light.webp?updatedAt=1723131733943',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/bright-light.webp?updatedAt=1723131730904',
           },
           {
-            id: 8,
-            name: 'Not Pet Friendly',
+            id: 7,
+            name: 'Pet Friendly',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/not-pf.webp?updatedAt=1723131736280',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pf.webp?updatedAt=1723131737424',
           },
           {
-            id: 9,
-            name: 'Once a Week',
+            id: 10,
+            name: 'Twice a Month',
             imageUrl:
-              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/once-week.webp?updatedAt=1723131736059',
+              'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/twice-month.webp?updatedAt=1723131754806',
           },
         ],
       },
