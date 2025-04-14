@@ -66,6 +66,8 @@ h1 {
 
 h2 {
   font-family: 'Cormorant Garamond';
+  font-size: 2.1rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -130,6 +132,9 @@ h3 {
   }
 }
 @media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
   h3 {
     font-size: 2.3rem;
   }

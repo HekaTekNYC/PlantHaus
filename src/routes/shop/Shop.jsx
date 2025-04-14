@@ -14,6 +14,11 @@ const Shop = () => {
           element={
             <>
               <div className="shop-page-header">
+                <img
+                  src="/images/monstera-light.png"
+                  alt="light green monstera leaf"
+                  className="shop-img"
+                />
                 <h2>Green Looks Good on You</h2>
                 <p>
                   Explore our full collection of plants that thrive in your
