@@ -5,9 +5,6 @@ import { BsArrowRight } from 'react-icons/bs'
 import './directory-preview.styles.scss'
 
 const DirectoryPreview = ({ title, products }) => {
-  const featuredIds = [14, 13, 15, 8]
-
-  const productMap = new Map(products.map((product) => [product.id, product]))
   return (
     <div className="directory-preview-container">
       <div className="directory-preview-header">
@@ -27,18 +24,11 @@ const DirectoryPreview = ({ title, products }) => {
         </div>
       </div>
       <div className="directory-preview">
-        {featuredIds
-          .map((id) => productMap.get(id))
-          .filter(Boolean)
-          .map((product, index) => (
-            <div
-              className="product-wrapper"
-              key={product.id}
-              data-index={index}
-            >
-              <ProductCard product={product} />
-            </div>
-          ))}
+        {products.slice(0, 4).map((product, index) => (
+          <div className="product-wrapper" key={product.id} data-index={index}>
+            <ProductCard product={product} />
+          </div>
+        ))}
       </div>
     </div>
   )
