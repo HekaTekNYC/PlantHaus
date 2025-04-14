@@ -3,8 +3,6 @@
   flex-direction: column;
   height: auto;
   width: 100%;
-  max-width: 1400px;
-  padding: 20px 0;
 }
 
 .directory-preview-header {
@@ -22,16 +20,25 @@
   .view-text-container {
     display: flex;
     flex-direction: column;
+  }
+  .view-align {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100%;
 
     p {
       margin: 5px 0 0;
       font-family: 'Cormorant Garamond';
       line-height: 1.3;
+    }
 
-      .arrow {
-        font-size: 0.9rem;
-        margin-left: 4px;
-      }
+    .arrow {
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      margin-left: 5px;
+      height: auto;
     }
   }
 }
@@ -54,14 +61,18 @@
 // Media Queries
 
 @media only screen and (min-width: 768px) {
-  .directory-preview-header {
-    .view-text-container {
-      p {
-        margin: 15px 0 0;
-        line-height: 1.3;
-      }
+  .view-align {
+    p {
+      font-size: 1.2rem;
+      margin: 15px 0 0;
+    }
+
+    .arrow {
+      font-size: 0.9rem;
+      margin: 0 0 5px 5px;
     }
   }
+
   .directory-preview {
     .product-wrapper {
       flex: 1 1 calc(33.333% - 1rem);
@@ -89,6 +100,4 @@
 }
 
 @media only screen and (min-width: 1400px) {
-  .directory-preview-container {
-  }
 }

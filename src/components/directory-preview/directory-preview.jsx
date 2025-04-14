@@ -16,12 +16,12 @@ const DirectoryPreview = ({ title, products }) => {
         </Link>
         <div className="view-text-container">
           <Link to={`/shop/${title}`}>
-            <p>
-              View More
-              <span className="arrow">
+            <div className="view-align">
+              <p>View More</p>
+              <div className="arrow">
                 <BsArrowRight />
-              </span>
-            </p>
+              </div>
+            </div>
             <div className="styled-line-under"></div>
           </Link>
         </div>
