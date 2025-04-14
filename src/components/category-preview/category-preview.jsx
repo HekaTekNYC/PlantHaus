@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import shopTitle from '../../utils/shopTitle.utils'
 import ProductCard from '../product-card/product-card'
@@ -33,11 +32,6 @@ const CategoryPreview = ({ title, products }) => {
             .map((product) => (
               <div className="product-wrapper" key={product.id}>
                 <ProductCard product={product} />
-                <div className="category-overlay">
-                  <Link className="title" to={`/shop/${title}`}>
-                    <h3>{shopTitle(title)}</h3>
-                  </Link>
-                </div>
               </div>
             ))}
         </div>

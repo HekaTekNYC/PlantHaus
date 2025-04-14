@@ -1,23 +1,42 @@
 import { Link } from 'react-router-dom'
 import ProductCard from '../product-card/product-card'
 import shopTitle from '../../utils/shopTitle.utils'
+import { BsArrowRight } from 'react-icons/bs'
 import './directory-preview.styles.scss'
 
 const DirectoryPreview = ({ title, products }) => {
+  const featuredIds = [14, 13, 15, 8]
+
+  const productMap = new Map(products.map((product) => [product.id, product]))
   return (
     <div className="directory-preview-container">
-      <h2 className="directory-title">
-        <Link to={`/shop/${title}`}>{shopTitle(title)}</Link>
-      </h2>
+      <div className="directory-preview-header">
+        <Link to={`/shop/${title}`}>
+          <h3 className="directory-title">{shopTitle(title)}</h3>
+        </Link>
+        <div className="view-text-container">
+          <Link to={`/shop/${title}`}>
+            <p>
+              View More
+              <span className="arrow">
+                <BsArrowRight />
+              </span>
+            </p>
+            <div className="styled-line-under"></div>
+          </Link>
+        </div>
+      </div>
       <div className="directory-preview">
-        {products
-          .filter((_, idx) => idx < 4)
-          .map((product) => (
-            <div className="product-wrapper" key={product.id}>
+        {featuredIds
+          .map((id) => productMap.get(id))
+          .filter(Boolean)
+          .map((product, index) => (
+            <div
+              className="product-wrapper"
+              key={product.id}
+              data-index={index}
+            >
               <ProductCard product={product} />
-              <div className="category-overlay">
-                <h3>{shopTitle(title)}</h3>
-              </div>
             </div>
           ))}
       </div>

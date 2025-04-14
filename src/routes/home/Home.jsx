@@ -29,12 +29,12 @@ const Home = () => {
         </div>
         <div className="hero-text-container">
           <div className="hero-text">
-            <div className="header-text">PLANT HAUS</div>
-            <div className="header-description">
+            <h1 className="header-text">PLANT HAUS</h1>
+            <p className="header-description">
               Your trusted companion for a thriving home oasis. Discover lush,
               resilient plants handpicked to transform any space into a green
               sanctuary.
-            </div>
+            </p>
             <Button
               buttonType={'inverted'}
               onClick={() => handleCategoryClick('category')}
@@ -51,15 +51,15 @@ const Home = () => {
       <div className="home-container">
         {/* Best Sellers*/}
         <div className="directories-section">
-          <DirectoriesPreview category="pet-friendly" />
+          <DirectoriesPreview category="best-sellers" />
         </div>
         {/* Feature  */}
-        <div className="feature-container">
+        <div className="feature-section">
           <FeaturePreview category="all-products" />
         </div>
 
         {/* <Reviews /> */}
-        <div className="reviews-container">
+        <div className="reviews-section">
           <ReviewsPreview />
         </div>
       </div>

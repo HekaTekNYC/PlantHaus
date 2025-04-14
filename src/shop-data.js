@@ -789,7 +789,7 @@ const SHOP_DATA = [
       {
         id: 13,
         name: 'Pothos',
-        latin_binomial: 'Am',
+        latin_binomial: 'Epipremnum aureum',
         imageUrl: {
           img1: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-1.webp?updatedAt=1723131741846',
           img2: 'https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/pothos-2.webp?updatedAt=1723131742042',
