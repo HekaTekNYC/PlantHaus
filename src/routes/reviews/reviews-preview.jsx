@@ -7,10 +7,9 @@ const ReviewsPreview = () => {
 
   return (
     <>
-      {Object.keys(reviewsMap).map((title) => {
-        const reviews = reviewsMap[title]
-        return <Reviews key={title} title={title} reviews={reviews} />
-      })}
+      {Object.entries(reviewsMap).map(([title, reviewList]) => (
+        <Reviews key={title} title={title} reviews={reviewList} />
+      ))}
     </>
   )
 }
