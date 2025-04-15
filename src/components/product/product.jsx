@@ -92,7 +92,7 @@ const Product = ({ product }) => {
       </div>
       <div className="product-info-container">
         <div className="product-header">
-          <span className="product-name">{name}</span>
+          <h3 className="product-name">{name}</h3>
           <div className="product-latin">{latin_binomial}</div>
           <div className="product-price">${selectedPrice}</div>
         </div>
