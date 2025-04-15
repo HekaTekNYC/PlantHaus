@@ -6,18 +6,18 @@ const ReviewCard = ({ reviews }) => {
 
   return (
     <div className="review-card-container">
+      <div className="profile-image-wrapper">
+        <img src={imageUrl} alt={`${user} profile`} />
+      </div>
+
       <div className="review-card">
-        <div className="review-card-header">
-          <div className="review-profile-picture">
-            <img src={imageUrl} alt={`${imageUrl}`} />
-          </div>
-          <div className="review-user-info">
-            <div className="review-user">{user}</div>
-            <div className="review-location">{location}</div>
-          </div>
-        </div>
         <div className="user-review">
           <p>{review}</p>
+        </div>
+
+        <div className="review-user-info-footer">
+          <div className="review-user">{user}</div>
+          <div className="review-location"><em>{location}</em></div>
         </div>
       </div>
     </div>
