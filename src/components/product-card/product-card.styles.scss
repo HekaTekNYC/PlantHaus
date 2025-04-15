@@ -3,90 +3,99 @@
   flex-direction: column;
   height: auto;
   max-width: 400px;
-  min-width: 225px;
   width: 100%;
   margin: 0 auto;
 }
 
 .product-card-img {
-  height: 350px;
-  width: 300px;
-  min-width: 225px;
-  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
+  cursor: pointer;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 }
 
 .footer {
-  display: none;
+  display: block;
+  flex-direction: column;
+  padding: 0 5px 0;
+  width: 100%;
+
+  .name {
+    font-weight: 500;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 6px 0 0;
+  }
+
+  .latin {
+    font-size: 0.688rem;
+    color: #4e4e4e;
+    font-style: italic;
+    padding-bottom: 2px;
+  }
+  .product-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .stars {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: auto;
+      margin-right: 4px;
+
+      .star-img {
+        width: 14px;
+        height: 14px;
+        padding-right: 2px;
+      }
+    }
+
+    .reviews-num {
+      font-size: 0.8rem;
+    }
+  }
+
+  .price {
+    font-style: italic;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 768px) {
   .footer {
-    display: block;
-    flex-direction: column;
-    padding: 0 5px 0;
-    width: 100%;
-
     .name {
-      font-weight: 500;
-      font-family: 'Cormorant Garamond';
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       line-height: 1.3;
       margin: 6px 0 0;
     }
 
     .latin {
-      font-size: 0.688rem;
-      color: #4e4e4e;
-      font-style: italic;
-      padding-bottom: 2px;
+      font-size: 0.775rem;
     }
     .product-reviews {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-
-      .stars {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        width: auto;
-        margin-right: 4px;
-
-        .star-img {
-          width: 14px;
-          height: 14px;
-          padding-right: 2px;
-        }
-      }
+      padding-bottom: 3px;
 
       .reviews-num {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
       }
     }
 
     .price {
-      font-style: italic;
-      margin-bottom: 20px;
+      font-size: 1rem;
     }
   }
 }
-
-// @media only screen and (min-width: 1000px) {
-//   .product-card-container {
-//     width: 300px;
-
-//       .product-card-img {
-//         width: 100%;
-//       }
-//   }
-// }
 
 // // Apply for screens up to 1200px
 // @media only screen and (min-width: 1200px) {

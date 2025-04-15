@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import CategoriesPreview from '../categories-preview/categories-preview'
 import CategoryPage from '../category-page/category-page'
 import ProductPage from '../product-page/product-page'
@@ -6,17 +6,43 @@ import ProductPage from '../product-page/product-page'
 import './shop.styles.scss'
 
 const Shop = () => {
-  const location = useLocation()
-
-  const isShopPage =
-    location.pathname.startsWith('/shop') || location.pathname === '/shop/'
-
   return (
     <div className="shop-container">
-      {isShopPage && <div className="mobile-buttons"></div>}
-
       <Routes>
-        <Route index element={<CategoriesPreview />} />
+        <Route
+          index
+          element={
+            <>
+              <div className="shop-page-header-container">
+                <div className="shop-page-header">
+                  <img
+                    src="/images/monstera-light.png"
+                    alt="light green monstera leaf"
+                    className="shop-monstera"
+                  />
+                  <img
+                    src="/images/leaf-light.png"
+                    alt="light green leaf"
+                    className="shop-leaf-md"
+                  />
+                  <img
+                    src="/images/leaf-dark.png"
+                    alt="light green leaf"
+                    className="shop-leaf-dark"
+                  />
+                  <h2>Green Looks Good on You</h2>
+                  <p>
+                    Explore our full collection of plants that thrive in your
+                    space — and your lifestyle.
+                  </p>
+                </div>
+              </div>
+              <div className="shop-category-container">
+                <CategoriesPreview />
+              </div>
+            </>
+          }
+        />
         <Route path=":category/" element={<CategoryPage />} />
         <Route path="product/:productName" element={<ProductPage />} />
       </Routes>
