@@ -153,7 +153,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: -8px;
     text-align: center;
 
     .plant-care-icon-container {
@@ -277,7 +276,7 @@
       }
 
       .plant-care-icon-name {
-        font-size: 1rem;
+        font-size: 0.6rem;
       }
     }
   }
