@@ -22,7 +22,7 @@
   padding: 40px 25px;
   z-index: 2;
 
-  .shop-img {
+  .shop-monstera {
     position: absolute;
     height: auto;
     width: 200px;
@@ -34,7 +34,7 @@
     z-index: -1;
   }
 
-  .shop-leaf-img {
+  .shop-leaf-md {
     position: absolute;
     height: auto;
     width: 200px;
@@ -43,7 +43,8 @@
     transform: scaleY(-1) rotate(10deg);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: top 0.5s ease, left 0.5s ease, width 0.5s ease,
+      opacity 0.5s ease, transform 0.5s ease;
     z-index: -1;
   }
   .shop-leaf-dark {
@@ -77,7 +78,7 @@
 
 @media only screen and (min-width: 430px) {
   .shop-page-header {
-    .shop-img {
+    .shop-monstera {
       top: -80px;
       left: -85px;
       transform: scaleY(-1) rotate(20deg);
@@ -100,13 +101,11 @@
   .shop-page-header {
     padding: 100px 0 80px;
 
-    .shop-img {
-      .shop-img {
-        top: -70px;
-        left: -100px;
-        transform: scaleY(-1) rotate(25deg);
-        width: 200px;
-      }
+    .shop-monstera {
+      top: -40px;
+      left: -60px;
+      transform: scaleY(-1) rotate(25deg);
+      width: 200px;
     }
 
     h2 {
@@ -117,14 +116,14 @@
 
 @media only screen and (min-width: 992px) {
   .shop-page-header {
-    .shop-img {
+    .shop-monstera {
       top: -30px;
       left: -120px;
       width: 250px;
       transform: scaleY(-1) rotate(20deg);
     }
 
-    .shop-leaf-img {
+    .shop-leaf-md {
       opacity: 1;
       visibility: visible;
     }
@@ -135,14 +134,30 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .shop-page-header {
+    .shop-monstera {
+      top: -30px;
+      left: -80px;
+      width: 300px;
+      transform: scaleY(-1) rotate(20deg);
+    }
+
+    .shop-leaf-md {
+      width: 250px;
+      top: -80px;
+      left: 10px;
+      transform: scaleY(-1) rotate(10deg);
+    }
+
     .shop-leaf-dark {
       opacity: 1;
       visibility: visible;
     }
   }
+}
 
+@media only screen and (min-width: 1400px) {
   .shop-category-container {
     padding: 40px 80px 0;
   }

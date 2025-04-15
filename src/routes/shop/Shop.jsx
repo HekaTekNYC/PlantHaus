@@ -18,12 +18,12 @@ const Shop = () => {
                   <img
                     src="/images/monstera-light.png"
                     alt="light green monstera leaf"
-                    className="shop-img"
+                    className="shop-monstera"
                   />
                   <img
                     src="/images/leaf-light.png"
                     alt="light green leaf"
-                    className="shop-leaf-img"
+                    className="shop-leaf-md"
                   />
                   <img
                     src="/images/leaf-dark.png"
