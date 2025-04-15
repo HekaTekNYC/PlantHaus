@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
 import shopTitle from '../../utils/shopTitle.utils'
 
-// import { FaArrowRight } from 'react-icons/fa6'
 import { BsArrowRight } from 'react-icons/bs'
 
 import './feature-product.styles.scss'
@@ -79,40 +77,39 @@ const FeatureProduct = ({ product }) => {
             <img src={selectedImage} alt={`${name}`} />
           </div>
         </div>
+
+        <div className="feature-header">
+          <div className="feature-plant-eyebrow">THIS WEEKS FEATURED PLANT</div>
+          <h3 className="feature-name">{name}</h3>
+          <div className="feature-latin">{latin_binomial}</div>
+        </div>
         <div className="feature-info-container">
-          <div className="feature-plant-header">THIS WEEKS FEATURED PLANT</div>
-          <div className="feature-header">
-            <span className="feature-name">{name}</span>
-            <div className="feature-latin">{latin_binomial}</div>
-            <div className="feature-price">{`$${priceMedium} - $${priceLarge}`}</div>
+          <div className="styled-line top-line"></div>
+          <div className="feature-price">Starting at $32</div>
+          <div className="feature-size-description">
+            {' '}
+            {size_description &&
+              Object.entries(size_description).map(([size, value]) => (
+                <div className="size-description" key={size}>{`${shopTitle(
+                  size
+                )}: ${value}`}</div>
+              ))}
           </div>
-          <div className="feature-size-container">
-            <div className="feature-size-description">
-              {' '}
-              {size_description &&
-                Object.entries(size_description).map(([size, value]) => (
-                  <div className="size-description" key={size}>{`${shopTitle(
-                    size
-                  )}: ${value}`}</div>
-                ))}
+          <div className="feature-description">{description}</div>
+          <div className="styled-line"></div>
+
+          <Link
+            to={`/shop/product/${plantName}`}
+            state={{ nameMatch }}
+            className="go-to-product"
+          >
+            View Full Details
+            <div className="arrow">
+              {/* <FaArrowRight /> */}
+              <BsArrowRight />
             </div>
-            <div className="feature-description">{description}</div>
-
-            <div className="styled-line"></div>
-
-            <Link
-              to={`/shop/product/${plantName}`}
-              state={{ nameMatch }}
-              className="go-to-product"
-            >
-              View Full Details
-              <div className="arrow">
-                {/* <FaArrowRight /> */}
-                <BsArrowRight />
-              </div>
-            </Link>
-            <div className="styled-line"></div>
-          </div>
+          </Link>
+          <div className="styled-line"></div>
         </div>
       </div>
     </>

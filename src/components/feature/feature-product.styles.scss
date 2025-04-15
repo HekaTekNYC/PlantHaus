@@ -1,15 +1,14 @@
 .feature-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 50px 50px;
 }
 
 .feature-img-container {
   display: flex;
-  width: 50%;
-  padding-top: 20px;
+  width: 100%;
+  order: 2;
 
   .feature-thumb-col {
     display: flex;
@@ -20,7 +19,7 @@
     order: 1;
 
     .feature-thumb-container {
-      width: 150px;
+      width: 100px;
       margin-bottom: 20px;
 
       img {
@@ -36,9 +35,7 @@
   .feature-img-col {
     height: auto;
     width: 100%;
-    padding: 0 10px 10px;
     order: 2;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,24 +46,18 @@
     }
   }
 }
-// feature product information container right side
-
-.feature-info-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 40px;
-  line-height: 1.6;
-}
-
-.feature-plant-header {
-  color: #3c685d;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
 
 .feature-header {
-  margin-top: 15px;
+  order: 1;
+  width: 100%;
+  padding-bottom: 10px;
+
+  .feature-plant-eyebrow {
+    color: #3c685d;
+    font-weight: 800;
+    font-size: 0.7rem;
+  }
+
   .feature-name {
     font-size: 3rem;
     line-height: 4rem;
@@ -79,15 +70,22 @@
     font-style: italic;
     font-weight: 300;
     margin-bottom: 10px;
-    line-height: 1.5rem;
+    line-height: 1rem;
   }
+}
+.feature-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 3;
+}
 
-  .feature-price {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 20px 0 10px;
-    font-family: 'Cormorant Garamond';
-  }
+.feature-price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 10px;
+  font-family: 'Cormorant Garamond';
 }
 
 .feature-size-description {
@@ -105,40 +103,26 @@
   }
 }
 
-// Apply for screens up to 1400px
-@media only screen and (max-width: 1400px) {
-  .feature-container {
-    margin: 0 0px 50px;
-  }
-
-  .feature-img-container {
-    .feature-thumb-col {
-      width: 130px;
-      margin-right: 10px;
-      .feature-thumb-container {
-        width: 130px;
-      }
-    }
-  }
+// Apply for screens up to 600px
+@media only screen and (min-width: 600px) {
 }
 
-// Apply for screens up to 1200px
-@media only screen and (max-width: 1200px) {
+// Apply for screens up to 768px
+
+@media only screen and (min-width: 768px) {
   .feature-container {
-    .feature-img-container {
-      .feature-thumb-col {
-        width: 100px;
-        margin-right: 15px;
-        .feature-thumb-container {
-          width: 100px;
-        }
-      }
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0;
+
+    .feature-img-col {
+      padding: 0 0 10px;
     }
   }
 }
 
 // Apply for screens up to 992px
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .feature-container {
     .feature-img-container {
       display: column;
@@ -160,20 +144,34 @@
   }
 }
 
-// Apply for screens up to 768px
-
-@media only screen and (max-width: 768px) {
+// Apply for screens up to 1200px
+@media only screen and (min-width: 1200px) {
   .feature-container {
-    flex-direction: column;
-    margin: 0 10px;
-    padding: 0;
-
-    .feature-img-col {
-      padding: 0 0 10px;
+    .feature-img-container {
+      .feature-thumb-col {
+        width: 100px;
+        margin-right: 15px;
+        .feature-thumb-container {
+          width: 100px;
+        }
+      }
     }
   }
 }
 
-// Apply for screens up to 600px
-@media only screen and (max-width: 600px) {
+// Apply for screens up to 1400px
+@media only screen and (min-width: 1400px) {
+  .feature-container {
+    margin: 0 0px 50px;
+  }
+
+  .feature-img-container {
+    .feature-thumb-col {
+      width: 130px;
+      margin-right: 10px;
+      .feature-thumb-container {
+        width: 130px;
+      }
+    }
+  }
 }
