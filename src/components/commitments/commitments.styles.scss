@@ -1,152 +1,190 @@
-.three-points-container {
+.commitments-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 60px 0;
-  height: 500px;
+  height: auto;
   width: 100%;
+  background-color: #3c403d;
+  overflow: hidden;
+  margin-bottom: 20px;
 
-  .three-header {
-    font-size: 2.2rem;
-    font-weight: 800;
-    font-family: 'Cormorant Garamond';
-    margin-bottom: 0;
+  .commitments-header {
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 3;
+  }
+
+  .fern-com {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    width: 150px;
+    transform: scaleY(-1) rotate(-20deg);
+    z-index: 2;
+  }
+
+  .palm-com {
+    position: absolute;
+    bottom: -40px;
+    left: -20px;
+    width: 150px;
+    transform: rotate(-10deg);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .monstera-com {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 150px;
+    transform: scaleY(-1) rotate(20deg);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .delicate-com {
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    width: 150px;
+    transform: rotate(-20deg);
+    opacity: 0;
+    z-index: 2;
   }
 }
 
-.three-points-row {
+.commitments-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
+  max-width: 1400px;
+  padding: 0 25px;
 
-  .main-point-container {
+  .point-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    height: 100%;
     width: 100%;
-    height: 300px;
-    margin: 0 5px;
+    max-width: 320px;
 
-    .blob-container {
+    .point-icon {
+      width: 50px;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 300px;
-      width: 300px;
-
-      .point-blob {
-        position: relative;
-        z-index: -1;
-        width: 150px;
-        height: 150px;
-        top: 8px;
-        left: 5px;
-      }
+      padding-bottom: 13px;
+      color: #ffffff;
     }
 
-    .points-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 45px;
-      height: auto;
-      width: 350px;
+    .point-header {
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.7rem;
+      z-index: 3;
+    }
 
-      .point-icon {
-        width: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    .point-info {
+      text-align: center;
+      padding-top: 8px;
+      line-height: 1.4;
+      color: #ffffff;
+      z-index: 3;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .commitments-row {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .commitments-container {
+    padding: 40px 0;
+
+    .commitments-header {
+      font-size: 2.1rem;
+    }
+
+    .palm-com {
+      opacity: 0;
+    }
+
+    .monstera-com {
+      opacity: 1;
+    }
+
+    .delicate-com {
+      opacity: 1;
+    }
+  }
+  .commitments-row {
+    flex-direction: row;
+    gap: 2rem;
+
+    .point-container {
+      margin-top: 25px;
 
       .point-header {
-        text-align: center;
-        font-family: 'Cormorant Garamond';
-        font-weight: 700;
-        font-size: 1.55rem;
-        margin: 3px 0 10px;
+        font-size: 1.4rem;
       }
 
       .point-info {
-        text-align: center;
-        margin: 10px 0;
-        padding: 5px 0;
-        line-height: 1.4;
+        font-size: 0.875rem;
       }
     }
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .three-points-row {
-    .points-container {
-      width: 400px;
+@media only screen and (min-width: 992px) {
+  .commitments-container {
+    .monstera-com {
+      top: -20px;
+      left: -80px;
+      width: 200px;
+      transform: scaleY(-1) rotate(20deg);
     }
   }
-}
+  .commitments-row {
+    justify-content: space-evenly;
+    padding: 0 60px;
 
-/* Apply for screens up to 1200px */
-@media only screen and (max-width: 1200px) {
-  .three-points-container {
-    height: 500px;
+    .point-container {
+      max-width: 250px;
 
-    .main-point-container {
-      width: 100%;
+      .point-header {
+        font-size: 1.5rem;
+      }
 
-      .points-container {
-        width: 100%;
+      .point-info {
+        font-size: 1rem;
       }
     }
   }
 }
 
-/* Medium devices (landscape tablets and medium desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .three-points-container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 5px 0;
-    height: auto;
-    margin-top: 30px;
-
-    .three-header {
-      font-size: 2rem;
-    }
-
-    .three-points-row {
-      flex-direction: column;
-
-      .main-point-container {
-        height: 300px;
-        width: 100%;
-
-        .points-container {
-          height: 100%;
-        }
-      }
+@media only screen and (min-width: 1400px) {
+  .commitments-container {
+    .palm-com {
+      opacity: 1;
+      bottom: -40px;
+      left: auto;
+      right: -10px;
+      width: 150px;
+      transform: scaleX(-1) rotate(20deg);
     }
   }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .three-points-container {
-    height: auto;
-
-    .main-point-container {
-      height: 350px;
-    }
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  .three-points-container {
-    min-height: 400px;
+  .commitments-row {
+    padding: 0 80px;
   }
 }
