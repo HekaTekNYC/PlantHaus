@@ -17,7 +17,9 @@ const ReviewCard = ({ reviews }) => {
 
         <div className="review-user-info-footer">
           <div className="review-user">{user}</div>
-          <div className="review-location"><em>{location}</em></div>
+          <div className="review-location">
+            <em>{location}</em>
+          </div>
         </div>
       </div>
     </div>
