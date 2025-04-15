@@ -6,12 +6,14 @@ const Reviews = ({ reviews }) => {
     <div className="reviews-preview-container">
       <h2 className="reviews-header">Reviews</h2>
       <div className="reviews-preview">
-        {reviews &&
-          reviews
-            .filter((_, idx) => idx < 4)
-            .map((review) => (
-              <div key={review.id}>{<ReviewCard reviews={review} />}</div>
-            ))}
+        <div className="reviews-wrapper">
+          {reviews &&
+            reviews
+              .filter((_, idx) => idx < 4)
+              .map((review) => (
+                <div key={review.id}>{<ReviewCard reviews={review} />}</div>
+              ))}
+        </div>
       </div>
     </div>
   )

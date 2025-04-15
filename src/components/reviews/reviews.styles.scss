@@ -6,7 +6,7 @@
   width: 100%;
 
   .reviews-header {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     font-family: 'Cormorant Garamond';
     cursor: pointer;
     font-size: 2.2rem;
@@ -17,8 +17,7 @@
   .reviews-preview {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
     transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
@@ -27,7 +26,6 @@
 }
 
 // Media Queries
-
 @media only screen and (min-width: 1175px) and (max-width: 1504px) {
   .reviews-preview-container {
     .reviews-preview {
@@ -38,7 +36,7 @@
   }
 }
 
-@media only screen and (max-width: 1174px) {
+@media only screen and (max-width: 1200px) {
   .reviews-preview-container {
     height: 1000px;
     h2 {
