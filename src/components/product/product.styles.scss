@@ -3,6 +3,7 @@
   flex-direction: row;
   width: 100%;
   // padding: 10px 20px;
+  padding: 40px 80px;
 }
 
 // product image container left side
@@ -326,3 +327,8 @@
     }
   }
 }
+// @media screen and (min-width: 1400px) {
+//   .about-us-content-container {
+//     padding: 40px 80px;
+//   }
+// }
