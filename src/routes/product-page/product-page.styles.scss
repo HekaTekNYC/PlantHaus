@@ -1,7 +1,23 @@
 .product-page-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 30px 25px;
   width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .product-page-container {
+    padding: 20px 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .product-page-container {
+    padding: 30px 60px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .product-page-container {
+    padding: 30px 80px;
+  }
 }
