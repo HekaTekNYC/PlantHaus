@@ -170,21 +170,52 @@
 // Media Queries
 
 @media only screen and (min-width: 768px) {
-  .product-icons-row {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.55rem;
-  }
-  .plant-care-icons-container {
-    .plant-care-icon-container {
-      .plant-care-icon {
-        height: 60px;
-        width: 60px;
+  .product-img-container {
+    display: flex;
+    flex-direction: row;
+
+    .product-thumb-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      width: 25%;
+      order: 1;
+    }
+    .product-thumb-container {
+      padding-right: 10px;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
+  }
 
-    .plant-care-icon-name {
-      font-size: 1rem;
+  .product-img-col {
+    height: auto;
+    width: 100%;
+    order: 2;
+  }
+}
+.product-icons-row {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+}
+
+.plant-care-icons-container {
+  .plant-care-icon-container {
+    .plant-care-icon {
+      height: 60px;
+      width: 60px;
     }
+  }
+
+  .plant-care-icon-name {
+    font-size: 1rem;
   }
 }
 
@@ -201,7 +232,9 @@
         width: 50px;
       }
     }
-
+    .product-img-col {
+      width: 100%;
+    }
     .plant-care-icon-name {
       font-size: 0.875rem;
     }
@@ -216,5 +249,4 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  
 }
