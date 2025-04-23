@@ -1,4 +1,3 @@
-
 import { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -9,7 +8,6 @@ import { CategoriesContext } from '../../contexts/categories.context'
 import './product-page.styles.scss'
 
 const ProductPage = () => {
-
   const { categoriesMap } = useContext(CategoriesContext)
   const products = Object.values(categoriesMap).flatMap(
     (productArray) => productArray
@@ -28,7 +26,7 @@ const ProductPage = () => {
 
   return (
     <>
-      <div className="product-container">
+      <div className="product-page-container">
         {products.map((product) => {
           if (
             product.name === nameMatch &&
@@ -41,7 +39,6 @@ const ProductPage = () => {
         })}
       </div>
     </>
-
   )
 }
 export default ProductPage

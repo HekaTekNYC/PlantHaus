@@ -92,7 +92,7 @@ const Product = ({ product }) => {
       </div>
       <div className="product-info-container">
         <div className="product-header">
-          <h3 className="product-name">{name}</h3>
+          <h3>{name}</h3>
           <div className="product-latin">{latin_binomial}</div>
           <div className="product-price">${selectedPrice}</div>
         </div>
@@ -141,7 +141,6 @@ const Product = ({ product }) => {
                     alt={icon.name}
                   />
                 </div>
-
                 <div className="plant-care-icon-name">{icon.name}</div>
               </div>
             ))}
