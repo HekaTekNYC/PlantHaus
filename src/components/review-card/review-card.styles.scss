@@ -1,28 +1,15 @@
-.reviews-wrapper {
-  display: grid;
-  // grid-template-columns: 1fr;
-  grid-template-columns: repeat(1, minmax(400px, 1fr));
-  gap: 60px;
-  justify-items: center;
-  align-items: center;
-  padding: 0 20px;
-}
-
 .review-card-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e1e3dc;
-  padding-top: 40px;
+  padding: 30px;
+
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 10px;
-  max-width: 380px;
-  max-height: 420px;
   height: 100%;
   width: 100%;
-  margin: 30px auto;
-  flex: 1 1 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 10px;
 }
 
 .profile-image-wrapper {
@@ -32,7 +19,6 @@
   height: 110px;
   border-radius: 50%;
   overflow: hidden;
-  background: #ccc;
   border: 4px solid #fff;
 
   img {
@@ -50,24 +36,12 @@
   justify-content: space-between;
   text-align: center;
   height: 100%;
-  padding: 40px 25px 25px;
-  box-sizing: border-box;
-  flex-grow: 1;
+  padding-top: 50px;
 }
 
 .user-review {
-  padding: 18px;
-  font-size: 1rem;
-  max-width: 260px;
-  border-radius: 6px;
   margin-bottom: 20px;
-  max-height: calc(1rem * 1.7 * 6);
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  box-sizing: border-box;
 }
 
 .review-user-info-footer {

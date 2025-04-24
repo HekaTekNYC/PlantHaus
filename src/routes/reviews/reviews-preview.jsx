@@ -1,17 +1,19 @@
-import { useContext } from 'react'
-import Reviews from '../../components/reviews/reviews'
-import { ReviewsContext } from '../../contexts/reviews.context'
+import ReviewCard from '../../components/review-card/review-card'
+import './reviews-preview.styles.scss'
 
-const ReviewsPreview = () => {
-  const { reviewsMap } = useContext(ReviewsContext)
-
+const ReviewsPreview = ({ reviews = [] }) => {
+  console.log('review data pass down', reviews)
   return (
-    <>
-    
-      {Object.entries(reviewsMap).map(([title, reviewList]) => (
-        <Reviews key={title} title={title} reviews={reviewList} />
-      ))}
-    </>
+    <div className="reviews-preview">
+      <h2 className="reviews-header">Reviews</h2>
+      <div className="reviews-list">
+        {reviews.map((review) => (
+          <div key={review.id} className="review-card">
+            <ReviewCard review={review} />
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 

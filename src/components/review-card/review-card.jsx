@@ -1,8 +1,8 @@
 import React from 'react'
 import './review-card.styles.scss'
 
-const ReviewCard = ({ reviews }) => {
-  const { location, review, imageUrl, user } = reviews
+const ReviewCard = ({ review }) => {
+  const { location, reviewText, imageUrl, user } = review
 
   return (
     <div className="review-card-container">
@@ -12,13 +12,13 @@ const ReviewCard = ({ reviews }) => {
 
       <div className="review-card">
         <div className="user-review">
-          <p>{review}</p>
+          <p>{reviewText}</p>
         </div>
 
         <div className="review-user-info-footer">
           <div className="review-user">{user}</div>
           <div className="review-location">
-            <em>{location}</em>
+            <p>{location}</p>
           </div>
         </div>
       </div>
