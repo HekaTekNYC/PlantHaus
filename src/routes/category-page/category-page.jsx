@@ -21,14 +21,15 @@ const CategoryPage = () => {
 
   return (
     <>
-      <div>
+      <div className="category-page-container">
         <h2 className="category-title">{shopTitle(category)}</h2>
-      </div>
-      <div className="category-container">
-        {products &&
-          products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+        <div className="category-container">
+          {products.map((product) => (
+            <div key={product.id}>
+              <ProductCard product={product} />
+            </div>
           ))}
+        </div>
       </div>
     </>
   )

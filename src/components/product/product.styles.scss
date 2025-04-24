@@ -1,30 +1,27 @@
 .product-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  max-width: 1300px;
 }
-
-// product image container left side
 
 .product-img-container {
   display: flex;
-  width: 50%;
-  padding-top: 20px;
+  flex-direction: column;
 
   .product-thumb-col {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 170px;
-    margin-right: 20px;
-    order: 1;
+    padding: 10px 0 20px;
+    width: 70%;
+    order: 2;
 
     .product-thumb-container {
-      width: 165px;
-      margin-bottom: 20px;
+      padding-right: 10px;
 
       img {
-        width: 100%;
+        width: 100px;
+        height: 100px;
       }
 
       &:hover {
@@ -34,14 +31,9 @@
   }
 
   .product-img-col {
-    height: auto;
+    height: 100%;
     width: 100%;
-    padding: 0 10px 10px;
-    order: 2;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    order: 1;
 
     img {
       width: 100%;
@@ -51,33 +43,28 @@
 }
 
 // product information container right side
-
 .product-info-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  line-height: 1.6;
 }
 
 .product-header {
-  .product-name {
-    font-size: 3rem;
-    margin: 0;
+  h3 {
+    font-size: 2.5rem !important;
   }
-
   .product-latin {
     font-family: 'Cormorant Garamond';
     color: #ce8861;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin: 2px 0 10px;
+    line-height: 1rem;
   }
-
   .product-price {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    font-style: italic;
     font-family: 'Cormorant Garamond';
   }
 }
@@ -134,41 +121,39 @@
   .size-description {
     font-style: italic;
     font-size: 0.9rem;
+    margin: 8px 0;
   }
 }
 
 .product-icons-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem;
   width: 100%;
-  padding: 0 16px;
-  box-sizing: border-box;
-  margin: 0 auto;
+}
+.plant-care-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-  .plant-care-icons-container {
+  .plant-care-icon-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .plant-care-icon-container {
-      height: 40px;
-      width: 40px;
-      margin-bottom: 4px;
-
-      img.plant-care-icon {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        display: block;
-      }
+    .plant-care-icon {
+      height: 50px;
+      width: 50px;
     }
+  }
 
-    .plant-care-icon-name {
-      font-size: 0.65rem;
-      text-align: center;
-    }
+  .plant-care-icon-name {
+    font-size: 0.875rem;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 4px;
   }
 }
 
@@ -176,7 +161,6 @@
   color: #ce8861;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 8px;
 }
 
 .product-paragraph {
@@ -186,124 +170,165 @@
 
 // Media Queries
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .product-img-container {
-    flex-direction: column;
-
-    .product-img-col {
-      order: 2;
-    }
+    flex-direction: row;
 
     .product-thumb-col {
-      order: 3;
-      flex-direction: row;
-      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 0;
+      width: 140px;
+      order: 2;
 
       .product-thumb-container {
-        margin-right: 10px;
+        width: 100%;
+        padding: 0 0 10px 10px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .product-img-col {
+      height: 100%;
+      width: 100%;
+      order: 1;
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
 
-  .product-icons-row {
-    padding: 0 12px;
-    .plant-care-icons-container {
-      width: 100px;
-      height: 100px;
-
-      .plant-care-icon-name {
-        margin-bottom: 8px;
-      }
-      .plant-care-icon-container {
-        height: 60px;
-        width: 60px;
-        margin-bottom: 4px;
-      }
-
-      .plant-care-icon-name {
-        font-size: 0.9rem;
-        margin-top: 10px;
-      }
+  .product-header {
+    h3 {
+      padding-top: 20px;
     }
   }
-}
-
-@media only screen and (max-width: 992px) {
   .product-icons-row {
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.55rem;
+  }
 
-    .plant-care-icons-container {
-      width: auto;
-
-      .plant-care-icon-name {
-        margin-bottom: 8px;
+  .plant-care-icons-container {
+    .plant-care-icon-container {
+      .plant-care-icon {
+        height: 60px;
+        width: 60px;
       }
     }
-  }
-}
 
-@media only screen and (max-width: 840px) {
-  .product-icons-row {
-    .plant-care-icons-container {
-      min-width: 80px;
+    .plant-care-icon-name {
+      font-size: 1rem;
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 820px) {
   .product-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .product-img-container {
     flex-direction: column;
+    width: 50%;
 
-    .product-img-container,
-    .product-info-container {
+    .product-thumb-col {
+      flex-direction: row;
       width: 100%;
-      padding: 0;
-    }
-    .product-icons-row {
-      .plant-care-icons-container {
-        .plant-care-icon-container {
-          height: 55px;
-          width: 55px;
+
+      .product-thumb-container {
+        width: 115px;
+        padding: 10px 10px 0 0;
+
+        img {
+          width: 100px;
+          height: 100px;
         }
 
-        .plant-care-icon-name {
-          font-size: 1rem;
+        &:hover {
+          cursor: pointer;
         }
       }
+    }
+
+    .product-img-col {
+      height: auto;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .product-info-container {
+    width: 50%;
+  }
+
+  .plant-care-icons-container {
+    .plant-care-icon-container {
+      .plant-care-icon {
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    .plant-care-icon-name {
+      font-size: 0.875rem;
     }
   }
 }
 
-@media only screen and (max-width: 609px) {
-  .product-icons-row {
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    justify-content: center;
-
-    .plant-care-icons-container {
-      .plant-care-icon-name {
-        margin-bottom: 8px;
-      }
-    }
+@media only screen and (min-width: 992px) {
+  .product-container {
+    gap: 1.8rem;
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .product-header {
-    .product-name {
-      font-size: 2.2rem;
+@media only screen and (min-width: 1200px) {
+  .product-img-container {
+    flex-direction: row;
+
+    .product-thumb-col {
+      flex-direction: column;
+      width: 120px;
+      order: 1;
+
+      .product-thumb-container {
+        width: 115px;
+        padding: 0 10px 10px 0;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
+    .product-img-col {
+      height: auto;
+      width: 100%;
+      order: 2;
 
-    .product-price {
-      font-size: 1.3rem;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
-  }
-
-  .product-cart-add {
-    display: flex;
-    justify-content: center;
-  }
-
-  .product-icons-row {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

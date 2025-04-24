@@ -1,23 +1,25 @@
 import React from 'react'
 import './review-card.styles.scss'
 
-const ReviewCard = ({ reviews }) => {
-  const { location, review, imageUrl, user } = reviews
+const ReviewCard = ({ review }) => {
+  const { location, reviewText, imageUrl, user } = review
 
   return (
     <div className="review-card-container">
+      <div className="profile-image-wrapper">
+        <img src={imageUrl} alt={`${user} profile`} />
+      </div>
+
       <div className="review-card">
-        <div className="review-card-header">
-          <div className="review-profile-picture">
-            <img src={imageUrl} alt={`${imageUrl}`} />
-          </div>
-          <div className="review-user-info">
-            <div className="review-user">{user}</div>
-            <div className="review-location">{location}</div>
-          </div>
-        </div>
         <div className="user-review">
-          <p>{review}</p>
+          <p>{reviewText}</p>
+        </div>
+
+        <div className="review-user-info-footer">
+          <div className="review-user">{user}</div>
+          <div className="review-location">
+            <p>{location}</p>
+          </div>
         </div>
       </div>
     </div>
