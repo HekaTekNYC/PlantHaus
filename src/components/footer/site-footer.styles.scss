@@ -1,0 +1,102 @@
+.site-footer {
+  background-color: #acc3be;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+
+  .footer-container {
+    padding: 2rem;
+
+    .footer-section {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .footer-column {
+          flex: 1 1 200px;
+
+          h6 {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            margin: 0.5rem 0;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+              margin-bottom: 0.5rem;
+
+              a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          .social-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 36px);
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+
+            a {
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              width: 36px;
+              height: 36px;
+              border: 1px solid white;
+              border-radius: 50%;
+              color: white;
+              background-color: transparent;
+              transition: background-color 0.3s;
+
+              &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+              }
+
+              i {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .copyright {
+      padding-left: 0.5rem;
+    }
+  }
+}

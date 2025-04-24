@@ -5,6 +5,7 @@ import CartIcon from '../../components/cart-icon/cart-icon'
 import CartSidebar from '../cart-sidebar/cart-sidebar'
 import Burger from './hamburger/Burger'
 import DropdownNav from './dropdown-nav/dropdown-nav'
+import TopBanner from '../top-banner/TopBanner'
 
 import { UserContext } from '../../contexts/user.context'
 import { CartContext } from '../../contexts/cart.context'
@@ -21,6 +22,7 @@ const Navigation = () => {
 
   return (
     <>
+      <TopBanner />
       <div className="navigation">
         <Link className="logo-container" to="/">
           <div className="logo-short-text">PH</div>
@@ -58,7 +60,6 @@ const Navigation = () => {
         </div>
         {isCartOpen && <CartSidebar />}
         {isMobileNavOpen && <DropdownNav />}{' '}
-        {/* ✅ Menu now renders properly */}
       </div>
 
       <Outlet />
