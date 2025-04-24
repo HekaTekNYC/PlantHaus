@@ -7,7 +7,6 @@ const ReviewsPreview = ({ reviews = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const cardsPerPage = useCardsPerPage()
 
-  // Clamp activeIndex if screen resizes and the index becomes invalid
   useEffect(() => {
     const maxIndex = Math.max(reviews.length - cardsPerPage, 0)
     if (activeIndex > maxIndex) {
@@ -15,10 +14,8 @@ const ReviewsPreview = ({ reviews = [] }) => {
     }
   }, [cardsPerPage, reviews.length, activeIndex])
 
-  // Get only the reviews to show on screen
   const activeCards = reviews.slice(activeIndex, activeIndex + cardsPerPage)
 
-  // Calculate how many positions we can scroll through
   const totalDots = Math.max(reviews.length - cardsPerPage + 1, 1)
 
   const handleDotClick = (index) => {

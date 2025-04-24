@@ -10,42 +10,47 @@ export const reviewData = [
   },
   {
     id: 2,
-    imageUrl: 'https://i.ibb.co/fDtVdfg/Jessica-Jones.png',
     rating: '',
+    imageUrl: 'https://i.ibb.co/fDtVdfg/Jessica-Jones.png',
     user: 'Jessica Jones',
     location: 'South Portland, Maine',
     reviewText:
-      "Living in South Portland, where winters can be long and harsh, I appreciate The Plant Haus for offering a variety of hardy plants that can thrive in my climate. The pet-friendly selection is fantastic too! The delivery was prompt, and the plants arrive in excellent condition. I'm now a loyal customer!",
+      'I was impressed by the thoughtful packaging and healthy plants. Even in Maine’s colder climate, everything arrived vibrant and ready to thrive. The site made it easy to find plants suited for my space.',
   },
   {
     id: 3,
+    rating: '',
     imageUrl: 'https://i.ibb.co/nn0Sr8S/ororo-munroe.png',
     user: 'Ororo Munroe',
-    location: 'LA, California',
+    location: 'Los Angeles, California',
     reviewText:
-      "Plant Haus's customer service team was incredibly helpful, providing insightful advice on my plant care questions! The carefully curated selection of plants made it a joy to explore and find the perfect green companion for my space.",
+      'Everything from browsing to delivery was seamless. My plants were lush and full of life when they arrived. I especially loved the care instructions that came with each one — super helpful!',
   },
   {
     id: 4,
+    rating: '',
     imageUrl: 'https://i.ibb.co/KGYxYLz/Wade-Wilson.png',
     user: 'Chad Knudsen',
     location: 'Austin, Texas',
     reviewText:
-      "The Plant Haus has a great support team. They've helped me navigate the unique care requirements for each plant. I deducted 1/2 a star because I'd like to see even more options fo rthose of us in warmer regions. Overall, highly reccommend.",
+      'Fantastic experience! The Plant Haus has a beautiful selection, and my order came quicker than expected. The plants are healthy, and I could tell they were packed with care for the Texas heat.',
   },
   {
     id: 5,
+    rating: '',
     imageUrl: 'https://i.ibb.co/gDpyzG6/Samanth-Fox.png',
     user: 'Samantha Fox',
     location: 'Brooklyn, New York',
     reviewText:
-      "As a Brooklyn plant parent, I'm always on the lookout for unique additions to my collection. The Plant Haus didn't disappoint! the selection is diverse, and the online support rocks! I knocked off one start because I wish the delivery could've been quicker.",
+      'I absolutely love my new plants! They arrived in perfect shape and added the exact touch of green my apartment needed. The website was easy to use, and I’ll definitely be ordering again soon.',
   },
   {
     id: 6,
+    rating: '',
     imageUrl: 'https://i.ibb.co/W6rNHDF/zach-lai.png',
     user: 'Zach Lai',
     location: 'Portland, Oregon',
-    reviewText: 'Im so great and so are my plants.',
+    reviewText:
+      'The quality was top-notch. My plants came looking even better than the photos online. I appreciate the eco-friendly packaging and the great customer service. Highly recommend The Plant Haus!',
   },
 ]
