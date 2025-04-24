@@ -18,7 +18,7 @@ const SHOP_DATA = [
         },
         price: {
           large: 88,
-          extra_large: 109,
+          x_large: 109,
         },
         reviews: 59,
         stars: 5,
@@ -28,7 +28,7 @@ const SHOP_DATA = [
         care: 'Basking in bright, indirect light, the Majesty Palm flourishes in conditions that mimic its native rainforest habitat. Keep the soil consistently moist but not waterlogged, and provide ample humidity for optimal growth. This pet-friendly palm appreciates regular misting and occasional fertilization during the growing season. Watch for browning tips, a sign it needs a bit more TLC.',
         size_description: {
           large: 'Majestic at 36"–48" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 48"–60" in height, ready to make a bold statement in a 12-inch pot.',
         },
         pro_tip:
@@ -680,7 +680,7 @@ const SHOP_DATA = [
         price: {
           medium: 35,
           large: 99,
-          extra_large: 119,
+          x_large: 119,
         },
         reviews: 83,
         stars: 4,
@@ -691,7 +691,7 @@ const SHOP_DATA = [
         size_description: {
           medium: 'Typically around 18"–24" tall in a 6-inch pot.',
           large: 'Majestic at 36"–48" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 48"–72" in height, making a bold statement in a 12-inch pot.',
         },
         pro_tip:
@@ -1285,7 +1285,7 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
           large: 99,
-          extra_large: 129,
+          x_large: 129,
         },
         reviews: 27,
         stars: 5,
@@ -1297,7 +1297,7 @@ const SHOP_DATA = [
           small: 'Typically around 12"–18" tall in a 6-inch pot.',
           medium: 'Reaching 18"–24" in height with an 8-inch pot.',
           large: 'Majestic at 24"–36" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 36"–60" in height, making a bold statement in a 12-inch pot.',
         },
         pro_tip:
@@ -1477,7 +1477,7 @@ const SHOP_DATA = [
           small: 22,
           medium: 32,
           large: 99,
-          extra_large: 129,
+          x_large: 129,
         },
         reviews: 27,
         stars: 5,
@@ -1489,7 +1489,7 @@ const SHOP_DATA = [
           small: 'Typically around 12"–18" tall in a 6-inch pot.',
           medium: 'Reaching 18"–24" in height with an 8-inch pot.',
           large: 'Majestic at 24"–36" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 36"–60" in height, making a bold statement in a 12-inch pot.',
         },
         pro_tip:
@@ -1652,7 +1652,7 @@ const SHOP_DATA = [
         },
         price: {
           large: 88,
-          extra_large: 109,
+          x_large: 109,
         },
         reviews: 59,
         stars: 5,
@@ -1662,7 +1662,7 @@ const SHOP_DATA = [
         care: 'Basking in bright, indirect light, the Majesty Palm flourishes in conditions that mimic its native rainforest habitat. Keep the soil consistently moist but not waterlogged, and provide ample humidity for optimal growth. This pet-friendly palm appreciates regular misting and occasional fertilization during the growing season. Watch for browning tips, a sign it needs a bit more TLC.',
         size_description: {
           large: 'Majestic at 36"–48" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 48"–60" in height, ready to make a bold statement in a 12-inch pot.',
         },
         pro_tip:
@@ -1830,7 +1830,7 @@ const SHOP_DATA = [
         price: {
           medium: 35,
           large: 99,
-          extra_large: 119,
+          x_large: 119,
         },
         reviews: 83,
         stars: 4,
@@ -1841,7 +1841,7 @@ const SHOP_DATA = [
         size_description: {
           medium: 'Typically around 18"–24" tall in a 6-inch pot.',
           large: 'Majestic at 36"–48" tall in a 10-inch pot.',
-          extra_large:
+          x_large:
             'Towering at 48"–72" in height, making a bold statement in a 12-inch pot.',
         },
         pro_tip:
