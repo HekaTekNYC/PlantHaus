@@ -1,5 +1,5 @@
 .about-container {
-  padding-top: 70px;
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,6 +240,7 @@
 
 @media screen and (min-width: 768px) {
   .about-header {
+    padding: 50px 25px;
     h2 {
       max-width: 400px;
       padding-bottom: 10px;
