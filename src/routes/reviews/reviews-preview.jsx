@@ -25,7 +25,6 @@ const ReviewsPreview = ({ reviews = [] }) => {
   return (
     <div className="reviews-preview">
       <h2 className="reviews-header">Reviews</h2>
-
       <div className="reviews-carousel">
         <div className="review-cards">
           {activeCards.map((review) => (

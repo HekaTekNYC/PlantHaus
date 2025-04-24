@@ -155,11 +155,14 @@
   }
 
   .directories-section,
-  .feature-section,
-  .reviews-section {
+  .feature-section {
     width: 100%;
     padding: 40px 0;
     max-width: 1400px;
+  }
+
+  .reviews-section {
+    padding: 60px 0;
   }
 }
 
