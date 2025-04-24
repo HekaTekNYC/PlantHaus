@@ -4,6 +4,7 @@ import Commitments from '../../components/commitments/Commitments'
 import DirectoriesPreview from '../directories-preview/directories-preview'
 import FeaturePreview from '../feature-preview/feature-preview'
 import ReviewsPreview from '../reviews/reviews-preview'
+import { reviewData } from '../../reviews-data'
 import Button from '../../components/button/main-button/Button'
 import { scrollToTop } from '../../utils/scrollToTop'
 
@@ -60,7 +61,7 @@ const Home = () => {
 
         {/* <Reviews /> */}
         <div className="reviews-section">
-          <ReviewsPreview />
+          <ReviewsPreview reviews={reviewData} />
         </div>
       </div>
     </>
