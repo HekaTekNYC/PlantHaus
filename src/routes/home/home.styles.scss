@@ -1,8 +1,10 @@
 :root {
+  --monstera-scale-x: 1;
   --monstera-rotate-start: 10deg;
   --monstera-move-start: -1px;
   --monstera-translate-y: 0px;
 
+  --long-scale-x: 1;
   --long-rotate-start: 80deg;
   --long-move-start: -1px;
   --long-translate-y: 0px;
@@ -15,16 +17,19 @@
 
 @keyframes sway-monstera {
   0% {
-    transform: scaleY(-1) rotate(var(--monstera-rotate-start))
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(var(--monstera-rotate-start))
       translateX(var(--monstera-move-start))
       translateY(var(--monstera-translate-y));
   }
   50% {
-    transform: scaleY(-1) rotate(calc(var(--monstera-rotate-start) + 2deg))
-      translateX(2px) translateY(4px);
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(calc(var(--monstera-rotate-start) + 2deg)) translateX(2px)
+      translateY(4px);
   }
   100% {
-    transform: scaleY(-1) rotate(var(--monstera-rotate-start))
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(var(--monstera-rotate-start))
       translateX(var(--monstera-move-start))
       translateY(var(--monstera-translate-y));
   }
@@ -32,16 +37,19 @@
 
 @keyframes sway-long {
   0% {
-    transform: scaleY(-1) rotate(var(--long-rotate-start))
-      translateX(var(--long-move-start)) translateY(var(--long-translate-y));
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(var(--long-rotate-start)) translateX(var(--long-move-start))
+      translateY(var(--long-translate-y));
   }
   50% {
-    transform: scaleY(-1) rotate(calc(var(--long-rotate-start) + 2deg))
-      translateX(3px) translateY(6px);
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(calc(var(--long-rotate-start) + 2deg)) translateX(3px)
+      translateY(6px);
   }
   100% {
-    transform: scaleY(-1) rotate(var(--long-rotate-start))
-      translateX(var(--long-move-start)) translateY(var(--long-translate-y));
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(var(--long-rotate-start)) translateX(var(--long-move-start))
+      translateY(var(--long-translate-y));
   }
 }
 
@@ -191,7 +199,6 @@
     .hero-text {
       padding: 0 40px;
       .header-description {
-        font-size: 1.2rem;
         margin-bottom: 30px;
       }
     }
@@ -322,6 +329,103 @@
   }
 }
 
+@media only screen and (min-width: 996px) {
+  .hero-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .hero-image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
+    }
+  }
+
+  :root {
+    --monstera-scale-x: -1;
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-scale-x: -1;
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-scale-x: 1;
+    --leaf-rotate-start: 75deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
+  }
+
+  .hero-right {
+    overflow: hidden;
+  }
+
+  .hero-plants {
+    .hero-monstera {
+      left: unset;
+      right: -40px;
+      width: 230px;
+    }
+
+    .hero-long {
+      top: -70px;
+      left: unset;
+      right: 80px;
+      width: 190px;
+    }
+
+    .hero-leaf {
+      right: 0px;
+      width: 240px;
+    }
+  }
+  .hero-text-container {
+    width: 100%;
+    padding: 20px 60px;
+
+    .hero-text {
+      padding: 0;
+    }
+
+    .header-description {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .home-container {
+    padding: 0 60px;
+  }
+
+  .directories-section,
+  .feature-section {
+    width: 100%;
+    padding: 40px 0;
+    max-width: 1400px;
+  }
+
+  .reviews-section {
+    padding: 60px 0;
+  }
+}
+
 /* iPad 12.9" Portrait (820x1180) */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   .hero-container {
@@ -354,7 +458,7 @@
   :root {
     --monstera-rotate-start: 25deg;
 
-    --long-rotate-start: 105deg;
+    --long-rotate-start: 95deg;
 
     --leaf-scale-x: -1;
     --leaf-rotate-start: 75deg;
@@ -362,49 +466,90 @@
   .hero-plants {
     .hero-monstera {
       top: -120px;
-      left: -90px;
-      width: 260px;
+      left: -70px;
+      width: 270px;
     }
 
     .hero-long {
       left: -45px;
-      top: -170px;
-      width: 210px;
+      top: -220px;
+      width: 320px;
     }
 
     .hero-leaf {
-      bottom: -60px;
+      bottom: -40px;
       left: unset;
       right: 0;
-      width: 210px;
+      width: 230px;
     }
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .hero-text-container {
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    flex-direction: row;
     width: 100%;
-    padding: 20px 0;
+  }
 
-    .header-description {
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .hero-image-container {
       width: 100%;
-      font-size: 1rem;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
     }
   }
 
-  .home-container {
-    padding: 0 60px;
+  :root {
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-rotate-start: 80deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
   }
 
-  .directories-section,
-  .feature-section {
+  .hero-plants {
+    .hero-monstera {
+      right: -80px;
+      width: 300px;
+    }
+
+    .hero-long {
+      width: 210px;
+    }
+
+    .hero-leaf {
+      left: -20px;
+      bottom: -60px;
+      width: 340px;
+    }
+  }
+  .hero-text-container {
     width: 100%;
-    padding: 40px 0;
-    max-width: 1400px;
-  }
+    max-width: 700px;
+    padding: 20px 60px;
 
-  .reviews-section {
-    padding: 60px 0;
+    .hero-text {
+      padding: 0;
+    }
   }
 }
 
