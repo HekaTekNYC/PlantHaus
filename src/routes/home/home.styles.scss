@@ -10,19 +10,24 @@
 
   .hero-image-container {
     position: relative;
-    background-image: url('https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/minimalist-plant.webp?updatedAt=1723142215474');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/PH-bkrnd.png?updatedAt=1745527470211');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     margin-top: 65px;
     z-index: -1;
 
     .overlay {
-      background-color: #00000092;
-      height: 100%;
-      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      height: 60%;
+      width: 60%;
       z-index: 1;
     }
   }
