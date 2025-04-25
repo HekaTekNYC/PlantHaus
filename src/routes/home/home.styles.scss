@@ -6,6 +6,10 @@
   --long-rotate-start: 80deg;
   --long-move-start: -1px;
   --long-translate-y: 0px;
+
+  --leaf-rotate-start: 15deg;
+  --leaf-move-start: -2px;
+  --leaf-translate-y: 0px;
 }
 
 @keyframes sway-monstera {
@@ -82,6 +86,13 @@
     top: -70px;
     left: 10px;
     width: 170px;
+  }
+  .hero-leaf {
+    animation: sway-long 6s ease-in-out infinite;
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 210px;
   }
 }
 

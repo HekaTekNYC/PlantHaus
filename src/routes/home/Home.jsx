@@ -45,6 +45,11 @@ const Home = () => {
               alt="long slate green leaf"
               className="hero-long"
             />
+            <img
+              src="/images/leaf-light.png"
+              alt="light green leaf"
+              className="hero-leaf"
+            />
           </div>
 
           <div className="hero-text-container">
