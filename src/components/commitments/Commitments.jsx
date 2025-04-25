@@ -39,9 +39,9 @@ const Commitments = () => {
           className="palm-com"
         />
         <img
-          src="/images/monstera-ash.png"
-          alt="ash monstera leaf"
-          className="monstera-com"
+          src="/images/palm2-ash.png"
+          alt="ash green leaf"
+          className="palm2-com"
         />
         <img
           src="/images/leaf-dark.png"
