@@ -36,19 +36,19 @@
     z-index: 2;
   }
 
-  .monstera-com {
+  .palm2-com {
     position: absolute;
-    top: 0;
-    left: -40px;
+    top: -100px;
+    left: -60px;
     width: 150px;
-    transform: scaleY(-1) rotate(20deg);
+    transform: scaleY(-1) rotate(0deg);
     opacity: 0;
     z-index: 2;
   }
 
   .delicate-com {
     position: absolute;
-    top: -90px;
+    top: -60px;
     left: -10px;
     width: 150px;
     transform: rotate(-20deg);
@@ -119,10 +119,6 @@
       opacity: 0;
     }
 
-    .monstera-com {
-      opacity: 1;
-    }
-
     .delicate-com {
       opacity: 1;
     }
@@ -147,11 +143,12 @@
 
 @media only screen and (min-width: 992px) {
   .commitments-container {
-    .monstera-com {
-      top: -20px;
-      left: -80px;
-      width: 200px;
-      transform: scaleY(-1) rotate(20deg);
+    .palm2-com {
+      opacity: 1;
+      top: -100px;
+      left: -60px;
+      width: 160px;
+      transform: scaleY(-1) rotate(10deg);
     }
   }
   .commitments-row {
