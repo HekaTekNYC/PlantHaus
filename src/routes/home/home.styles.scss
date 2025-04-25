@@ -529,7 +529,7 @@
   .hero-plants {
     .hero-monstera {
       right: -80px;
-      width: 300px;
+      width: 320px;
     }
 
     .hero-long {
@@ -554,6 +554,41 @@
 }
 
 @media only screen and (min-width: 1400px) {
+  .hero-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  :root {
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-rotate-start: 80deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
+  }
+
+  .hero-plants {
+    .hero-monstera {
+      right: -80px;
+      width: 340px;
+    }
+
+    .hero-long {
+      width: 210px;
+    }
+
+    .hero-leaf {
+      left: -20px;
+      bottom: -60px;
+      width: 340px;
+    }
+  }
   .home-container {
     padding: 20px 80px;
   }
