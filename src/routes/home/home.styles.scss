@@ -1,69 +1,165 @@
+:root {
+  --monstera-scale-x: 1;
+  --monstera-rotate-start: 10deg;
+  --monstera-move-start: -1px;
+  --monstera-translate-y: 0px;
+
+  --long-scale-x: 1;
+  --long-rotate-start: 80deg;
+  --long-move-start: -1px;
+  --long-translate-y: 0px;
+
+  --leaf-scale-x: 1;
+  --leaf-rotate-start: 75deg;
+  --leaf-move-start: -2px;
+  --leaf-translate-y: 0px;
+}
+
+@keyframes sway-monstera {
+  0% {
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(var(--monstera-rotate-start))
+      translateX(var(--monstera-move-start))
+      translateY(var(--monstera-translate-y));
+  }
+  50% {
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(calc(var(--monstera-rotate-start) + 2deg)) translateX(2px)
+      translateY(4px);
+  }
+  100% {
+    transform: scaleY(-1) scaleX(var(--monstera-scale-x))
+      rotate(var(--monstera-rotate-start))
+      translateX(var(--monstera-move-start))
+      translateY(var(--monstera-translate-y));
+  }
+}
+
+@keyframes sway-long {
+  0% {
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(var(--long-rotate-start)) translateX(var(--long-move-start))
+      translateY(var(--long-translate-y));
+  }
+  50% {
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(calc(var(--long-rotate-start) + 2deg)) translateX(3px)
+      translateY(6px);
+  }
+  100% {
+    transform: scaleY(-1) scaleX(var(--long-scale-x))
+      rotate(var(--long-rotate-start)) translateX(var(--long-move-start))
+      translateY(var(--long-translate-y));
+  }
+}
+
+@keyframes sway-leaf {
+  0% {
+    transform: scaleY(-1) scaleX(var(--leaf-scale-x))
+      rotate(var(--leaf-rotate-start)) translateX(var(--leaf-move-start))
+      translateY(var(--leaf-translate-y));
+  }
+  50% {
+    transform: scaleY(-1) scaleX(var(--leaf-scale-x))
+      rotate(calc(var(--leaf-rotate-start) + 3deg)) translateX(5px)
+      translateY(10px);
+  }
+  100% {
+    transform: scaleY(-1) scaleX(var(--leaf-scale-x))
+      rotate(var(--leaf-rotate-start)) translateX(var(--leaf-move-start))
+      translateY(var(--leaf-translate-y));
+  }
+}
+
 .hero-container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: calc(100vh - 110px);
+  margin-top: 110px;
   width: 100%;
   overflow: hidden;
   z-index: 5;
+}
+.hero-left {
+  display: none;
+}
 
-  .hero-image-container {
-    position: relative;
-    background-image: url('https://ik.imagekit.io/snjtzh7cg/Plant%20Haus/minimalist-plant.webp?updatedAt=1723142215474');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    width: 100%;
-    height: 100vh;
-    margin-top: 65px;
-    z-index: -1;
+.hero-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 
-    .overlay {
-      background-color: #00000092;
-      height: 100%;
-      width: 100%;
-      z-index: 1;
-    }
+.hero-plants {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .hero-monstera {
+    animation: sway-monstera 6s ease-in-out infinite;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+    width: 220px;
   }
 
-  .hero-text-container {
+  .hero-long {
+    animation: sway-long 6s ease-in-out infinite;
     position: absolute;
+    top: -70px;
+    left: 10px;
+    width: 170px;
+  }
+  .hero-leaf {
+    animation: sway-leaf 6s ease-in-out infinite;
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 210px;
+  }
+}
+
+.hero-text-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+
+  .hero-text {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    z-index: 3;
+    padding: 0 35px;
 
-    .hero-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 35px;
+    .header-text {
+      text-align: center;
+      margin-bottom: 12px;
+      z-index: 3;
+    }
 
-      .header-text {
-        text-align: center;
-        margin-bottom: 12px;
-        z-index: 3;
-      }
+    .header-description {
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      margin-bottom: 25px;
+      max-width: 900px;
+      color: #3c403f;
+      z-index: 3;
 
-      .header-description {
-        text-align: center;
-        font-size: 0.9rem;
-        width: 100%;
-        margin-bottom: 25px;
-        max-width: 900px;
-        color: #fff;
-        z-index: 3;
-
-        .expanded-text {
-          display: none;
-        }
+      .expanded-text {
+        display: none;
       }
     }
   }
 }
+
 .commitments-section {
   width: 100%;
 }
@@ -85,28 +181,25 @@
   max-width: 1400px;
 }
 
-// Media Queries
-@media only screen and (min-width: 390px) {
-  .hero-container {
-    .hero-text-container {
-      .hero-text {
-        .header-description {
-          font-size: 1.1rem;
-        }
-      }
+@media only screen and (min-width: 430px) {
+  .hero-plants {
+    .hero-monstera {
+      top: -80px;
+      left: -60px;
+      width: 250px;
+    }
+
+    .hero-long {
+      left: 25px;
+      width: 190px;
     }
   }
-}
 
-@media only screen and (min-width: 430px) {
-  .hero-container {
-    .hero-text-container {
-      .hero-text {
-        padding: 0 40px;
-        .header-description {
-          font-size: 1.2rem;
-          margin-bottom: 30px;
-        }
+  .hero-text-container {
+    .hero-text {
+      padding: 0 40px;
+      .header-description {
+        margin-bottom: 30px;
       }
     }
   }
@@ -118,38 +211,214 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .hero-container {
-    min-height: 600px;
-    height: 80%;
-  }
-  .hero-text-container {
-    .hero-text {
-      padding: 0 60px;
-    }
-  }
-}
-
-@media only screen and (min-width: 992px) {
+/* iPad Mini Portrait  */
+@media only screen and (min-width: 768px) and (max-width: 819px) and (orientation: portrait) {
   .hero-container {
     flex-direction: column;
     justify-content: start;
     width: 100%;
-    min-height: 800px;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    width: 100%;
 
     .hero-image-container {
-      background-position: right;
+      width: 80%;
+      height: 100%;
     }
-    .hero-text-container {
-      width: 100%;
-      padding: 20px 0;
 
-      .header-description {
-        width: 100%;
-        font-size: 1rem;
-      }
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
     }
   }
+
+  :root {
+    --monstera-rotate-start: 25deg;
+
+    --long-rotate-start: 105deg;
+
+    --leaf-scale-x: -1;
+    --leaf-rotate-start: 75deg;
+  }
+  .hero-plants {
+    .hero-monstera {
+      top: -120px;
+      left: -100px;
+      width: 240px;
+    }
+
+    .hero-long {
+      left: -45px;
+      top: -170px;
+      width: 210px;
+    }
+
+    .hero-leaf {
+      bottom: -60px;
+      left: unset;
+      right: 0;
+      width: 190px;
+    }
+  }
+}
+
+/* iPad 10.9" Portrait (820x1180) */
+@media only screen and (min-width: 820px) and (max-width: 1023px) and (orientation: portrait) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+
+    .hero-image-container {
+      width: 85%;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
+    }
+  }
+
+  :root {
+    --monstera-rotate-start: 25deg;
+
+    --long-rotate-start: 105deg;
+
+    --leaf-scale-x: -1;
+    --leaf-rotate-start: 75deg;
+  }
+  .hero-plants {
+    .hero-monstera {
+      top: -120px;
+      left: -90px;
+      width: 260px;
+    }
+
+    .hero-long {
+      left: -45px;
+      top: -170px;
+      width: 210px;
+    }
+
+    .hero-leaf {
+      bottom: -60px;
+      left: unset;
+      right: 0;
+      width: 210px;
+    }
+  }
+
+  .directories-section,
+  .feature-section {
+    padding: 50px 0;
+  }
+
+  .reviews-section {
+    padding: 0 0 60px;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .hero-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .hero-image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
+    }
+  }
+
+  :root {
+    --monstera-scale-x: -1;
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-scale-x: -1;
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-scale-x: 1;
+    --leaf-rotate-start: 75deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
+  }
+
+  .hero-right {
+    overflow: hidden;
+  }
+
+  .hero-plants {
+    .hero-monstera {
+      left: unset;
+      right: -40px;
+      width: 230px;
+    }
+
+    .hero-long {
+      top: -70px;
+      left: unset;
+      right: 80px;
+      width: 190px;
+    }
+
+    .hero-leaf {
+      right: 0px;
+      width: 240px;
+    }
+  }
+  .hero-text-container {
+    width: 100%;
+    padding: 20px 60px;
+
+    .hero-text {
+      padding: 0;
+    }
+
+    .header-description {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
   .home-container {
     padding: 0 60px;
   }
@@ -166,7 +435,169 @@
   }
 }
 
+/* iPad 12.9" Portrait (820x1180) */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+
+    .hero-image-container {
+      width: 85%;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
+    }
+  }
+
+  :root {
+    --monstera-rotate-start: 25deg;
+
+    --long-rotate-start: 95deg;
+
+    --leaf-scale-x: -1;
+    --leaf-rotate-start: 75deg;
+  }
+  .hero-plants {
+    .hero-monstera {
+      top: -120px;
+      left: -70px;
+      width: 270px;
+    }
+
+    .hero-long {
+      left: -45px;
+      top: -220px;
+      width: 320px;
+    }
+
+    .hero-leaf {
+      bottom: -40px;
+      left: unset;
+      right: 0;
+      width: 230px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .hero-image-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-image-container picture,
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10% 5%;
+    }
+  }
+
+  :root {
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-rotate-start: 80deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
+  }
+
+  .hero-plants {
+    .hero-monstera {
+      right: -80px;
+      width: 320px;
+    }
+
+    .hero-long {
+      width: 210px;
+    }
+
+    .hero-leaf {
+      left: -20px;
+      bottom: -60px;
+      width: 340px;
+    }
+  }
+  .hero-text-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px 60px;
+
+    .hero-text {
+      padding: 0;
+    }
+  }
+}
+
 @media only screen and (min-width: 1400px) {
+  .hero-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  :root {
+    --monstera-rotate-start: 10deg;
+    --monstera-move-start: -1px;
+    --monstera-translate-y: 0px;
+
+    --long-rotate-start: 80deg;
+    --long-move-start: -1px;
+    --long-translate-y: 0px;
+
+    --leaf-rotate-start: 80deg;
+    --leaf-move-start: -2px;
+    --leaf-translate-y: 0px;
+  }
+
+  .hero-plants {
+    .hero-monstera {
+      right: -80px;
+      width: 340px;
+    }
+
+    .hero-long {
+      width: 210px;
+    }
+
+    .hero-leaf {
+      left: -20px;
+      bottom: -60px;
+      width: 340px;
+    }
+  }
   .home-container {
     padding: 20px 80px;
   }
