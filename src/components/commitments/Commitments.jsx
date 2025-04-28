@@ -29,22 +29,22 @@ const Commitments = () => {
       <div className="commitments-container">
         <h2 className="commitments-header">Our Commitment</h2>
         <img
-          src="/images/fern-slate.png"
+          src="/images/fern-slate.svg"
           alt="slate green fern leaf"
           className="fern-com"
         />
         <img
-          src="/images/palm-slate.png"
+          src="/images/palm-slate.svg"
           alt="slate green leaf"
           className="palm-com"
         />
         <img
-          src="/images/palm2-ash.png"
+          src="/images/palm2-ash.svg"
           alt="ash green leaf"
           className="palm2-com"
         />
         <img
-          src="/images/leaf-dark.png"
+          src="/images/leaf-dark.svg"
           alt="slate green leaf"
           className="delicate-com"
         />

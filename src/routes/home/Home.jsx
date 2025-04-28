@@ -1,14 +1,12 @@
 import React, { useEffect, lazy, Suspense, startTransition } from 'react'
 
+import Commitments from '../../components/commitments/Commitments'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { reviewData } from '../../reviews-data'
 import Button from '../../components/button/main-button/Button'
 import { scrollToTop } from '../../utils/scrollToTop'
 import './home.styles.scss'
 
-const Commitments = lazy(() =>
-  import('../../components/commitments/Commitments')
-)
 const DirectoriesPreview = lazy(() =>
   import('../directories-preview/directories-preview')
 )
@@ -50,19 +48,16 @@ const Home = () => {
               src="/images/monstera-orange.svg"
               alt="orange monstera leaf"
               className="hero-monstera"
-              loading="lazy"
             />
             <img
               src="/images/long-slate.svg"
               alt="long slate green leaf"
               className="hero-long"
-              loading="lazy"
             />
             <img
               src="/images/leaf-light.svg"
               alt="light green leaf"
               className="hero-leaf"
-              loading="lazy"
             />
           </div>
 
@@ -81,29 +76,33 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Our Commitments Section */}
 
-      <Suspense
-        fallback={<div>Loading...</div>}
-        className="commitments-section"
-      >
+      {/* Our Commitments Section */}
+      <section className="commitments-section">
         <Commitments />
-      </Suspense>
+      </section>
 
       <div className="home-container">
-        {/* Best Sellers*/}
-        <section className="directories-section">
-          <DirectoriesPreview category="best-sellers" />
-        </section>
-        {/* Feature  */}
-        <section className="feature-section">
-          <FeaturePreview category="all-products" />
-        </section>
+        <Suspense fallback={<div>Loading...</div>}>
+          {' '}
+          {/* Best Sellers*/}
+          <section className="directories-section">
+            <DirectoriesPreview category="best-sellers" />
+          </section>
+        </Suspense>
 
-        {/* <Reviews /> */}
-        <section className="reviews-section">
-          <ReviewsPreview reviews={reviewData} />
-        </section>
+        <Suspense fallback={<div>Loading...</div>}>
+          {/* Feature  */}
+          <section className="feature-section">
+            <FeaturePreview category="all-products" />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          {/* <Reviews /> */}
+          <section className="reviews-section">
+            <ReviewsPreview reviews={reviewData} />
+          </section>
+        </Suspense>
       </div>
     </>
   )
