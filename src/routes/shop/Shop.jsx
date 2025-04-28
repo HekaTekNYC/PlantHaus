@@ -21,12 +21,12 @@ const Shop = () => {
                     className="shop-monstera"
                   />
                   <img
-                    src="/images/leaf-light.png"
+                    src="/images/leaf-light.svg"
                     alt="light green leaf"
                     className="shop-leaf-md"
                   />
                   <img
-                    src="/images/leaf-dark.png"
+                    src="/images/leaf-dark.svg"
                     alt="light green leaf"
                     className="shop-leaf-dark"
                   />
