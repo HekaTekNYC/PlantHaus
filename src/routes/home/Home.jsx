@@ -1,20 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, lazy, Suspense, startTransition } from 'react'
+
 import { useNavigate, useLocation } from 'react-router-dom'
-import Commitments from '../../components/commitments/Commitments'
-import DirectoriesPreview from '../directories-preview/directories-preview'
-import FeaturePreview from '../feature-preview/feature-preview'
-import ReviewsPreview from '../reviews/reviews-preview'
 import { reviewData } from '../../reviews-data'
 import Button from '../../components/button/main-button/Button'
 import { scrollToTop } from '../../utils/scrollToTop'
-
 import './home.styles.scss'
+
+const Commitments = lazy(() =>
+  import('../../components/commitments/Commitments')
+)
+const DirectoriesPreview = lazy(() =>
+  import('../directories-preview/directories-preview')
+)
+const FeaturePreview = lazy(() => import('../feature-preview/feature-preview'))
+const ReviewsPreview = lazy(() => import('../reviews/reviews-preview'))
 
 const Home = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const handleCategoryClick = () => {
-    navigate(`/shop/`)
+    startTransition(() => {
+      navigate('/shop/')
+    })
   }
 
   useEffect(() => {
@@ -24,31 +31,38 @@ const Home = () => {
     <>
       {/* Hero section */}
 
-      <div className="hero-container">
+      <section className="hero-container">
         <div className="hero-left">
           <div className="hero-image-container">
             <picture>
-              <source srcset="/images/PH-room.webp" type="image/webp" />
-              <img src="/images/PH-room.png" alt="living room full of plants" />
+              <source srcSet="/images/PH-room.webp" type="image/webp" />
+              <img
+                rel="preload"
+                src="/images/PH-room.png"
+                alt="living room full of plants"
+              />
             </picture>
           </div>
         </div>
         <div className="hero-right">
           <div className="hero-plants">
             <img
-              src="/images/monstera-orange.png"
+              src="/images/monstera-orange.svg"
               alt="orange monstera leaf"
               className="hero-monstera"
+              loading="lazy"
             />
             <img
-              src="/images/long-slate.png"
+              src="/images/long-slate.svg"
               alt="long slate green leaf"
               className="hero-long"
+              loading="lazy"
             />
             <img
-              src="/images/leaf-light.png"
+              src="/images/leaf-light.svg"
               alt="light green leaf"
               className="hero-leaf"
+              loading="lazy"
             />
           </div>
 
@@ -66,25 +80,30 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* Our Commitments Section */}
-      <div className="commitments-section">
+
+      <Suspense
+        fallback={<div>Loading...</div>}
+        className="commitments-section"
+      >
         <Commitments />
-      </div>
+      </Suspense>
+
       <div className="home-container">
         {/* Best Sellers*/}
-        <div className="directories-section">
+        <section className="directories-section">
           <DirectoriesPreview category="best-sellers" />
-        </div>
+        </section>
         {/* Feature  */}
-        <div className="feature-section">
+        <section className="feature-section">
           <FeaturePreview category="all-products" />
-        </div>
+        </section>
 
         {/* <Reviews /> */}
-        <div className="reviews-section">
+        <section className="reviews-section">
           <ReviewsPreview reviews={reviewData} />
-        </div>
+        </section>
       </div>
     </>
   )
