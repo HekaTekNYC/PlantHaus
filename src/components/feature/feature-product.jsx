@@ -60,7 +60,7 @@ const FeatureProduct = ({ product }) => {
           className="feature-banana"
         />
         <img
-          src="/images/palm2-ash.png"
+          src="/images/palm2-ash.svg"
           alt="light green palm leaf"
           className="feature-palm"
         />
