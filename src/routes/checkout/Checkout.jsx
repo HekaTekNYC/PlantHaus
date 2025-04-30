@@ -27,13 +27,12 @@ const Checkout = () => {
               <CheckoutItem key={cartItem.id} cartItem={cartItem} />
             ))}
             <div className="discount-row">
-              <div className="discount-input-container">
-                <input
-                  type="text"
-                  placeholder="Discount Code"
-                  className="discount-input"
-                />
-              </div>
+              <input
+                type="text"
+                placeholder="Discount Code"
+                className="discount-input"
+              />
+
               <div className="discount-btn">
                 <Button buttonType="checkout" type="submit">
                   Submit
