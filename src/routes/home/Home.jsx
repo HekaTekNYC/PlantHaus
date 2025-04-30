@@ -44,12 +44,12 @@ const Home = ({ isSvgLoaded, onSvgLoad }) => {
           </div>
         </div>
         <div className="hero-right">
-          <div className="hero-plants">
+          <div className={`hero-plants ${isSvgLoaded ? 'loaded' : ''}`}>
             <img
               src="/images/monstera-orange.svg"
               alt="orange monstera leaf"
-              className={`hero-monstera ${isSvgLoaded ? 'loaded' : ''}`}
-              onLoad={onSvgLoad} // Use the onLoad passed down as a prop
+              className="hero-monstera"
+              onLoad={onSvgLoad}
               loading="eager"
               fetchpriority="high"
               width="220"
@@ -58,7 +58,7 @@ const Home = ({ isSvgLoaded, onSvgLoad }) => {
             <img
               src="/images/long-slate.svg"
               alt="long slate green leaf"
-              className={`hero-long ${isSvgLoaded ? 'loaded' : ''}`}
+              className="hero-long"
               onLoad={onSvgLoad}
               loading="eager"
               fetchpriority="high"
@@ -66,7 +66,7 @@ const Home = ({ isSvgLoaded, onSvgLoad }) => {
             <img
               src="/images/leaf-light.svg"
               alt="light green leaf"
-              className={`hero-leaf ${isSvgLoaded ? 'loaded' : ''}`}
+              className="hero-leaf"
               onLoad={onSvgLoad}
               loading="eager"
               fetchpriority="high"
