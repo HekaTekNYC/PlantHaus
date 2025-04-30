@@ -8,14 +8,20 @@ const DirectoryPreview = ({ title, products }) => {
   return (
     <div className="directory-preview-container">
       <div className="directory-preview-header">
-        <Link to={`/shop/${title}`}>
+        <Link
+          to={`/shop/${title}`}
+          aria-label={`Browse ${shopTitle(title)} collection`}
+        >
           <h3 className="directory-title">{shopTitle(title)}</h3>
         </Link>
         <div className="view-text-container">
-          <Link to={`/shop/${title}`}>
+          <Link
+            to={`/shop/${title}`}
+            aria-label={`View more products in ${shopTitle(title)}`}
+          >
             <div className="view-align">
               <p>View More</p>
-              <div className="arrow">
+              <div className="arrow" aria-hidden="true">
                 <BsArrowRight />
               </div>
             </div>
@@ -23,6 +29,7 @@ const DirectoryPreview = ({ title, products }) => {
           </Link>
         </div>
       </div>
+
       <div className="directory-preview">
         {products.slice(0, 4).map((product, index) => (
           <div className="product-wrapper" key={product.id} data-index={index}>

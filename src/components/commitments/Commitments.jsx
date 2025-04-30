@@ -8,18 +8,21 @@ const Commitments = () => {
     {
       id: 1,
       icon: <PiPottedPlantLight size={43} />,
+      ariaLabel: 'Potted plant icon representing top-quality plants',
       header: 'Top-Quality Plants',
       info: 'Handpicked from top-rated growers for unbeatable quality at the best prices.',
     },
     {
       id: 2,
       icon: <BsBox2Heart size={34} className="delivery-icon" />,
+      ariaLabel: 'Box with heart icon representing delivery and care',
       header: 'Doorstep Delivery',
       info: 'Speedy delivery, happy vibes — and if your plant isn’t feeling the love, we’ll fix it.',
     },
     {
       id: 3,
       icon: <PiChatsCircleLight size={40} />,
+      ariaLabel: 'Chat bubble icon representing expert support',
       header: 'Expert Support',
       info: 'Get care tips with every order and chat with our online plant pros anytime.',
     },
@@ -49,9 +52,11 @@ const Commitments = () => {
           className="delicate-com"
         />
         <div className="commitments-row">
-          {pointsData.map(({ icon, header, info, id, svg }) => (
+          {pointsData.map(({ icon, header, info, id, ariaLabel }) => (
             <div className="point-container" key={id}>
-              <div className="point-icon">{icon}</div>
+              <div className="point-icon" role="img" aria-label={ariaLabel}>
+                {icon}
+              </div>
               <h3 className="point-header">{header}</h3>
               <p className="point-info">{info}</p>
             </div>

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkplant_haus=self.webpackChunkplant_haus||[]).push([[765],{4765:(e,a,s)=>{s.r(a),s.d(a,{default:()=>r});var n=s(579);const r=()=>(0,n.jsxs)("div",{className:"top-banner",children:["Free shipping on all orders over $75"," ",(0,n.jsx)("span",{className:"top-banner-extend",children:" + 30 Day Guarantee"})]})}}]);
+//# sourceMappingURL=765.b0fcee5a.chunk.js.map

@@ -1,6 +1,6 @@
 .button-container {
   width: auto;
-  min-width: 155px;
+  min-width: 205px;
   height: 45px;
   padding: 0 30px;
   font-size: 1rem;
@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 
   &:hover {
     background-color: #fff;

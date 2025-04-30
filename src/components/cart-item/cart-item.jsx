@@ -9,15 +9,12 @@ import './cart-item.styles.scss'
 const CartItem = ({ cartItem }) => {
   const { name, quantity, thumbnailUrl, price, size } = cartItem
 
-
   const { clearAllItemsFromCart, addItemToCart, removeItemFromCart } =
     useContext(CartContext)
 
   const clearItemsHandler = () => clearAllItemsFromCart(cartItem)
   const addItemHandler = () => addItemToCart(cartItem, size)
   const removeItemHandler = () => removeItemFromCart(cartItem, size)
-
-
 
   return (
     <>
@@ -30,26 +27,37 @@ const CartItem = ({ cartItem }) => {
             <div className="cart-item-details-row">
               <div className="cart-item-details">
                 <div className="cart-item-name">{name}</div>
-             
+
                 <div className="cart-item-size">Size: {shopTitle(size)}</div>
               </div>
               <div className="x-btn">
-                <TfiClose onClick={clearItemsHandler} className="closeX" />
+                <TfiClose
+                  onClick={clearItemsHandler}
+                  className="closeX"
+                  role="button"
+                  aria-label="Close cart"
+                />
               </div>
             </div>
             <div className="counter-price-container">
               <div className="counter-container">
                 <HiOutlineMinus
-                  onClick={removeItemHandler}
-                  className="cart-item-icon"
+                  onClick={quantity > 1 ? removeItemHandler : undefined}
+                  className={`cart-item-icon ${
+                    quantity <= 1 ? 'disabled' : ''
+                  }`}
+                  role="button"
+                  aria-label="Decrease quantity"
                 />
                 {quantity}
                 <HiOutlinePlus
                   onClick={addItemHandler}
                   className="cart-item-icon"
+                  role="button"
+                  aria-label="Increase quantity"
                 />
               </div>
-              <div className="cart-item-price">${price}</div>
+              <div className="cart-item-price">${price.toFixed(2)}</div>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { UserContext } from '../../../contexts/user.context'
 import { signOutUser } from '../../../utils/firebase/firebase.utils'
 import { NavbarContext } from '../../../contexts/navbar.context'
 import { scrollToTop } from '../../../utils/scrollToTop'
-// import Navigation from '../Navigation'
 import './dropdown-nav.styles.scss'
 
 const DropdownNav = () => {
@@ -19,46 +18,53 @@ const DropdownNav = () => {
   }
 
   return (
-    <>
-      <div className="dropdown-container">
-        <Link className="nav-link" to="/" onClick={() => toggleMobileNav()}>
-          HOME
-        </Link>
+    <div className="dropdown-container">
+      <Link
+        className="nav-link"
+        to="/"
+        onClick={() => handleLinkClick('/')}
+        aria-label="Go to homepage"
+      >
+        HOME
+      </Link>
+      <Link
+        className="nav-link"
+        to="/shop"
+        onClick={() => handleLinkClick('/shop')}
+        aria-label="Go to shop page"
+      >
+        SHOP
+      </Link>
+      <Link
+        className="nav-link"
+        to="/about"
+        onClick={() => handleLinkClick('/about')}
+        aria-label="Learn more about us"
+      >
+        ABOUT
+      </Link>
+      {currentUser ? (
+        <button
+          className="nav-link"
+          onClick={() => {
+            signOutUser()
+            handleLinkClick('/')
+          }}
+          aria-label="Sign out of your account"
+        >
+          SIGN OUT
+        </button>
+      ) : (
         <Link
           className="nav-link"
-          to="/shop/"
-          onClick={() => toggleMobileNav()}
+          to="/auth"
+          onClick={() => handleLinkClick('/auth')}
+          aria-label="Sign in to your account"
         >
-          SHOP
+          SIGN IN
         </Link>
-        <Link
-          className="nav-link"
-          to="/about"
-          onClick={() => toggleMobileNav()}
-        >
-          ABOUT
-        </Link>
-        {currentUser ? (
-          <span
-            className="nav-link"
-            onClick={() => {
-              signOutUser()
-              handleLinkClick('/')
-            }}
-          >
-            SIGN OUT
-          </span>
-        ) : (
-          <Link
-            className="nav-link"
-            to="/auth"
-            onClick={() => toggleMobileNav()}
-          >
-            SIGN IN
-          </Link>
-        )}
-      </div>
-    </>
+      )}
+    </div>
   )
 }
 
