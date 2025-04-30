@@ -26,24 +26,20 @@ const App = () => {
   }
 
   return (
-    <div className="page-container">
+    <>
       <Navigation />
-      <div className="content-container">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home isSvgLoaded={isSvgLoaded} onSvgLoad={handleSvgLoad} />
-            }
-          />
-          <Route path="auth" element={<Authentication navigate={navigate} />} />
-          <Route path="shop/*" element={<Shop />} />
-          <Route path="about" element={<About />} />
-          <Route path="checkout" element={<Checkout />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home isSvgLoaded={isSvgLoaded} onSvgLoad={handleSvgLoad} />}
+        />
+        <Route path="auth" element={<Authentication navigate={navigate} />} />
+        <Route path="shop/*" element={<Shop />} />
+        <Route path="about" element={<About />} />
+        <Route path="checkout" element={<Checkout />} />
+      </Routes>
       <SiteFooter />
-    </div>
+    </>
   )
 }
 
