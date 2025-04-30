@@ -2,13 +2,14 @@ import React from 'react'
 import './review-card.styles.scss'
 
 const ReviewCard = ({ review }) => {
-  const { location, reviewText, imageUrl, user } = review
+  const { location, reviewText, png, webp, user } = review
 
   return (
     <div className="review-card-container">
-      <div className="profile-image-wrapper">
-        <img src={imageUrl} alt={`${user} profile`} />
-      </div>
+      <picture className="profile-image-wrapper">
+        <source srcSet={webp} type="image/webp" />
+        <img src={png} alt={`${user} profile`} loading="lazy" />
+      </picture>
 
       <div className="review-card">
         <div className="user-review">
