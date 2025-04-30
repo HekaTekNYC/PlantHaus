@@ -7,31 +7,36 @@ body {
   color: #3c403f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: scroll;
-
+  overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
 
 html {
-  overflow: scroll;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
 }
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex-grow: 1;
 }
 
 a {
