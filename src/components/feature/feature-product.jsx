@@ -27,7 +27,6 @@ const FeatureProduct = ({ product }) => {
       (key) => thumbnailUrl[key] === clickedThumbnail
     )
 
-    console.log('Clicked Thumbnail Key:', thumbnailKey)
     const imgMatch = thumbnailKey.match(/(\d+)(?=(?:-thumb)?\.[^.]*$|$)/)
 
     if (thumbnailKey === undefined) {
@@ -35,17 +34,10 @@ const FeatureProduct = ({ product }) => {
     }
 
     const lastNumber = imgMatch[1]
-
-    console.log('Last Number:', lastNumber)
     const fullSizeImageKey = Object.keys(imageUrl).find((key) =>
       key.includes(lastNumber)
     )
-
-    console.log('Full Size Image Key:', fullSizeImageKey)
-
     const fullSizeImage = imageUrl[fullSizeImageKey]
-
-    console.log('Full Size Image:', fullSizeImage)
 
     setSelectedImage(fullSizeImage)
   }
@@ -55,7 +47,7 @@ const FeatureProduct = ({ product }) => {
     <>
       <div className="feature-container">
         <img
-          src="/images/banana-green.png"
+          src="/images/banana-green.svg"
           alt="green banana leaf"
           className="feature-banana"
         />
@@ -116,10 +108,10 @@ const FeatureProduct = ({ product }) => {
               to={`/shop/product/${plantName}`}
               state={{ nameMatch }}
               className="go-to-product"
+              aria-label={`View full details for ${plantName}`}
             >
               View Full Details
               <div className="arrow">
-                {/* <FaArrowRight /> */}
                 <BsArrowRight />
               </div>
             </Link>
