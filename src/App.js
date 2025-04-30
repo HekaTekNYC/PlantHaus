@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import Navigation from './components/navigation/Navigation'
 import Home from './routes/home/Home'
@@ -12,6 +12,8 @@ import { scrollToTop } from './utils/scrollToTop'
 import './index.scss'
 
 const App = () => {
+  const [isSvgLoaded, setIsSvgLoaded] = useState(false)
+
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -19,12 +21,21 @@ const App = () => {
     scrollToTop()
   }, [location])
 
+  const handleSvgLoad = () => {
+    setIsSvgLoaded(true)
+  }
+
   return (
     <div className="page-container">
       <Navigation />
       <div className="content-container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Home isSvgLoaded={isSvgLoaded} onSvgLoad={handleSvgLoad} />
+            }
+          />
           <Route path="auth" element={<Authentication navigate={navigate} />} />
           <Route path="shop/*" element={<Shop />} />
           <Route path="about" element={<About />} />

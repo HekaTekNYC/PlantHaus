@@ -99,23 +99,34 @@
   width: 100%;
   height: 100%;
 
-  .hero-monstera {
+  .hero-monstera,
+  .hero-long,
+  .hero-leaf {
+    opacity: 0; // Initially hide the SVGs
+    transition: opacity 0.5s ease-in-out; // Fade-in effect when loaded
+  }
+
+  .hero-monstera.loaded {
     animation: sway-monstera 6s ease-in-out infinite;
+    opacity: 1;
     position: absolute;
     top: -70px;
     left: -50px;
     width: 220px;
   }
 
-  .hero-long {
+  .hero-long.loaded {
     animation: sway-long 6s ease-in-out infinite;
+    opacity: 1;
     position: absolute;
     top: -70px;
     left: 10px;
     width: 170px;
   }
-  .hero-leaf {
+
+  .hero-leaf.loaded {
     animation: sway-leaf 6s ease-in-out infinite;
+    opacity: 1;
     position: absolute;
     bottom: -50px;
     left: 0px;
