@@ -33,7 +33,7 @@ const About = () => {
         <div className="about-header-container">
           <div className="about-header">
             <img
-              src="/images/monstera-light.png"
+              src="/images/monstera-light.svg"
               alt="light green monstera leaf"
               className="about-monstera"
             />
@@ -117,12 +117,12 @@ const About = () => {
 
           <div className="about-cta">
             <img
-              src="/images/monstera-ash.png"
+              src="/images/monstera-ash.svg"
               alt="monstera leaf"
               className="cta-monstera"
             />
             <img
-              src="/images/palm-apricot.png"
+              src="/images/palm-apricot.svg"
               alt="palm leaf"
               className="cta-palm"
             />
