@@ -13,9 +13,10 @@ const DirectoriesPreview = lazy(() =>
 const FeaturePreview = lazy(() => import('../feature-preview/feature-preview'))
 const ReviewsPreview = lazy(() => import('../reviews/reviews-preview'))
 
-const Home = () => {
+const Home = ({ isSvgLoaded, onSvgLoad }) => {
   const navigate = useNavigate()
   const location = useLocation()
+
   const handleCategoryClick = () => {
     startTransition(() => {
       navigate('/shop/')
@@ -25,10 +26,10 @@ const Home = () => {
   useEffect(() => {
     scrollToTop()
   }, [location])
+
   return (
     <>
       {/* Hero section */}
-
       <section className="hero-container">
         <div className="hero-left">
           <div className="hero-image-container">
@@ -43,21 +44,32 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-right">
-          <div className="hero-plants">
+          <div className={`hero-plants ${isSvgLoaded ? 'loaded' : ''}`}>
             <img
               src="/images/monstera-orange.svg"
               alt="orange monstera leaf"
               className="hero-monstera"
+              onLoad={onSvgLoad}
+              loading="eager"
+              fetchpriority="high"
+              width="220"
+              height="auto"
             />
             <img
               src="/images/long-slate.svg"
               alt="long slate green leaf"
               className="hero-long"
+              onLoad={onSvgLoad}
+              loading="eager"
+              fetchpriority="high"
             />
             <img
               src="/images/leaf-light.svg"
               alt="light green leaf"
               className="hero-leaf"
+              onLoad={onSvgLoad}
+              loading="eager"
+              fetchpriority="high"
             />
           </div>
 

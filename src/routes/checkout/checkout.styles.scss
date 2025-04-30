@@ -1,69 +1,59 @@
+.checkout-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .checkout-page-container {
   display: flex;
-  flex-direction: row;
-  padding: 60px 100px 20px;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   width: 100%;
+  height: 100%;
+  max-width: 1400px;
 }
 
 .checkout-form {
-  padding: 100px 40px 20px;
   width: 100%;
   height: 100%;
-  order: 1;
+  flex-grow: 1;
+  padding: 140px 30px 60px;
 }
 
 .checkout-container {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 100px 40px 0px;
   background-color: #fde8dc;
   width: 100%;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  order: 2;
+  height: 100%;
+  padding: 50px 30px;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  .checkout-order-summary {
+  h4 {
     font-family: 'Cormorant Garamond';
-  }
-  .checkout-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-bottom: 1px solid darkgrey;
-
-    .header-block {
-      display: flex;
-      margin-right: 20px;
-      text-transform: capitalize;
-      width: 63%;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 
   .checkout-items {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 100vh;
   }
 
   .discount-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
     margin: 20px 0;
+    gap: 1rem;
 
     .discount-input {
+      height: 100%;
+      padding: 7px;
       width: 200px;
+      border: none;
+      border-radius: 6px;
     }
 
     .form-select:focus,
@@ -71,31 +61,6 @@
       border-color: rgb(206, 136, 97);
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
         0 0 8px rgba(206, 136, 97, 0.6);
-    }
-
-    .discount-btn {
-      min-width: 100px;
-      width: 120px;
-      height: 45px;
-      letter-spacing: 0.5px;
-      padding: 0 35px 0 35px;
-      font-size: 1rem;
-      background-color: #ce8861;
-      color: white;
-      text-transform: uppercase;
-      font-weight: bolder;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-
-      &:hover {
-        background-color: #c1693b;
-        color: #fff;
-        border: 1px solid #ce8861;
-      }
     }
   }
 
@@ -148,47 +113,58 @@
 }
 
 // Media Queries
-@media only screen and (max-width: 1400px) {
-  .checkout-page-container {
-    padding: 60px 40px 0px;
 
-    .checkout-items {
-      width: 100%;
+@media only screen and (min-width: 768px) {
+  .checkout-page-container {
+    flex-direction: row;
+    height: 80vh;
+    padding-top: 110px;
+  }
+
+  .checkout-form {
+    padding: 40px;
+  }
+
+  .checkout-container {
+    padding: 40px;
+
+    .discount-row {
+      flex-direction: column;
+
+      .discount-input {
+        width: 100%;
+        height: 44px;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .checkout-page-container {
-    padding: 60px 40px 20px;
-  }
-}
+    flex-direction: row;
 
-@media only screen and (max-width: 992px) {
-  .checkout-page-container {
-    flex-direction: column;
-    padding: 60px 0;
+    height: 100%;
   }
 
   .checkout-form {
-    padding: 40px 40px 20px;
+    padding: 40px 60px;
+    width: 50%;
   }
 
   .checkout-container {
-    padding: 40px 40px 20px;
-    height: auto;
-  }
-}
+    padding: 40px 60px;
+    width: 50%;
 
-@media only screen and (max-width: 600px) {
-  .checkout-page-container {
-    flex-direction: column;
-  }
-
-  .checkout-container {
     .discount-row {
+      flex-direction: row;
+      justify-content: end;
+
+      .dicount-input-container {
+        width: 50%;
+      }
       .discount-input {
-        width: 150px;
+        width: 100%;
+        height: 44px;
       }
     }
   }
