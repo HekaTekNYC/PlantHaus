@@ -1,5 +1,3 @@
-@import '~bootstrap/scss/bootstrap';
-
 @font-face {
   font-family: 'Cormorant';
   src: url('./assets/fonts/Cormorant/Cormorant-Light.ttf') format('truetype');
@@ -163,7 +161,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'DM Sans';
+  font-family: 'Cormorant Garamond';
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
