@@ -20,17 +20,19 @@ const App = () => {
   }, [location])
 
   return (
-    <>
+    <div className="page-container">
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="auth" element={<Authentication navigate={navigate} />} />
-        <Route path="shop/*" element={<Shop />} />
-        <Route path="about" element={<About />} />
-        <Route path="checkout" element={<Checkout />} />
-      </Routes>
+      <div className="content-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="auth" element={<Authentication navigate={navigate} />} />
+          <Route path="shop/*" element={<Shop />} />
+          <Route path="about" element={<About />} />
+          <Route path="checkout" element={<Checkout />} />
+        </Routes>
+      </div>
       <SiteFooter />
-    </>
+    </div>
   )
 }
 

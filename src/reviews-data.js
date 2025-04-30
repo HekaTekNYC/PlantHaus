@@ -2,7 +2,8 @@ export const reviewData = [
   {
     id: 1,
     rating: '',
-    imageUrl: 'https://i.ibb.co/wCxdpJw/blue-shirt.png',
+    webp: '/images/riri-w.webp',
+    png: '/images/riri-w.png',
     user: 'Riri Williams',
     location: 'Queens, New York',
     reviewText:
@@ -11,7 +12,8 @@ export const reviewData = [
   {
     id: 2,
     rating: '',
-    imageUrl: 'https://i.ibb.co/fDtVdfg/Jessica-Jones.png',
+    webp: '/images/jessica-j.webp',
+    png: '/images/jessica-j.png',
     user: 'Jessica Jones',
     location: 'South Portland, Maine',
     reviewText:
@@ -20,7 +22,8 @@ export const reviewData = [
   {
     id: 3,
     rating: '',
-    imageUrl: 'https://i.ibb.co/nn0Sr8S/ororo-munroe.png',
+    webp: '/images/ororo-m.webp',
+    png: '/images/ororo-m.png',
     user: 'Ororo Munroe',
     location: 'Los Angeles, California',
     reviewText:
@@ -29,7 +32,8 @@ export const reviewData = [
   {
     id: 4,
     rating: '',
-    imageUrl: 'https://i.ibb.co/KGYxYLz/Wade-Wilson.png',
+    webp: '/images/wade-w.webp',
+    png: '/images/wade-w.png',
     user: 'Chad Knudsen',
     location: 'Austin, Texas',
     reviewText:
@@ -38,7 +42,8 @@ export const reviewData = [
   {
     id: 5,
     rating: '',
-    imageUrl: 'https://i.ibb.co/gDpyzG6/Samanth-Fox.png',
+    webp: '/images/samantha-f.webp',
+    png: '/images/samantha-f.png',
     user: 'Samantha Fox',
     location: 'Brooklyn, New York',
     reviewText:
@@ -47,7 +52,8 @@ export const reviewData = [
   {
     id: 6,
     rating: '',
-    imageUrl: 'https://i.ibb.co/W6rNHDF/zach-lai.png',
+    webp: '/images/zach-l.webp',
+    png: '/images/zach-l.png',
     user: 'Zach Lai',
     location: 'Portland, Oregon',
     reviewText:

@@ -16,7 +16,7 @@ const Shop = () => {
               <div className="shop-page-header-container">
                 <div className="shop-page-header">
                   <img
-                    src="/images/monstera-light.png"
+                    src="/images/monstera-light.svg"
                     alt="light green monstera leaf"
                     className="shop-monstera"
                   />

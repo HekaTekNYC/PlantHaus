@@ -25,13 +25,12 @@ const Product = ({ product }) => {
   const [selectedPrice, setSelectedPrice] = useState(Object.values(price)[0])
 
   const { addItemToCart } = useContext(CartContext)
-  console.log('selectedPrice in product', selectedPrice)
 
   const addProductToCart = () => {
     if (selectedSize) {
       addItemToCart(product, selectedSize)
     } else {
-      console.log('Select your size before adding to cart!')
+      alert('Please select a size before adding to cart!')
     }
   }
   const [selectedImage, setSelectedImage] = useState(imageUrl.img1)
@@ -80,14 +79,19 @@ const Product = ({ product }) => {
                   className="product-thumb-container"
                   key={index}
                   onClick={() => handleThumbnailClick(thumbnail)}
+                  aria-label={`Thumbnail image for ${name}`}
                 >
-                  <img src={thumbnail} alt={`${name}`} loading="lazy" />
+                  <img
+                    src={thumbnail}
+                    alt={`${name} thumbnail`}
+                    loading="lazy"
+                  />
                 </div>
               )
             )}
         </div>
         <div className="product-img-col">
-          <img src={selectedImage} alt={`${name}`} />
+          <img src={selectedImage} alt={`${name}`} loading="lazy" />
         </div>
       </div>
       <div className="product-info-container">
