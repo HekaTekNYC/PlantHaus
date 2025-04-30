@@ -26,53 +26,59 @@ const Navigation = () => {
         <TopBanner />
       </Suspense>
       <div className="navigation">
-        <Link className="logo-container" to="/">
-          <div className="logo-short-text">PH</div>
-          <div className="nav-store-name">PLANT HAUS</div>
-        </Link>
+        <div className="nav-container">
+          <Link className="logo-container" to="/">
+            <div className="logo-short-text">PH</div>
+            <div className="nav-store-name">PLANT HAUS</div>
+          </Link>
 
-        <div className="right-menu">
-          <div className="hamburger-icon">
-            <Suspense fallback={<div>Loading Menu...</div>}>
-              <Burger />
-            </Suspense>
-          </div>
+          <div className="right-menu">
+            <div className="hamburger-icon">
+              <Suspense fallback={<div>Loading Menu...</div>}>
+                <Burger />
+              </Suspense>
+            </div>
 
-          <nav className="nav-links-container">
-            <Link className="nav-links" to="/" aria-label="Go to home page">
-              HOME
-            </Link>
-            <Link className="nav-links" to="/shop" aria-label="Go to shop page">
-              SHOP
-            </Link>
-            <Link
-              className="nav-links"
-              to="/about"
-              aria-label="Learn more about us"
-            >
-              ABOUT
-            </Link>
-            {currentUser ? (
-              <button
-                className="nav-links"
-                onClick={signOutUser}
-                aria-label="Sign out of the account"
-              >
-                SIGN OUT
-              </button>
-            ) : (
+            <nav className="nav-links-container">
+              <Link className="nav-links" to="/" aria-label="Go to home page">
+                HOME
+              </Link>
               <Link
                 className="nav-links"
-                to="/auth"
-                aria-label="Sign in to your account"
+                to="/shop"
+                aria-label="Go to shop page"
               >
-                SIGN IN
+                SHOP
               </Link>
-            )}
-          </nav>
+              <Link
+                className="nav-links"
+                to="/about"
+                aria-label="Learn more about us"
+              >
+                ABOUT
+              </Link>
+              {currentUser ? (
+                <button
+                  className="nav-links"
+                  onClick={signOutUser}
+                  aria-label="Sign out of the account"
+                >
+                  SIGN OUT
+                </button>
+              ) : (
+                <Link
+                  className="nav-links"
+                  to="/auth"
+                  aria-label="Sign in to your account"
+                >
+                  SIGN IN
+                </Link>
+              )}
+            </nav>
 
-          <div className="cart-icon">
-            <CartIcon />
+            <div className="cart-icon">
+              <CartIcon />
+            </div>
           </div>
         </div>
 
