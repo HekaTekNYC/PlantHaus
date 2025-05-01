@@ -27,13 +27,12 @@ const Checkout = () => {
               <CheckoutItem key={cartItem.id} cartItem={cartItem} />
             ))}
             <div className="discount-row">
-              <div className="discount-input-container">
-                <input
-                  type="text"
-                  placeholder="Discount Code"
-                  className="discount-input"
-                />
-              </div>
+              <input
+                type="text"
+                placeholder="Discount Code"
+                className="discount-input"
+              />
+
               <div className="discount-btn">
                 <Button buttonType="checkout" type="submit">
                   Submit
@@ -41,19 +40,19 @@ const Checkout = () => {
               </div>
             </div>
             <div className="subtotal-row">
-              <div className="subtotal">Subtotal</div>
-              <div className="subtotal-text">${cartTotal}</div>
+              <p className="subtotal">Subtotal</p>
+              <p className="subtotal-text">${cartTotal}</p>
             </div>
             <div className="shipping-row">
-              <div className="shipping">Shipping</div>
-              <div className="shipping-text">Caluclated at next step</div>
+              <p className="shipping">Shipping</p>
+              <p className="shipping-text">Caluclated at next step</p>
             </div>
 
             <div className="total-container">
               <div className="styled-line"></div>
               <div className="total-row">
-                <div className="total">Total</div>
-                <div className="total-text">${cartTotal}</div>
+                <p className="total">Total</p>
+                <p className="total-text">${cartTotal}</p>
               </div>
             </div>
           </div>
