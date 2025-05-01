@@ -17,17 +17,15 @@ const CheckoutItem = ({ cartItem }) => {
         </div>
         <div className="checkout-item-details-container">
           <div className="checkout-item-details-row">
-            <div className="checkout-item-details">
-              <div className="checkout-item-name">{name}, </div>
+            <p className="checkout-item">
+              {name}, <span>{shopTitle(size)}</span>{' '}
+            </p>
 
-              <div className="checkout-item-size">{shopTitle(size)}</div>
-            </div>
-            <div className="checkout-item-price">${price}</div>
+            <p className="checkout-item-price">${price}</p>
           </div>
-          <div className="counter-price-container">
-            <div className="quantity-container">
-              Quantity: {quantity} {quantity === 1 ? 'item' : 'items'}
-            </div>
+
+          <div className="quantity-container">
+            Quantity: {quantity} {quantity === 1 ? 'item' : 'items'}
           </div>
         </div>
       </div>

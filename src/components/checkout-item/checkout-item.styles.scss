@@ -20,9 +20,8 @@
 .checkout-item-details-container {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
   width: 80%;
-  height: 100%;
 }
 
 .checkout-item-details-row {
@@ -30,22 +29,10 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 5px;
 
-  .checkout-item-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 6px;
-    width: 100%;
-
-    .checkout-item-name {
-      font-size: 1.1rem;
-      padding-right: 6px;
-    }
-    .checkout-item-size {
-      font-size: 1.1rem;
-    }
+  .checkout-item {
+    font-size: 1.1rem;
   }
 
   .checkout-item-price {
@@ -55,20 +42,10 @@
   }
 }
 
-.counter-price-container {
+.quantity-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-
-  .quantity-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 86px;
-    height: 30px;
-    margin: 5px;
-  }
+  justify-content: start;
+  margin-top: 5px;
 }
