@@ -40,19 +40,19 @@ const Checkout = () => {
               </div>
             </div>
             <div className="subtotal-row">
-              <div className="subtotal">Subtotal</div>
-              <div className="subtotal-text">${cartTotal}</div>
+              <p className="subtotal">Subtotal</p>
+              <p className="subtotal-text">${cartTotal}</p>
             </div>
             <div className="shipping-row">
-              <div className="shipping">Shipping</div>
-              <div className="shipping-text">Caluclated at next step</div>
+              <p className="shipping">Shipping</p>
+              <p className="shipping-text">Caluclated at next step</p>
             </div>
 
             <div className="total-container">
               <div className="styled-line"></div>
               <div className="total-row">
-                <div className="total">Total</div>
-                <div className="total-text">${cartTotal}</div>
+                <p className="total">Total</p>
+                <p className="total-text">${cartTotal}</p>
               </div>
             </div>
           </div>
