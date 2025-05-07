@@ -101,6 +101,7 @@
   .hero-monstera,
   .hero-long,
   .hero-leaf {
+    visibility: hidden;
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -126,16 +127,19 @@
 
   &.loaded {
     .hero-monstera {
+      visibility: visible;
       animation: sway-monstera 6s ease-in-out infinite;
       opacity: 1;
     }
 
     .hero-long {
+      visibility: visible;
       animation: sway-long 6s ease-in-out infinite;
       opacity: 1;
     }
 
     .hero-leaf {
+      visibility: visible;
       animation: sway-leaf 6s ease-in-out infinite;
       opacity: 1;
     }
