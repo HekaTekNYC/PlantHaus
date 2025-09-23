@@ -80,7 +80,7 @@ export const CartProvider = ({ children }) => {
   const [cartCount, setCartCount] = useState(0)
   const [cartTotal, setCartTotal] = useState(0)
 
-  // 🛒 Load cart items from localStorage when the app starts
+  //  Load cart items from localStorage when the app starts
   useEffect(() => {
     const storedCart = localStorage.getItem(CART_STORAGE_KEY)
     if (storedCart) {
@@ -88,16 +88,16 @@ export const CartProvider = ({ children }) => {
     }
   }, [])
 
-  // 💾 Save cart items to localStorage whenever they change
+  //  Save cart items to localStorage whenever they change
   useEffect(() => {
     if (cartItems.length > 0) {
       localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems))
     } else {
-      localStorage.removeItem(CART_STORAGE_KEY) // Remove storage if cart is empty
+      localStorage.removeItem(CART_STORAGE_KEY)
     }
   }, [cartItems])
 
-  // 🔄 Update cart count when items change
+  //  Update cart count when items change
   useEffect(() => {
     const newCartCount = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity,
@@ -106,7 +106,7 @@ export const CartProvider = ({ children }) => {
     setCartCount(newCartCount)
   }, [cartItems])
 
-  // 💰 Update total price when items change
+  //  Update total price when items change
   useEffect(() => {
     const newCartTotal = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity * cartItem.price,
@@ -115,21 +115,21 @@ export const CartProvider = ({ children }) => {
     setCartTotal(newCartTotal)
   }, [cartItems])
 
-  // ✅ Add item to cart
+  //  Add item to cart
   const addItemToCart = (productToAdd, selectedSize) => {
     setCartItems((prevCartItems) =>
       addCartItem(prevCartItems, productToAdd, selectedSize)
     )
   }
 
-  // 🛑 Remove one quantity from cart
+  //  Remove one quantity from cart
   const removeItemFromCart = (cartItemToRemove) => {
     setCartItems((prevCartItems) =>
       removeCartItem(prevCartItems, cartItemToRemove)
     )
   }
 
-  // ❌ Clear all of a specific item from cart
+  //  Clear all of a specific item from cart
   const clearAllItemsFromCart = (cartItemToClear) => {
     setCartItems((prevCartItems) =>
       clearCartItem(prevCartItems, cartItemToClear)
